@@ -28,7 +28,7 @@ fs.readFile('./dist/js/home.bundle.min.js', "utf8", (err, data) => {
   homeBundle = data || "";
 })
 
-app.get('/home', (req, res) => {
+app.get('/', (req, res) => {
   let data = "";
   res.set('Cache-Control', 'public, max-age=31557600');
   res.send(returnHTML(data, homeBundle, HomeRoot, "home"));
