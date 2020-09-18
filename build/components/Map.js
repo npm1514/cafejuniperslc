@@ -7,9 +7,11 @@ exports["default"] = void 0;
 
 var _react = _interopRequireWildcard(require("react"));
 
-var _ = require("./");
+var _map = require("../styled-components/components/map");
 
-var _header = require("../styled-components/components/header");
+var _subcomponents = require("../subcomponents");
+
+var _colors = require("../styled-components/colors");
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
 
@@ -37,37 +39,44 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
-var HeaderComponent = /*#__PURE__*/function (_Component) {
-  _inherits(HeaderComponent, _Component);
+var MapComponent = /*#__PURE__*/function (_Component) {
+  _inherits(MapComponent, _Component);
 
-  var _super = _createSuper(HeaderComponent);
+  var _super = _createSuper(MapComponent);
 
-  function HeaderComponent() {
-    _classCallCheck(this, HeaderComponent);
+  function MapComponent() {
+    _classCallCheck(this, MapComponent);
 
     return _super.apply(this, arguments);
   }
 
-  _createClass(HeaderComponent, [{
+  _createClass(MapComponent, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/_react["default"].createElement(_header.HeaderWrap, null, /*#__PURE__*/_react["default"].createElement(_header.Header, null, /*#__PURE__*/_react["default"].createElement("a", {
-        href: "/#menu"
-      }, "Menu"), /*#__PURE__*/_react["default"].createElement("a", {
-        href: "/#about"
-      }, "About Us"), /*#__PURE__*/_react["default"].createElement("a", {
-        className: "online-order",
-        href: "/#order"
-      }, "Order Online"), /*#__PURE__*/_react["default"].createElement("a", {
-        href: "/#map"
-      }, "Location"), /*#__PURE__*/_react["default"].createElement("a", {
-        href: "/#contact"
-      }, "Contact")));
+      return /*#__PURE__*/_react["default"].createElement(_map.MapWrap, {
+        id: this.props.id
+      }, /*#__PURE__*/_react["default"].createElement(_map.Map, null, /*#__PURE__*/_react["default"].createElement(_subcomponents.Hex, {
+        color: _colors.green,
+        top: -110,
+        left: 10,
+        size: 200
+      }), /*#__PURE__*/_react["default"].createElement("h1", null, "Come visit us at 29", /*#__PURE__*/_react["default"].createElement("sub", null, "E"), " 400", /*#__PURE__*/_react["default"].createElement("sub", null, "S"), "!"), /*#__PURE__*/_react["default"].createElement("iframe", {
+        src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.0500648091283!2d-111.89217568459362!3d40.760923579326665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752f51053dac723%3A0x39f2100c58807a0b!2s29%20E%20400%20S%2C%20Salt%20Lake%20City%2C%20UT%2084111!5e0!3m2!1sen!2sus!4v1600403552691!5m2!1sen!2sus",
+        width: "600",
+        height: "400",
+        frameBorder: "0",
+        style: {
+          border: 0
+        },
+        allowFullScreen: "",
+        "aria-hidden": "false",
+        tabIndex: "0"
+      })));
     }
   }]);
 
-  return HeaderComponent;
+  return MapComponent;
 }(_react.Component);
 
-var _default = HeaderComponent;
+var _default = MapComponent;
 exports["default"] = _default;

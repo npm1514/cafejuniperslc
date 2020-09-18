@@ -7,13 +7,9 @@ exports["default"] = void 0;
 
 var _react = _interopRequireWildcard(require("react"));
 
-var _Header = _interopRequireDefault(require("../components/Header"));
-
-var _Footer = _interopRequireDefault(require("../components/Footer"));
+var _components = require("../components");
 
 var _home = require("../styled-components/home");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
 
@@ -55,7 +51,19 @@ var Home = /*#__PURE__*/function (_Component) {
   _createClass(Home, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/_react["default"].createElement(_home.HomeWrapper, null, /*#__PURE__*/_react["default"].createElement(_Header["default"], null), /*#__PURE__*/_react["default"].createElement(_home.HomeContent, null, "home page"), /*#__PURE__*/_react["default"].createElement(_Footer["default"], null));
+      return /*#__PURE__*/_react["default"].createElement(_home.HomeWrapper, null, /*#__PURE__*/_react["default"].createElement(_components.Banner, {
+        id: "home"
+      }), /*#__PURE__*/_react["default"].createElement(_components.Header, null), /*#__PURE__*/_react["default"].createElement(_components.Menu, null), /*#__PURE__*/_react["default"].createElement(_components.Parallax, {
+        url: "https://cbtl-images.s3.us-west-1.amazonaws.com/Production/Drupal/s3fs-public/styles/blog_banner/public/2019-03/19SPR_Website_HomepageBanner_desktop_Mocha_1440x550.jpg?itok=GDnw2q7Z"
+      }), /*#__PURE__*/_react["default"].createElement(_components.Description, {
+        id: "about"
+      }), /*#__PURE__*/_react["default"].createElement(_components.Parallax, {
+        url: "https://cbtl-images.s3.us-west-1.amazonaws.com/Production/Drupal/s3fs-public/styles/blog_banner/public/2019-03/19SPR_Website_HomepageBanner_desktop_Mocha_1440x550.jpg?itok=GDnw2q7Z"
+      }), /*#__PURE__*/_react["default"].createElement(_components.Map, {
+        id: "map"
+      }), /*#__PURE__*/_react["default"].createElement(_components.Message, {
+        id: "contact"
+      }), /*#__PURE__*/_react["default"].createElement(_components.Partners, null), /*#__PURE__*/_react["default"].createElement(_components.Footer, null));
     }
   }]);
 

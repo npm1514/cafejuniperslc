@@ -7,9 +7,7 @@ exports["default"] = void 0;
 
 var _react = _interopRequireWildcard(require("react"));
 
-var _ = require("./");
-
-var _header = require("../styled-components/components/header");
+var _hex = require("../styled-components/subcomponents/hex");
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
 
@@ -37,37 +35,45 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
-var HeaderComponent = /*#__PURE__*/function (_Component) {
-  _inherits(HeaderComponent, _Component);
+var HexComponent = /*#__PURE__*/function (_Component) {
+  _inherits(HexComponent, _Component);
 
-  var _super = _createSuper(HeaderComponent);
+  var _super = _createSuper(HexComponent);
 
-  function HeaderComponent() {
-    _classCallCheck(this, HeaderComponent);
+  function HexComponent() {
+    _classCallCheck(this, HexComponent);
 
     return _super.apply(this, arguments);
   }
 
-  _createClass(HeaderComponent, [{
+  _createClass(HexComponent, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/_react["default"].createElement(_header.HeaderWrap, null, /*#__PURE__*/_react["default"].createElement(_header.Header, null, /*#__PURE__*/_react["default"].createElement("a", {
-        href: "/#menu"
-      }, "Menu"), /*#__PURE__*/_react["default"].createElement("a", {
-        href: "/#about"
-      }, "About Us"), /*#__PURE__*/_react["default"].createElement("a", {
-        className: "online-order",
-        href: "/#order"
-      }, "Order Online"), /*#__PURE__*/_react["default"].createElement("a", {
-        href: "/#map"
-      }, "Location"), /*#__PURE__*/_react["default"].createElement("a", {
-        href: "/#contact"
-      }, "Contact")));
+      var _this$props = this.props,
+          size = _this$props.size,
+          top = _this$props.top,
+          bottom = _this$props.bottom,
+          left = _this$props.left,
+          right = _this$props.right,
+          color = _this$props.color;
+      size = size || 100;
+      return /*#__PURE__*/_react["default"].createElement(_hex.Hex, {
+        viewBox: "0 0 100 100",
+        height: size,
+        width: size,
+        top: top,
+        bottom: bottom,
+        left: left,
+        right: right,
+        color: color
+      }, /*#__PURE__*/_react["default"].createElement("polygon", {
+        points: "50 1 95 25 95 75 50 99 5 75 5 25"
+      }));
     }
   }]);
 
-  return HeaderComponent;
+  return HexComponent;
 }(_react.Component);
 
-var _default = HeaderComponent;
+var _default = HexComponent;
 exports["default"] = _default;

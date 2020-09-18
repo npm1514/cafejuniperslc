@@ -18,6 +18,8 @@ var _compression = _interopRequireDefault(require("compression"));
 
 var _cors = _interopRequireDefault(require("cors"));
 
+var _path = _interopRequireDefault(require("path"));
+
 var _bodyParser = _interopRequireDefault(require("body-parser"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
@@ -36,14 +38,14 @@ _fs["default"].readFile('./dist/js/home.bundle.min.js', "utf8", function (err, d
   homeBundle = data || "";
 });
 
-app.get('/home', function (req, res) {
+app.get('/', function (req, res) {
   var data = "";
   res.set('Cache-Control', 'public, max-age=31557600');
   res.send(returnHTML(data, homeBundle, _HomeRoot["default"], "home"));
 });
-;
-app.get('/health', function (req, res) {
-  return res.send('OK');
+app.get('/images/:id', function (req, res) {
+  res.set('Cache-Control', 'public, max-age=31557600');
+  res.sendFile(_path["default"].join(__dirname, '../images/' + req.params.id));
 });
 app.listen(PORT, function () {
   console.log('Running on http://localhost:' + PORT);
@@ -79,7 +81,7 @@ function returnHTML(data, bundle, Page, title) {
     data: data
   })));
   var styles = sheet.getStyleTags();
-  return "\n            <html lang=\"en\">\n              <head>\n                <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n                <title>".concat(title, "</title>\n                <meta name=\"Description\" content=\"").concat(title, "\">\n                <style>\n                  body { margin: 0; font-family: Helvetica; }\n                  a { text-decoration: none; color: #000; }\n                </style>\n                ").concat(styles, "\n              </head>\n              <body>\n                <script>window.os = window.os || {};</script>\n                <script>window.__DATA__=").concat(dataString, "</script>\n                <div id=\"app\" role=\"main\">").concat(body, "</div>\n                <script>").concat(bundle, "</script>\n              </body>\n            </html>\n          ");
+  return "\n      <html lang=\"en\">\n        <head>\n          <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n          <title>".concat(title, "</title>\n          <meta name=\"Description\" content=\"").concat(title, "\">\n          <link rel=\"stylesheet\" href=\"https://use.typekit.net/mno0keq.css\">\n          <style>\n            body {\n              margin: 0;\n              font-family:\n              diazo-mvb-ex-cond, sans-serif;\n              font-weight: 400;\n              font-style: normal;\n              overflow-x: hidden;\n            }\n            h1 { font-weight: 700;}\n            p { font-weight: 100;}\n          </style>\n          ").concat(styles, "\n        </head>\n        <body>\n          <script>window.os = window.os || {};</script>\n          <script>window.__DATA__=").concat(dataString, "</script>\n          <div id=\"app\" role=\"main\">").concat(body, "</div>\n          <script>").concat(bundle, "</script>\n        </body>\n      </html>\n    ");
 }
 
 function errHandle(err) {

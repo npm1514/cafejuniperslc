@@ -7,9 +7,7 @@ exports["default"] = void 0;
 
 var _react = _interopRequireWildcard(require("react"));
 
-var _ = require("./");
-
-var _header = require("../styled-components/components/header");
+var _partners = require("../styled-components/components/partners");
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
 
@@ -37,37 +35,28 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
-var HeaderComponent = /*#__PURE__*/function (_Component) {
-  _inherits(HeaderComponent, _Component);
+var PartnersComponent = /*#__PURE__*/function (_Component) {
+  _inherits(PartnersComponent, _Component);
 
-  var _super = _createSuper(HeaderComponent);
+  var _super = _createSuper(PartnersComponent);
 
-  function HeaderComponent() {
-    _classCallCheck(this, HeaderComponent);
+  function PartnersComponent() {
+    _classCallCheck(this, PartnersComponent);
 
     return _super.apply(this, arguments);
   }
 
-  _createClass(HeaderComponent, [{
+  _createClass(PartnersComponent, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/_react["default"].createElement(_header.HeaderWrap, null, /*#__PURE__*/_react["default"].createElement(_header.Header, null, /*#__PURE__*/_react["default"].createElement("a", {
-        href: "/#menu"
-      }, "Menu"), /*#__PURE__*/_react["default"].createElement("a", {
-        href: "/#about"
-      }, "About Us"), /*#__PURE__*/_react["default"].createElement("a", {
-        className: "online-order",
-        href: "/#order"
-      }, "Order Online"), /*#__PURE__*/_react["default"].createElement("a", {
-        href: "/#map"
-      }, "Location"), /*#__PURE__*/_react["default"].createElement("a", {
-        href: "/#contact"
-      }, "Contact")));
+      return /*#__PURE__*/_react["default"].createElement(_partners.Partners, {
+        id: this.props.id
+      }, "partners");
     }
   }]);
 
-  return HeaderComponent;
+  return PartnersComponent;
 }(_react.Component);
 
-var _default = HeaderComponent;
+var _default = PartnersComponent;
 exports["default"] = _default;

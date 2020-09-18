@@ -7,9 +7,11 @@ exports["default"] = void 0;
 
 var _react = _interopRequireWildcard(require("react"));
 
-var _ = require("./");
+var _banner = require("../styled-components/components/banner");
 
-var _header = require("../styled-components/components/header");
+var _subcomponents = require("../subcomponents");
+
+var _colors = require("../styled-components/colors");
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
 
@@ -37,37 +39,55 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
-var HeaderComponent = /*#__PURE__*/function (_Component) {
-  _inherits(HeaderComponent, _Component);
+var BannerComponent = /*#__PURE__*/function (_Component) {
+  _inherits(BannerComponent, _Component);
 
-  var _super = _createSuper(HeaderComponent);
+  var _super = _createSuper(BannerComponent);
 
-  function HeaderComponent() {
-    _classCallCheck(this, HeaderComponent);
+  function BannerComponent() {
+    _classCallCheck(this, BannerComponent);
 
     return _super.apply(this, arguments);
   }
 
-  _createClass(HeaderComponent, [{
+  _createClass(BannerComponent, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/_react["default"].createElement(_header.HeaderWrap, null, /*#__PURE__*/_react["default"].createElement(_header.Header, null, /*#__PURE__*/_react["default"].createElement("a", {
-        href: "/#menu"
-      }, "Menu"), /*#__PURE__*/_react["default"].createElement("a", {
-        href: "/#about"
-      }, "About Us"), /*#__PURE__*/_react["default"].createElement("a", {
-        className: "online-order",
-        href: "/#order"
-      }, "Order Online"), /*#__PURE__*/_react["default"].createElement("a", {
-        href: "/#map"
-      }, "Location"), /*#__PURE__*/_react["default"].createElement("a", {
-        href: "/#contact"
-      }, "Contact")));
+      return /*#__PURE__*/_react["default"].createElement(_banner.BannerWrap, {
+        id: this.props.id
+      }, /*#__PURE__*/_react["default"].createElement(_banner.Banner, null, /*#__PURE__*/_react["default"].createElement(_subcomponents.Hex, {
+        color: _colors.darkblue,
+        top: -80,
+        left: -60,
+        size: 230
+      }), /*#__PURE__*/_react["default"].createElement(_subcomponents.Hex, {
+        color: _colors.green,
+        top: 135,
+        left: 80,
+        size: 130
+      }), /*#__PURE__*/_react["default"].createElement(_subcomponents.Hex, {
+        color: _colors.pink,
+        top: -25,
+        right: 110,
+        size: 100
+      }), /*#__PURE__*/_react["default"].createElement(_subcomponents.Hex, {
+        color: _colors.darkblue,
+        top: -90,
+        right: -100,
+        size: 200
+      }), /*#__PURE__*/_react["default"].createElement(_subcomponents.Hex, {
+        color: _colors.brown,
+        top: 120,
+        right: -10,
+        size: 160
+      }), /*#__PURE__*/_react["default"].createElement("img", {
+        src: "/images/Cafe-Juniper_Primary_01.png"
+      })));
     }
   }]);
 
-  return HeaderComponent;
+  return BannerComponent;
 }(_react.Component);
 
-var _default = HeaderComponent;
+var _default = BannerComponent;
 exports["default"] = _default;

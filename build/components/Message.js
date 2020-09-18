@@ -7,9 +7,11 @@ exports["default"] = void 0;
 
 var _react = _interopRequireWildcard(require("react"));
 
-var _ = require("./");
+var _message = require("../styled-components/components/message");
 
-var _header = require("../styled-components/components/header");
+var _subcomponents = require("../subcomponents");
+
+var _colors = require("../styled-components/colors");
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
 
@@ -37,37 +39,33 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
-var HeaderComponent = /*#__PURE__*/function (_Component) {
-  _inherits(HeaderComponent, _Component);
+var MessageComponent = /*#__PURE__*/function (_Component) {
+  _inherits(MessageComponent, _Component);
 
-  var _super = _createSuper(HeaderComponent);
+  var _super = _createSuper(MessageComponent);
 
-  function HeaderComponent() {
-    _classCallCheck(this, HeaderComponent);
+  function MessageComponent() {
+    _classCallCheck(this, MessageComponent);
 
     return _super.apply(this, arguments);
   }
 
-  _createClass(HeaderComponent, [{
+  _createClass(MessageComponent, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/_react["default"].createElement(_header.HeaderWrap, null, /*#__PURE__*/_react["default"].createElement(_header.Header, null, /*#__PURE__*/_react["default"].createElement("a", {
-        href: "/#menu"
-      }, "Menu"), /*#__PURE__*/_react["default"].createElement("a", {
-        href: "/#about"
-      }, "About Us"), /*#__PURE__*/_react["default"].createElement("a", {
-        className: "online-order",
-        href: "/#order"
-      }, "Order Online"), /*#__PURE__*/_react["default"].createElement("a", {
-        href: "/#map"
-      }, "Location"), /*#__PURE__*/_react["default"].createElement("a", {
-        href: "/#contact"
-      }, "Contact")));
+      return /*#__PURE__*/_react["default"].createElement(_message.MessageWrap, {
+        id: this.props.id
+      }, /*#__PURE__*/_react["default"].createElement(_message.Message, null, /*#__PURE__*/_react["default"].createElement("h1", null, "123-456-7890 | cafejuniperslc@gmail.com"), /*#__PURE__*/_react["default"].createElement("h1", null, "Shoot us a message"), /*#__PURE__*/_react["default"].createElement(_message.TextBox, null, /*#__PURE__*/_react["default"].createElement(_subcomponents.Hex, {
+        color: _colors.lightblue,
+        bottom: -30,
+        right: -33,
+        size: 75
+      }), /*#__PURE__*/_react["default"].createElement("textarea", null))));
     }
   }]);
 
-  return HeaderComponent;
+  return MessageComponent;
 }(_react.Component);
 
-var _default = HeaderComponent;
+var _default = MessageComponent;
 exports["default"] = _default;

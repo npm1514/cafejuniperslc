@@ -10,6 +10,7 @@ import { ServerStyleSheet } from 'styled-components';
 import fs from 'fs';
 import compression from 'compression';
 import cors from 'cors';
+import path from 'path'
 import bodyParser from 'body-parser';
 
 var PORT = process.env.PORT || 3003;
@@ -32,9 +33,12 @@ app.get('/', (req, res) => {
   let data = "";
   res.set('Cache-Control', 'public, max-age=31557600');
   res.send(returnHTML(data, homeBundle, HomeRoot, "home"));
-});;
+});
 
-app.get('/health', (req, res) => res.send('OK'));
+app.get('/images/:id', (req, res) => {
+  res.set('Cache-Control', 'public, max-age=31557600');
+  res.sendFile(path.join(__dirname, '../images/' + req.params.id));
+});
 
 app.listen( PORT, () => {
   console.log('Running on http://localhost:' + PORT)
@@ -72,25 +76,34 @@ function returnHTML(data, bundle, Page, title){
     const styles = sheet.getStyleTags();
 
     return `
-            <html lang="en">
-              <head>
-                <meta name="viewport" content="width=device-width, initial-scale=1">
-                <title>${title}</title>
-                <meta name="Description" content="${title}">
-                <style>
-                  body { margin: 0; font-family: Helvetica; }
-                  a { text-decoration: none; color: #000; }
-                </style>
-                ${styles}
-              </head>
-              <body>
-                <script>window.os = window.os || {};</script>
-                <script>window.__DATA__=${dataString}</script>
-                <div id="app" role="main">${body}</div>
-                <script>${bundle}</script>
-              </body>
-            </html>
-          `;
+      <html lang="en">
+        <head>
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <title>${title}</title>
+          <meta name="Description" content="${title}">
+          <link rel="stylesheet" href="https://use.typekit.net/mno0keq.css">
+          <style>
+            body {
+              margin: 0;
+              font-family:
+              diazo-mvb-ex-cond, sans-serif;
+              font-weight: 400;
+              font-style: normal;
+              overflow-x: hidden;
+            }
+            h1 { font-weight: 700;}
+            p { font-weight: 100;}
+          </style>
+          ${styles}
+        </head>
+        <body>
+          <script>window.os = window.os || {};</script>
+          <script>window.__DATA__=${dataString}</script>
+          <div id="app" role="main">${body}</div>
+          <script>${bundle}</script>
+        </body>
+      </html>
+    `;
 }
 
 function errHandle(err){

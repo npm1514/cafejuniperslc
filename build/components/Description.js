@@ -7,9 +7,11 @@ exports["default"] = void 0;
 
 var _react = _interopRequireWildcard(require("react"));
 
-var _ = require("./");
+var _description = require("../styled-components/components/description");
 
-var _header = require("../styled-components/components/header");
+var _subcomponents = require("../subcomponents");
+
+var _colors = require("../styled-components/colors");
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
 
@@ -37,37 +39,40 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
-var HeaderComponent = /*#__PURE__*/function (_Component) {
-  _inherits(HeaderComponent, _Component);
+var DescriptionComponent = /*#__PURE__*/function (_Component) {
+  _inherits(DescriptionComponent, _Component);
 
-  var _super = _createSuper(HeaderComponent);
+  var _super = _createSuper(DescriptionComponent);
 
-  function HeaderComponent() {
-    _classCallCheck(this, HeaderComponent);
+  function DescriptionComponent() {
+    _classCallCheck(this, DescriptionComponent);
 
     return _super.apply(this, arguments);
   }
 
-  _createClass(HeaderComponent, [{
+  _createClass(DescriptionComponent, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/_react["default"].createElement(_header.HeaderWrap, null, /*#__PURE__*/_react["default"].createElement(_header.Header, null, /*#__PURE__*/_react["default"].createElement("a", {
-        href: "/#menu"
-      }, "Menu"), /*#__PURE__*/_react["default"].createElement("a", {
-        href: "/#about"
-      }, "About Us"), /*#__PURE__*/_react["default"].createElement("a", {
-        className: "online-order",
-        href: "/#order"
-      }, "Order Online"), /*#__PURE__*/_react["default"].createElement("a", {
-        href: "/#map"
-      }, "Location"), /*#__PURE__*/_react["default"].createElement("a", {
-        href: "/#contact"
-      }, "Contact")));
+      return /*#__PURE__*/_react["default"].createElement(_description.DescriptionWrap, {
+        id: this.props.id
+      }, /*#__PURE__*/_react["default"].createElement(_description.Description, null, /*#__PURE__*/_react["default"].createElement(_subcomponents.Hex, {
+        color: _colors.lightblue,
+        top: -40,
+        right: -50,
+        size: 130
+      }), /*#__PURE__*/_react["default"].createElement(_subcomponents.Hex, {
+        color: _colors.darkblue,
+        bottom: -40,
+        right: 20,
+        size: 100
+      }), /*#__PURE__*/_react["default"].createElement(_description.DescriptionLeft, null, /*#__PURE__*/_react["default"].createElement("img", {
+        src: "/images/Cafe-Juniper_Primary_03.png"
+      })), /*#__PURE__*/_react["default"].createElement(_description.DescriptionRight, null, /*#__PURE__*/_react["default"].createElement("h1", null, "ABOUT US"), /*#__PURE__*/_react["default"].createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."))));
     }
   }]);
 
-  return HeaderComponent;
+  return DescriptionComponent;
 }(_react.Component);
 
-var _default = HeaderComponent;
+var _default = DescriptionComponent;
 exports["default"] = _default;
