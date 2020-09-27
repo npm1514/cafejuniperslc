@@ -28,7 +28,10 @@ export const DesktopHeader = styled.header`
   a:hover {
     color: ${lightblue};
   }
-  @media screen and (min-width: 700px){
+  @media (min-width: 700px){
+    display: flex;
+  }
+  @media (min-device-width: 700px){
     display: flex;
   }
 `;
@@ -46,7 +49,10 @@ export const MobileHeader = styled.header`
     margin: 24px;
   }
 
-  @media screen and (min-width: 700px){
+  @media (min-width: 700px){
+    display: none;
+  }
+  @media (min-device-width: 700px){
     display: none;
   }
 `;
@@ -82,6 +88,9 @@ export const MobileMenu = styled.div`
     color: ${lightblue};
   }
   @media(min-width: 700px){
+    display: none;
+  }
+  @media(min-device-width: 700px){
     display: none;
   }
 `;

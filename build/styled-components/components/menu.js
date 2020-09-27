@@ -12,7 +12,7 @@ var _colors = require("../colors");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _templateObject4() {
-  var data = _taggedTemplateLiteral(["\n  width: 100%;\n  display: flex;\n  justify-content: flex-start;\n  margin-top: 24px;\n  table {\n    margin: auto;\n  }\n  @media screen and (min-width: 700px){\n    margin-top: 0;\n    justify-content: flex-end;\n    width: 40%;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  width: 100%;\n  display: flex;\n  justify-content: flex-start;\n  margin-top: 24px;\n  table {\n    margin: auto;\n  }\n  @media (min-width: 700px){\n    margin-top: 0;\n    justify-content: flex-end;\n    width: 40%;\n  }\n  @media (min-device-width: 700px){\n    margin-top: 0;\n    justify-content: flex-end;\n    width: 40%;\n  }\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -22,7 +22,7 @@ function _templateObject4() {
 }
 
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n  width: 100%;\n  table {\n    margin: auto;\n  }\n  @media screen and (min-width: 700px){\n      width: 60%;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  width: 100%;\n  table {\n    margin: auto;\n  }\n  @media (min-width: 700px){\n      width: 60%;\n  }\n  @media (min-device-width: 700px){\n      width: 60%;\n  }\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -32,7 +32,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n  width: calc(100% - 64px);\n  background-color: ", ";\n  color: ", ";\n  padding: 32px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: flex-start;\n  max-width: 736px;\n  margin: auto;\n  tr th:first-child {\n    text-align: left;\n    padding: 0;\n    width: 84px;\n  }\n  tr td:first-child {\n    text-align: left;\n    padding: 0;\n  }\n  th {\n    text-align: right;\n    color: ", ";\n    padding: 0 12px;\n    min-width: 30px;\n  }\n  td {\n    text-align: right;\n    color: ", ";\n    padding: 0 12px;\n  }\n  sup {\n    font-size: 12px;\n  }\n  @media screen and (min-width: 700px){\n    flex-direction: row;\n    .mobile-menu-header {\n      display: none;\n    }\n    tr th:last-child {\n      padding-right: 0;\n    }\n    tr td:last-child {\n      padding-right: 0;\n    }\n    tr th:first-child {\n      text-align: left;\n      padding-left: 0;\n      width: 167px;\n    }\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  width: calc(100% - 64px);\n  background-color: ", ";\n  color: ", ";\n  padding: 32px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: flex-start;\n  max-width: 736px;\n  margin: auto;\n  tr th:first-child {\n    text-align: left;\n    padding: 0;\n    width: 84px;\n  }\n  tr td:first-child {\n    text-align: left;\n    padding: 0;\n  }\n  th {\n    text-align: right;\n    color: ", ";\n    padding: 0 12px;\n    min-width: 30px;\n  }\n  td {\n    text-align: right;\n    color: ", ";\n    padding: 0 12px;\n  }\n  sup {\n    font-size: 12px;\n  }\n  @media (min-width: 700px){\n    flex-direction: row;\n    .mobile-menu-header {\n      display: none;\n    }\n    tr th:last-child {\n      padding-right: 0;\n    }\n    tr td:last-child {\n      padding-right: 0;\n    }\n    tr th:first-child {\n      text-align: left;\n      padding-left: 0;\n      width: 167px;\n    }\n  }\n  @media (min-device-width: 700px){\n    flex-direction: row;\n    .mobile-menu-header {\n      display: none;\n    }\n    tr th:last-child {\n      padding-right: 0;\n    }\n    tr td:last-child {\n      padding-right: 0;\n    }\n    tr th:first-child {\n      text-align: left;\n      padding-left: 0;\n      width: 167px;\n    }\n  }\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;

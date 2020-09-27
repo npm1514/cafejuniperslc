@@ -21,7 +21,11 @@ export const DescriptionLeft = styled.div`
   img {
     width: 150px;
   }
-  @media screen and (min-width: 700px){
+  @media (min-width: 700px){
+      width: 30%;
+      display: block;
+  }
+  @media (min-device-width: 700px){
       width: 30%;
       display: block;
   }
@@ -31,7 +35,10 @@ export const DescriptionRight = styled.div`
   h1 {
     color: ${darkblue}
   }
-  @media screen and (min-width: 700px){
+  @media (min-width: 700px){
+      width: 70%;
+  }
+  @media (min-device-width: 700px){
       width: 70%;
   }
 `;

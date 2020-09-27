@@ -93,7 +93,11 @@ function returnHTML(data, bundle, Page, title){
             }
             th, h1 { font-weight: 700; font-size: 16px; }
             p { font-weight: 100; font-size: 12px; }
-            @media screen and (min-width: 700px){
+            @media (min-width: 700px){
+              body, th, h1, td { font-size: 30px; }
+              p { font-size: 18px; }
+            }
+            @media (min-device-width: 700px){
               body, th, h1, td { font-size: 30px; }
               p { font-size: 18px; }
             }

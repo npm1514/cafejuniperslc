@@ -12,7 +12,7 @@ var _colors = require("../colors");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n  width: 100%;\n  max-width: 800px;\n  margin: auto;\n  text-align: center;\n  position: relative;\n  background-color: ", ";\n  h1 {\n    text-align: center;\n    margin-top: 0;\n  }\n  .mobile-map {\n    display: inline\n  }\n  .desktop-map {\n    display: none;\n  }\n  @media screen and (min-width: 700px){\n    .mobile-map {\n      display: none;\n    }\n    .desktop-map {\n      display: inline;\n    }\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  width: 100%;\n  max-width: 800px;\n  margin: auto;\n  text-align: center;\n  position: relative;\n  background-color: ", ";\n  h1 {\n    text-align: center;\n    margin-top: 0;\n  }\n  .mobile-map {\n    display: inline\n  }\n  .desktop-map {\n    display: none;\n  }\n  @media (min-width: 700px){\n    .mobile-map {\n      display: none;\n    }\n    .desktop-map {\n      display: inline;\n    }\n  }\n  @media (min-device-width: 700px){\n    .mobile-map {\n      display: none;\n    }\n    .desktop-map {\n      display: inline;\n    }\n  }\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
