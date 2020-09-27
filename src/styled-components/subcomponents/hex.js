@@ -17,7 +17,7 @@ export const Hex = styled.svg`
     fill: ${props => props.color};;
     stroke-width: 0;
   }
-  @media(min-width: 700px){
+  @media screen and (min-width: 700px){
     &.desktop-hex {
       display: inline;
     }

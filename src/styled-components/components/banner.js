@@ -6,7 +6,7 @@ export const BannerWrap = styled.div`
   background-color: ${white};
   height: 0;
   overflow: hidden;
-  @media (min-width: 700px){
+  @media screen and (min-width: 700px){
     height: 300px;
   }
 `;
@@ -24,7 +24,7 @@ export const Banner = styled.div`
   img {
     width: 200px;
   }
-  @media (min-width: 700px){
+  @media screen and (min-width: 700px){
     display: flex;
   }
 `;

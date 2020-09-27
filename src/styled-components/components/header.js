@@ -28,7 +28,7 @@ export const DesktopHeader = styled.header`
   a:hover {
     color: ${lightblue};
   }
-  @media(min-width: 700px){
+  @media screen and (min-width: 700px){
     display: flex;
   }
 `;
@@ -46,7 +46,7 @@ export const MobileHeader = styled.header`
     margin: 24px;
   }
 
-  @media (min-width: 700px){
+  @media screen and (min-width: 700px){
     display: none;
   }
 `;

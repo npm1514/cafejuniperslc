@@ -24,7 +24,7 @@ export const Map = styled.div`
   .desktop-map {
     display: none;
   }
-  @media (min-width: 700px){
+  @media screen and (min-width: 700px){
     .mobile-map {
       display: none;
     }

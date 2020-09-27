@@ -38,7 +38,7 @@ export const Menu = styled.div`
   sup {
     font-size: 12px;
   }
-  @media (min-width: 700px){
+  @media screen and (min-width: 700px){
     flex-direction: row;
     .mobile-menu-header {
       display: none;
@@ -61,7 +61,7 @@ export const MenuLeft = styled.div`
   table {
     margin: auto;
   }
-  @media(min-width: 700px){
+  @media screen and (min-width: 700px){
       width: 60%;
   }
 `;
@@ -73,7 +73,7 @@ export const MenuRight = styled.div`
   table {
     margin: auto;
   }
-  @media(min-width: 700px){
+  @media screen and (min-width: 700px){
     margin-top: 0;
     justify-content: flex-end;
     width: 40%;

@@ -32,7 +32,7 @@ function _templateObject4() {
 }
 
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n  width: 100%;\n  max-width: 732px;\n  margin: auto;\n  background-color: ", ";\n\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  img {\n    width: calc(60% - 48px);\n    margin: 24px;\n  }\n\n  @media (min-width: 700px){\n    display: none;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  width: 100%;\n  max-width: 732px;\n  margin: auto;\n  background-color: ", ";\n\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  img {\n    width: calc(60% - 48px);\n    margin: 24px;\n  }\n\n  @media screen and (min-width: 700px){\n    display: none;\n  }\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -42,7 +42,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n  width: 100%;\n  max-width: 732px;\n  margin: auto;\n  background-color: ", ";\n  height: 40px;\n  color: ", ";\n  display: none;\n  align-items: center;\n  justify-content: space-between;\n  a {\n    text-decoration: none;\n    text-align: center;\n    font-size: 24px;\n    color: ", ";\n    margin: 0 12px;\n  }\n  .online-order {\n    color: ", "\n  }\n  a:hover {\n    color: ", ";\n  }\n  @media(min-width: 700px){\n    display: flex;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  width: 100%;\n  max-width: 732px;\n  margin: auto;\n  background-color: ", ";\n  height: 40px;\n  color: ", ";\n  display: none;\n  align-items: center;\n  justify-content: space-between;\n  a {\n    text-decoration: none;\n    text-align: center;\n    font-size: 24px;\n    color: ", ";\n    margin: 0 12px;\n  }\n  .online-order {\n    color: ", "\n  }\n  a:hover {\n    color: ", ";\n  }\n  @media screen and (min-width: 700px){\n    display: flex;\n  }\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
