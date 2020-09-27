@@ -10,7 +10,7 @@ var _styledComponents = _interopRequireDefault(require("styled-components"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  width: 100%;\n  height: 400px;\n  background-image: url(", ");\n  background-attachment: fixed;\n  background-position: right;\n  background-repeat: no-repeat;\n  background-size: cover;\n"]);
+  var data = _taggedTemplateLiteral(["\n  width: 100%;\n  height: 400px;\n  background-image: url(", ");\n  background-attachment: fixed;\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n"]);
 
   _templateObject = function _templateObject() {
     return data;

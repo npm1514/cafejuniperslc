@@ -18,4 +18,18 @@ export const Map = styled.div`
     text-align: center;
     margin-top: 0;
   }
+  .mobile-map {
+    display: inline
+  }
+  .desktop-map {
+    display: none;
+  }
+  @media (min-width: 700px){
+    .mobile-map {
+      display: none;
+    }
+    .desktop-map {
+      display: inline;
+    }
+  }
 `;

@@ -56,26 +56,31 @@ var BannerComponent = /*#__PURE__*/function (_Component) {
       return /*#__PURE__*/_react["default"].createElement(_banner.BannerWrap, {
         id: this.props.id
       }, /*#__PURE__*/_react["default"].createElement(_banner.Banner, null, /*#__PURE__*/_react["default"].createElement(_subcomponents.Hex, {
+        className: "desktop-hex",
         color: _colors.darkblue,
         top: -80,
         left: -60,
         size: 230
       }), /*#__PURE__*/_react["default"].createElement(_subcomponents.Hex, {
+        className: "desktop-hex",
         color: _colors.green,
         top: 135,
         left: 80,
         size: 130
       }), /*#__PURE__*/_react["default"].createElement(_subcomponents.Hex, {
+        className: "desktop-hex",
         color: _colors.pink,
         top: -25,
         right: 110,
         size: 100
       }), /*#__PURE__*/_react["default"].createElement(_subcomponents.Hex, {
+        className: "desktop-hex",
         color: _colors.darkblue,
         top: -90,
         right: -100,
         size: 200
       }), /*#__PURE__*/_react["default"].createElement(_subcomponents.Hex, {
+        className: "desktop-hex",
         color: _colors.brown,
         top: 120,
         right: -10,

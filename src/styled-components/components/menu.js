@@ -10,42 +10,57 @@ export const Menu = styled.div`
   color: ${green};
   padding: 32px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   max-width: 736px;
   margin: auto;
   tr th:first-child {
     text-align: left;
-    padding-left: 0;
+    padding: 0;
+    width: 84px;
   }
   tr td:first-child {
     text-align: left;
-    padding-left: 0;
-  }
-  tr th:last-child {
-    padding-right: 0;
-  }
-  tr td:last-child {
-    padding-right: 0;
+    padding: 0;
   }
   th {
     text-align: right;
     color: ${darkblue};
     padding: 0 12px;
-    font-size: 32px;
+    min-width: 30px;
   }
   td {
     text-align: right;
     color: ${green};
     padding: 0 12px;
-    font-size: 32px;
   }
   sup {
     font-size: 12px;
   }
+  @media (min-width: 700px){
+    flex-direction: row;
+    .mobile-menu-header {
+      display: none;
+    }
+    tr th:last-child {
+      padding-right: 0;
+    }
+    tr td:last-child {
+      padding-right: 0;
+    }
+    tr th:first-child {
+      text-align: left;
+      padding-left: 0;
+      width: 167px;
+    }
+  }
 `;
 export const MenuLeft = styled.div`
   width: 100%;
+  table {
+    margin: auto;
+  }
   @media(min-width: 700px){
       width: 60%;
   }
@@ -53,8 +68,14 @@ export const MenuLeft = styled.div`
 export const MenuRight = styled.div`
   width: 100%;
   display: flex;
-      justify-content: flex-end;
+  justify-content: flex-start;
+  margin-top: 24px;
+  table {
+    margin: auto;
+  }
   @media(min-width: 700px){
-      width: 40%;
+    margin-top: 0;
+    justify-content: flex-end;
+    width: 40%;
   }
 `;

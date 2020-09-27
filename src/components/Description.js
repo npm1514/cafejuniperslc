@@ -8,8 +8,8 @@ class DescriptionComponent extends Component {
     return (
       <DescriptionWrap id={this.props.id}>
         <Description>
-          <Hex color={lightblue} top={-40} right={-50} size={130}/>
-          <Hex color={darkblue} bottom={-40} right={20} size={100}/>
+          <Hex className="desktop-hex" color={lightblue} top={-40} right={-5} size={130}/>
+          <Hex className="desktop-hex" color={darkblue} bottom={-60} right={70} size={100}/>
           <DescriptionLeft>
             <img src="/images/Cafe-Juniper_Primary_03.png" />
           </DescriptionLeft>

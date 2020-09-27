@@ -56,14 +56,16 @@ var DescriptionComponent = /*#__PURE__*/function (_Component) {
       return /*#__PURE__*/_react["default"].createElement(_description.DescriptionWrap, {
         id: this.props.id
       }, /*#__PURE__*/_react["default"].createElement(_description.Description, null, /*#__PURE__*/_react["default"].createElement(_subcomponents.Hex, {
+        className: "desktop-hex",
         color: _colors.lightblue,
         top: -40,
-        right: -50,
+        right: -5,
         size: 130
       }), /*#__PURE__*/_react["default"].createElement(_subcomponents.Hex, {
+        className: "desktop-hex",
         color: _colors.darkblue,
-        bottom: -40,
-        right: 20,
+        bottom: -60,
+        right: 70,
         size: 100
       }), /*#__PURE__*/_react["default"].createElement(_description.DescriptionLeft, null, /*#__PURE__*/_react["default"].createElement("img", {
         src: "/images/Cafe-Juniper_Primary_03.png"

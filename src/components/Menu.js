@@ -52,7 +52,7 @@ class MenuComponent extends Component {
               </tr>
               <tr>
                 <td>Espresso</td>
-                <td>$2.00</td>
+                <td>+$2.00</td>
                 <td></td>
                 <td></td>
               </tr>
@@ -63,6 +63,8 @@ class MenuComponent extends Component {
               <tr>
                 <th>Food</th>
                 <th></th>
+                <th className="mobile-menu-header"></th>
+                <th className="mobile-menu-header"></th>
               </tr>
               <tr>
                 <td>Bagels</td>

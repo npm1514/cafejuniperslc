@@ -85,14 +85,18 @@ function returnHTML(data, bundle, Page, title){
           <style>
             body {
               margin: 0;
-              font-family:
-              diazo-mvb-ex-cond, sans-serif;
+              font-family: diazo-mvb-ex-cond, sans-serif;
               font-weight: 400;
               font-style: normal;
               overflow-x: hidden;
+              font-size: 14px;
             }
-            h1 { font-weight: 700;}
-            p { font-weight: 100;}
+            th, h1 { font-weight: 700; font-size: 16px; }
+            p { font-weight: 100; font-size: 12px; }
+            @media(min-width: 700px){
+              body, th, h1, td { font-size: 30px; }
+              p { font-size: 18px; }
+            }
           </style>
           ${styles}
         </head>

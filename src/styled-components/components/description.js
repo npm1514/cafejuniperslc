@@ -17,12 +17,13 @@ export const Description = styled.div`
   margin: auto;
 `;
 export const DescriptionLeft = styled.div`
-  width: 100%;
+  display: none;
   img {
     width: 150px;
   }
   @media(min-width: 700px){
       width: 30%;
+      display: block;
   }
 `;
 export const DescriptionRight = styled.div`

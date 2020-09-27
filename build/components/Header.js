@@ -7,9 +7,11 @@ exports["default"] = void 0;
 
 var _react = _interopRequireWildcard(require("react"));
 
-var _ = require("./");
+var _subcomponents = require("../subcomponents");
 
 var _header = require("../styled-components/components/header");
+
+var _colors = require("../styled-components/colors");
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
 
@@ -37,21 +39,108 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 var HeaderComponent = /*#__PURE__*/function (_Component) {
   _inherits(HeaderComponent, _Component);
 
   var _super = _createSuper(HeaderComponent);
 
-  function HeaderComponent() {
+  function HeaderComponent(props) {
+    var _this;
+
     _classCallCheck(this, HeaderComponent);
 
-    return _super.apply(this, arguments);
+    _this = _super.call(this, props);
+
+    _defineProperty(_assertThisInitialized(_this), "clickMenu", function () {
+      if (_this.state.menuOpen) _this.closeMenu();else _this.openMenu();
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "closeMenu", function () {
+      _this.setState({
+        menuOpen: false
+      }, function () {
+        return document.body.removeEventListener('click', _this.onBlur);
+      });
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "openMenu", function () {
+      _this.setState({
+        menuOpen: true
+      }, function () {
+        return document.body.addEventListener('click', _this.onBlur);
+      });
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "onBlur", function (e) {
+      if (!e.path.find(function (a) {
+        return a.id == "mobile-header";
+      }) && !e.path.find(function (a) {
+        return a.id == "mobile-menu";
+      })) _this.closeMenu();
+    });
+
+    _this.state = {
+      menuOpen: false
+    };
+    return _this;
   }
 
   _createClass(HeaderComponent, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/_react["default"].createElement(_header.HeaderWrap, null, /*#__PURE__*/_react["default"].createElement(_header.Header, null, /*#__PURE__*/_react["default"].createElement("a", {
+      return /*#__PURE__*/_react["default"].createElement(_header.HeaderWrap, null, /*#__PURE__*/_react["default"].createElement(_header.MobileHeader, {
+        id: "mobile-header"
+      }, /*#__PURE__*/_react["default"].createElement("img", {
+        src: "/images/Cafe-Juniper_Secondary_02.png"
+      }), /*#__PURE__*/_react["default"].createElement(_header.HexLock, {
+        onClick: this.clickMenu
+      }, /*#__PURE__*/_react["default"].createElement(_subcomponents.Hex, {
+        className: "mobile-hex",
+        color: _colors.green,
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        size: 60
+      }, /*#__PURE__*/_react["default"].createElement("line", {
+        x1: "25",
+        x2: "75",
+        y1: "40",
+        y2: "40",
+        stroke: _colors.darkblue,
+        strokeWidth: "4"
+      }), /*#__PURE__*/_react["default"].createElement("line", {
+        x1: "25",
+        x2: "75",
+        y1: "50",
+        y2: "50",
+        stroke: _colors.darkblue,
+        strokeWidth: "4"
+      }), /*#__PURE__*/_react["default"].createElement("line", {
+        x1: "25",
+        x2: "75",
+        y1: "60",
+        y2: "60",
+        stroke: _colors.darkblue,
+        strokeWidth: "4"
+      })))), this.state.menuOpen && /*#__PURE__*/_react["default"].createElement(_header.MobileMenu, {
+        id: "mobile-menu"
+      }, /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement("a", {
+        href: "/#menu"
+      }, "Menu")), /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement("a", {
+        href: "/#about"
+      }, "About Us")), /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement("a", {
+        href: "/#map"
+      }, "Location")), /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement("a", {
+        href: "/#contact"
+      }, "Contact")), /*#__PURE__*/_react["default"].createElement("div", {
+        className: "online-order"
+      }, /*#__PURE__*/_react["default"].createElement("a", {
+        className: "online-order",
+        href: "https://www.clover.com/online-ordering/cafe-juniper-llc-salt-lake-city"
+      }, "Order Online"))), /*#__PURE__*/_react["default"].createElement(_header.DesktopHeader, null, /*#__PURE__*/_react["default"].createElement("a", {
         href: "/#menu"
       }, "Menu"), /*#__PURE__*/_react["default"].createElement("a", {
         href: "/#about"

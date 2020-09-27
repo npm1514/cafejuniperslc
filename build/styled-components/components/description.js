@@ -22,7 +22,7 @@ function _templateObject4() {
 }
 
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n  width: 100%;\n  img {\n    width: 150px;\n  }\n  @media(min-width: 700px){\n      width: 30%;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  display: none;\n  img {\n    width: 150px;\n  }\n  @media(min-width: 700px){\n      width: 30%;\n      display: block;\n  }\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;

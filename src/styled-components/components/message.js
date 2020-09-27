@@ -25,5 +25,10 @@ export const TextBox = styled.div`
   textarea {
     width: 100%;
     height: 200px;
+    font-family: diazo-mvb-ex-cond, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    padding: 8px;
   }
 `;

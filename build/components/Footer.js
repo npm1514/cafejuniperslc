@@ -49,7 +49,7 @@ var FooterComponent = /*#__PURE__*/function (_Component) {
   _createClass(FooterComponent, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/_react["default"].createElement(_footer.Footer, null, "footer");
+      return /*#__PURE__*/_react["default"].createElement(_footer.Footer, null, "Copyright 2020 Cafe Juniper LLC");
     }
   }]);
 

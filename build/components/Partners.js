@@ -51,7 +51,15 @@ var PartnersComponent = /*#__PURE__*/function (_Component) {
     value: function render() {
       return /*#__PURE__*/_react["default"].createElement(_partners.Partners, {
         id: this.props.id
-      }, "partners");
+      }, /*#__PURE__*/_react["default"].createElement("h1", null, "Our Local Partners"), /*#__PURE__*/_react["default"].createElement("hr", null), /*#__PURE__*/_react["default"].createElement(_partners.PartnerList, null, /*#__PURE__*/_react["default"].createElement("a", {
+        href: "https://www.bluecopperslc.com/"
+      }, /*#__PURE__*/_react["default"].createElement("img", {
+        src: "https://images.squarespace-cdn.com/content/51e96fcde4b09e55a03510a0/1384813590049-JT5ZTY8WTKQOGQXFEK1F/bluecopperlogooption-01.png?content-type=image%2Fpng"
+      })), /*#__PURE__*/_react["default"].createElement("a", {
+        href: "https://mimsslc.com/"
+      }, /*#__PURE__*/_react["default"].createElement("img", {
+        src: "https://cdn.shopify.com/s/files/1/0432/0228/1631/files/MIMS_logo_472fb171-b623-44d7-a21d-78950c28cbcb_300x300.jpg?v=1598733206"
+      }))), /*#__PURE__*/_react["default"].createElement("hr", null), /*#__PURE__*/_react["default"].createElement("p", null, "Without whom we could not run our business."));
     }
   }]);
 

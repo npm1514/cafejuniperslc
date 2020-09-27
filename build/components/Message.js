@@ -56,11 +56,17 @@ var MessageComponent = /*#__PURE__*/function (_Component) {
       return /*#__PURE__*/_react["default"].createElement(_message.MessageWrap, {
         id: this.props.id
       }, /*#__PURE__*/_react["default"].createElement(_message.Message, null, /*#__PURE__*/_react["default"].createElement("h1", null, "123-456-7890 | cafejuniperslc@gmail.com"), /*#__PURE__*/_react["default"].createElement("h1", null, "Shoot us a message"), /*#__PURE__*/_react["default"].createElement(_message.TextBox, null, /*#__PURE__*/_react["default"].createElement(_subcomponents.Hex, {
+        className: "desktop-hex",
         color: _colors.lightblue,
-        bottom: -30,
-        right: -33,
+        bottom: -11,
+        right: -15,
         size: 75
-      }), /*#__PURE__*/_react["default"].createElement("textarea", null))));
+      }, /*#__PURE__*/_react["default"].createElement("polygon", {
+        points: "20 40 75 30 50 80 42 60 62 40 40 56",
+        fill: _colors.pink
+      })), /*#__PURE__*/_react["default"].createElement("textarea", {
+        placeholder: "Talk to me!"
+      }))));
     }
   }]);
 

@@ -5,7 +5,7 @@ class FooterComponent extends Component {
   render(){
     return (
       <Footer>
-        footer
+        Copyright 2020 Cafe Juniper LLC
       </Footer>
     );
   }

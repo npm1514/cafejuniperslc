@@ -55,7 +55,8 @@ var HexComponent = /*#__PURE__*/function (_Component) {
           bottom = _this$props.bottom,
           left = _this$props.left,
           right = _this$props.right,
-          color = _this$props.color;
+          color = _this$props.color,
+          className = _this$props.className;
       size = size || 100;
       return /*#__PURE__*/_react["default"].createElement(_hex.Hex, {
         viewBox: "0 0 100 100",
@@ -65,10 +66,11 @@ var HexComponent = /*#__PURE__*/function (_Component) {
         bottom: bottom,
         left: left,
         right: right,
-        color: color
+        color: color,
+        className: className
       }, /*#__PURE__*/_react["default"].createElement("polygon", {
         points: "50 1 95 25 95 75 50 99 5 75 5 25"
-      }));
+      }), this.props.children);
     }
   }]);
 

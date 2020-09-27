@@ -8,11 +8,11 @@ class BannerComponent extends Component {
     return (
       <BannerWrap id={this.props.id}>
         <Banner>
-          <Hex color={darkblue} top={-80} left={-60} size={230}/>
-          <Hex color={green} top={135} left={80} size={130}/>
-          <Hex color={pink} top={-25} right={110} size={100}/>
-          <Hex color={darkblue} top={-90} right={-100} size={200}/>
-          <Hex color={brown} top={120} right={-10} size={160}/>
+          <Hex className="desktop-hex" color={darkblue} top={-80} left={-60} size={230}/>
+          <Hex className="desktop-hex" color={green} top={135} left={80} size={130}/>
+          <Hex className="desktop-hex" color={pink} top={-25} right={110} size={100}/>
+          <Hex className="desktop-hex" color={darkblue} top={-90} right={-100} size={200}/>
+          <Hex className="desktop-hex" color={brown} top={120} right={-10} size={160}/>
           <img src="/images/Cafe-Juniper_Primary_01.png"/>
         </Banner>
       </BannerWrap>
