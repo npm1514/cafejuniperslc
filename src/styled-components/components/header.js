@@ -37,12 +37,12 @@ export const MobileHeader = styled.header`
   max-width: 732px;
   margin: auto;
   background-color: ${darkblue};
-
+  height: 144px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   img {
-    width: calc(60% - 48px);
+    width: 170px;
     margin: 24px;
   }
 
