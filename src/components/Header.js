@@ -17,13 +17,19 @@ class HeaderComponent extends Component {
   closeMenu = () => {
     this.setState(
       { menuOpen: false },
-      () => document.body.removeEventListener('click', this.onBlur)
+      () => {
+        document.body.removeEventListener('click', this.onBlur)
+        document.body.removeEventListener('touch', this.onBlur)
+      }
     )
   }
   openMenu = () => {
     this.setState(
       { menuOpen: true },
-      () => document.body.addEventListener('click', this.onBlur)
+      () => {
+        document.body.addEventListener('click', this.onBlur)
+        document.body.addEventListener('touch', this.onBlur)
+      }
     )
   }
   onBlur = (e) => {
