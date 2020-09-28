@@ -90,6 +90,7 @@ function returnHTML(data, bundle, Page, title){
               font-style: normal;
               overflow-x: hidden;
               font-size: 14px;
+              max-width: 100%;
             }
             th, h1 { font-weight: 700; font-size: 16px; }
             p { font-weight: 100; font-size: 12px; }
