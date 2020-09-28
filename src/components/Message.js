@@ -73,7 +73,6 @@ class MessageComponent extends Component {
             ></textarea>
             <TextBox type="submit">
               <Hex
-                className="desktop-hex"
                 color={lightblue}
                 bottom={-11}
                 right={-15}
