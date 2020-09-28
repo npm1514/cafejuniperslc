@@ -4,4 +4,6 @@ yarn.lock
 .idea/
 *.iml
 target/
+build/
+dist/
 *~

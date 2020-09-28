@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Banner, Header, Menu, Parallax, Description, Map, Message, Partners, Footer } from '../components';
-import { HomeWrapper } from '../styled-components/home';
+import { HomeWrapper, Spacer } from '../styled-components/home';
 
 class Home extends Component {
     render(){

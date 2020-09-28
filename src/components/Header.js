@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import { Hex } from '../subcomponents';
-import { HeaderWrap, DesktopHeader, MobileMenu, MobileHeader, HexLock } from '../styled-components/components/header';
+import { HeaderWrap, DesktopHeader, MobileMenu, MobileHeader, HexLock, Spacer } from '../styled-components/components/header';
 import { green, darkblue } from '../styled-components/colors';
 
 class HeaderComponent extends Component {
   constructor(props){
     super(props);
     this.state = {
-      menuOpen: false
+      menuOpen: false,
+      menuStuck: false
     }
   }
   clickMenu = () => {
@@ -35,7 +36,16 @@ class HeaderComponent extends Component {
   onBlur = (e) => {
     if(!e.path.find(a => a.id == "mobile-header") && !e.path.find(a => a.id == "mobile-menu")) this.closeMenu();
   }
+  scrollCheck = (e) => {
+    if(window.scrollY > 300) this.setState({menuStuck: true})
+    else this.setState({menuStuck: false})
+  }
+  componentDidMount(){
+    window.removeEventListener('scroll', this.scrollCheck)
+    window.addEventListener('scroll', this.scrollCheck)
+  }
   render(){
+    const { menuStuck } = this.state;
     return (
       <HeaderWrap>
         <MobileHeader id="mobile-header">
@@ -58,13 +68,16 @@ class HeaderComponent extends Component {
             <div className="online-order"><a className="online-order" href="https://www.clover.com/online-ordering/cafe-juniper-llc-salt-lake-city">Order Online</a></div>
           </MobileMenu>
         }
-        <DesktopHeader>
+        <HeaderWrap menuStuck={menuStuck}>
+        <DesktopHeader menuStuck={menuStuck}>
           <a href="/#menu">Menu</a>
           <a href="/#about">About Us</a>
           <a className="online-order"  href="https://www.clover.com/online-ordering/cafe-juniper-llc-salt-lake-city">Order Online</a>
           <a href="/#map">Location</a>
           <a href="/#contact">Contact</a>
         </DesktopHeader>
+        </HeaderWrap>
+        <Spacer menuStuck={menuStuck}/>
       </HeaderWrap>
     );
   }

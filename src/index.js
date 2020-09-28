@@ -12,6 +12,13 @@ import compression from 'compression';
 import cors from 'cors';
 import path from 'path'
 import bodyParser from 'body-parser';
+import config from './config';
+
+const Cryptr = require('cryptr');
+const cryptr = new Cryptr(config.key);
+
+import nodemailer from 'nodemailer';
+var cron = require('node-cron');
 
 var PORT = process.env.PORT || 3003;
 
@@ -20,6 +27,11 @@ app.use(compression());
 app.use(cors());
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded())
+
+cron.schedule('* * 1 * *', () => {
+  fetch('http://www.cafejuniperslc.com/')
+  .then(res => console.log("requested at " + new Date()));
+});
 
 var dataObj = {},
 homeBundle = "";
@@ -39,6 +51,37 @@ app.get('/images/:id', (req, res) => {
   res.set('Cache-Control', 'public, max-age=31557600');
   res.sendFile(path.join(__dirname, '../images/' + req.params.id));
 });
+
+
+
+app.post('/emailer', (req, res) => {
+  var transporter = nodemailer.createTransport({
+    host: 'smtp.gmail.com',
+    port: 587,
+    secure: false,
+    requireTLS: true,
+    auth: {
+      user: cryptr.decrypt(config.email),
+      pass: cryptr.decrypt(config.gmPass)
+    }
+  });
+
+  transporter.sendMail({
+    from: req.body.email,
+    to: cryptr.decrypt(config.email),
+    subject: 'Cafe Juniper: Online Message',
+    html: `
+      <h3>Hi Cafe Juniper!</h3>
+      <h3>The following person has submitted a message.<h3/>
+      <h4>Name: ${req.body.name}</h4>
+      <h4>Email: ${req.body.email}</h4>
+      <h4>Message: ${req.body.message}</h4>
+    `
+  }, (error, info) => {
+    if (error) res.send({error: error});
+    else res.send({response: info});
+  });
+})
 
 app.listen( PORT, () => {
   console.log('Running on http://localhost:' + PORT)

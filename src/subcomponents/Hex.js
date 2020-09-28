@@ -3,7 +3,7 @@ import { Hex } from '../styled-components/subcomponents/hex';
 
 class HexComponent extends Component {
   render(){
-    let { size, top, bottom, left, right, color, className } = this.props;
+    let { size, top, bottom, left, right, color, className, onClick } = this.props;
     size = size || 100;
     return (
       <Hex
@@ -16,6 +16,7 @@ class HexComponent extends Component {
         right={right}
         color={color}
         className={className}
+        onClick={onClick}
       >
         <polygon points="50 1 95 25 95 75 50 99 5 75 5 25" />
         {this.props.children}

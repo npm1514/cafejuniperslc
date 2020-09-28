@@ -12,7 +12,7 @@ var _colors = require("../colors");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n  width: 80%;\n  margin: auto;\n  background-color: ", ";\n  position: relative;\n  textarea {\n    width: 100%;\n    height: 200px;\n    font-family: diazo-mvb-ex-cond, sans-serif;\n    font-weight: 400;\n    font-style: normal;\n    font-size: 18px;\n    padding: 8px;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  width: 80%;\n  height: 0;\n  padding: 0;\n  border: 0;\n  margin: auto;\n  background-color: ", ";\n  position: relative;\n  #airplane:hover {\n    fill: ", ";\n    cursor: pointer;\n  }\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -22,7 +22,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n  width: 100%;\n  background-color: ", ";\n  max-width: 800px;\n  margin: auto;\n  text-align: center;\n  h1 {\n    color: ", "\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  width: 100%;\n  background-color: ", ";\n  max-width: 800px;\n  margin: auto;\n  text-align: center;\n  h1 {\n    color: ", "\n  }\n  textarea, input {\n    font-family: diazo-mvb-ex-cond, sans-serif;\n    font-weight: 400;\n    font-style: normal;\n    font-size: 18px;\n    padding: 8px;\n  }\n  textarea {\n    height: 200px;\n    width: 80%;\n  }\n  input {\n    height: 50px;\n    width: 80%;\n  }\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -51,6 +51,6 @@ var Message = _styledComponents["default"].div(_templateObject2(), _colors.darkb
 
 exports.Message = Message;
 
-var TextBox = _styledComponents["default"].div(_templateObject3(), _colors.darkblue);
+var TextBox = _styledComponents["default"].button(_templateObject3(), _colors.darkblue, _colors.darkblue);
 
 exports.TextBox = TextBox;

@@ -16,19 +16,32 @@ export const Message = styled.div`
   h1 {
     color: ${white}
   }
-`;
-export const TextBox = styled.div`
-  width: 80%;
-  margin: auto;
-  background-color: ${darkblue};
-  position: relative;
-  textarea {
-    width: 100%;
-    height: 200px;
+  textarea, input {
     font-family: diazo-mvb-ex-cond, sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 18px;
     padding: 8px;
+  }
+  textarea {
+    height: 200px;
+    width: 80%;
+  }
+  input {
+    height: 50px;
+    width: 80%;
+  }
+`;
+export const TextBox = styled.button`
+  width: 80%;
+  height: 0;
+  padding: 0;
+  border: 0;
+  margin: auto;
+  background-color: ${darkblue};
+  position: relative;
+  #airplane:hover {
+    fill: ${darkblue};
+    cursor: pointer;
   }
 `;

@@ -39,34 +39,113 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 var MessageComponent = /*#__PURE__*/function (_Component) {
   _inherits(MessageComponent, _Component);
 
   var _super = _createSuper(MessageComponent);
 
-  function MessageComponent() {
+  function MessageComponent(props) {
+    var _this;
+
     _classCallCheck(this, MessageComponent);
 
-    return _super.apply(this, arguments);
+    _this = _super.call(this, props);
+
+    _defineProperty(_assertThisInitialized(_this), "submitMessage", function (e) {
+      e.preventDefault();
+      fetch('/emailer', {
+        method: "POST",
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(_this.state)
+      }).then(function (res) {
+        return res.json();
+      }).then(function (res) {
+        alert("An email has been submitted to the staff at Cafe Juniper. Someone will be in contact with you shortly.");
+
+        _this.setState({
+          name: "",
+          email: "",
+          message: ""
+        });
+      })["catch"](function (err) {
+        alert("Something went wrong. Please contact Cafe Juniper directly via email or telephone. We are sorry for the inconvenience.");
+
+        _this.setState({
+          name: "",
+          email: "",
+          message: ""
+        });
+      });
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "change", function (e, prop) {
+      var obj = {};
+      obj[prop] = e.currentTarget.value;
+
+      _this.setState(obj);
+    });
+
+    _this.state = {
+      name: "",
+      email: "",
+      message: ""
+    };
+    return _this;
   }
 
   _createClass(MessageComponent, [{
     key: "render",
     value: function render() {
+      var _this2 = this;
+
+      var _this$state = this.state,
+          name = _this$state.name,
+          email = _this$state.email,
+          message = _this$state.message;
       return /*#__PURE__*/_react["default"].createElement(_message.MessageWrap, {
         id: this.props.id
-      }, /*#__PURE__*/_react["default"].createElement(_message.Message, null, /*#__PURE__*/_react["default"].createElement("h1", null, "123-456-7890 | cafejuniperslc@gmail.com"), /*#__PURE__*/_react["default"].createElement("h1", null, "Shoot us a message"), /*#__PURE__*/_react["default"].createElement(_message.TextBox, null, /*#__PURE__*/_react["default"].createElement(_subcomponents.Hex, {
+      }, /*#__PURE__*/_react["default"].createElement(_message.Message, null, /*#__PURE__*/_react["default"].createElement("h1", null, "123-456-7890 | cafejuniperslc@gmail.com"), /*#__PURE__*/_react["default"].createElement("h1", null, "Shoot us a message"), /*#__PURE__*/_react["default"].createElement("form", {
+        onSubmit: this.submitMessage
+      }, /*#__PURE__*/_react["default"].createElement("input", {
+        value: name,
+        placeholder: "Name",
+        type: "text",
+        required: true,
+        onChange: function onChange(e) {
+          _this2.change(e, "name");
+        }
+      }), /*#__PURE__*/_react["default"].createElement("input", {
+        value: email,
+        placeholder: "Email Address",
+        type: "email",
+        required: true,
+        onChange: function onChange(e) {
+          _this2.change(e, "email");
+        }
+      }), /*#__PURE__*/_react["default"].createElement("textarea", {
+        value: message,
+        required: true,
+        placeholder: "Talk to me!",
+        onChange: function onChange(e) {
+          _this2.change(e, "message");
+        }
+      }), /*#__PURE__*/_react["default"].createElement(_message.TextBox, {
+        type: "submit"
+      }, /*#__PURE__*/_react["default"].createElement(_subcomponents.Hex, {
         className: "desktop-hex",
         color: _colors.lightblue,
         bottom: -11,
         right: -15,
         size: 75
       }, /*#__PURE__*/_react["default"].createElement("polygon", {
+        id: "airplane",
         points: "20 40 75 30 50 80 42 60 62 40 40 56",
         fill: _colors.pink
-      })), /*#__PURE__*/_react["default"].createElement("textarea", {
-        placeholder: "Talk to me!"
-      }))));
+      }))))));
     }
   }]);
 
