@@ -122,8 +122,8 @@ function returnHTML(data, bundle, Page, title){
       <html lang="en">
         <head>
           <meta name="viewport" content="width=device-width, initial-scale=1">
-          <title>${title}</title>
-          <meta name="Description" content="${title}">
+          <title>Cafe Juniper | Downtown Premier Coffee Shop and Snacks</title>
+          <meta name="Description" content="Cafe Juniper | Downtown Premier Coffee Shop and Snacks">
           <link rel="stylesheet" href="https://use.typekit.net/mno0keq.css">
           <style>
             body {
