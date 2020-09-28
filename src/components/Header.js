@@ -19,7 +19,7 @@ class HeaderComponent extends Component {
       { menuOpen: false },
       () => {
         document.body.removeEventListener('click', this.onBlur)
-        document.body.removeEventListener('touch', this.onBlur)
+        document.body.removeEventListener('touchstart', this.onBlur)
       }
     )
   }
@@ -28,7 +28,7 @@ class HeaderComponent extends Component {
       { menuOpen: true },
       () => {
         document.body.addEventListener('click', this.onBlur)
-        document.body.addEventListener('touch', this.onBlur)
+        document.body.addEventListener('touchstart', this.onBlur)
       }
     )
   }
