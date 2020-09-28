@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { MapWrap, Map } from '../styled-components/components/map';
 import { Hex } from '../subcomponents';
-import { green } from '../styled-components/colors';
+import { green, pink } from '../styled-components/colors';
 
 class MapComponent extends Component {
   render(){
@@ -9,6 +9,7 @@ class MapComponent extends Component {
       <MapWrap id={this.props.id}>
         <Map>
           <Hex className="desktop-hex" color={green} top={-77} left={-27} size={200}/>
+          <Hex className="mobile-hex" color={pink} top={-77} left={-27} size={75}/>
           <h1>Come visit us at 29<sub>E</sub> 400<sub>S</sub>!</h1>
           <iframe
             className="desktop-map"

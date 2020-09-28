@@ -12,6 +12,8 @@ export const Message = styled.div`
   background-color: ${darkblue};
   max-width: 800px;
   margin: auto;
+  padding-top: 24px;
+  position: relative;
   text-align: center;
   h1 {
     color: ${white}

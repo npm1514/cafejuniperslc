@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Hex } from '../subcomponents';
-import { HeaderWrap, DesktopHeader, MobileMenu, MobileHeader, HexLock, Spacer } from '../styled-components/components/header';
-import { green, darkblue } from '../styled-components/colors';
+import { HeaderWrap, DesktopHeader, MobileMenu, MobileHeader, HexLock, Spacer, OnlineOrder } from '../styled-components/components/header';
+import { green, darkblue, pink, brown } from '../styled-components/colors';
 
 class HeaderComponent extends Component {
   constructor(props){
@@ -49,6 +49,7 @@ class HeaderComponent extends Component {
     return (
       <HeaderWrap>
         <MobileHeader id="mobile-header">
+          <Hex className="mobile-hex" color={pink} top={-17} right={10} size={40}/>
           <img src="/images/Cafe-Juniper_Secondary_02.png"/>
           <HexLock onClick={this.clickMenu}>
             <Hex className="mobile-hex" color={green} top={0} left={0} right={0} bottom={0} size={60}>
@@ -69,15 +70,16 @@ class HeaderComponent extends Component {
           </MobileMenu>
         }
         <HeaderWrap menuStuck={menuStuck}>
-        <DesktopHeader menuStuck={menuStuck}>
-          <a href="/#menu">Menu</a>
-          <a href="/#about">About Us</a>
-          <a className="online-order"  href="https://www.clover.com/online-ordering/cafe-juniper-llc-salt-lake-city">Order Online</a>
-          <a href="/#map">Location</a>
-          <a href="/#contact">Contact</a>
-        </DesktopHeader>
+          <DesktopHeader menuStuck={menuStuck}>
+            <a href="/#menu">Menu</a>
+            <a href="/#about">About Us</a>
+            <a className="online-order"  href="https://www.clover.com/online-ordering/cafe-juniper-llc-salt-lake-city">Order Online</a>
+            <a href="/#map">Location</a>
+            <a href="/#contact">Contact</a>
+          </DesktopHeader>
         </HeaderWrap>
         <Spacer menuStuck={menuStuck}/>
+        <OnlineOrder><a className="online-order" href="https://www.clover.com/online-ordering/cafe-juniper-llc-salt-lake-city">Order Online</a></OnlineOrder>
       </HeaderWrap>
     );
   }

@@ -10,6 +10,7 @@ class DescriptionComponent extends Component {
         <Description>
           <Hex className="desktop-hex" color={lightblue} top={-40} right={-5} size={130}/>
           <Hex className="desktop-hex" color={darkblue} bottom={-60} right={70} size={100}/>
+          <Hex className="mobile-hex" color={darkblue} top={30} right={-48} size={75}/>
           <DescriptionLeft>
             <img src="/images/Cafe-Juniper_Primary_03.png" />
           </DescriptionLeft>

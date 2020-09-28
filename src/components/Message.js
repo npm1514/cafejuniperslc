@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { MessageWrap, Message, TextBox } from '../styled-components/components/message';
 import { Hex } from '../subcomponents';
 import { lightblue } from '../styled-components/colors';
-import { pink } from '../styled-components/colors';
+import { pink, green } from '../styled-components/colors';
 
 class MessageComponent extends Component {
   constructor(props){
@@ -48,6 +48,7 @@ class MessageComponent extends Component {
     return (
       <MessageWrap id={this.props.id}>
         <Message>
+          <Hex className="mobile-hex" color={green} bottom={-83} left={-50} size={100}/>
           <h1>123-456-7890 | cafejuniperslc@gmail.com</h1>
           <h1>Shoot us a message</h1>
           <form onSubmit={this.submitMessage}>

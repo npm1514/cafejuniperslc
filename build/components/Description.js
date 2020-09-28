@@ -67,6 +67,12 @@ var DescriptionComponent = /*#__PURE__*/function (_Component) {
         bottom: -60,
         right: 70,
         size: 100
+      }), /*#__PURE__*/_react["default"].createElement(_subcomponents.Hex, {
+        className: "mobile-hex",
+        color: _colors.darkblue,
+        top: 30,
+        right: -48,
+        size: 75
       }), /*#__PURE__*/_react["default"].createElement(_description.DescriptionLeft, null, /*#__PURE__*/_react["default"].createElement("img", {
         src: "/images/Cafe-Juniper_Primary_03.png"
       })), /*#__PURE__*/_react["default"].createElement(_description.DescriptionRight, null, /*#__PURE__*/_react["default"].createElement("h1", null, "ABOUT US"), /*#__PURE__*/_react["default"].createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."))));

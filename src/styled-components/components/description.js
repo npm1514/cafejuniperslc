@@ -11,6 +11,7 @@ export const Description = styled.div`
   padding: 24px;
   display: flex;
   position: relative;
+  overflow: hidden;
   justify-content: center;
   align-items: center;
   max-width: 736px;

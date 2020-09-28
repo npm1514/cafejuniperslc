@@ -108,7 +108,13 @@ var MessageComponent = /*#__PURE__*/function (_Component) {
           message = _this$state.message;
       return /*#__PURE__*/_react["default"].createElement(_message.MessageWrap, {
         id: this.props.id
-      }, /*#__PURE__*/_react["default"].createElement(_message.Message, null, /*#__PURE__*/_react["default"].createElement("h1", null, "123-456-7890 | cafejuniperslc@gmail.com"), /*#__PURE__*/_react["default"].createElement("h1", null, "Shoot us a message"), /*#__PURE__*/_react["default"].createElement("form", {
+      }, /*#__PURE__*/_react["default"].createElement(_message.Message, null, /*#__PURE__*/_react["default"].createElement(_subcomponents.Hex, {
+        className: "mobile-hex",
+        color: _colors.green,
+        bottom: -83,
+        left: -50,
+        size: 100
+      }), /*#__PURE__*/_react["default"].createElement("h1", null, "123-456-7890 | cafejuniperslc@gmail.com"), /*#__PURE__*/_react["default"].createElement("h1", null, "Shoot us a message"), /*#__PURE__*/_react["default"].createElement("form", {
         onSubmit: this.submitMessage
       }, /*#__PURE__*/_react["default"].createElement("input", {
         value: name,
@@ -136,7 +142,6 @@ var MessageComponent = /*#__PURE__*/function (_Component) {
       }), /*#__PURE__*/_react["default"].createElement(_message.TextBox, {
         type: "submit"
       }, /*#__PURE__*/_react["default"].createElement(_subcomponents.Hex, {
-        className: "desktop-hex",
         color: _colors.lightblue,
         bottom: -11,
         right: -15,

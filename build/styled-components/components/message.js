@@ -22,7 +22,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n  width: 100%;\n  background-color: ", ";\n  max-width: 800px;\n  margin: auto;\n  text-align: center;\n  h1 {\n    color: ", "\n  }\n  textarea, input {\n    font-family: diazo-mvb-ex-cond, sans-serif;\n    font-weight: 400;\n    font-style: normal;\n    font-size: 18px;\n    padding: 8px;\n  }\n  textarea {\n    height: 200px;\n    width: 80%;\n  }\n  input {\n    height: 50px;\n    width: 80%;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  width: 100%;\n  background-color: ", ";\n  max-width: 800px;\n  margin: auto;\n  padding-top: 24px;\n  position: relative;\n  text-align: center;\n  h1 {\n    color: ", "\n  }\n  textarea, input {\n    font-family: diazo-mvb-ex-cond, sans-serif;\n    font-weight: 400;\n    font-style: normal;\n    font-size: 18px;\n    padding: 8px;\n  }\n  textarea {\n    height: 200px;\n    width: 80%;\n  }\n  input {\n    height: 50px;\n    width: 80%;\n  }\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;

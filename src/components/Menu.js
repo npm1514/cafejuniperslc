@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
+import { Hex } from '../subcomponents';
 import { MenuWrap, Menu, MenuLeft, MenuRight } from '../styled-components/components/menu';
+import { brown, darkblue, pink } from '../styled-components/colors';
 
 class MenuComponent extends Component {
   render(){
     return (
       <MenuWrap>
         <Menu>
+          <Hex className="mobile-hex" color={brown} top={-5} left={-125} size={150}/>
+          <Hex className="mobile-hex" color={darkblue} top={240} right={-20} size={100}/>
+          <Hex className="mobile-hex" color={pink} top={340} right={50} size={50}/>
           <MenuLeft>
             <table>
               <tr>

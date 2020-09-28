@@ -129,11 +129,9 @@ function returnHTML(data, bundle, Page, title){
             body {
               margin: 0;
               font-family: diazo-mvb-ex-cond, sans-serif;
-              font-weight: 400;
-              font-style: normal;
-              overflow-x: hidden;
-              font-size: 14px;
-              max-width: 100%;
+              font-weight: 400; font-style: normal;
+              overflow-x: hidden; font-size: 14px;
+              width: 100%; max-width: 100%; height: auto;
             }
             th, h1 { font-weight: 700; font-size: 16px; }
             p { font-weight: 100; font-size: 12px; }

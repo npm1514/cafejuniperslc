@@ -2,12 +2,12 @@ import styled from 'styled-components';
 import {darkblue, white, lightblue, pink, green} from '../colors';
 
 export const HeaderWrap = styled.div`
-  width: 100%;
+  width: 100vw;
   background-color: ${darkblue};
   position: ${props => props.menuStuck ? 'fixed': 'static'};
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 10;
 `;
 export const DesktopHeader = styled.header`
   width: 100%;
@@ -19,7 +19,7 @@ export const DesktopHeader = styled.header`
   display: none;
   align-items: center;
   justify-content: space-between;
-  z-index: 100;
+  z-index: 10;
   a {
     text-decoration: none;
     text-align: center;
@@ -45,14 +45,14 @@ export const MobileHeader = styled.header`
   top: 0;
   left: 0;
   background-color: ${darkblue};
-  height: 144px;
+  height: 102px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 100;
+  z-index: 10;
   img {
-    width: 170px;
-    margin: 24px;
+    width: 140px;
+    margin: 12px 24px;
   }
 
   @media (min-width: 700px){
@@ -68,12 +68,12 @@ export const MobileMenu = styled.div`
   height: 140px;
   display: flex;
   position: fixed;
-  top: 144px;
+  top: 102px;
   left: 0;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  z-index: 100;
+  z-index: 20;
   div {
     width: 50%;
     text-align: center;
@@ -107,10 +107,34 @@ export const HexLock = styled.div`
 `;
 
 export const Spacer = styled.div`
-  height: 144px;
+  height: 114px;
   width: 100%;
   background-color: ${white};
   @media(min-width: 700px){
     height: ${props => props.menuStuck ? '40px' : '0'};
+  }
+`;
+export const OnlineOrder = styled.div`
+  width: 100%;
+  color: ${darkblue};
+  background-color: ${pink};
+  text-align: center;
+  position: fixed;
+  top: 102px;
+  left: 0;
+  z-index: 10;
+  a {
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    color: ${darkblue};
+    font-size: 24px;
+    margin: 0 12px;
+  }
+  a:hover {
+    color: ${lightblue};
+  }
+  @media(min-width: 700px){
+    display: none;
   }
 `;

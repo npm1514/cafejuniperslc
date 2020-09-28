@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { white } from './colors';
+import { pink, darkblue, lightblue } from './colors';
 
 export const HomeWrapper = styled.div`
   width: 100%;

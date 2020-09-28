@@ -110,7 +110,13 @@ var HeaderComponent = /*#__PURE__*/function (_Component) {
       var menuStuck = this.state.menuStuck;
       return /*#__PURE__*/_react["default"].createElement(_header.HeaderWrap, null, /*#__PURE__*/_react["default"].createElement(_header.MobileHeader, {
         id: "mobile-header"
-      }, /*#__PURE__*/_react["default"].createElement("img", {
+      }, /*#__PURE__*/_react["default"].createElement(_subcomponents.Hex, {
+        className: "mobile-hex",
+        color: _colors.pink,
+        top: -17,
+        right: 10,
+        size: 40
+      }), /*#__PURE__*/_react["default"].createElement("img", {
         src: "/images/Cafe-Juniper_Secondary_02.png"
       }), /*#__PURE__*/_react["default"].createElement(_header.HexLock, {
         onClick: this.clickMenu
@@ -175,7 +181,10 @@ var HeaderComponent = /*#__PURE__*/function (_Component) {
         href: "/#contact"
       }, "Contact"))), /*#__PURE__*/_react["default"].createElement(_header.Spacer, {
         menuStuck: menuStuck
-      }));
+      }), /*#__PURE__*/_react["default"].createElement(_header.OnlineOrder, null, /*#__PURE__*/_react["default"].createElement("a", {
+        className: "online-order",
+        href: "https://www.clover.com/online-ordering/cafe-juniper-llc-salt-lake-city"
+      }, "Order Online")));
     }
   }]);
 

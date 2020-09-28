@@ -9,6 +9,8 @@ export const Menu = styled.div`
   background-color: ${white};
   color: ${green};
   padding: 32px;
+  overflow: hidden;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;

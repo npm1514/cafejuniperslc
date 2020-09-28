@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Spacer = exports.HexLock = exports.MobileMenu = exports.MobileHeader = exports.DesktopHeader = exports.HeaderWrap = void 0;
+exports.OnlineOrder = exports.Spacer = exports.HexLock = exports.MobileMenu = exports.MobileHeader = exports.DesktopHeader = exports.HeaderWrap = void 0;
 
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 
@@ -11,8 +11,18 @@ var _colors = require("../colors");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
+function _templateObject7() {
+  var data = _taggedTemplateLiteral(["\n  width: 100%;\n  color: ", ";\n  background-color: ", ";\n  text-align: center;\n  position: fixed;\n  top: 102px;\n  left: 0;\n  z-index: 10;\n  a {\n    width: 100%;\n    text-decoration: none;\n    text-align: center;\n    color: ", ";\n    font-size: 24px;\n    margin: 0 12px;\n  }\n  a:hover {\n    color: ", ";\n  }\n  @media(min-width: 700px){\n    display: none;\n  }\n"]);
+
+  _templateObject7 = function _templateObject7() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject6() {
-  var data = _taggedTemplateLiteral(["\n  height: 144px;\n  width: 100%;\n  background-color: ", ";\n  @media(min-width: 700px){\n    height: ", ";\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  height: 114px;\n  width: 100%;\n  background-color: ", ";\n  @media(min-width: 700px){\n    height: ", ";\n  }\n"]);
 
   _templateObject6 = function _templateObject6() {
     return data;
@@ -32,7 +42,7 @@ function _templateObject5() {
 }
 
 function _templateObject4() {
-  var data = _taggedTemplateLiteral(["\n  width: 100%;\n  max-width: 732px;\n  margin: auto;\n  background-color: ", ";\n  height: 140px;\n  display: flex;\n  position: fixed;\n  top: 144px;\n  left: 0;\n  align-items: center;\n  justify-content: space-between;\n  flex-wrap: wrap;\n  z-index: 100;\n  div {\n    width: 50%;\n    text-align: center;\n    a {\n      text-decoration: none;\n      text-align: center;\n      font-size: 24px;\n      color: ", ";\n      margin: auto;\n    }\n  }\n  .online-order {\n    color: ", ";\n    width: 100%;\n    padding: 8px 0;\n    background-color: ", ";\n  }\n  a:hover {\n    color: ", ";\n  }\n  @media(min-width: 700px){\n    display: none;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  width: 100%;\n  max-width: 732px;\n  margin: auto;\n  background-color: ", ";\n  height: 140px;\n  display: flex;\n  position: fixed;\n  top: 102px;\n  left: 0;\n  align-items: center;\n  justify-content: space-between;\n  flex-wrap: wrap;\n  z-index: 20;\n  div {\n    width: 50%;\n    text-align: center;\n    a {\n      text-decoration: none;\n      text-align: center;\n      font-size: 24px;\n      color: ", ";\n      margin: auto;\n    }\n  }\n  .online-order {\n    color: ", ";\n    width: 100%;\n    padding: 8px 0;\n    background-color: ", ";\n  }\n  a:hover {\n    color: ", ";\n  }\n  @media(min-width: 700px){\n    display: none;\n  }\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -42,7 +52,7 @@ function _templateObject4() {
 }
 
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n  width: 100%;\n  max-width: 732px;\n  margin: auto;\n  position: fixed;\n  top: 0;\n  left: 0;\n  background-color: ", ";\n  height: 144px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  z-index: 100;\n  img {\n    width: 170px;\n    margin: 24px;\n  }\n\n  @media (min-width: 700px){\n    display: none;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  width: 100%;\n  max-width: 732px;\n  margin: auto;\n  position: fixed;\n  top: 0;\n  left: 0;\n  background-color: ", ";\n  height: 102px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  z-index: 10;\n  img {\n    width: 140px;\n    margin: 12px 24px;\n  }\n\n  @media (min-width: 700px){\n    display: none;\n  }\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -52,7 +62,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n  width: 100%;\n  max-width: 732px;\n  margin: auto;\n  background-color: ", ";\n  height: 40px;\n  color: ", ";\n  display: none;\n  align-items: center;\n  justify-content: space-between;\n  z-index: 100;\n  a {\n    text-decoration: none;\n    text-align: center;\n    font-size: 24px;\n    color: ", ";\n    margin: 0 12px;\n  }\n  .online-order {\n    color: ", "\n  }\n  a:hover {\n    color: ", ";\n  }\n  @media (min-width: 700px){\n    display: flex;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  width: 100%;\n  max-width: 732px;\n  margin: auto;\n  background-color: ", ";\n  height: 40px;\n  color: ", ";\n  display: none;\n  align-items: center;\n  justify-content: space-between;\n  z-index: 10;\n  a {\n    text-decoration: none;\n    text-align: center;\n    font-size: 24px;\n    color: ", ";\n    margin: 0 12px;\n  }\n  .online-order {\n    color: ", "\n  }\n  a:hover {\n    color: ", ";\n  }\n  @media (min-width: 700px){\n    display: flex;\n  }\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -62,7 +72,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  width: 100%;\n  background-color: ", ";\n  position: ", ";\n  top: 0;\n  left: 0;\n  z-index: 100;\n"]);
+  var data = _taggedTemplateLiteral(["\n  width: 100vw;\n  background-color: ", ";\n  position: ", ";\n  top: 0;\n  left: 0;\n  z-index: 10;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -100,3 +110,7 @@ var Spacer = _styledComponents["default"].div(_templateObject6(), _colors.white,
 });
 
 exports.Spacer = Spacer;
+
+var OnlineOrder = _styledComponents["default"].div(_templateObject7(), _colors.darkblue, _colors.pink, _colors.darkblue, _colors.lightblue);
+
+exports.OnlineOrder = OnlineOrder;
