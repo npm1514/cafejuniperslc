@@ -16,6 +16,9 @@ export const Description = styled.div`
   align-items: center;
   max-width: 736px;
   margin: auto;
+  @media (min-width: 700px) {
+    overflow: visible;
+  }
 `;
 export const DescriptionLeft = styled.div`
   display: none;

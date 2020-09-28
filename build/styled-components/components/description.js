@@ -32,7 +32,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n  width: calc(100% - 48px);\n  background-color: ", ";\n  color: ", ";\n  padding: 24px;\n  display: flex;\n  position: relative;\n  overflow: hidden;\n  justify-content: center;\n  align-items: center;\n  max-width: 736px;\n  margin: auto;\n"]);
+  var data = _taggedTemplateLiteral(["\n  width: calc(100% - 48px);\n  background-color: ", ";\n  color: ", ";\n  padding: 24px;\n  display: flex;\n  position: relative;\n  overflow: hidden;\n  justify-content: center;\n  align-items: center;\n  max-width: 736px;\n  margin: auto;\n  @media (min-width: 700px) {\n    overflow: visible;\n  }\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
