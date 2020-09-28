@@ -10,7 +10,7 @@ var _styledComponents = _interopRequireDefault(require("styled-components"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  width: 100%;\n  height: 400px;\n  background-image: url(", ");\n  background-attachment: fixed;\n  background-position: center;\n  background-repeat: repeat;\n  background-size: cover;\n  @media(min-width: 700px){\n    background-image: url(", ");\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  width: 100%;\n  height: 400px;\n  background-image: url(", ");\n  background-attachment: scroll;\n  background-position: center;\n  background-repeat: repeat;\n  background-size: cover;\n  &.mobile-parallax {\n    display: none;\n  }\n  @media(min-width: 700px){\n    &.mobile-parallax {\n      display: block;\n    }\n    background-attachment: fixed;\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -22,9 +22,7 @@ function _templateObject() {
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 var Parallax = _styledComponents["default"].div(_templateObject(), function (props) {
-  return props.mobileurl;
-}, function (props) {
-  return props.desktopurl;
+  return props.url;
 });
 
 exports.Parallax = Parallax;

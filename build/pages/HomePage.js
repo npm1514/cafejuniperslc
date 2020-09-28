@@ -54,13 +54,12 @@ var Home = /*#__PURE__*/function (_Component) {
       return /*#__PURE__*/_react["default"].createElement(_home.HomeWrapper, null, /*#__PURE__*/_react["default"].createElement(_components.Banner, {
         id: "home"
       }), /*#__PURE__*/_react["default"].createElement(_components.Header, null), /*#__PURE__*/_react["default"].createElement(_components.Menu, null), /*#__PURE__*/_react["default"].createElement(_components.Parallax, {
-        desktopurl: "/images/normalcup.jpg",
-        mobileurl: "/images/skinny.jpg"
+        url: "/images/normalcup.jpg"
       }), /*#__PURE__*/_react["default"].createElement(_components.Description, {
         id: "about"
       }), /*#__PURE__*/_react["default"].createElement(_components.Parallax, {
-        desktopurl: "/images/normalcup.jpg",
-        mobileurl: "/images/skinny.jpg"
+        className: "mobile-parallax",
+        url: "/images/normalcup.jpg"
       }), /*#__PURE__*/_react["default"].createElement(_components.Map, {
         id: "map"
       }), /*#__PURE__*/_react["default"].createElement(_components.Message, {

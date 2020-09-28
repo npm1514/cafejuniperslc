@@ -8,11 +8,10 @@ class Home extends Component {
           <HomeWrapper>
             <Banner id="home"/>
             <Header/>
-
             <Menu/>
-            <Parallax desktopurl="/images/normalcup.jpg" mobileurl="/images/skinny.jpg"/>
+            <Parallax url="/images/normalcup.jpg"/>
             <Description id="about"/>
-            <Parallax desktopurl="/images/normalcup.jpg" mobileurl="/images/skinny.jpg"/>
+            <Parallax className="mobile-parallax" url="/images/normalcup.jpg"/>
             <Map id="map"/>
             <Message id="contact"/>
             <Partners/>

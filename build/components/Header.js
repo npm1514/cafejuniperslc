@@ -116,9 +116,11 @@ var HeaderComponent = /*#__PURE__*/function (_Component) {
         top: -17,
         right: 10,
         size: 40
-      }), /*#__PURE__*/_react["default"].createElement("img", {
+      }), /*#__PURE__*/_react["default"].createElement("a", {
+        href: "/"
+      }, /*#__PURE__*/_react["default"].createElement("img", {
         src: "/images/Cafe-Juniper_Secondary_02.png"
-      }), /*#__PURE__*/_react["default"].createElement(_header.HexLock, {
+      })), /*#__PURE__*/_react["default"].createElement(_header.HexLock, {
         onClick: this.clickMenu
       }, /*#__PURE__*/_react["default"].createElement(_subcomponents.Hex, {
         className: "mobile-hex",
@@ -152,12 +154,16 @@ var HeaderComponent = /*#__PURE__*/function (_Component) {
       })))), this.state.menuOpen && /*#__PURE__*/_react["default"].createElement(_header.MobileMenu, {
         id: "mobile-menu"
       }, /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement("a", {
+        onClick: this.closeMenu,
         href: "/#menu"
       }, "Menu")), /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement("a", {
+        onClick: this.closeMenu,
         href: "/#about"
       }, "About Us")), /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement("a", {
+        onClick: this.closeMenu,
         href: "/#map"
       }, "Location")), /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement("a", {
+        onClick: this.closeMenu,
         href: "/#contact"
       }, "Contact")), /*#__PURE__*/_react["default"].createElement("div", {
         className: "online-order"

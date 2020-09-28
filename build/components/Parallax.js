@@ -50,8 +50,8 @@ var ParallaxComponent = /*#__PURE__*/function (_Component) {
     key: "render",
     value: function render() {
       return /*#__PURE__*/_react["default"].createElement(_parallax.Parallax, {
-        desktopurl: this.props.desktopurl,
-        mobileurl: this.props.mobileurl
+        url: this.props.url,
+        className: this.props.className
       });
     }
   }]);
