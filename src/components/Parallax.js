@@ -4,7 +4,7 @@ import { Parallax } from '../styled-components/components/parallax';
 class ParallaxComponent extends Component {
   render(){
     return (
-      <Parallax url={this.props.url}/>
+      <Parallax desktopurl={this.props.desktopurl} mobileurl={this.props.mobileurl}/>
     );
   }
 }
