@@ -55,23 +55,6 @@ export const Menu = styled.div`
       width: 167px;
     }
   }
-  @media (min-device-width: 700px){
-    flex-direction: row;
-    .mobile-menu-header {
-      display: none;
-    }
-    tr th:last-child {
-      padding-right: 0;
-    }
-    tr td:last-child {
-      padding-right: 0;
-    }
-    tr th:first-child {
-      text-align: left;
-      padding-left: 0;
-      width: 167px;
-    }
-  }
 `;
 export const MenuLeft = styled.div`
   width: 100%;
@@ -79,9 +62,6 @@ export const MenuLeft = styled.div`
     margin: auto;
   }
   @media (min-width: 700px){
-      width: 60%;
-  }
-  @media (min-device-width: 700px){
       width: 60%;
   }
 `;
@@ -94,11 +74,6 @@ export const MenuRight = styled.div`
     margin: auto;
   }
   @media (min-width: 700px){
-    margin-top: 0;
-    justify-content: flex-end;
-    width: 40%;
-  }
-  @media (min-device-width: 700px){
     margin-top: 0;
     justify-content: flex-end;
     width: 40%;

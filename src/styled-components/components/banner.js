@@ -9,9 +9,6 @@ export const BannerWrap = styled.div`
   @media (min-width: 700px){
     height: 300px;
   }
-  @media (min-device-width: 700px){
-    height: 300px;
-  }
 `;
 
 export const Banner = styled.div`
@@ -28,9 +25,6 @@ export const Banner = styled.div`
     width: 200px;
   }
   @media (min-width: 700px){
-    display: flex;
-  }
-  @media (min-device-width: 700px){
     display: flex;
   }
 `;

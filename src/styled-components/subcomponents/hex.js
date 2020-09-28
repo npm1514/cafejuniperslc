@@ -25,12 +25,4 @@ export const Hex = styled.svg`
       display: none;
     }
   }
-  @media (min-device-width: 700px){
-    &.desktop-hex {
-      display: inline;
-    }
-    &.mobile-hex {
-      display: none;
-    }
-  }
 `;

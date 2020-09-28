@@ -62,7 +62,7 @@ var HeaderComponent = /*#__PURE__*/function (_Component) {
         menuOpen: false
       }, function () {
         document.body.removeEventListener('click', _this.onBlur);
-        document.body.removeEventListener('touch', _this.onBlur);
+        document.body.removeEventListener('touchstart', _this.onBlur);
       });
     });
 
@@ -71,7 +71,7 @@ var HeaderComponent = /*#__PURE__*/function (_Component) {
         menuOpen: true
       }, function () {
         document.body.addEventListener('click', _this.onBlur);
-        document.body.addEventListener('touch', _this.onBlur);
+        document.body.addEventListener('touchstart', _this.onBlur);
       });
     });
 

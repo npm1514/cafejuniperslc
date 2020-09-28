@@ -25,10 +25,6 @@ export const DescriptionLeft = styled.div`
       width: 30%;
       display: block;
   }
-  @media (min-device-width: 700px){
-      width: 30%;
-      display: block;
-  }
 `;
 export const DescriptionRight = styled.div`
   width: 100%;
@@ -36,9 +32,6 @@ export const DescriptionRight = styled.div`
     color: ${darkblue}
   }
   @media (min-width: 700px){
-      width: 70%;
-  }
-  @media (min-device-width: 700px){
       width: 70%;
   }
 `;

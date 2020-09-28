@@ -32,12 +32,4 @@ export const Map = styled.div`
       display: inline;
     }
   }
-  @media (min-device-width: 700px){
-    .mobile-map {
-      display: none;
-    }
-    .desktop-map {
-      display: inline;
-    }
-  }
 `;

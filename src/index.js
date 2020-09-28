@@ -98,10 +98,6 @@ function returnHTML(data, bundle, Page, title){
               body, th, h1, td { font-size: 30px; }
               p { font-size: 18px; }
             }
-            @media (min-device-width: 700px){
-              body, th, h1, td { font-size: 30px; }
-              p { font-size: 18px; }
-            }
           </style>
           ${styles}
         </head>
