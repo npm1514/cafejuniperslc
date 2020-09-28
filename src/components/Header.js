@@ -61,7 +61,7 @@ class HeaderComponent extends Component {
         <DesktopHeader>
           <a href="/#menu">Menu</a>
           <a href="/#about">About Us</a>
-          <a className="online-order" href="/#order">Order Online</a>
+          <a className="online-order"  href="https://www.clover.com/online-ordering/cafe-juniper-llc-salt-lake-city">Order Online</a>
           <a href="/#map">Location</a>
           <a href="/#contact">Contact</a>
         </DesktopHeader>
