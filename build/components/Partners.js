@@ -59,6 +59,22 @@ var PartnersComponent = /*#__PURE__*/function (_Component) {
         href: "https://mimsslc.com/"
       }, /*#__PURE__*/_react["default"].createElement("img", {
         src: "/images/MIMS_logo.jpg"
+      })), /*#__PURE__*/_react["default"].createElement("a", {
+        href: "https://amourspreads.com/"
+      }, /*#__PURE__*/_react["default"].createElement("img", {
+        src: "/images/amourlogo.jpg"
+      })), /*#__PURE__*/_react["default"].createElement("a", {
+        href: "https://www.instagram.com/challahbackdough/"
+      }, /*#__PURE__*/_react["default"].createElement("img", {
+        src: "/images/challahbackdough.jpg"
+      })), /*#__PURE__*/_react["default"].createElement("a", {
+        href: "https://maddoughslc.com/"
+      }, /*#__PURE__*/_react["default"].createElement("img", {
+        src: "/images/maddough.jpg"
+      })), /*#__PURE__*/_react["default"].createElement("a", {
+        href: "https://www.piepartytime.com/"
+      }, /*#__PURE__*/_react["default"].createElement("img", {
+        src: "/images/pieparty.jpeg"
       }))), /*#__PURE__*/_react["default"].createElement("hr", null), /*#__PURE__*/_react["default"].createElement("p", null, "Without whom we could not run our business."));
     }
   }]);

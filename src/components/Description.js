@@ -16,7 +16,7 @@ class DescriptionComponent extends Component {
           </DescriptionLeft>
           <DescriptionRight>
             <h1>ABOUT US</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Our team has been in the hospitality industry of Salt Lake City for the last ten plus years. Our mission is to give back to the Salt Lake City community by providing the best quality coffee, snacks, and confectionaries sourced both locally and responsibly.</p>
           </DescriptionRight>
         </Description>
       </DescriptionWrap>

@@ -5,10 +5,10 @@ export const DescriptionWrap = styled.div`
   background-color: ${brown};
 `;
 export const Description = styled.div`
-  width: calc(100% - 48px);
+  width: calc(100% - 64px);
   background-color: ${brown};
   color: ${white};
-  padding: 24px;
+  padding: 32px;
   display: flex;
   position: relative;
   overflow: hidden;

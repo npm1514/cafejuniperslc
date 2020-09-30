@@ -20,46 +20,70 @@ class MenuComponent extends Component {
                 <th>16<sup>oz</sup></th>
               </tr>
               <tr>
-                <td>Drip</td>
-                <td>$2.75</td>
-                <td>$3.25</td>
-                <td>$3.75</td>
+                <td>Espresso</td>
+                <td>$3.00</td>
+                <td></td>
+                <td></td>
               </tr>
               <tr>
-                <td>Americano</td>
-                <td>$2.75</td>
-                <td>$3.25</td>
-                <td>$3.75</td>
-              </tr>
-              <tr>
-                <td>Drip</td>
-                <td>$2.75</td>
-                <td>$3.25</td>
-                <td>$3.75</td>
-              </tr>
-              <tr>
-                <td>Macchiato</td>
-                <td>$2.75</td>
-                <td>$3.25</td>
-                <td>$3.75</td>
+                <td>Cortado</td>
+                <td>$3.50</td>
+                <td></td>
+                <td></td>
               </tr>
               <tr>
                 <td>Cappacchino</td>
-                <td>$2.75</td>
-                <td>$3.25</td>
-                <td>$3.75</td>
-              </tr>
-              <tr>
-                <td>Mocha</td>
-                <td>$2.75</td>
-                <td>$3.25</td>
-                <td>$3.75</td>
-              </tr>
-              <tr>
-                <td>Espresso</td>
-                <td>+$2.00</td>
+                <td>$3.50</td>
                 <td></td>
                 <td></td>
+              </tr>
+              <tr>
+                <td>Latte</td>
+                <td>$4.00</td>
+                <td>$4.50</td>
+                <td>$5.00</td>
+              </tr>
+              <tr>
+                <td>Drip</td>
+                <td></td>
+                <td>$3.00</td>
+                <td>$3.50</td>
+              </tr>
+              <tr>
+                <td>Americano</td>
+                <td></td>
+                <td>$3.00</td>
+                <td>$3.50</td>
+              </tr>
+              <tr>
+                <td>Pour Over</td>
+                <td></td>
+                <td>$4.00</td>
+                <td>$4.50</td>
+              </tr>
+              <tr>
+                <td>Cold Brew</td>
+                <td></td>
+                <td>$4.50</td>
+                <td>$5.00</td>
+              </tr>
+              <tr>
+                <td>Chai</td>
+                <td></td>
+                <td>$4.50</td>
+                <td>$5.00</td>
+              </tr>
+              <tr>
+                <td>Tea</td>
+                <td></td>
+                <td>$3.00</td>
+                <td>$3.50</td>
+              </tr>
+              <tr>
+                <td>Hot Cocoa</td>
+                <td></td>
+                <td>$4.00</td>
+                <td>$4.50</td>
               </tr>
             </table>
           </MenuLeft>
@@ -72,20 +96,47 @@ class MenuComponent extends Component {
                 <th className="mobile-menu-header"></th>
               </tr>
               <tr>
-                <td>Bagels</td>
-                <td>$2.75</td>
+                <td>Toast</td>
+                <td>$3.50</td>
               </tr>
               <tr>
                 <td>Avocado Toast</td>
-                <td>$7.75</td>
+                <td>$7.00</td>
               </tr>
               <tr>
-                <td>Pastry</td>
-                <td>$2.75</td>
+                <td>Pie</td>
+                <td>$5.00</td>
+              </tr>
+              <tr>
+                <td>Donut</td>
+                <td>$3.00</td>
               </tr>
               <tr>
                 <td>Cookie</td>
-                <td>$7.75</td>
+                <td>$3.00</td>
+              </tr>
+              <br/>
+              <tr>
+                <th>Retail</th>
+                <th></th>
+                <th className="mobile-menu-header"></th>
+                <th className="mobile-menu-header"></th>
+              </tr>
+              <tr>
+                <td>House Coffee</td>
+                <td>$15.00</td>
+              </tr>
+              <tr>
+                <td>Single Origin</td>
+                <td>$17.00</td>
+              </tr>
+              <tr>
+                <td>House Espresso</td>
+                <td>$17.00</td>
+              </tr>
+              <tr>
+                <td>Bulk Tea</td>
+                <td>$12.00</td>
               </tr>
             </table>
           </MenuRight>

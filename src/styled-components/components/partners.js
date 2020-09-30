@@ -16,7 +16,7 @@ export const PartnerList = styled.div`
   display: flex;
   margin: 24px 0;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-wrap: wrap;
   img {
     max-width: 150px;

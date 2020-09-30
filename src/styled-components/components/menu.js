@@ -20,7 +20,8 @@ export const Menu = styled.div`
   tr th:first-child {
     text-align: left;
     padding: 0;
-    width: 84px;
+    width: 117px;
+
   }
   tr td:first-child {
     text-align: left;
@@ -56,6 +57,14 @@ export const Menu = styled.div`
       padding-left: 0;
       width: 167px;
     }
+    th, td {
+      font-size: 18px;
+    }
+  }
+  @media (min-width: 800px){
+    th, td {
+      font-size: 28px;
+    }
   }
 `;
 export const MenuLeft = styled.div`
@@ -65,19 +74,22 @@ export const MenuLeft = styled.div`
   }
   @media (min-width: 700px){
       width: 60%;
+      table {
+        margin: 12px 24px;
+      }
   }
 `;
 export const MenuRight = styled.div`
   width: 100%;
-  display: flex;
-  justify-content: flex-start;
   margin-top: 24px;
   table {
     margin: auto;
   }
   @media (min-width: 700px){
     margin-top: 0;
-    justify-content: flex-end;
     width: 40%;
+    table {
+      margin: 12px 24px;
+    }
   }
 `;

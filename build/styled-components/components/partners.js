@@ -12,7 +12,7 @@ var _colors = require("../colors");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n  width: 100%;\n  display: flex;\n  margin: 24px 0;\n  justify-content: center;\n  align-items: flex-start;\n  flex-wrap: wrap;\n  img {\n    max-width: 150px;\n    margin: 16px 24px;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  width: 100%;\n  display: flex;\n  margin: 24px 0;\n  justify-content: center;\n  align-items: center;\n  flex-wrap: wrap;\n  img {\n    max-width: 150px;\n    margin: 16px 24px;\n  }\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
