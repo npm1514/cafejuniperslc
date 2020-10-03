@@ -9,7 +9,7 @@ class MenuComponent extends Component {
       <MenuWrap>
         <Menu>
           <Hex className="mobile-hex" color={brown} top={-5} left={-125} size={150}/>
-          <Hex className="mobile-hex" color={darkblue} top={240} right={-20} size={100}/>
+          <Hex className="mobile-hex" color={darkblue} top={240} right={-60} size={100}/>
           <Hex className="mobile-hex" color={pink} top={340} right={50} size={50}/>
           <MenuLeft>
             <table>
@@ -109,11 +109,11 @@ class MenuComponent extends Component {
               </tr>
               <tr>
                 <td>Donut</td>
-                <td>$3.00</td>
+                <td>$5.00</td>
               </tr>
               <tr>
                 <td>Cookie</td>
-                <td>$3.00</td>
+                <td>$1.50</td>
               </tr>
               <br/>
               <tr>
@@ -134,10 +134,12 @@ class MenuComponent extends Component {
                 <td>House Espresso</td>
                 <td>$17.00</td>
               </tr>
-              <tr>
-                <td>Bulk Tea</td>
-                <td>$12.00</td>
-              </tr>
+              {
+                // <tr>
+                //   <td>Bulk Tea</td>
+                //   <td>$12.00</td>
+                // </tr>
+              }
             </table>
           </MenuRight>
         </Menu>
