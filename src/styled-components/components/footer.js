@@ -15,4 +15,7 @@ export const Footer = styled.footer`
   i {
     margin-left: 8px;
   }
+  a:visited {
+    color: ${white};
+  }
 `;
