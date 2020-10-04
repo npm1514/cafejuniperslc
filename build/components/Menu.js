@@ -79,7 +79,7 @@ var MenuComponent = /*#__PURE__*/function (_Component) {
         className: "mobile-menu-header"
       }), /*#__PURE__*/_react["default"].createElement("th", {
         className: "mobile-menu-header"
-      })), /*#__PURE__*/_react["default"].createElement("tr", null, /*#__PURE__*/_react["default"].createElement("td", null, "House Coffee"), /*#__PURE__*/_react["default"].createElement("td", null, "$15.00")), /*#__PURE__*/_react["default"].createElement("tr", null, /*#__PURE__*/_react["default"].createElement("td", null, "Single Origin"), /*#__PURE__*/_react["default"].createElement("td", null, "$17.00")), /*#__PURE__*/_react["default"].createElement("tr", null, /*#__PURE__*/_react["default"].createElement("td", null, "House Espresso"), /*#__PURE__*/_react["default"].createElement("td", null, "$17.00"))))));
+      })), /*#__PURE__*/_react["default"].createElement("tr", null, /*#__PURE__*/_react["default"].createElement("td", null, "House Coffee"), /*#__PURE__*/_react["default"].createElement("td", null, "$15.00")), /*#__PURE__*/_react["default"].createElement("tr", null, /*#__PURE__*/_react["default"].createElement("td", null, "Single Origin"), /*#__PURE__*/_react["default"].createElement("td", null, "$17.00")), /*#__PURE__*/_react["default"].createElement("tr", null, /*#__PURE__*/_react["default"].createElement("td", null, "House Espresso"), /*#__PURE__*/_react["default"].createElement("td", null, "$17.00")), /*#__PURE__*/_react["default"].createElement("tr", null, /*#__PURE__*/_react["default"].createElement("td", null, "Jam"), /*#__PURE__*/_react["default"].createElement("td", null, "$12.00"))))));
     }
   }]);
 

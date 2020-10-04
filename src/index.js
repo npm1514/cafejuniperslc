@@ -125,6 +125,7 @@ function returnHTML(data, bundle, Page, title){
           <title>Cafe Juniper | Downtown Premier Coffee Shop and Snacks</title>
           <meta name="Description" content="Cafe Juniper | Downtown Premier Coffee Shop and Snacks">
           <link rel="stylesheet" href="https://use.typekit.net/mno0keq.css">
+          <script src="https://kit.fontawesome.com/7fa747235e.js" crossorigin="anonymous"></script>
           <style>
             body {
               margin: 0;

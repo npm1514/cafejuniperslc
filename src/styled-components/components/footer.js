@@ -8,5 +8,11 @@ export const Footer = styled.footer`
   padding: 16px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  span {
+    line-height: 0.85;
+  }
+  i {
+    margin-left: 8px;
+  }
 `;

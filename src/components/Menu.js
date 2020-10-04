@@ -134,12 +134,10 @@ class MenuComponent extends Component {
                 <td>House Espresso</td>
                 <td>$17.00</td>
               </tr>
-              {
-                // <tr>
-                //   <td>Bulk Tea</td>
-                //   <td>$12.00</td>
-                // </tr>
-              }
+              <tr>
+                <td>Jam</td>
+                <td>$12.00</td>
+              </tr>
             </table>
           </MenuRight>
         </Menu>
