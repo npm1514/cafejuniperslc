@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {darkblue, white} from '../colors';
+import {darkblue, white, lightblue } from '../colors';
 
 export const Footer = styled.footer`
   width: calc(100% - 32px);
@@ -14,6 +14,9 @@ export const Footer = styled.footer`
   }
   i {
     margin-left: 8px;
+  }
+  a:hover {
+    color: ${lightblue};
   }
   a:visited {
     color: ${white};
