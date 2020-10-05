@@ -7,7 +7,7 @@ class MenuComponent extends Component {
   render(){
     return (
       <MenuWrap>
-        <Menu>
+        <Menu id="menu">
           <Hex className="mobile-hex" color={brown} top={-5} left={-125} size={150}/>
           <Hex className="mobile-hex" color={darkblue} top={240} right={-60} size={100}/>
           <Hex className="mobile-hex" color={pink} top={340} right={50} size={50}/>
@@ -32,7 +32,7 @@ class MenuComponent extends Component {
                 <td></td>
               </tr>
               <tr>
-                <td>Cappacchino</td>
+                <td>Cappuccino</td>
                 <td>$3.50</td>
                 <td></td>
                 <td></td>
