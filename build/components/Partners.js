@@ -64,13 +64,9 @@ var PartnersComponent = /*#__PURE__*/function (_Component) {
       }, /*#__PURE__*/_react["default"].createElement("img", {
         src: "/images/amourlogo.jpg"
       })), /*#__PURE__*/_react["default"].createElement("a", {
-        href: "https://www.instagram.com/challahbackdough/"
+        href: "https://rubysnap.com/"
       }, /*#__PURE__*/_react["default"].createElement("img", {
-        src: "/images/challahbackdough.jpg"
-      })), /*#__PURE__*/_react["default"].createElement("a", {
-        href: "https://maddoughslc.com/"
-      }, /*#__PURE__*/_react["default"].createElement("img", {
-        src: "/images/maddough.jpg"
+        src: "/images/rubymainlogo.jpeg"
       })), /*#__PURE__*/_react["default"].createElement("a", {
         href: "https://www.piepartytime.com/"
       }, /*#__PURE__*/_react["default"].createElement("img", {

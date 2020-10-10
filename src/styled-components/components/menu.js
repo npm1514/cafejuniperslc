@@ -15,12 +15,12 @@ export const Menu = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  max-width: 736px;
+  max-width: 762px;
   margin: auto;
   tr th:first-child {
     text-align: left;
     padding: 0;
-    width: 117px;
+    width: 170px;
 
   }
   tr td:first-child {
@@ -55,7 +55,7 @@ export const Menu = styled.div`
     tr th:first-child {
       text-align: left;
       padding-left: 0;
-      width: 167px;
+      width: 172px;
     }
     th, td {
       font-size: 18px;
