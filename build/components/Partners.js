@@ -52,25 +52,35 @@ var PartnersComponent = /*#__PURE__*/function (_Component) {
       return /*#__PURE__*/_react["default"].createElement(_partners.Partners, {
         id: this.props.id
       }, /*#__PURE__*/_react["default"].createElement("h1", null, "Our Local Partners"), /*#__PURE__*/_react["default"].createElement("hr", null), /*#__PURE__*/_react["default"].createElement(_partners.PartnerList, null, /*#__PURE__*/_react["default"].createElement("a", {
+        rel: "noopener",
         href: "https://www.bluecopperslc.com/"
       }, /*#__PURE__*/_react["default"].createElement("img", {
-        src: "/images/bluecopperlogooption-01.png"
+        src: "/images/bluecopperlogooption-01.png",
+        alt: "blue copper logo"
       })), /*#__PURE__*/_react["default"].createElement("a", {
+        rel: "noopener",
         href: "https://mimsslc.com/"
       }, /*#__PURE__*/_react["default"].createElement("img", {
-        src: "/images/MIMS_logo.jpg"
+        src: "/images/MIMS_logo.jpg",
+        alt: "mims logo"
       })), /*#__PURE__*/_react["default"].createElement("a", {
+        rel: "noopener",
         href: "https://amourspreads.com/"
       }, /*#__PURE__*/_react["default"].createElement("img", {
-        src: "/images/amourlogo.jpg"
+        src: "/images/amourlogo.jpg",
+        alt: "amour logo"
       })), /*#__PURE__*/_react["default"].createElement("a", {
+        rel: "noopener",
         href: "https://rubysnap.com/"
       }, /*#__PURE__*/_react["default"].createElement("img", {
-        src: "/images/rubymainlogo.jpeg"
+        src: "/images/rubymainlogo.jpeg",
+        alt: "ruby snap logo"
       })), /*#__PURE__*/_react["default"].createElement("a", {
+        rel: "noopener",
         href: "https://www.piepartytime.com/"
       }, /*#__PURE__*/_react["default"].createElement("img", {
-        src: "/images/pieparty.jpeg"
+        src: "/images/pieparty.jpeg",
+        alt: "pie party logo"
       }))), /*#__PURE__*/_react["default"].createElement("hr", null), /*#__PURE__*/_react["default"].createElement("p", null, "Without whom we could not run our business."));
     }
   }]);

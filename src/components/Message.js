@@ -58,6 +58,7 @@ class MessageComponent extends Component {
               type="text"
               required
               onChange={(e) => {this.change(e, "name")}}
+              id="name-input"
             />
             <input
               value={email}
@@ -65,14 +66,17 @@ class MessageComponent extends Component {
               type="email"
               required
               onChange={(e) => {this.change(e, "email")}}
+              id="emial-input"
             />
             <textarea
               value={message}
               required
               placeholder="Talk to me!"
               onChange={(e) => {this.change(e, "message")}}
+              id="message-textarea"
             ></textarea>
             <TextBox type="submit">
+              <span style={{color: 'transparent'}}>Send Email Button</span>
               <Hex
                 color={lightblue}
                 bottom={-11}

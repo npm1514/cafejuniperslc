@@ -33,7 +33,7 @@ function _templateObject() {
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var Partners = _styledComponents["default"].div(_templateObject(), _colors.lightblue);
+var Partners = _styledComponents["default"].div(_templateObject(), _colors.darkblue);
 
 exports.Partners = Partners;
 

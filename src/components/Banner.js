@@ -13,7 +13,7 @@ class BannerComponent extends Component {
           <Hex className="desktop-hex" color={pink} top={-25} right={110} size={100}/>
           <Hex className="desktop-hex" color={darkblue} top={-90} right={-100} size={200}/>
           <Hex className="desktop-hex" color={brown} top={120} right={-10} size={160}/>
-          <img src="/images/Cafe-Juniper_Primary_01.png"/>
+          <img src="/images/Cafe-Juniper_Primary_01.png" alt="primary logo"/>
         </Banner>
       </BannerWrap>
     );

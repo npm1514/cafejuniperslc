@@ -50,7 +50,7 @@ class HeaderComponent extends Component {
       <HeaderWrap>
         <MobileHeader id="mobile-header">
           <Hex className="mobile-hex" color={pink} top={-17} right={10} size={40}/>
-          <a href="/"><img src="/images/Cafe-Juniper_Secondary_02.png"/></a>
+          <a name="link to home" href="/"><img alt="secondary logo" src="/images/Cafe-Juniper_Secondary_02.png"/></a>
           <HexLock onClick={this.clickMenu}>
             <Hex className="mobile-hex" color={green} top={0} left={0} right={0} bottom={0} size={60}>
               <line x1="25" x2="75" y1="40" y2="40" stroke={darkblue} strokeWidth="4"/>
@@ -66,7 +66,7 @@ class HeaderComponent extends Component {
             <div><a onClick={this.closeMenu} href="/#about">About Us</a></div>
             <div><a onClick={this.closeMenu} href="/#map">Location</a></div>
             <div><a onClick={this.closeMenu} href="/#contact">Contact</a></div>
-            <div className="online-order"><a className="online-order" href="https://www.clover.com/online-ordering/cafe-juniper-llc-salt-lake-city">Order Online</a></div>
+            <div className="online-order"><a rel="noopener" className="online-order" href="https://www.clover.com/online-ordering/cafe-juniper-llc-salt-lake-city">Order Online</a></div>
           </MobileMenu>
         }
         <HeaderWrap menuStuck={menuStuck}>
@@ -79,7 +79,7 @@ class HeaderComponent extends Component {
           </DesktopHeader>
         </HeaderWrap>
         <Spacer menuStuck={menuStuck}/>
-        <OnlineOrder><a className="online-order" href="https://www.clover.com/online-ordering/cafe-juniper-llc-salt-lake-city">Order Online</a></OnlineOrder>
+        <OnlineOrder><a rel="noopener" className="online-order" href="https://www.clover.com/online-ordering/cafe-juniper-llc-salt-lake-city">Order Online</a></OnlineOrder>
       </HeaderWrap>
     );
   }

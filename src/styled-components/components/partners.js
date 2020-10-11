@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { white, lightblue } from '../colors';
+import { white, darkblue } from '../colors';
 
 export const Partners = styled.div`
   width: 100%;
@@ -7,7 +7,7 @@ export const Partners = styled.div`
   margin: auto;
   h1, p {
     text-align: center;
-    color: ${lightblue};
+    color: ${darkblue};
   }
 `;
 

@@ -117,8 +117,10 @@ var HeaderComponent = /*#__PURE__*/function (_Component) {
         right: 10,
         size: 40
       }), /*#__PURE__*/_react["default"].createElement("a", {
+        name: "link to home",
         href: "/"
       }, /*#__PURE__*/_react["default"].createElement("img", {
+        alt: "secondary logo",
         src: "/images/Cafe-Juniper_Secondary_02.png"
       })), /*#__PURE__*/_react["default"].createElement(_header.HexLock, {
         onClick: this.clickMenu
@@ -168,6 +170,7 @@ var HeaderComponent = /*#__PURE__*/function (_Component) {
       }, "Contact")), /*#__PURE__*/_react["default"].createElement("div", {
         className: "online-order"
       }, /*#__PURE__*/_react["default"].createElement("a", {
+        rel: "noopener",
         className: "online-order",
         href: "https://www.clover.com/online-ordering/cafe-juniper-llc-salt-lake-city"
       }, "Order Online"))), /*#__PURE__*/_react["default"].createElement(_header.HeaderWrap, {
@@ -188,6 +191,7 @@ var HeaderComponent = /*#__PURE__*/function (_Component) {
       }, "Contact"))), /*#__PURE__*/_react["default"].createElement(_header.Spacer, {
         menuStuck: menuStuck
       }), /*#__PURE__*/_react["default"].createElement(_header.OnlineOrder, null, /*#__PURE__*/_react["default"].createElement("a", {
+        rel: "noopener",
         className: "online-order",
         href: "https://www.clover.com/online-ordering/cafe-juniper-llc-salt-lake-city"
       }, "Order Online")));

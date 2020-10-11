@@ -50,11 +50,15 @@ var FooterComponent = /*#__PURE__*/function (_Component) {
     key: "render",
     value: function render() {
       return /*#__PURE__*/_react["default"].createElement(_footer.Footer, null, /*#__PURE__*/_react["default"].createElement("span", null, "Copyright 2020 Cafe Juniper LLC"), /*#__PURE__*/_react["default"].createElement("a", {
+        rel: "noopener",
+        name: "instagram link",
         href: "https://www.instagram.com/cafejuniperslc/",
         target: "_blank"
       }, /*#__PURE__*/_react["default"].createElement("i", {
         className: "fab fa-instagram"
       })), /*#__PURE__*/_react["default"].createElement("a", {
+        rel: "noopener",
+        name: "facebook link",
         href: "https://www.facebook.com/cafejuniperslc",
         target: "_blank"
       }, /*#__PURE__*/_react["default"].createElement("i", {

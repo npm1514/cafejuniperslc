@@ -123,7 +123,8 @@ var MessageComponent = /*#__PURE__*/function (_Component) {
         required: true,
         onChange: function onChange(e) {
           _this2.change(e, "name");
-        }
+        },
+        id: "name-input"
       }), /*#__PURE__*/_react["default"].createElement("input", {
         value: email,
         placeholder: "Email Address",
@@ -131,17 +132,23 @@ var MessageComponent = /*#__PURE__*/function (_Component) {
         required: true,
         onChange: function onChange(e) {
           _this2.change(e, "email");
-        }
+        },
+        id: "emial-input"
       }), /*#__PURE__*/_react["default"].createElement("textarea", {
         value: message,
         required: true,
         placeholder: "Talk to me!",
         onChange: function onChange(e) {
           _this2.change(e, "message");
-        }
+        },
+        id: "message-textarea"
       }), /*#__PURE__*/_react["default"].createElement(_message.TextBox, {
         type: "submit"
-      }, /*#__PURE__*/_react["default"].createElement(_subcomponents.Hex, {
+      }, /*#__PURE__*/_react["default"].createElement("span", {
+        style: {
+          color: 'transparent'
+        }
+      }, "Send Email Button"), /*#__PURE__*/_react["default"].createElement(_subcomponents.Hex, {
         color: _colors.lightblue,
         bottom: -11,
         right: -15,

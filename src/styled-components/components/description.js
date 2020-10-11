@@ -7,7 +7,7 @@ export const DescriptionWrap = styled.div`
 export const Description = styled.div`
   width: calc(100% - 64px);
   background-color: ${brown};
-  color: ${white};
+  color: #fff;
   padding: 32px;
   display: flex;
   position: relative;

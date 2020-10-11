@@ -12,7 +12,7 @@ class DescriptionComponent extends Component {
           <Hex className="desktop-hex" color={darkblue} bottom={-60} right={70} size={100}/>
           <Hex className="mobile-hex" color={darkblue} top={30} right={-48} size={75}/>
           <DescriptionLeft>
-            <img src="/images/Cafe-Juniper_Primary_03.png" />
+            <img src="/images/Cafe-Juniper_Primary_03.png" alt="primary logo"/>
           </DescriptionLeft>
           <DescriptionRight>
             <h1>ABOUT US</h1>
