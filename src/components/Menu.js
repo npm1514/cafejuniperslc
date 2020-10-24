@@ -127,7 +127,7 @@ class MenuComponent extends Component {
                 <td>Single Origin</td>
                 <td></td>
                 <td></td>
-                <td>$20.00</td>
+                <td>$19.00</td>
               </tr>
               <tr>
                 <td>House Espresso</td>
@@ -155,13 +155,13 @@ class MenuComponent extends Component {
                 <td>Sourdoughnie</td>
                 <th className="mobile-menu-header"></th>
                 <th className="mobile-menu-header"></th>
-                <td>$3.50</td>
+                <td>$4.00</td>
               </tr>
               <tr>
                 <td>Cookie</td>
                 <th className="mobile-menu-header"></th>
                 <th className="mobile-menu-header"></th>
-                <td>$2.50</td>
+                <td>$3.00</td>
               </tr>
               <br/>
               <tr>
