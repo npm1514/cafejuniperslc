@@ -49,8 +49,8 @@ class MessageComponent extends Component {
       <MessageWrap id={this.props.id}>
         <Message>
           <Hex className="mobile-hex" color={green} bottom={-83} left={-50} size={100}/>
-          <h1>385-213-5061 | cafejuniperslc@gmail.com</h1>
-          <h1>Shoot us a message</h1>
+          <h2>385-213-5061 | cafejuniperslc@gmail.com</h2>
+          <h2>Shoot us a message</h2>
           <form onSubmit={this.submitMessage}>
             <input
               value={name}

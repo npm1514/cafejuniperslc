@@ -45,16 +45,26 @@ export const MobileHeader = styled.header`
   top: 0;
   left: 0;
   background-color: ${darkblue};
-  height: 102px;
+  height: 125px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: column;
   z-index: 10;
   img {
     width: 140px;
     margin: 12px 24px;
   }
-
+  span {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  h1 {
+    color: ${white};
+    margin: 0;
+  }
   @media (min-width: 700px){
     display: none;
   }
@@ -107,7 +117,7 @@ export const HexLock = styled.div`
 `;
 
 export const Spacer = styled.div`
-  height: 114px;
+  height: 132px;
   width: 100%;
   background-color: ${white};
   @media(min-width: 700px){
@@ -120,7 +130,7 @@ export const OnlineOrder = styled.div`
   background-color: ${pink};
   text-align: center;
   position: fixed;
-  top: 102px;
+  top: 125px;
   left: 0;
   z-index: 10;
   a {

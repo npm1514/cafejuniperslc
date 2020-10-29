@@ -116,7 +116,7 @@ var HeaderComponent = /*#__PURE__*/function (_Component) {
         top: -17,
         right: 10,
         size: 40
-      }), /*#__PURE__*/_react["default"].createElement("a", {
+      }), /*#__PURE__*/_react["default"].createElement("span", null, /*#__PURE__*/_react["default"].createElement("a", {
         name: "link to home",
         href: "/"
       }, /*#__PURE__*/_react["default"].createElement("img", {
@@ -153,7 +153,7 @@ var HeaderComponent = /*#__PURE__*/function (_Component) {
         y2: "60",
         stroke: _colors.darkblue,
         strokeWidth: "4"
-      })))), this.state.menuOpen && /*#__PURE__*/_react["default"].createElement(_header.MobileMenu, {
+      })))), /*#__PURE__*/_react["default"].createElement("h1", null, "Salt lake city's premier coffee shop")), this.state.menuOpen && /*#__PURE__*/_react["default"].createElement(_header.MobileMenu, {
         id: "mobile-menu"
       }, /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement("a", {
         onClick: this.closeMenu,

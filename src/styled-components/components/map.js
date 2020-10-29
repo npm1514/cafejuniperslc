@@ -14,9 +14,12 @@ export const Map = styled.div`
   text-align: center;
   position: relative;
   background-color: ${lightblue};
-  h1 {
+  h2 {
     text-align: center;
     margin-top: 0;
+  }
+  h2:last-child {
+    margin-top: 24px;
   }
   .mobile-map {
     display: inline

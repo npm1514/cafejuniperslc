@@ -86,9 +86,17 @@ var BannerComponent = /*#__PURE__*/function (_Component) {
         right: -10,
         size: 160
       }), /*#__PURE__*/_react["default"].createElement("img", {
-        src: "/images/Cafe-Juniper_Primary_01.png",
+        src: "/images/Cafe-Juniper_J_01.png",
         alt: "primary logo"
-      })));
+      }), /*#__PURE__*/_react["default"].createElement("h1", null, /*#__PURE__*/_react["default"].createElement("span", null, "C", /*#__PURE__*/_react["default"].createElement("span", {
+        className: "smallLetters"
+      }, "A"), "F\xC9 JUN", /*#__PURE__*/_react["default"].createElement("span", {
+        className: "smallLetters"
+      }, "I"), "P", /*#__PURE__*/_react["default"].createElement("span", {
+        className: "smallLetters"
+      }, "E"), "R"), /*#__PURE__*/_react["default"].createElement("span", {
+        className: "bottomBanner"
+      }, "Salt lake city's premier coffee shop"))));
     }
   }]);
 

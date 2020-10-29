@@ -13,7 +13,15 @@ class BannerComponent extends Component {
           <Hex className="desktop-hex" color={pink} top={-25} right={110} size={100}/>
           <Hex className="desktop-hex" color={darkblue} top={-90} right={-100} size={200}/>
           <Hex className="desktop-hex" color={brown} top={120} right={-10} size={160}/>
-          <img src="/images/Cafe-Juniper_Primary_01.png" alt="primary logo"/>
+          <img src="/images/Cafe-Juniper_J_01.png" alt="primary logo"/>
+          <h1>
+          <span>
+          C<span className="smallLetters">A</span>FÉ JUN<span className="smallLetters">I</span>P<span className="smallLetters">E</span>R
+          </span>
+          <span className="bottomBanner">
+          Salt lake city's premier coffee shop
+          </span>
+          </h1>
         </Banner>
       </BannerWrap>
     );

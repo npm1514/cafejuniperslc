@@ -3,6 +3,9 @@ import { white, green, darkblue } from '../colors';
 export const MenuWrap = styled.div`
   width: 100%;
   background-color: ${white};
+  h2 {
+    color: ${darkblue};
+  }
 `;
 export const Menu = styled.div`
   width: calc(100% - 64px);

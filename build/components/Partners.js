@@ -51,7 +51,7 @@ var PartnersComponent = /*#__PURE__*/function (_Component) {
     value: function render() {
       return /*#__PURE__*/_react["default"].createElement(_partners.Partners, {
         id: this.props.id
-      }, /*#__PURE__*/_react["default"].createElement("h1", null, "Our Local Partners"), /*#__PURE__*/_react["default"].createElement("hr", null), /*#__PURE__*/_react["default"].createElement(_partners.PartnerList, null, /*#__PURE__*/_react["default"].createElement("a", {
+      }, /*#__PURE__*/_react["default"].createElement("h2", null, "Our Local Partners"), /*#__PURE__*/_react["default"].createElement("hr", null), /*#__PURE__*/_react["default"].createElement(_partners.PartnerList, null, /*#__PURE__*/_react["default"].createElement("a", {
         rel: "noopener",
         href: "https://www.bluecopperslc.com/"
       }, /*#__PURE__*/_react["default"].createElement("img", {

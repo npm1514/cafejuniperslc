@@ -15,7 +15,7 @@ export const Message = styled.div`
   padding-top: 24px;
   position: relative;
   text-align: center;
-  h1 {
+  h2 {
     color: ${white}
   }
   textarea, input {

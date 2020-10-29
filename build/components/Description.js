@@ -76,7 +76,7 @@ var DescriptionComponent = /*#__PURE__*/function (_Component) {
       }), /*#__PURE__*/_react["default"].createElement(_description.DescriptionLeft, null, /*#__PURE__*/_react["default"].createElement("img", {
         src: "/images/Cafe-Juniper_Primary_03.png",
         alt: "primary logo"
-      })), /*#__PURE__*/_react["default"].createElement(_description.DescriptionRight, null, /*#__PURE__*/_react["default"].createElement("h1", null, "ABOUT US"), /*#__PURE__*/_react["default"].createElement("p", null, "Our team has been in the hospitality industry of Salt Lake City for the last ten plus years. Our mission is to give back to the Salt Lake City community by providing the best quality coffee, snacks, and confectionaries sourced both locally and responsibly."))));
+      })), /*#__PURE__*/_react["default"].createElement(_description.DescriptionRight, null, /*#__PURE__*/_react["default"].createElement("h2", null, "ABOUT US"), /*#__PURE__*/_react["default"].createElement("p", null, "Our team has been in the hospitality industry of Salt Lake City for the last ten plus years. Our mission is to give back to the Salt Lake City community by providing the best quality coffee, snacks, and confectionaries sourced both locally and responsibly in our cute downtown cafe."))));
     }
   }]);
 

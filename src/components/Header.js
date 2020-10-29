@@ -50,7 +50,10 @@ class HeaderComponent extends Component {
       <HeaderWrap>
         <MobileHeader id="mobile-header">
           <Hex className="mobile-hex" color={pink} top={-17} right={10} size={40}/>
-          <a name="link to home" href="/"><img alt="secondary logo" src="/images/Cafe-Juniper_Secondary_02.png"/></a>
+          <span>
+          <a name="link to home" href="/">
+            <img alt="secondary logo" src="/images/Cafe-Juniper_Secondary_02.png"/>
+          </a>
           <HexLock onClick={this.clickMenu}>
             <Hex className="mobile-hex" color={green} top={0} left={0} right={0} bottom={0} size={60}>
               <line x1="25" x2="75" y1="40" y2="40" stroke={darkblue} strokeWidth="4"/>
@@ -58,6 +61,8 @@ class HeaderComponent extends Component {
               <line x1="25" x2="75" y1="60" y2="60" stroke={darkblue} strokeWidth="4"/>
             </Hex>
           </HexLock>
+          </span>
+          <h1>Salt lake city's premier coffee shop</h1>
         </MobileHeader>
         {
           this.state.menuOpen &&

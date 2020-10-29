@@ -15,8 +15,8 @@ class DescriptionComponent extends Component {
             <img src="/images/Cafe-Juniper_Primary_03.png" alt="primary logo"/>
           </DescriptionLeft>
           <DescriptionRight>
-            <h1>ABOUT US</h1>
-            <p>Our team has been in the hospitality industry of Salt Lake City for the last ten plus years. Our mission is to give back to the Salt Lake City community by providing the best quality coffee, snacks, and confectionaries sourced both locally and responsibly.</p>
+            <h2>ABOUT US</h2>
+            <p>Our team has been in the hospitality industry of Salt Lake City for the last ten plus years. Our mission is to give back to the Salt Lake City community by providing the best quality coffee, snacks, and confectionaries sourced both locally and responsibly in our cute downtown cafe.</p>
           </DescriptionRight>
         </Description>
       </DescriptionWrap>

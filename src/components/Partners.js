@@ -5,7 +5,7 @@ class PartnersComponent extends Component {
   render(){
     return (
       <Partners id={this.props.id}>
-        <h1>Our Local Partners</h1>
+        <h2>Our Local Partners</h2>
         <hr/>
         <PartnerList>
           <a rel="noopener" href="https://www.bluecopperslc.com/"><img src="/images/bluecopperlogooption-01.png" alt="blue copper logo"/></a>

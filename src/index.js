@@ -122,8 +122,8 @@ function returnHTML(data, bundle, Page, title){
       <html lang="en">
         <head>
           <meta name="viewport" content="width=device-width, initial-scale=1">
-          <title>Cafe Juniper | Downtown Premier Coffee Shop and Snacks</title>
-          <meta name="Description" content="Cafe Juniper | Downtown Premier Coffee Shop and Snacks">
+          <title>Cafe Juniper | Salt Lake City Premier Coffee Shop and Toast</title>
+          <meta name="Description" content="Cafe Juniper | Salt Lake City Premier Coffee Shop and Toast">
           <link rel="stylesheet" href="https://use.typekit.net/mno0keq.css">
           <script src="https://kit.fontawesome.com/7fa747235e.js" crossorigin="anonymous"></script>
           <style>
@@ -134,11 +134,11 @@ function returnHTML(data, bundle, Page, title){
               overflow-x: hidden; font-size: 14px;
               width: 100%; max-width: 100%; height: auto;
             }
-            th, h1 { font-weight: 700; font-size: 16px; }
+            th, h1, h2 { font-weight: 700; font-size: 16px; }
             p { font-weight: 100; font-size: 12px; }
             a { text-decoration: none;}
             @media (min-width: 700px){
-              body, th, h1, td { font-size: 30px; }
+              body, th, h1, h2, td { font-size: 30px; }
               p { font-size: 18px; }
             }
           </style>

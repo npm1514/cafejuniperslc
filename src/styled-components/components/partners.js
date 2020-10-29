@@ -5,7 +5,7 @@ export const Partners = styled.div`
   width: 100%;
   max-width: 732px;
   margin: auto;
-  h1, p {
+  h2, p {
     text-align: center;
     color: ${darkblue};
   }

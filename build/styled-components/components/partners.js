@@ -22,7 +22,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  width: 100%;\n  max-width: 732px;\n  margin: auto;\n  h1, p {\n    text-align: center;\n    color: ", ";\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  width: 100%;\n  max-width: 732px;\n  margin: auto;\n  h2, p {\n    text-align: center;\n    color: ", ";\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;

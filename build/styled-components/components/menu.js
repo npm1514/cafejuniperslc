@@ -42,7 +42,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  width: 100%;\n  background-color: ", ";\n"]);
+  var data = _taggedTemplateLiteral(["\n  width: 100%;\n  background-color: ", ";\n  h2 {\n    color: ", ";\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -53,7 +53,7 @@ function _templateObject() {
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var MenuWrap = _styledComponents["default"].div(_templateObject(), _colors.white);
+var MenuWrap = _styledComponents["default"].div(_templateObject(), _colors.white, _colors.darkblue);
 
 exports.MenuWrap = MenuWrap;
 

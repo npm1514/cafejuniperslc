@@ -32,7 +32,7 @@ export const DescriptionLeft = styled.div`
 `;
 export const DescriptionRight = styled.div`
   width: 100%;
-  h1 {
+  h2 {
     color: ${darkblue}
   }
   @media (min-width: 700px){
