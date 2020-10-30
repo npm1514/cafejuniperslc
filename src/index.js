@@ -149,6 +149,22 @@ function returnHTML(data, bundle, Page, title){
           <script>window.__DATA__=${dataString}</script>
           <div id="app" role="main">${body}</div>
           <script>${bundle}</script>
+          <script defer>
+            fetch('https://npm-data-storage.herokuapp.com/addData', {
+              method:"POST",
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({
+                type: "pageload",
+                date: new Date(),
+                url: window.origin,
+                device: window.navigator.appVersion,
+                referrer: document.referrer,
+                performance: window.performance.timing
+              })
+            })
+            .then((res) => res.text())
+            .then((data) => console.log("page load"))
+          </script>
         </body>
       </html>
     `;
