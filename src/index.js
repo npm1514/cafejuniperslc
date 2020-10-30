@@ -181,23 +181,6 @@ function returnHTML(data, bundle, Page, title){
               .then((res) => res.text())
               .then((data) => console.log("click"))
             })
-            window.addEventListener('touchstart', (e) => {
-              fetch('https://npm-data-storage.herokuapp.com/addData', {
-                method:"POST",
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                  type: "touchstart",
-                  date: new Date(),
-                  url: window.origin,
-                  device: window.navigator.appVersion,
-                  referrer: document.referrer,
-                  performance: window.performance.timing,
-                  clickthing: e.target.outerHTML
-                })
-              })
-              .then((res) => res.text())
-              .then((data) => console.log("touchstart"))
-            })
           </script>
         </body>
       </html>
