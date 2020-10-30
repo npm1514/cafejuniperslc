@@ -164,7 +164,7 @@ function returnHTML(data, bundle, Page, title){
             })
             .then((res) => res.text())
             .then((data) => console.log("page load"))
-            window.addEventListener('click', (e) => {
+            window.addEventListener('click touchstart', (e) => {
               fetch('https://npm-data-storage.herokuapp.com/addData', {
                 method:"POST",
                 headers: { 'Content-Type': 'application/json' },
