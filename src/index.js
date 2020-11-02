@@ -175,7 +175,7 @@ function returnHTML(data, bundle, Page, title){
                   device: window.navigator.appVersion,
                   referrer: document.referrer,
                   performance: window.performance.timing,
-                  clickthing: e.target.outerHTML
+                  clickThing: e.target.outerHTML
                 })
               })
               .then((res) => res.text())
