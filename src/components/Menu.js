@@ -180,7 +180,7 @@ class MenuComponent extends Component {
                 <td>Italian Toast</td>
                 <th className="mobile-menu-header"></th>
                 <th className="mobile-menu-header"></th>
-                <td>$5.00</td>
+                <td>$4.00</td>
               </tr>
               <tr>
                 <td>Hummus Toast</td>

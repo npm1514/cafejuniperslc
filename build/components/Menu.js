@@ -109,7 +109,7 @@ var MenuComponent = /*#__PURE__*/function (_Component) {
         className: "mobile-menu-header"
       }), /*#__PURE__*/_react["default"].createElement("th", {
         className: "mobile-menu-header"
-      }), /*#__PURE__*/_react["default"].createElement("td", null, "$5.00")), /*#__PURE__*/_react["default"].createElement("tr", null, /*#__PURE__*/_react["default"].createElement("td", null, "Hummus Toast"), /*#__PURE__*/_react["default"].createElement("th", {
+      }), /*#__PURE__*/_react["default"].createElement("td", null, "$4.00")), /*#__PURE__*/_react["default"].createElement("tr", null, /*#__PURE__*/_react["default"].createElement("td", null, "Hummus Toast"), /*#__PURE__*/_react["default"].createElement("th", {
         className: "mobile-menu-header"
       }), /*#__PURE__*/_react["default"].createElement("th", {
         className: "mobile-menu-header"
