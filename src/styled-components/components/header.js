@@ -64,6 +64,8 @@ export const MobileHeader = styled.header`
   h1 {
     color: ${white};
     margin: 0;
+    font-weight: 500;
+    letter-spacing: 1;
   }
   @media (min-width: 700px){
     display: none;

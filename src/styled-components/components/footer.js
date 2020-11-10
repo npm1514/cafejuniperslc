@@ -15,13 +15,22 @@ export const Footer = styled.footer`
   i {
     margin-left: 8px;
   }
+  svg {
+    margin-left: 4px;
+  }
   a {
     color: ${white};
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   a:hover {
     color: ${lightblue};
   }
   a:visited {
     color: ${white};
+  }
+  svg {
+    fill: ${white};
   }
 `;

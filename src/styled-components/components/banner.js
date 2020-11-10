@@ -25,26 +25,31 @@ export const Banner = styled.div`
   img {
     width: 130px;
   }
-  h1 {
+  div {
     color: ${brown};
     font-size: 40px;
     font-weight: 500;
     letter-spacing: 1;
     margin: 22px 0 0 0;
-    span:first-child {
-      line-height: 0.5;
-      display: flex;
-      align-items: flex-start;
-      justify-content: center;
-    }
-    .bottomBanner {
-      font-size: 24px;
-      margin-top: 12px;
-      display: block;
-    }
+    line-height: 0.5;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
     .smallLetters {
       font-size: 33px;
     }
+  }
+  h1 {
+    font-size: 24px;
+    margin-top: 12px;
+    margin-bottom: 0;
+    display: block;
+    color: ${brown};
+    font-weight: 500;
+    letter-spacing: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
   }
   @media (min-width: 700px){
     display: flex;
