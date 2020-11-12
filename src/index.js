@@ -121,6 +121,7 @@ function returnHTML(data, bundle, Page, title){
     return `
       <html lang="en">
         <head>
+          <link data-default-icon="/images/cj_icon.ico" data-badged-icon="/images/cj_icon.ico" rel="shortcut icon" href="/images/cj_icon.ico">
           <meta name="viewport" content="width=device-width, initial-scale=1">
           <title>Cafe Juniper | Salt Lake City Premier Coffee Shop and Toast</title>
           <meta name="Description" content="Cafe Juniper | Salt Lake City Premier Coffee Shop and Toast">
