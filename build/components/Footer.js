@@ -49,7 +49,7 @@ var FooterComponent = /*#__PURE__*/function (_Component) {
   _createClass(FooterComponent, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/_react["default"].createElement(_footer.Footer, null, /*#__PURE__*/_react["default"].createElement("span", null, "Copyright 2020 Cafe Juniper LLC"), /*#__PURE__*/_react["default"].createElement("a", {
+      return /*#__PURE__*/_react["default"].createElement(_footer.Footer, null, /*#__PURE__*/_react["default"].createElement("span", null, "Copyright 2020 Cafe Juniper LLC"), /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement("a", {
         rel: "noopener",
         name: "instagram link",
         href: "https://www.instagram.com/cafejuniperslc/",
@@ -90,7 +90,7 @@ var FooterComponent = /*#__PURE__*/function (_Component) {
         viewBox: "0 0 99.5 56.5"
       }, /*#__PURE__*/_react["default"].createElement("path", {
         d: "M95.64,13.38A25.24,25.24,0,0,0,73.27,0H2.43A2.44,2.44,0,0,0,.72,4.16L16.15,19.68a7.26,7.26,0,0,0,5.15,2.14H71.24a6.44,6.44,0,1,1,.13,12.88H36.94a2.44,2.44,0,0,0-1.72,4.16L50.66,54.39a7.25,7.25,0,0,0,5.15,2.14H71.38c20.26,0,35.58-21.66,24.26-43.16"
-      }))));
+      })))));
     }
   }]);
 

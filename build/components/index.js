@@ -3,16 +3,34 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+Object.defineProperty(exports, "About", {
+  enumerable: true,
+  get: function get() {
+    return _About["default"];
+  }
+});
 Object.defineProperty(exports, "Banner", {
   enumerable: true,
   get: function get() {
     return _Banner["default"];
   }
 });
-Object.defineProperty(exports, "Description", {
+Object.defineProperty(exports, "CateringMenu", {
   enumerable: true,
   get: function get() {
-    return _Description["default"];
+    return _CateringMenu["default"];
+  }
+});
+Object.defineProperty(exports, "CoffeeMenu", {
+  enumerable: true,
+  get: function get() {
+    return _CoffeeMenu["default"];
+  }
+});
+Object.defineProperty(exports, "Delivery", {
+  enumerable: true,
+  get: function get() {
+    return _Delivery["default"];
   }
 });
 Object.defineProperty(exports, "Footer", {
@@ -58,9 +76,15 @@ Object.defineProperty(exports, "Partners", {
   }
 });
 
+var _About = _interopRequireDefault(require("./About"));
+
 var _Banner = _interopRequireDefault(require("./Banner"));
 
-var _Description = _interopRequireDefault(require("./Description"));
+var _CateringMenu = _interopRequireDefault(require("./CateringMenu"));
+
+var _CoffeeMenu = _interopRequireDefault(require("./CoffeeMenu"));
+
+var _Delivery = _interopRequireDefault(require("./Delivery"));
 
 var _Footer = _interopRequireDefault(require("./Footer"));
 

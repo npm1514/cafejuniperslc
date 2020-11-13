@@ -11,8 +11,6 @@ var _subcomponents = require("../subcomponents");
 
 var _menu = require("../styled-components/components/menu");
 
-var _colors = require("../styled-components/colors");
-
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
@@ -54,98 +52,8 @@ var MenuComponent = /*#__PURE__*/function (_Component) {
     key: "render",
     value: function render() {
       return /*#__PURE__*/_react["default"].createElement(_menu.MenuWrap, null, /*#__PURE__*/_react["default"].createElement(_menu.Menu, {
-        id: "menu"
-      }, /*#__PURE__*/_react["default"].createElement(_subcomponents.Hex, {
-        className: "mobile-hex",
-        color: _colors.brown,
-        top: -5,
-        left: -125,
-        size: 150
-      }), /*#__PURE__*/_react["default"].createElement(_subcomponents.Hex, {
-        className: "mobile-hex",
-        color: _colors.darkblue,
-        top: 240,
-        right: -60,
-        size: 100
-      }), /*#__PURE__*/_react["default"].createElement(_subcomponents.Hex, {
-        className: "mobile-hex",
-        color: _colors.pink,
-        top: 340,
-        right: 50,
-        size: 50
-      }), /*#__PURE__*/_react["default"].createElement(_menu.MenuLeft, null, /*#__PURE__*/_react["default"].createElement("table", null, /*#__PURE__*/_react["default"].createElement("tr", null, /*#__PURE__*/_react["default"].createElement("th", null, "Drinks"), /*#__PURE__*/_react["default"].createElement("th", null, "8", /*#__PURE__*/_react["default"].createElement("sup", null, "oz")), /*#__PURE__*/_react["default"].createElement("th", null, "12", /*#__PURE__*/_react["default"].createElement("sup", null, "oz")), /*#__PURE__*/_react["default"].createElement("th", null, "16", /*#__PURE__*/_react["default"].createElement("sup", null, "oz"))), /*#__PURE__*/_react["default"].createElement("tr", null, /*#__PURE__*/_react["default"].createElement("td", null, "Espresso"), /*#__PURE__*/_react["default"].createElement("td", null, "$3.00"), /*#__PURE__*/_react["default"].createElement("td", null), /*#__PURE__*/_react["default"].createElement("td", null)), /*#__PURE__*/_react["default"].createElement("tr", null, /*#__PURE__*/_react["default"].createElement("td", null, "Cortado"), /*#__PURE__*/_react["default"].createElement("td", null, "$3.50"), /*#__PURE__*/_react["default"].createElement("td", null), /*#__PURE__*/_react["default"].createElement("td", null)), /*#__PURE__*/_react["default"].createElement("tr", null, /*#__PURE__*/_react["default"].createElement("td", null, "Cappuccino"), /*#__PURE__*/_react["default"].createElement("td", null, "$3.50"), /*#__PURE__*/_react["default"].createElement("td", null), /*#__PURE__*/_react["default"].createElement("td", null)), /*#__PURE__*/_react["default"].createElement("tr", null, /*#__PURE__*/_react["default"].createElement("td", null, "Latte"), /*#__PURE__*/_react["default"].createElement("td", null, "$4.00"), /*#__PURE__*/_react["default"].createElement("td", null, "$4.50"), /*#__PURE__*/_react["default"].createElement("td", null, "$5.00")), /*#__PURE__*/_react["default"].createElement("tr", null, /*#__PURE__*/_react["default"].createElement("td", null, "Drip"), /*#__PURE__*/_react["default"].createElement("td", null), /*#__PURE__*/_react["default"].createElement("td", null, "$3.00"), /*#__PURE__*/_react["default"].createElement("td", null, "$3.50")), /*#__PURE__*/_react["default"].createElement("tr", null, /*#__PURE__*/_react["default"].createElement("td", null, "Americano"), /*#__PURE__*/_react["default"].createElement("td", null), /*#__PURE__*/_react["default"].createElement("td", null, "$3.00"), /*#__PURE__*/_react["default"].createElement("td", null, "$3.50")), /*#__PURE__*/_react["default"].createElement("tr", null, /*#__PURE__*/_react["default"].createElement("td", null, "Pour Over"), /*#__PURE__*/_react["default"].createElement("td", null), /*#__PURE__*/_react["default"].createElement("td", null, "$4.00"), /*#__PURE__*/_react["default"].createElement("td", null, "$4.50")), /*#__PURE__*/_react["default"].createElement("tr", null, /*#__PURE__*/_react["default"].createElement("td", null, "Cold Brew"), /*#__PURE__*/_react["default"].createElement("td", null), /*#__PURE__*/_react["default"].createElement("td", null, "$4.50"), /*#__PURE__*/_react["default"].createElement("td", null, "$5.00")), /*#__PURE__*/_react["default"].createElement("tr", null, /*#__PURE__*/_react["default"].createElement("td", null, "Chai"), /*#__PURE__*/_react["default"].createElement("td", null), /*#__PURE__*/_react["default"].createElement("td", null, "$4.50"), /*#__PURE__*/_react["default"].createElement("td", null, "$5.00")), /*#__PURE__*/_react["default"].createElement("tr", null, /*#__PURE__*/_react["default"].createElement("td", null, "Tea"), /*#__PURE__*/_react["default"].createElement("td", null), /*#__PURE__*/_react["default"].createElement("td", null, "$3.00"), /*#__PURE__*/_react["default"].createElement("td", null, "$3.50")), /*#__PURE__*/_react["default"].createElement("tr", null, /*#__PURE__*/_react["default"].createElement("td", null, "Hot Cocoa"), /*#__PURE__*/_react["default"].createElement("td", null), /*#__PURE__*/_react["default"].createElement("td", null, "$4.00"), /*#__PURE__*/_react["default"].createElement("td", null, "$4.50")), /*#__PURE__*/_react["default"].createElement("br", null), /*#__PURE__*/_react["default"].createElement("tr", null, /*#__PURE__*/_react["default"].createElement("th", null, "Flavors"), /*#__PURE__*/_react["default"].createElement("th", null), /*#__PURE__*/_react["default"].createElement("th", {
-        className: "mobile-menu-header"
-      }), /*#__PURE__*/_react["default"].createElement("th", {
-        className: "mobile-menu-header"
-      })), /*#__PURE__*/_react["default"].createElement("tr", null, /*#__PURE__*/_react["default"].createElement("td", null, "Chocolate"), /*#__PURE__*/_react["default"].createElement("td", null), /*#__PURE__*/_react["default"].createElement("td", null), /*#__PURE__*/_react["default"].createElement("td", null, "+$1.00")), /*#__PURE__*/_react["default"].createElement("tr", null, /*#__PURE__*/_react["default"].createElement("td", null, "Caramel"), /*#__PURE__*/_react["default"].createElement("td", null), /*#__PURE__*/_react["default"].createElement("td", null), /*#__PURE__*/_react["default"].createElement("td", null, "+$1.00")), /*#__PURE__*/_react["default"].createElement("tr", null, /*#__PURE__*/_react["default"].createElement("td", null, "Vanilla"), /*#__PURE__*/_react["default"].createElement("td", null), /*#__PURE__*/_react["default"].createElement("td", null), /*#__PURE__*/_react["default"].createElement("td", null, "+$1.00")), /*#__PURE__*/_react["default"].createElement("br", null), /*#__PURE__*/_react["default"].createElement("tr", null, /*#__PURE__*/_react["default"].createElement("th", null, "Retail"), /*#__PURE__*/_react["default"].createElement("th", null), /*#__PURE__*/_react["default"].createElement("th", {
-        className: "mobile-menu-header"
-      }), /*#__PURE__*/_react["default"].createElement("th", {
-        className: "mobile-menu-header"
-      })), /*#__PURE__*/_react["default"].createElement("tr", null, /*#__PURE__*/_react["default"].createElement("td", null, "House Coffee"), /*#__PURE__*/_react["default"].createElement("td", null), /*#__PURE__*/_react["default"].createElement("td", null), /*#__PURE__*/_react["default"].createElement("td", null, "$15.00")), /*#__PURE__*/_react["default"].createElement("tr", null, /*#__PURE__*/_react["default"].createElement("td", null, "Single Origin"), /*#__PURE__*/_react["default"].createElement("td", null), /*#__PURE__*/_react["default"].createElement("td", null), /*#__PURE__*/_react["default"].createElement("td", null, "$19.00")), /*#__PURE__*/_react["default"].createElement("tr", null, /*#__PURE__*/_react["default"].createElement("td", null, "House Espresso"), /*#__PURE__*/_react["default"].createElement("td", null), /*#__PURE__*/_react["default"].createElement("td", null), /*#__PURE__*/_react["default"].createElement("td", null, "$17.00")))), /*#__PURE__*/_react["default"].createElement(_menu.MenuRight, null, /*#__PURE__*/_react["default"].createElement("table", null, /*#__PURE__*/_react["default"].createElement("tr", null, /*#__PURE__*/_react["default"].createElement("th", null, "Snacks"), /*#__PURE__*/_react["default"].createElement("th", null), /*#__PURE__*/_react["default"].createElement("th", {
-        className: "mobile-menu-header"
-      }), /*#__PURE__*/_react["default"].createElement("th", {
-        className: "mobile-menu-header"
-      })), /*#__PURE__*/_react["default"].createElement("tr", null, /*#__PURE__*/_react["default"].createElement("td", null, "Pie"), /*#__PURE__*/_react["default"].createElement("th", {
-        className: "mobile-menu-header"
-      }), /*#__PURE__*/_react["default"].createElement("th", {
-        className: "mobile-menu-header"
-      }), /*#__PURE__*/_react["default"].createElement("td", null, "$5.00")), /*#__PURE__*/_react["default"].createElement("tr", null, /*#__PURE__*/_react["default"].createElement("td", null, "Sourdoughnie"), /*#__PURE__*/_react["default"].createElement("th", {
-        className: "mobile-menu-header"
-      }), /*#__PURE__*/_react["default"].createElement("th", {
-        className: "mobile-menu-header"
-      }), /*#__PURE__*/_react["default"].createElement("td", null, "$4.00")), /*#__PURE__*/_react["default"].createElement("tr", null, /*#__PURE__*/_react["default"].createElement("td", null, "Cookie"), /*#__PURE__*/_react["default"].createElement("th", {
-        className: "mobile-menu-header"
-      }), /*#__PURE__*/_react["default"].createElement("th", {
-        className: "mobile-menu-header"
-      }), /*#__PURE__*/_react["default"].createElement("td", null, "$3.00")), /*#__PURE__*/_react["default"].createElement("br", null), /*#__PURE__*/_react["default"].createElement("tr", null, /*#__PURE__*/_react["default"].createElement("th", null, "Toast"), /*#__PURE__*/_react["default"].createElement("th", null), /*#__PURE__*/_react["default"].createElement("th", {
-        className: "mobile-menu-header"
-      }), /*#__PURE__*/_react["default"].createElement("th", {
-        className: "mobile-menu-header"
-      })), /*#__PURE__*/_react["default"].createElement("tr", null, /*#__PURE__*/_react["default"].createElement("td", null, "Toast"), /*#__PURE__*/_react["default"].createElement("th", {
-        className: "mobile-menu-header"
-      }), /*#__PURE__*/_react["default"].createElement("th", {
-        className: "mobile-menu-header"
-      }), /*#__PURE__*/_react["default"].createElement("td", null, "$3.50")), /*#__PURE__*/_react["default"].createElement("tr", null, /*#__PURE__*/_react["default"].createElement("td", null, "Italian Toast"), /*#__PURE__*/_react["default"].createElement("th", {
-        className: "mobile-menu-header"
-      }), /*#__PURE__*/_react["default"].createElement("th", {
-        className: "mobile-menu-header"
-      }), /*#__PURE__*/_react["default"].createElement("td", null, "$4.00")), /*#__PURE__*/_react["default"].createElement("tr", null, /*#__PURE__*/_react["default"].createElement("td", null, "Hummus Toast"), /*#__PURE__*/_react["default"].createElement("th", {
-        className: "mobile-menu-header"
-      }), /*#__PURE__*/_react["default"].createElement("th", {
-        className: "mobile-menu-header"
-      }), /*#__PURE__*/_react["default"].createElement("td", null, "$6.00")), /*#__PURE__*/_react["default"].createElement("tr", null, /*#__PURE__*/_react["default"].createElement("td", null, "Ricotta Toast"), /*#__PURE__*/_react["default"].createElement("th", {
-        className: "mobile-menu-header"
-      }), /*#__PURE__*/_react["default"].createElement("th", {
-        className: "mobile-menu-header"
-      }), /*#__PURE__*/_react["default"].createElement("td", null, "$7.00")), /*#__PURE__*/_react["default"].createElement("tr", null, /*#__PURE__*/_react["default"].createElement("td", null, "Avocado Toast"), /*#__PURE__*/_react["default"].createElement("th", {
-        className: "mobile-menu-header"
-      }), /*#__PURE__*/_react["default"].createElement("th", {
-        className: "mobile-menu-header"
-      }), /*#__PURE__*/_react["default"].createElement("td", null, "$7.00")), /*#__PURE__*/_react["default"].createElement("br", null), /*#__PURE__*/_react["default"].createElement("tr", null, /*#__PURE__*/_react["default"].createElement("th", null, "Toast Ingredients"), /*#__PURE__*/_react["default"].createElement("th", null), /*#__PURE__*/_react["default"].createElement("th", {
-        className: "mobile-menu-header"
-      }), /*#__PURE__*/_react["default"].createElement("th", {
-        className: "mobile-menu-header"
-      })), /*#__PURE__*/_react["default"].createElement("tr", null, /*#__PURE__*/_react["default"].createElement("td", null, "EVOO"), /*#__PURE__*/_react["default"].createElement("th", {
-        className: "mobile-menu-header"
-      }), /*#__PURE__*/_react["default"].createElement("th", {
-        className: "mobile-menu-header"
-      }), /*#__PURE__*/_react["default"].createElement("td", null, "+$0.50")), /*#__PURE__*/_react["default"].createElement("tr", null, /*#__PURE__*/_react["default"].createElement("td", null, "Butter"), /*#__PURE__*/_react["default"].createElement("th", {
-        className: "mobile-menu-header"
-      }), /*#__PURE__*/_react["default"].createElement("th", {
-        className: "mobile-menu-header"
-      }), /*#__PURE__*/_react["default"].createElement("td", null, "+$0.50")), /*#__PURE__*/_react["default"].createElement("tr", null, /*#__PURE__*/_react["default"].createElement("td", null, "Amour Jam"), /*#__PURE__*/_react["default"].createElement("th", {
-        className: "mobile-menu-header"
-      }), /*#__PURE__*/_react["default"].createElement("th", {
-        className: "mobile-menu-header"
-      }), /*#__PURE__*/_react["default"].createElement("td", null, "+$1.00")), /*#__PURE__*/_react["default"].createElement("tr", null, /*#__PURE__*/_react["default"].createElement("td", null, "Goat Cheese"), /*#__PURE__*/_react["default"].createElement("th", {
-        className: "mobile-menu-header"
-      }), /*#__PURE__*/_react["default"].createElement("th", {
-        className: "mobile-menu-header"
-      }), /*#__PURE__*/_react["default"].createElement("td", null, "+$1.00")), /*#__PURE__*/_react["default"].createElement("tr", null, /*#__PURE__*/_react["default"].createElement("td", null, "Ricotta"), /*#__PURE__*/_react["default"].createElement("th", {
-        className: "mobile-menu-header"
-      }), /*#__PURE__*/_react["default"].createElement("th", {
-        className: "mobile-menu-header"
-      }), /*#__PURE__*/_react["default"].createElement("td", null, "+$1.00"))))));
+        id: this.props.id
+      }, this.props.children));
     }
   }]);
 

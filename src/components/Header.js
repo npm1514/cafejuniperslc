@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Hex } from '../subcomponents';
-import { HeaderWrap, DesktopHeader, MobileMenu, MobileHeader, HexLock, Spacer, OnlineOrder } from '../styled-components/components/header';
+import { HeaderWrap, DesktopHeader, MobileMenu, MobileHeader, HexLock, Spacer, OnlineOrder, DesktopOrder } from '../styled-components/components/header';
 import { green, darkblue, pink, brown } from '../styled-components/colors';
 
 class HeaderComponent extends Component {
@@ -71,6 +71,7 @@ class HeaderComponent extends Component {
             <div><a onClick={this.closeMenu} href="/#about">About Us</a></div>
             <div><a onClick={this.closeMenu} href="/#map">Location</a></div>
             <div><a onClick={this.closeMenu} href="/#contact">Contact</a></div>
+            <div><a onClick={this.closeMenu} href="/catering">Catering</a></div>
             <div className="online-order"><a rel="noopener" className="online-order" href="https://www.clover.com/online-ordering/cafe-juniper-llc-salt-lake-city">Order Online</a></div>
           </MobileMenu>
         }
@@ -78,10 +79,13 @@ class HeaderComponent extends Component {
           <DesktopHeader menuStuck={menuStuck}>
             <a href="/#menu">Menu</a>
             <a href="/#about">About Us</a>
-            <a className="online-order"  href="https://www.clover.com/online-ordering/cafe-juniper-llc-salt-lake-city">Order Online</a>
             <a href="/#map">Location</a>
             <a href="/#contact">Contact</a>
+            <a href="/catering">Catering</a>
           </DesktopHeader>
+          <DesktopOrder>
+            <a rel="noopener" className="online-order" href="https://www.clover.com/online-ordering/cafe-juniper-llc-salt-lake-city">Order Online</a>
+          </DesktopOrder>
         </HeaderWrap>
         <Spacer menuStuck={menuStuck}/>
         <OnlineOrder><a rel="noopener" className="online-order" href="https://www.clover.com/online-ordering/cafe-juniper-llc-salt-lake-city">Order Online</a></OnlineOrder>

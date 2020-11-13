@@ -4,6 +4,7 @@ import React from "react";
 import { renderToString } from "react-dom/server";
 
 import HomeRoot from "./roots/HomeRoot";
+import CateringRoot from "./roots/CateringRoot";
 
 import { ServerStyleSheet } from 'styled-components';
 
@@ -34,12 +35,23 @@ cron.schedule('* * 1 * *', () => {
 });
 
 var dataObj = {},
-homeBundle = "";
+homeBundle = "",
+cateringBundle = "";
 
 fs.readFile('./dist/js/home.bundle.min.js', "utf8", (err, data) => {
   if (err) console.log("ERR" ,err);
   homeBundle = data || "";
 })
+fs.readFile('./dist/js/catering.bundle.min.js', "utf8", (err, data) => {
+  if (err) console.log("ERR" ,err);
+  cateringBundle = data || "";
+})
+
+app.get('/catering', (req, res) => {
+  let data = "";
+  res.set('Cache-Control', 'public, max-age=31557600');
+  res.send(returnHTML(data, cateringBundle, CateringRoot, "catering"));
+});
 
 app.get('/', (req, res) => {
   let data = "";
@@ -139,6 +151,7 @@ function returnHTML(data, bundle, Page, title){
             th, h1, h2 { font-weight: 700; font-size: 16px; }
             p { font-weight: 100; font-size: 12px; }
             a { text-decoration: none;}
+            i { font-size: 30px;}
             @media (min-width: 700px){
               body, th, h1, h2, td { font-size: 30px; }
               p { font-size: 18px; }
@@ -191,7 +204,6 @@ function returnHTML(data, bundle, Page, title){
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-
             gtag('config', 'UA-182243768-1');
           </script>
         </body>

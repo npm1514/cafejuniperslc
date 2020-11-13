@@ -53,14 +53,16 @@ var Home = /*#__PURE__*/function (_Component) {
     value: function render() {
       return /*#__PURE__*/_react["default"].createElement(_home.HomeWrapper, null, /*#__PURE__*/_react["default"].createElement(_components.Banner, {
         id: "home"
-      }), /*#__PURE__*/_react["default"].createElement(_components.Header, null), /*#__PURE__*/_react["default"].createElement(_components.Menu, null), /*#__PURE__*/_react["default"].createElement(_components.Parallax, {
-        url: "/images/normalcup.jpg"
-      }), /*#__PURE__*/_react["default"].createElement(_components.Description, {
-        id: "about"
+      }), /*#__PURE__*/_react["default"].createElement(_components.Header, null), /*#__PURE__*/_react["default"].createElement(_components.CoffeeMenu, {
+        id: "menu"
       }), /*#__PURE__*/_react["default"].createElement(_components.Parallax, {
         className: "mobile-parallax",
         url: "/images/normalcup.jpg"
-      }), /*#__PURE__*/_react["default"].createElement(_components.Map, {
+      }), /*#__PURE__*/_react["default"].createElement(_components.About, {
+        id: "about"
+      }, /*#__PURE__*/_react["default"].createElement("h2", null, "ABOUT US"), /*#__PURE__*/_react["default"].createElement("p", null, "Our team has been in the hospitality industry of Salt Lake City for the last ten plus years. Our mission is to give back to the Salt Lake City community by providing the best quality coffee, snacks, and confectionaries sourced both locally and responsibly in our cute downtown cafe.")), /*#__PURE__*/_react["default"].createElement(_components.Parallax, {
+        url: "/images/normalcup.jpg"
+      }), /*#__PURE__*/_react["default"].createElement(_components.Delivery, null), /*#__PURE__*/_react["default"].createElement(_components.Map, {
         id: "map"
       }), /*#__PURE__*/_react["default"].createElement(_components.Message, {
         id: "contact"

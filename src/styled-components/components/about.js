@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 import { brown, white, darkblue } from '../colors';
-export const DescriptionWrap = styled.div`
+export const AboutWrap = styled.div`
   width: 100%;
   background-color: ${brown};
 `;
-export const Description = styled.div`
+export const About = styled.div`
   width: calc(100% - 64px);
   background-color: ${brown};
   color: #fff;
@@ -20,7 +20,7 @@ export const Description = styled.div`
     overflow: visible;
   }
 `;
-export const DescriptionLeft = styled.div`
+export const AboutLeft = styled.div`
   display: none;
   img {
     width: 150px;
@@ -30,7 +30,7 @@ export const DescriptionLeft = styled.div`
       display: block;
   }
 `;
-export const DescriptionRight = styled.div`
+export const AboutRight = styled.div`
   width: 100%;
   h2 {
     color: ${darkblue}

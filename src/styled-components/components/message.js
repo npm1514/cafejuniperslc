@@ -45,5 +45,6 @@ export const TextBox = styled.button`
   #airplane:hover {
     fill: ${darkblue};
     cursor: pointer;
+    transition: fill 0.5s;
   }
 `;

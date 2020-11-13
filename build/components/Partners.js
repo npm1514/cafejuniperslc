@@ -81,6 +81,12 @@ var PartnersComponent = /*#__PURE__*/function (_Component) {
       }, /*#__PURE__*/_react["default"].createElement("img", {
         src: "/images/pieparty.jpeg",
         alt: "pie party logo"
+      })), /*#__PURE__*/_react["default"].createElement("a", {
+        rel: "noopener",
+        href: "https://www.eatchocolateconspiracy.com/"
+      }, /*#__PURE__*/_react["default"].createElement("img", {
+        src: "/images/chocolate.jpg",
+        alt: "chocolate conspiracy logo"
       }))), /*#__PURE__*/_react["default"].createElement("hr", null), /*#__PURE__*/_react["default"].createElement("p", null, "Without whom we could not run our business."));
     }
   }]);

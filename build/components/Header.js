@@ -167,7 +167,10 @@ var HeaderComponent = /*#__PURE__*/function (_Component) {
       }, "Location")), /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement("a", {
         onClick: this.closeMenu,
         href: "/#contact"
-      }, "Contact")), /*#__PURE__*/_react["default"].createElement("div", {
+      }, "Contact")), /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement("a", {
+        onClick: this.closeMenu,
+        href: "/catering"
+      }, "Catering")), /*#__PURE__*/_react["default"].createElement("div", {
         className: "online-order"
       }, /*#__PURE__*/_react["default"].createElement("a", {
         rel: "noopener",
@@ -182,13 +185,16 @@ var HeaderComponent = /*#__PURE__*/function (_Component) {
       }, "Menu"), /*#__PURE__*/_react["default"].createElement("a", {
         href: "/#about"
       }, "About Us"), /*#__PURE__*/_react["default"].createElement("a", {
-        className: "online-order",
-        href: "https://www.clover.com/online-ordering/cafe-juniper-llc-salt-lake-city"
-      }, "Order Online"), /*#__PURE__*/_react["default"].createElement("a", {
         href: "/#map"
       }, "Location"), /*#__PURE__*/_react["default"].createElement("a", {
         href: "/#contact"
-      }, "Contact"))), /*#__PURE__*/_react["default"].createElement(_header.Spacer, {
+      }, "Contact"), /*#__PURE__*/_react["default"].createElement("a", {
+        href: "/catering"
+      }, "Catering")), /*#__PURE__*/_react["default"].createElement(_header.DesktopOrder, null, /*#__PURE__*/_react["default"].createElement("a", {
+        rel: "noopener",
+        className: "online-order",
+        href: "https://www.clover.com/online-ordering/cafe-juniper-llc-salt-lake-city"
+      }, "Order Online"))), /*#__PURE__*/_react["default"].createElement(_header.Spacer, {
         menuStuck: menuStuck
       }), /*#__PURE__*/_react["default"].createElement(_header.OnlineOrder, null, /*#__PURE__*/_react["default"].createElement("a", {
         rel: "noopener",

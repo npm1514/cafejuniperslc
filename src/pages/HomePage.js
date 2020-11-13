@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Banner, Header, Menu, Parallax, Description, Map, Message, Partners, Footer } from '../components';
+import { Banner, Header, CoffeeMenu, Parallax, About, Map, Message, Partners, Footer, Delivery } from '../components';
 import { HomeWrapper, OnlineOrder } from '../styled-components/home';
 
 class Home extends Component {
@@ -8,10 +8,14 @@ class Home extends Component {
           <HomeWrapper>
             <Banner id="home"/>
             <Header/>
-            <Menu/>
-            <Parallax url="/images/normalcup.jpg"/>
-            <Description id="about"/>
+            <CoffeeMenu id="menu"/>
             <Parallax className="mobile-parallax" url="/images/normalcup.jpg"/>
+            <About id="about">
+              <h2>ABOUT US</h2>
+              <p>Our team has been in the hospitality industry of Salt Lake City for the last ten plus years. Our mission is to give back to the Salt Lake City community by providing the best quality coffee, snacks, and confectionaries sourced both locally and responsibly in our cute downtown cafe.</p>
+            </About>
+            <Parallax url="/images/normalcup.jpg"/>
+            <Delivery/>
             <Map id="map"/>
             <Message id="contact"/>
             <Partners/>

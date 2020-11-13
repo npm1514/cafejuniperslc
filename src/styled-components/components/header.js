@@ -14,11 +14,12 @@ export const DesktopHeader = styled.header`
   max-width: 732px;
   margin: auto;
   background-color: ${darkblue};
+  position: relative;
   height: 40px;
   color: ${white};
   display: none;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   z-index: 10;
   a {
     text-decoration: none;
@@ -27,11 +28,9 @@ export const DesktopHeader = styled.header`
     color: ${white};
     margin: 0 12px;
   }
-  .online-order {
-    color: ${pink}
-  }
   a:hover {
     color: ${lightblue};
+    transition: color 0.5s;
   }
   @media (min-width: 700px){
     display: flex;
@@ -105,6 +104,7 @@ export const MobileMenu = styled.div`
   }
   a:hover {
     color: ${lightblue};
+    transition: color 0.5s;
   }
   @media(min-width: 700px){
     display: none;
@@ -123,7 +123,7 @@ export const Spacer = styled.div`
   width: 100%;
   background-color: ${white};
   @media(min-width: 700px){
-    height: ${props => props.menuStuck ? '40px' : '0'};
+    height: ${props => props.menuStuck ? '80px' : '0'};
   }
 `;
 export const OnlineOrder = styled.div`
@@ -145,8 +145,35 @@ export const OnlineOrder = styled.div`
   }
   a:hover {
     color: ${lightblue};
+    transition: color 0.5s;
   }
   @media(min-width: 700px){
     display: none;
+  }
+`;
+
+export const DesktopOrder = styled.div`
+  width: 100%;
+  color: ${darkblue};
+  background-color: ${pink};
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  display: none;
+  a {
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    color: ${darkblue};
+    font-size: 24px;
+    margin: 0 12px;
+  }
+  a:hover {
+    color: red;
+    transition: color 0.5s;
+    text-shadow: 0 0 1px red;
+  }
+  @media(min-width: 700px){
+    display: block;
   }
 `;

@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 import { white, green, darkblue } from '../colors';
-export const MenuWrap = styled.div`
+export const CoffeeMenuWrap = styled.div`
   width: 100%;
   background-color: ${white};
   h2 {
     color: ${darkblue};
   }
 `;
-export const Menu = styled.div`
+export const CoffeeMenu = styled.div`
   width: calc(100% - 64px);
   background-color: ${white};
   color: ${green};
@@ -20,9 +20,6 @@ export const Menu = styled.div`
   align-items: flex-start;
   max-width: 762px;
   margin: auto;
-  table {
-    margin: auto;
-  }
   tr th:first-child {
     text-align: left;
     padding: 0;
@@ -73,8 +70,11 @@ export const Menu = styled.div`
     }
   }
 `;
-export const MenuLeft = styled.div`
+export const CoffeeMenuLeft = styled.div`
   width: 100%;
+  table {
+    margin: auto;
+  }
   @media (min-width: 700px){
       width: 60%;
       table {
@@ -82,10 +82,12 @@ export const MenuLeft = styled.div`
       }
   }
 `;
-export const MenuRight = styled.div`
+export const CoffeeMenuRight = styled.div`
   width: 100%;
   margin-top: 24px;
-
+  table {
+    margin: auto;
+  }
   @media (min-width: 700px){
     margin-top: 0;
     width: 40%;
