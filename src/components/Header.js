@@ -37,6 +37,7 @@ class HeaderComponent extends Component {
     if(!e.path.find(a => a.id == "mobile-header") && !e.path.find(a => a.id == "mobile-menu")) this.closeMenu();
   }
   scrollCheck = (e) => {
+    console.log(window.scrollY);
     if(window.scrollY > 300) this.setState({menuStuck: true})
     else this.setState({menuStuck: false})
   }
