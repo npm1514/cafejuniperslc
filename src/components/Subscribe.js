@@ -20,7 +20,8 @@ class SubscribeComponent extends Component {
       }]
     };
   }
-  addProduct = () => {
+  addProduct = (e) => {
+    e.preventDefault()
     let products = this.state.products;
     products.push({
       product: "",
@@ -29,7 +30,8 @@ class SubscribeComponent extends Component {
     })
     this.setState({ products })
   }
-  deleteProduct = (i) => {
+  deleteProduct = (e,i) => {
+    e.preventDefault()
     let products = this.state.products;
     products.splice(i,1)
     this.setState({ products })
@@ -161,7 +163,7 @@ class SubscribeComponent extends Component {
                           <option value="Once a Month">Once a Month</option>
                         </select>
                       </td>
-                      <td title="remove product" className="hoverer" onClick={() => {this.deleteProduct(i)}}>X</td>
+                      <td title="remove product" className="hoverer" onClick={(e) => {this.deleteProduct(e,i)}}>X</td>
                     </tr>
                   )
                 })
