@@ -120,7 +120,6 @@ class SubscribeComponent extends Component {
               </tr>
               {
                 products.map((a, i) => {
-                  console.log(a.product);
                   return (
                     <tr key={i}>
                       <td>
@@ -162,13 +161,13 @@ class SubscribeComponent extends Component {
                           <option value="Once a Month">Once a Month</option>
                         </select>
                       </td>
-                      <td title="remove product" className="deleter" onClick={() => {this.deleteProduct(i)}}>X</td>
+                      <td title="remove product" className="hoverer" onClick={() => {this.deleteProduct(i)}}>X</td>
                     </tr>
                   )
                 })
               }
               <tr>
-                <td onClick={this.addProduct}>Add More</td>
+                <td onClick={this.addProduct} className="hoverer">Add More</td>
               </tr>
             </table>
             <textarea

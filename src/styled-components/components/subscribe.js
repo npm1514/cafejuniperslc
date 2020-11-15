@@ -44,7 +44,7 @@ export const Subscribe = styled.div`
       text-align: center;
     }
   }
-  .deleter:hover {
+  .hoverer:hover {
     cursor: pointer;
     color: ${lightblue};
   }

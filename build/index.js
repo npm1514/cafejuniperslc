@@ -16,8 +16,6 @@ var _styledComponents = require("styled-components");
 
 var _fs = _interopRequireDefault(require("fs"));
 
-var _compression = _interopRequireDefault(require("compression"));
-
 var _cors = _interopRequireDefault(require("cors"));
 
 var _path = _interopRequireDefault(require("path"));
@@ -38,7 +36,6 @@ var cron = require('node-cron');
 
 var PORT = process.env.PORT || 3003;
 var app = (0, _express["default"])();
-app.use((0, _compression["default"])());
 app.use((0, _cors["default"])());
 app.use(_bodyParser["default"].json());
 app.use(_bodyParser["default"].urlencoded());

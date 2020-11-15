@@ -9,7 +9,6 @@ import CateringRoot from "./roots/CateringRoot";
 import { ServerStyleSheet } from 'styled-components';
 
 import fs from 'fs';
-import compression from 'compression';
 import cors from 'cors';
 import path from 'path'
 import bodyParser from 'body-parser';
@@ -24,7 +23,6 @@ var cron = require('node-cron');
 var PORT = process.env.PORT || 3003;
 
 const app = express();
-app.use(compression());
 app.use(cors());
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded())
