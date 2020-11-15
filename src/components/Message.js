@@ -38,6 +38,9 @@ class MessageComponent extends Component {
       })
     })
   }
+  clickChange = (e) => {
+    console.log(e);
+  }
   change = (e, prop) => {
     let obj = {};
     obj[prop] = e.currentTarget.value;
@@ -79,7 +82,7 @@ class MessageComponent extends Component {
                   id="message-textarea"
                 ></textarea>
                 <TextBox type="submit">
-                  <span onClick={() => {console.log("crash");}} style={{color: 'transparent'}}>Send Email Button</span>
+                  <span onClick={this.clickChange} style={{color: 'transparent'}}>Send Email Button</span>
                   <Hex
                     color={lightblue}
                     bottom={-11}
