@@ -82,10 +82,6 @@ var MessageComponent = /*#__PURE__*/function (_Component) {
       });
     });
 
-    _defineProperty(_assertThisInitialized(_this), "clickChange", function (e) {
-      console.log(e);
-    });
-
     _defineProperty(_assertThisInitialized(_this), "change", function (e, prop) {
       var obj = {};
       obj[prop] = e.currentTarget.value;
@@ -149,7 +145,6 @@ var MessageComponent = /*#__PURE__*/function (_Component) {
       }), /*#__PURE__*/_react["default"].createElement(_message.TextBox, {
         type: "submit"
       }, /*#__PURE__*/_react["default"].createElement("span", {
-        onClick: this.clickChange,
         style: {
           color: 'transparent'
         }

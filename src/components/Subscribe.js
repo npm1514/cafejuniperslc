@@ -21,7 +21,7 @@ class SubscribeComponent extends Component {
     };
   }
   addProduct = (e) => {
-    e.preventDefault()
+    console.log("add product", e);
     let products = this.state.products;
     products.push({
       product: "",

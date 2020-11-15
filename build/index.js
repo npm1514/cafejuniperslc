@@ -63,11 +63,6 @@ app.get('/catering', function (req, res) {
   res.set('Cache-Control', 'public, max-age=31557600');
   res.send(returnHTML(data, cateringBundle, _CateringRoot["default"], "catering"));
 });
-app.get('/', function (req, res) {
-  var data = "";
-  res.set('Cache-Control', 'public, max-age=31557600');
-  res.send(returnHTML(data, homeBundle, _HomeRoot["default"], "home"));
-});
 app.get('/images/:id', function (req, res) {
   res.set('Cache-Control', 'public, max-age=31557600');
   res.sendFile(_path["default"].join(__dirname, '../images/' + req.params.id));
@@ -123,6 +118,11 @@ app.post('/emailer', function (req, res) {
       response: info
     });
   });
+});
+app.get('/', function (req, res) {
+  var data = "";
+  res.set('Cache-Control', 'public, max-age=31557600');
+  res.send(returnHTML(data, homeBundle, _HomeRoot["default"], "home"));
 });
 app.listen(PORT, function () {
   console.log('Running on http://localhost:' + PORT);
