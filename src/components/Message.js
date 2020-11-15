@@ -79,7 +79,7 @@ class MessageComponent extends Component {
                   id="message-textarea"
                 ></textarea>
                 <TextBox type="submit">
-                  <span style={{color: 'transparent'}}>Send Email Button</span>
+                  <span onClick={() => {console.log("crash");}} style={{color: 'transparent'}}>Send Email Button</span>
                   <Hex
                     color={lightblue}
                     bottom={-11}

@@ -145,6 +145,9 @@ var MessageComponent = /*#__PURE__*/function (_Component) {
       }), /*#__PURE__*/_react["default"].createElement(_message.TextBox, {
         type: "submit"
       }, /*#__PURE__*/_react["default"].createElement("span", {
+        onClick: function onClick() {
+          console.log("crash");
+        },
         style: {
           color: 'transparent'
         }
