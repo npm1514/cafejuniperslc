@@ -207,23 +207,6 @@ function returnHTML(data, bundle, Page, title){
             })
             .then((res) => res.text())
             .then((data) => console.log("page load"))
-            // window.addEventListener('click', (e) => {
-            //   fetch('https://npm-data-storage.herokuapp.com/addData', {
-            //     method:"POST",
-            //     headers: { 'Content-Type': 'application/json' },
-            //     body: JSON.stringify({
-            //       type: "click",
-            //       date: new Date(),
-            //       url: window.origin,
-            //       device: window.navigator.appVersion,
-            //       referrer: document.referrer,
-            //       performance: window.performance.timing,
-            //       clickThing: e.target.outerHTML
-            //     })
-            //   })
-            //   .then((res) => res.text())
-            //   .then((data) => console.log("click"))
-            // })
           </script>
           <!-- Global site tag (gtag.js) - Google Analytics -->
           <script async src="https://www.googletagmanager.com/gtag/js?id=UA-182243768-1">
@@ -242,3 +225,21 @@ function returnHTML(data, bundle, Page, title){
 function errHandle(err){
     console.log(err);
 }
+
+// window.addEventListener('click', (e) => {
+//   fetch('https://npm-data-storage.herokuapp.com/addData', {
+//     method:"POST",
+//     headers: { 'Content-Type': 'application/json' },
+//     body: JSON.stringify({
+//       type: "click",
+//       date: new Date(),
+//       url: window.origin,
+//       device: window.navigator.appVersion,
+//       referrer: document.referrer,
+//       performance: window.performance.timing,
+//       clickThing: e.target.outerHTML
+//     })
+//   })
+//   .then((res) => res.text())
+//   .then((data) => console.log("click"))
+// })
