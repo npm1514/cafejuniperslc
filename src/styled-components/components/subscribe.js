@@ -43,6 +43,25 @@ export const Subscribe = styled.div`
       padding: 4px 8px;
       text-align: center;
     }
+    tr {
+      td:nth-of-type(1){
+        width: 40%;
+        select {
+          width: 100%;
+          height: 50px;
+        }
+      }
+      td:nth-of-type(2){
+        width: 20%;
+      }
+      td:nth-of-type(3){
+        width: 40%;
+        select {
+          width: 100%;
+          height: 50px;
+        }
+      }
+    }
   }
   .hoverer:hover {
     cursor: pointer;

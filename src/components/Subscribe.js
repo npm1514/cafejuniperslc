@@ -87,7 +87,7 @@ class SubscribeComponent extends Component {
       <SubscribeWrap>
         <Subscribe>
           <h2>Submit your catering/subscription request below.</h2>
-          <p>Timelines will be indefinite and subscriptions will end on written notification.</p>
+          <p style={{color: "#fff"}}>Timelines will be indefinite and subscriptions will end on written notification.</p>
           <form onSubmit={this.submitSubscribe}>
             <input
               value={name}
@@ -156,7 +156,7 @@ class SubscribeComponent extends Component {
                           <option value="">Select Frequency</option>
                           <option value="One Time">One Time</option>
                           <option value="Everyday">Everyday</option>
-                          <option value="Monday through Friday">Monday through Friday</option>
+                          <option value="Monday through Friday">Monday - Friday</option>
                           <option value="Once a Week">Once a Week</option>
                           <option value="Once a Month">Once a Month</option>
                         </select>

@@ -37,29 +37,15 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 var Catering = /*#__PURE__*/function (_Component) {
   _inherits(Catering, _Component);
 
   var _super = _createSuper(Catering);
 
   function Catering() {
-    var _this;
-
     _classCallCheck(this, Catering);
 
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = _super.call.apply(_super, [this].concat(args));
-
-    _defineProperty(_assertThisInitialized(_this), "h2Click", function (e) {
-      console.log("h2click", e);
-    });
-
-    return _this;
+    return _super.apply(this, arguments);
   }
 
   _createClass(Catering, [{
@@ -68,9 +54,7 @@ var Catering = /*#__PURE__*/function (_Component) {
       return /*#__PURE__*/_react["default"].createElement(_catering.CateringWrapper, null, /*#__PURE__*/_react["default"].createElement(_components.Banner, null), /*#__PURE__*/_react["default"].createElement(_components.Header, null), /*#__PURE__*/_react["default"].createElement(_components.About, {
         noLogo: true,
         noHexes: true
-      }, /*#__PURE__*/_react["default"].createElement("h2", {
-        onClick: this.h2Click
-      }, "Catering Program"), /*#__PURE__*/_react["default"].createElement("p", null, "We want to be at the forefront of coffee catering in Salt Lake City. We are capable of providing premium coffee to any business or event within the Salt Lake valley. Please consider our catering menu and if you are interested, fill out the form below.")), /*#__PURE__*/_react["default"].createElement(_components.CateringMenu, null), /*#__PURE__*/_react["default"].createElement(_components.About, {
+      }, /*#__PURE__*/_react["default"].createElement("h2", null, "Catering Program"), /*#__PURE__*/_react["default"].createElement("p", null, "We want to be at the forefront of coffee catering in Salt Lake City. We are capable of providing premium coffee to any business or event within the Salt Lake valley. Please consider our catering menu and if you are interested, fill out the form below.")), /*#__PURE__*/_react["default"].createElement(_components.CateringMenu, null), /*#__PURE__*/_react["default"].createElement(_components.About, {
         noLogo: true
       }, /*#__PURE__*/_react["default"].createElement("h2", null, "Subscription Program"), /*#__PURE__*/_react["default"].createElement("p", null, "Every one of our retail whole bean products are available by subscription. Sign up today to get weekly coffee beans!")), /*#__PURE__*/_react["default"].createElement(_components.Subscribe, null), /*#__PURE__*/_react["default"].createElement(_components.Message, {
         noMessage: true

@@ -56,7 +56,6 @@ var SubscribeComponent = /*#__PURE__*/function (_Component) {
     _this = _super.call(this, props);
 
     _defineProperty(_assertThisInitialized(_this), "addProduct", function (e) {
-      console.log("add product", e);
       var products = _this.state.products;
       products.push({
         product: "",
@@ -70,7 +69,6 @@ var SubscribeComponent = /*#__PURE__*/function (_Component) {
     });
 
     _defineProperty(_assertThisInitialized(_this), "deleteProduct", function (e, i) {
-      e.preventDefault();
       var products = _this.state.products;
       products.splice(i, 1);
 
@@ -161,7 +159,11 @@ var SubscribeComponent = /*#__PURE__*/function (_Component) {
           email = _this$state.email,
           message = _this$state.message,
           products = _this$state.products;
-      return /*#__PURE__*/_react["default"].createElement(_subscribe.SubscribeWrap, null, /*#__PURE__*/_react["default"].createElement(_subscribe.Subscribe, null, /*#__PURE__*/_react["default"].createElement("h2", null, "Submit your catering/subscription request below."), /*#__PURE__*/_react["default"].createElement("p", null, "Timelines will be indefinite and subscriptions will end on written notification."), /*#__PURE__*/_react["default"].createElement("form", {
+      return /*#__PURE__*/_react["default"].createElement(_subscribe.SubscribeWrap, null, /*#__PURE__*/_react["default"].createElement(_subscribe.Subscribe, null, /*#__PURE__*/_react["default"].createElement("h2", null, "Submit your catering/subscription request below."), /*#__PURE__*/_react["default"].createElement("p", {
+        style: {
+          color: "#fff"
+        }
+      }, "Timelines will be indefinite and subscriptions will end on written notification."), /*#__PURE__*/_react["default"].createElement("form", {
         onSubmit: this.submitSubscribe
       }, /*#__PURE__*/_react["default"].createElement("input", {
         value: name,
@@ -245,7 +247,7 @@ var SubscribeComponent = /*#__PURE__*/function (_Component) {
           value: "Everyday"
         }, "Everyday"), /*#__PURE__*/_react["default"].createElement("option", {
           value: "Monday through Friday"
-        }, "Monday through Friday"), /*#__PURE__*/_react["default"].createElement("option", {
+        }, "Monday - Friday"), /*#__PURE__*/_react["default"].createElement("option", {
           value: "Once a Week"
         }, "Once a Week"), /*#__PURE__*/_react["default"].createElement("option", {
           value: "Once a Month"
