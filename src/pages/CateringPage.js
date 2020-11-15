@@ -3,16 +3,13 @@ import { Banner, Header, CateringMenu, About, Message, Footer, Subscribe } from 
 import { CateringWrapper, OnlineOrder } from '../styled-components/catering';
 
 class Catering extends Component {
-    h2Click = (e) => {
-      console.log("h2click", e);
-    }
     render(){
       return (
           <CateringWrapper>
             <Banner/>
             <Header/>
             <About noLogo noHexes>
-              <h2 onClick={this.h2Click}>Catering Program</h2>
+              <h2>Catering Program</h2>
               <p>We want to be at the forefront of coffee catering in Salt Lake City. We are capable of providing premium coffee to any business or event within the Salt Lake valley. Please consider our catering menu and if you are interested, fill out the form below.</p>
             </About>
             <CateringMenu/>

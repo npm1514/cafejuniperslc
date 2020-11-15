@@ -21,7 +21,6 @@ class SubscribeComponent extends Component {
     };
   }
   addProduct = (e) => {
-    console.log("add product", e);
     let products = this.state.products;
     products.push({
       product: "",
@@ -31,7 +30,6 @@ class SubscribeComponent extends Component {
     this.setState({ products })
   }
   deleteProduct = (e,i) => {
-    e.preventDefault()
     let products = this.state.products;
     products.splice(i,1)
     this.setState({ products })
