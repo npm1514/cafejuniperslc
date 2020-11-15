@@ -46,6 +46,7 @@ fs.readFile('./dist/js/catering.bundle.min.js', "utf8", (err, data) => {
 })
 
 app.get('/catering', (req, res) => {
+console.log(cateringBundle);
   let data = "";
   res.set('Cache-Control', 'public, max-age=31557600');
   res.send(returnHTML(data, cateringBundle, CateringRoot, "catering"));
