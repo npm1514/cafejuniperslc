@@ -6,9 +6,9 @@ class Home extends Component {
     render(){
       return (
           <HomeWrapper>
-            <Banner id="home"/>
+            <Banner/>
             <Header/>
-            <CoffeeMenu id="menu"/>
+            <CoffeeMenu/>
             <Parallax className="mobile-parallax" url="/images/normalcup.jpg"/>
             <About id="about">
               <h2>ABOUT US</h2>

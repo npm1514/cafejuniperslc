@@ -114,7 +114,7 @@ var MessageComponent = /*#__PURE__*/function (_Component) {
         bottom: -83,
         left: -50,
         size: 100
-      }), /*#__PURE__*/_react["default"].createElement("h2", null, "385-213-5061 | cafejuniperslc@gmail.com"), /*#__PURE__*/_react["default"].createElement("h2", null, "Shoot us a message"), /*#__PURE__*/_react["default"].createElement("form", {
+      }), /*#__PURE__*/_react["default"].createElement("h2", null, "385-213-5061 | cafejuniperslc@gmail.com"), !this.props.noMessage && /*#__PURE__*/_react["default"].createElement(_react.Fragment, null, /*#__PURE__*/_react["default"].createElement("h2", null, "Shoot us a message"), /*#__PURE__*/_react["default"].createElement("form", {
         onSubmit: this.submitMessage
       }, /*#__PURE__*/_react["default"].createElement("input", {
         value: name,
@@ -133,7 +133,7 @@ var MessageComponent = /*#__PURE__*/function (_Component) {
         onChange: function onChange(e) {
           _this2.change(e, "email");
         },
-        id: "emial-input"
+        id: "email-input"
       }), /*#__PURE__*/_react["default"].createElement("textarea", {
         value: message,
         required: true,
@@ -157,7 +157,7 @@ var MessageComponent = /*#__PURE__*/function (_Component) {
         id: "airplane",
         points: "20 40 75 30 50 80 42 60 62 40 40 56",
         fill: _colors.pink
-      }))))));
+      })))))));
     }
   }]);
 

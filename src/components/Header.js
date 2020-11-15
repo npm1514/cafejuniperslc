@@ -67,7 +67,7 @@ class HeaderComponent extends Component {
         {
           this.state.menuOpen &&
           <MobileMenu id="mobile-menu">
-            <div><a onClick={this.closeMenu} href="/#menu">Menu</a></div>
+            <div><a onClick={this.closeMenu} href="/">Home</a></div>
             <div><a onClick={this.closeMenu} href="/#about">About Us</a></div>
             <div><a onClick={this.closeMenu} href="/#map">Location</a></div>
             <div><a onClick={this.closeMenu} href="/#contact">Contact</a></div>
@@ -77,7 +77,7 @@ class HeaderComponent extends Component {
         }
         <HeaderWrap menuStuck={menuStuck}>
           <DesktopHeader menuStuck={menuStuck}>
-            <a href="/#menu">Menu</a>
+            <a href="/">Home</a>
             <a href="/#about">About Us</a>
             <a href="/#map">Location</a>
             <a href="/#contact">Contact</a>

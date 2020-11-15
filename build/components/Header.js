@@ -157,8 +157,8 @@ var HeaderComponent = /*#__PURE__*/function (_Component) {
         id: "mobile-menu"
       }, /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement("a", {
         onClick: this.closeMenu,
-        href: "/#menu"
-      }, "Menu")), /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement("a", {
+        href: "/"
+      }, "Home")), /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement("a", {
         onClick: this.closeMenu,
         href: "/#about"
       }, "About Us")), /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement("a", {
@@ -181,8 +181,8 @@ var HeaderComponent = /*#__PURE__*/function (_Component) {
       }, /*#__PURE__*/_react["default"].createElement(_header.DesktopHeader, {
         menuStuck: menuStuck
       }, /*#__PURE__*/_react["default"].createElement("a", {
-        href: "/#menu"
-      }, "Menu"), /*#__PURE__*/_react["default"].createElement("a", {
+        href: "/"
+      }, "Home"), /*#__PURE__*/_react["default"].createElement("a", {
         href: "/#about"
       }, "About Us"), /*#__PURE__*/_react["default"].createElement("a", {
         href: "/#map"

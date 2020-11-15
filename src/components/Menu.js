@@ -6,7 +6,7 @@ class MenuComponent extends Component {
   render(){
     return (
       <MenuWrap>
-        <Menu id={this.props.id}>
+        <Menu>
           {this.props.children}
         </Menu>
       </MenuWrap>

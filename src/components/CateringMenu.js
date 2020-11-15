@@ -38,8 +38,9 @@ class CateringMenuComponent extends Component {
               <th></th>
               <th>$5.00</th>
             </tr>
+            <p>*Weekly, Monthly, Annual Contract Discounts Available</p>
           </table>
-          <p>*Weekly, Monthly, Annual Contract Discounts Available</p>
+
         </Menu>
     );
   }

@@ -64,7 +64,37 @@ app.get('/images/:id', (req, res) => {
   res.sendFile(path.join(__dirname, '../images/' + req.params.id));
 });
 
+app.post('/subscriber', (req, res) => {
+  var transporter = nodemailer.createTransport({
+    host: 'smtp.gmail.com',
+    port: 587,
+    secure: false,
+    requireTLS: true,
+    auth: {
+      user: cryptr.decrypt(config.email),
+      pass: cryptr.decrypt(config.gmPass)
+    }
+  });
 
+  transporter.sendMail({
+    from: req.body.email,
+    to: cryptr.decrypt(config.email),
+    subject: 'Cafe Juniper: Subscribe Message',
+    html: `
+      <h3>Hi Cafe Juniper!</h3>
+      <h3>The following person has submitted a subscription request.<h3/>
+      <h4>Name: ${req.body.name}</h4>
+      <h4>Email: ${req.body.email}</h4>
+      <h4>Message: ${req.body.message}</h4>
+      <h4>Products: ${req.body.products.map(a => {
+        return <div>{a.product} - {a.quantity} - {a.frequency}</div>
+      })}</h4>
+    `
+  }, (error, info) => {
+    if (error) res.send({error: error});
+    else res.send({response: info});
+  });
+})
 
 app.post('/emailer', (req, res) => {
   var transporter = nodemailer.createTransport({

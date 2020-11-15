@@ -51,11 +51,7 @@ var Home = /*#__PURE__*/function (_Component) {
   _createClass(Home, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/_react["default"].createElement(_home.HomeWrapper, null, /*#__PURE__*/_react["default"].createElement(_components.Banner, {
-        id: "home"
-      }), /*#__PURE__*/_react["default"].createElement(_components.Header, null), /*#__PURE__*/_react["default"].createElement(_components.CoffeeMenu, {
-        id: "menu"
-      }), /*#__PURE__*/_react["default"].createElement(_components.Parallax, {
+      return /*#__PURE__*/_react["default"].createElement(_home.HomeWrapper, null, /*#__PURE__*/_react["default"].createElement(_components.Banner, null), /*#__PURE__*/_react["default"].createElement(_components.Header, null), /*#__PURE__*/_react["default"].createElement(_components.CoffeeMenu, null), /*#__PURE__*/_react["default"].createElement(_components.Parallax, {
         className: "mobile-parallax",
         url: "/images/normalcup.jpg"
       }), /*#__PURE__*/_react["default"].createElement(_components.About, {

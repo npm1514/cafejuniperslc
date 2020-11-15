@@ -85,10 +85,12 @@ var BannerComponent = /*#__PURE__*/function (_Component) {
         top: 120,
         right: -10,
         size: 160
-      }), /*#__PURE__*/_react["default"].createElement("img", {
+      }), /*#__PURE__*/_react["default"].createElement("a", {
+        href: "/"
+      }, /*#__PURE__*/_react["default"].createElement("img", {
         src: "/images/Cafe-Juniper_J_01.png",
         alt: "primary logo"
-      }), /*#__PURE__*/_react["default"].createElement("div", null, "C", /*#__PURE__*/_react["default"].createElement("span", {
+      })), /*#__PURE__*/_react["default"].createElement("div", null, "C", /*#__PURE__*/_react["default"].createElement("span", {
         className: "smallLetters"
       }, "A"), "F\xC9 JUN", /*#__PURE__*/_react["default"].createElement("span", {
         className: "smallLetters"

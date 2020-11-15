@@ -75,6 +75,33 @@ app.get('/images/:id', function (req, res) {
   res.set('Cache-Control', 'public, max-age=31557600');
   res.sendFile(_path["default"].join(__dirname, '../images/' + req.params.id));
 });
+app.post('/subscriber', function (req, res) {
+  var transporter = _nodemailer["default"].createTransport({
+    host: 'smtp.gmail.com',
+    port: 587,
+    secure: false,
+    requireTLS: true,
+    auth: {
+      user: cryptr.decrypt(_config["default"].email),
+      pass: cryptr.decrypt(_config["default"].gmPass)
+    }
+  });
+
+  transporter.sendMail({
+    from: req.body.email,
+    to: cryptr.decrypt(_config["default"].email),
+    subject: 'Cafe Juniper: Subscribe Message',
+    html: "\n      <h3>Hi Cafe Juniper!</h3>\n      <h3>The following person has submitted a subscription request.<h3/>\n      <h4>Name: ".concat(req.body.name, "</h4>\n      <h4>Email: ").concat(req.body.email, "</h4>\n      <h4>Message: ").concat(req.body.message, "</h4>\n      <h4>Products: ").concat(req.body.products.map(function (a) {
+      return /*#__PURE__*/_react["default"].createElement("div", null, a.product, " - ", a.quantity, " - ", a.frequency);
+    }), "</h4>\n    ")
+  }, function (error, info) {
+    if (error) res.send({
+      error: error
+    });else res.send({
+      response: info
+    });
+  });
+});
 app.post('/emailer', function (req, res) {
   var transporter = _nodemailer["default"].createTransport({
     host: 'smtp.gmail.com',

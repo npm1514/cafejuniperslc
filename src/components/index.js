@@ -10,3 +10,4 @@ export { default as Menu } from "./Menu";
 export { default as Message } from "./Message";
 export { default as Parallax } from "./Parallax";
 export { default as Partners } from "./Partners";
+export { default as Subscribe } from "./Subscribe";

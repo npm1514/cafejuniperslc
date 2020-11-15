@@ -75,6 +75,12 @@ Object.defineProperty(exports, "Partners", {
     return _Partners["default"];
   }
 });
+Object.defineProperty(exports, "Subscribe", {
+  enumerable: true,
+  get: function get() {
+    return _Subscribe["default"];
+  }
+});
 
 var _About = _interopRequireDefault(require("./About"));
 
@@ -99,5 +105,7 @@ var _Message = _interopRequireDefault(require("./Message"));
 var _Parallax = _interopRequireDefault(require("./Parallax"));
 
 var _Partners = _interopRequireDefault(require("./Partners"));
+
+var _Subscribe = _interopRequireDefault(require("./Subscribe"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }

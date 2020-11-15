@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { MessageWrap, Message, TextBox } from '../styled-components/components/message';
 import { Hex } from '../subcomponents';
 import { lightblue } from '../styled-components/colors';
@@ -50,43 +50,48 @@ class MessageComponent extends Component {
         <Message>
           <Hex className="mobile-hex" color={green} bottom={-83} left={-50} size={100}/>
           <h2>385-213-5061 | cafejuniperslc@gmail.com</h2>
-          <h2>Shoot us a message</h2>
-          <form onSubmit={this.submitMessage}>
-            <input
-              value={name}
-              placeholder="Name"
-              type="text"
-              required
-              onChange={(e) => {this.change(e, "name")}}
-              id="name-input"
-            />
-            <input
-              value={email}
-              placeholder="Email Address"
-              type="email"
-              required
-              onChange={(e) => {this.change(e, "email")}}
-              id="emial-input"
-            />
-            <textarea
-              value={message}
-              required
-              placeholder="Talk to me!"
-              onChange={(e) => {this.change(e, "message")}}
-              id="message-textarea"
-            ></textarea>
-            <TextBox type="submit">
-              <span style={{color: 'transparent'}}>Send Email Button</span>
-              <Hex
-                color={lightblue}
-                bottom={-11}
-                right={-15}
-                size={75}
-              >
-                <polygon id="airplane" points="20 40 75 30 50 80 42 60 62 40 40 56" fill={pink}/>
-              </Hex>
-            </TextBox>
-          </form>
+          {
+            !this.props.noMessage &&
+            <Fragment>
+              <h2>Shoot us a message</h2>
+              <form onSubmit={this.submitMessage}>
+                <input
+                  value={name}
+                  placeholder="Name"
+                  type="text"
+                  required
+                  onChange={(e) => {this.change(e, "name")}}
+                  id="name-input"
+                />
+                <input
+                  value={email}
+                  placeholder="Email Address"
+                  type="email"
+                  required
+                  onChange={(e) => {this.change(e, "email")}}
+                  id="email-input"
+                />
+                <textarea
+                  value={message}
+                  required
+                  placeholder="Talk to me!"
+                  onChange={(e) => {this.change(e, "message")}}
+                  id="message-textarea"
+                ></textarea>
+                <TextBox type="submit">
+                  <span style={{color: 'transparent'}}>Send Email Button</span>
+                  <Hex
+                    color={lightblue}
+                    bottom={-11}
+                    right={-15}
+                    size={75}
+                  >
+                    <polygon id="airplane" points="20 40 75 30 50 80 42 60 62 40 40 56" fill={pink}/>
+                  </Hex>
+                </TextBox>
+              </form>
+            </Fragment>
+          }
         </Message>
       </MessageWrap>
     );
