@@ -74,18 +74,19 @@ app.post('/subscriber', function (req, res) {
     secure: false,
     requireTLS: true,
     auth: {
-      user: cryptr.decrypt(_config["default"].email),
-      pass: cryptr.decrypt(_config["default"].gmPass)
+      user: cryptr.decrypt(_config["default"].nodemailerEmail),
+      pass: cryptr.decrypt(_config["default"].nodemailerPW)
     }
   });
 
+  var products = req.body.products.map(function (a) {
+    return "<div>".concat(a.product, " - ").concat(a.quantity, " - ").concat(a.frequency, "</div>");
+  }).join('');
   transporter.sendMail({
     from: req.body.email,
-    to: cryptr.decrypt(_config["default"].email),
+    to: cryptr.decrypt(_config["default"].nodemailerEmail),
     subject: 'Cafe Juniper: Subscribe Message',
-    html: "\n      <h3>Hi Cafe Juniper!</h3>\n      <h3>The following person has submitted a subscription request.<h3/>\n      <h4>Name: ".concat(req.body.name, "</h4>\n      <h4>Email: ").concat(req.body.email, "</h4>\n      <h4>Message: ").concat(req.body.message, "</h4>\n      <h4>Products: ").concat(req.body.products.map(function (a) {
-      return /*#__PURE__*/_react["default"].createElement("div", null, a.product, " - ", a.quantity, " - ", a.frequency);
-    }), "</h4>\n    ")
+    html: "\n      <h3>Hi Cafe Juniper!</h3>\n      <h3>The following person has submitted a subscription request.<h3/>\n      <h4>Name: ".concat(req.body.name, "</h4>\n      <h4>Email: ").concat(req.body.email, "</h4>\n      <h4>Message: ").concat(req.body.message, "</h4>\n      <h4>Products: ").concat(products, "</h4>\n    ")
   }, function (error, info) {
     if (error) res.send({
       error: error
@@ -101,14 +102,14 @@ app.post('/emailer', function (req, res) {
     secure: false,
     requireTLS: true,
     auth: {
-      user: cryptr.decrypt(_config["default"].email),
-      pass: cryptr.decrypt(_config["default"].gmPass)
+      user: cryptr.decrypt(_config["default"].nodemailerEmail),
+      pass: cryptr.decrypt(_config["default"].nodemailerPW)
     }
   });
 
   transporter.sendMail({
     from: req.body.email,
-    to: cryptr.decrypt(_config["default"].email),
+    to: cryptr.decrypt(_config["default"].nodemailerEmail),
     subject: 'Cafe Juniper: Online Message',
     html: "\n      <h3>Hi Cafe Juniper!</h3>\n      <h3>The following person has submitted a message.<h3/>\n      <h4>Name: ".concat(req.body.name, "</h4>\n      <h4>Email: ").concat(req.body.email, "</h4>\n      <h4>Message: ").concat(req.body.message, "</h4>\n    ")
   }, function (error, info) {

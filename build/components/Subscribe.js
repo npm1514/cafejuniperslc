@@ -212,7 +212,7 @@ var SubscribeComponent = /*#__PURE__*/function (_Component) {
           value: "Prebrewed Single Origin Coffee - 128oz"
         }, "Prebrewed Single Origin Coffee - 128oz"), /*#__PURE__*/_react["default"].createElement("option", {
           value: "Prebrewed Cold Brew - 2L"
-        }, "Prebrewed House Coffee - 64oz"), /*#__PURE__*/_react["default"].createElement("option", {
+        }, "Prebrewed Cold Brew - 2L"), /*#__PURE__*/_react["default"].createElement("option", {
           value: "House Coffee - 12oz Whole Beans"
         }, "House Coffee - 12oz Whole Beans"), /*#__PURE__*/_react["default"].createElement("option", {
           value: "House Espresso - 12oz Whole Beans"

@@ -3,13 +3,23 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.CateringMenuRight = exports.CateringMenuLeft = exports.CateringMenu = exports.CateringMenuWrap = void 0;
+exports.MenuMarkup = exports.CateringMenuRight = exports.CateringMenuLeft = exports.CateringMenu = exports.CateringMenuWrap = void 0;
 
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 
 var _colors = require("../colors");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+function _templateObject5() {
+  var data = _taggedTemplateLiteral(["\n  color: ", ";\n  margin: -4px 0 0 8px;\n  font-size: 14px;\n"]);
+
+  _templateObject5 = function _templateObject5() {
+    return data;
+  };
+
+  return data;
+}
 
 function _templateObject4() {
   var data = _taggedTemplateLiteral(["\n  width: 100%;\n  margin-top: 24px;\n  table {\n    margin: auto;\n  }\n  @media (min-width: 700px){\n    margin-top: 0;\n    width: 40%;\n    table {\n      margin: 12px 24px;\n    }\n  }\n"]);
@@ -68,3 +78,7 @@ exports.CateringMenuLeft = CateringMenuLeft;
 var CateringMenuRight = _styledComponents["default"].div(_templateObject4());
 
 exports.CateringMenuRight = CateringMenuRight;
+
+var MenuMarkup = _styledComponents["default"].div(_templateObject5(), _colors.darkblue);
+
+exports.MenuMarkup = MenuMarkup;

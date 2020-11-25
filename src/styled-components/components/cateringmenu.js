@@ -96,3 +96,8 @@ export const CateringMenuRight = styled.div`
     }
   }
 `;
+export const MenuMarkup = styled.div`
+  color: ${darkblue};
+  margin: -4px 0 0 8px;
+  font-size: 14px;
+`;

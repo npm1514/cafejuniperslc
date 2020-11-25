@@ -63,14 +63,17 @@ app.post('/subscriber', (req, res) => {
     secure: false,
     requireTLS: true,
     auth: {
-      user: cryptr.decrypt(config.email),
-      pass: cryptr.decrypt(config.gmPass)
+      user: cryptr.decrypt(config.nodemailerEmail),
+      pass: cryptr.decrypt(config.nodemailerPW)
     }
   });
+  let products = req.body.products.map(a => {
+    return `<div>${a.product} - ${a.quantity} - ${a.frequency}</div>`
+  }).join('');
 
   transporter.sendMail({
     from: req.body.email,
-    to: cryptr.decrypt(config.email),
+    to: cryptr.decrypt(config.nodemailerEmail),
     subject: 'Cafe Juniper: Subscribe Message',
     html: `
       <h3>Hi Cafe Juniper!</h3>
@@ -78,9 +81,7 @@ app.post('/subscriber', (req, res) => {
       <h4>Name: ${req.body.name}</h4>
       <h4>Email: ${req.body.email}</h4>
       <h4>Message: ${req.body.message}</h4>
-      <h4>Products: ${req.body.products.map(a => {
-        return <div>{a.product} - {a.quantity} - {a.frequency}</div>
-      })}</h4>
+      <h4>Products: ${products}</h4>
     `
   }, (error, info) => {
     if (error) res.send({error: error});
@@ -95,14 +96,14 @@ app.post('/emailer', (req, res) => {
     secure: false,
     requireTLS: true,
     auth: {
-      user: cryptr.decrypt(config.email),
-      pass: cryptr.decrypt(config.gmPass)
+      user: cryptr.decrypt(config.nodemailerEmail),
+      pass: cryptr.decrypt(config.nodemailerPW)
     }
   });
 
   transporter.sendMail({
     from: req.body.email,
-    to: cryptr.decrypt(config.email),
+    to: cryptr.decrypt(config.nodemailerEmail),
     subject: 'Cafe Juniper: Online Message',
     html: `
       <h3>Hi Cafe Juniper!</h3>
