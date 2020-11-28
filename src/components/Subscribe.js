@@ -132,7 +132,10 @@ class SubscribeComponent extends Component {
                           <option value="Prebrewed House Coffee - 128oz">Prebrewed House Coffee - 128oz</option>
                           <option value="Prebrewed Single Origin Coffee - 64oz">Prebrewed Single Origin Coffee - 64oz</option>
                           <option value="Prebrewed Single Origin Coffee - 128oz">Prebrewed Single Origin Coffee - 128oz</option>
-                          <option value="Prebrewed Cold Brew - 2L">Prebrewed Cold Brew - 2L</option>
+                          <option value="Cold Brew - 64oz">Cold Brew - 64oz</option>
+                          <option value="Cold Brew - 128oz">Cold Brew - 128oz</option>
+                          <option value="Prebrewed Tea - 64oz">Prebrewed Tea - 64oz</option>
+                          <option value="Prebrewed Tea - 128oz">Prebrewed Tea - 128oz</option>
                           <option value="House Coffee - 12oz Whole Beans">House Coffee - 12oz Whole Beans</option>
                           <option value="House Espresso - 12oz Whole Beans">House Espresso - 12oz Whole Beans</option>
                           <option value="Nicaragua Coffee - 12oz Whole Beans">Nicaragua Coffee - 12oz Whole Beans</option>

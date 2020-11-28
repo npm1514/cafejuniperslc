@@ -6,7 +6,6 @@ export const SubscribeWrap = styled.div`
   background-color: ${green};
   padding-bottom: 24px;
   position: relative;
-  z-index: -10;
 `;
 
 export const Subscribe = styled.div`
