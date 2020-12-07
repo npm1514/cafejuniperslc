@@ -166,7 +166,7 @@ function returnHTML(data, bundle, Page, title){
           <meta name="google-site-verification" content="hzAIEHsN0e84-jcUhXzS7ahusAox1Ha14-sfJyMoq2w" />
           <meta name="viewport" content="width=device-width, initial-scale=1">
           <title>Cafe Juniper | Salt Lake City Premier Coffee Shop and Toast</title>
-          <meta name="Description" content="Cafe Juniper | Salt Lake City Premier Coffee Shop and Toast">
+          <meta name="Description" content="Welcome to downtown Salt Lake's newest coffee shop destination! Offering coffee and espresso drinks, baked goods, and our very own artisanal toast selection prepared daily. Stop by today!">
           <link rel="stylesheet" href="https://use.typekit.net/mno0keq.css">
           <script src="https://kit.fontawesome.com/7fa747235e.js" crossorigin="anonymous"></script>
           <style>
