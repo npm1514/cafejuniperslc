@@ -77,7 +77,27 @@ var DeliveryComponent = /*#__PURE__*/function (_Component) {
         style: {
           width: "268px"
         }
-      }))));
+      })), /*#__PURE__*/_react["default"].createElement("h2", null, "OR PLACE AN ORDER FOR PICKUP!"), /*#__PURE__*/_react["default"].createElement("a", {
+        href: "https://www.clover.com/online-ordering/cafe-juniper-llc-salt-lake-city",
+        target: "_blank",
+        alt: "Order Food Pickup with Clover",
+        title: "Order Food Pickup with Clover",
+        style: {
+          textDecoration: "none"
+        }
+      }, /*#__PURE__*/_react["default"].createElement("div", {
+        style: {
+          background: "#FFF",
+          borderRadius: "4px",
+          padding: "8px 16px"
+        }
+      }, /*#__PURE__*/_react["default"].createElement("img", {
+        className: "clButton",
+        src: "/images/clover-logo.svg",
+        style: {
+          width: "200px"
+        }
+      })))));
     }
   }]);
 

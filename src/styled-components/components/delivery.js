@@ -33,6 +33,14 @@ export const Delivery = styled.div`
     opacity: 0.8;
     transition: opacity 0.5s;
   }
+  svg {
+    .st0{
+      fill:#5A5A5A;
+    }
+    .st1{
+      fill:#228800;
+    }
+  }
   @media (min-width: 700px) {
     overflow: visible;
   }

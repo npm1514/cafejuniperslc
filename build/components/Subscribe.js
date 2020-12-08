@@ -94,6 +94,9 @@ var SubscribeComponent = /*#__PURE__*/function (_Component) {
           name: "",
           business: "",
           email: "",
+          address: "",
+          zip: "",
+          phone: "",
           message: "",
           products: [{
             product: "",
@@ -107,6 +110,9 @@ var SubscribeComponent = /*#__PURE__*/function (_Component) {
         _this.setState({
           name: "",
           business: "",
+          address: "",
+          zip: "",
+          phone: "",
           email: "",
           message: "",
           products: [{
@@ -137,6 +143,9 @@ var SubscribeComponent = /*#__PURE__*/function (_Component) {
     _this.state = {
       name: "",
       business: "",
+      address: "",
+      zip: "",
+      phone: "",
       email: "",
       message: "",
       products: [{
@@ -158,8 +167,13 @@ var SubscribeComponent = /*#__PURE__*/function (_Component) {
           business = _this$state.business,
           email = _this$state.email,
           message = _this$state.message,
-          products = _this$state.products;
-      return /*#__PURE__*/_react["default"].createElement(_subscribe.SubscribeWrap, null, /*#__PURE__*/_react["default"].createElement(_subscribe.Subscribe, null, /*#__PURE__*/_react["default"].createElement("h2", null, "Submit your catering/subscription request below."), /*#__PURE__*/_react["default"].createElement("p", {
+          products = _this$state.products,
+          address = _this$state.address,
+          zip = _this$state.zip,
+          phone = _this$state.phone;
+      return /*#__PURE__*/_react["default"].createElement(_subscribe.SubscribeWrap, {
+        id: "subscribe"
+      }, /*#__PURE__*/_react["default"].createElement("br", null), /*#__PURE__*/_react["default"].createElement(_subscribe.Subscribe, null, /*#__PURE__*/_react["default"].createElement("h2", null, "Submit your subscription/catering request below."), /*#__PURE__*/_react["default"].createElement("p", {
         style: {
           color: "#fff"
         }
@@ -176,12 +190,39 @@ var SubscribeComponent = /*#__PURE__*/function (_Component) {
         id: "name-input"
       }), /*#__PURE__*/_react["default"].createElement("input", {
         value: business,
-        placeholder: "Business",
+        placeholder: "Business (if applicable)",
         type: "text",
         onChange: function onChange(e) {
           _this2.change(e, "business");
         },
         id: "business-input"
+      }), /*#__PURE__*/_react["default"].createElement("input", {
+        value: address,
+        placeholder: "Address",
+        type: "text",
+        required: true,
+        onChange: function onChange(e) {
+          _this2.change(e, "address");
+        },
+        id: "address-input"
+      }), /*#__PURE__*/_react["default"].createElement("input", {
+        value: zip,
+        placeholder: "Zip Code",
+        type: "text",
+        required: true,
+        onChange: function onChange(e) {
+          _this2.change(e, "zip");
+        },
+        id: "zip-input"
+      }), /*#__PURE__*/_react["default"].createElement("input", {
+        value: phone,
+        placeholder: "Phone Number",
+        type: "text",
+        required: true,
+        onChange: function onChange(e) {
+          _this2.change(e, "phone");
+        },
+        id: "phone-input"
       }), /*#__PURE__*/_react["default"].createElement("input", {
         value: email,
         placeholder: "Email Address",
@@ -203,18 +244,30 @@ var SubscribeComponent = /*#__PURE__*/function (_Component) {
         }, /*#__PURE__*/_react["default"].createElement("option", {
           value: ""
         }, "Select Product"), /*#__PURE__*/_react["default"].createElement("option", {
+          value: "Prebrewed House Coffee - 16oz"
+        }, "Prebrewed House Coffee - 16oz"), /*#__PURE__*/_react["default"].createElement("option", {
+          value: "Prebrewed House Coffee - 32oz"
+        }, "Prebrewed House Coffee - 32oz"), /*#__PURE__*/_react["default"].createElement("option", {
           value: "Prebrewed House Coffee - 64oz"
         }, "Prebrewed House Coffee - 64oz"), /*#__PURE__*/_react["default"].createElement("option", {
           value: "Prebrewed House Coffee - 128oz"
         }, "Prebrewed House Coffee - 128oz"), /*#__PURE__*/_react["default"].createElement("option", {
+          value: "Prebrewed Single Origin Coffee - 16oz"
+        }, "Prebrewed Single Origin Coffee - 32oz"), /*#__PURE__*/_react["default"].createElement("option", {
+          value: "Prebrewed Single Origin Coffee - 32oz"
+        }, "Prebrewed Single Origin Coffee - 32oz"), /*#__PURE__*/_react["default"].createElement("option", {
           value: "Prebrewed Single Origin Coffee - 64oz"
         }, "Prebrewed Single Origin Coffee - 64oz"), /*#__PURE__*/_react["default"].createElement("option", {
           value: "Prebrewed Single Origin Coffee - 128oz"
         }, "Prebrewed Single Origin Coffee - 128oz"), /*#__PURE__*/_react["default"].createElement("option", {
+          value: "Cold Brew - 32oz"
+        }, "Cold Brew - 32oz"), /*#__PURE__*/_react["default"].createElement("option", {
           value: "Cold Brew - 64oz"
         }, "Cold Brew - 64oz"), /*#__PURE__*/_react["default"].createElement("option", {
           value: "Cold Brew - 128oz"
         }, "Cold Brew - 128oz"), /*#__PURE__*/_react["default"].createElement("option", {
+          value: "Prebrewed Tea - 64oz"
+        }, "Prebrewed Tea - 32oz"), /*#__PURE__*/_react["default"].createElement("option", {
           value: "Prebrewed Tea - 64oz"
         }, "Prebrewed Tea - 64oz"), /*#__PURE__*/_react["default"].createElement("option", {
           value: "Prebrewed Tea - 128oz"
@@ -269,7 +322,7 @@ var SubscribeComponent = /*#__PURE__*/function (_Component) {
         className: "hoverer"
       }, "Add More"))), /*#__PURE__*/_react["default"].createElement("textarea", {
         value: message,
-        placeholder: "Please explain specifics here. If we are delivering, include address, time of day, etc. If you would like a once a week or once a month order, please provide day or date you would like it delivered.",
+        placeholder: "Please provide more details if necessary here. Is there a time of day that works best for you? If you would like a once a week or once a month order, please provide day or date you would like it delivered.",
         onChange: function onChange(e) {
           _this2.change(e, "message");
         }
@@ -288,7 +341,11 @@ var SubscribeComponent = /*#__PURE__*/function (_Component) {
         id: "airplane",
         points: "20 40 75 30 50 80 42 60 62 40 40 56",
         fill: _colors.pink
-      }))))));
+      })))), /*#__PURE__*/_react["default"].createElement("p", {
+        style: {
+          color: "#fff"
+        }
+      }, "If no other specific details are provided, we will deliver between 8am and 10am. Weekly subscriptions will start on Monday. Monthly subscriptions will start on the first. 16oz drinks will be delivered via disposabel cup. Larger sizes will be delivered in a reusable container. On drop off, those reusable containers will be collected. Any container damaged or lost will be charged against your account.")));
     }
   }]);
 

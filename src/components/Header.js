@@ -72,7 +72,7 @@ class HeaderComponent extends Component {
             <div><a onClick={this.closeMenu} href="/#map">Location</a></div>
             <div><a onClick={this.closeMenu} href="/#contact">Contact</a></div>
             <div><a onClick={this.closeMenu} href="/catering">Catering</a></div>
-            <div className="online-order"><a rel="noopener" className="online-order" href="https://www.clover.com/online-ordering/cafe-juniper-llc-salt-lake-city">Order Online</a></div>
+            <div className="online-order"><a rel="noopener" className="online-order" href="/catering#subscribe">Subscribe Now</a></div>
           </MobileMenu>
         }
         <HeaderWrap menuStuck={menuStuck}>
@@ -84,11 +84,11 @@ class HeaderComponent extends Component {
             <a href="/catering">Catering</a>
           </DesktopHeader>
           <DesktopOrder>
-            <a rel="noopener" className="online-order" href="https://www.clover.com/online-ordering/cafe-juniper-llc-salt-lake-city">Order Online</a>
+            <a rel="noopener" className="online-order" href="/catering/#subscribe">Subscribe Now</a>
           </DesktopOrder>
         </HeaderWrap>
         <Spacer menuStuck={menuStuck}/>
-        <OnlineOrder><a rel="noopener" className="online-order" href="https://www.clover.com/online-ordering/cafe-juniper-llc-salt-lake-city">Order Online</a></OnlineOrder>
+        <OnlineOrder><a rel="noopener" className="online-order" href="/catering#subscribe">Subscribe Now</a></OnlineOrder>
       </HeaderWrap>
     );
   }

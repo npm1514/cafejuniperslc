@@ -54,10 +54,7 @@ var Catering = /*#__PURE__*/function (_Component) {
       return /*#__PURE__*/_react["default"].createElement(_catering.CateringWrapper, null, /*#__PURE__*/_react["default"].createElement(_components.Banner, null), /*#__PURE__*/_react["default"].createElement(_components.Header, null), /*#__PURE__*/_react["default"].createElement(_components.About, {
         noLogo: true,
         noHexes: true
-      }, /*#__PURE__*/_react["default"].createElement("h2", null, "Catering Program"), /*#__PURE__*/_react["default"].createElement("p", null, "We want to be at the forefront of coffee catering in Salt Lake City. We are capable of providing premium coffee to any business or event within the Salt Lake valley. Please consider our catering menu and if you are interested, fill out the form below.")), /*#__PURE__*/_react["default"].createElement(_components.CateringMenu, null), /*#__PURE__*/_react["default"].createElement(_components.About, {
-        noLogo: true,
-        noHexes: true
-      }, /*#__PURE__*/_react["default"].createElement("h2", null, "Subscription Program"), /*#__PURE__*/_react["default"].createElement("p", null, "Every one of our retail whole bean products are available by subscription. Sign up today to get weekly coffee beans!")), /*#__PURE__*/_react["default"].createElement(_components.Subscribe, null), /*#__PURE__*/_react["default"].createElement(_components.Message, {
+      }, /*#__PURE__*/_react["default"].createElement("h2", null, "Subscription / Catering Program"), /*#__PURE__*/_react["default"].createElement("p", null, "We are capable of providing premium coffee to anybody and any business within the Salt Lake valley. Please consider our catering menu and if you are interested, fill out the form below.")), /*#__PURE__*/_react["default"].createElement(_components.CateringMenu, null), /*#__PURE__*/_react["default"].createElement(_components.Subscribe, null), /*#__PURE__*/_react["default"].createElement(_components.Message, {
         noMessage: true
       }), /*#__PURE__*/_react["default"].createElement(_components.Footer, null));
     }

@@ -11,6 +11,9 @@ class SubscribeComponent extends Component {
     this.state = {
       name: "",
       business: "",
+      address: "",
+      zip: "",
+      phone: "",
       email: "",
       message: "",
       products: [{
@@ -48,6 +51,9 @@ class SubscribeComponent extends Component {
         name: "",
         business: "",
         email: "",
+        address: "",
+        zip: "",
+        phone: "",
         message: "",
         products: [{
           product: "",
@@ -61,6 +67,9 @@ class SubscribeComponent extends Component {
       this.setState({
         name: "",
         business: "",
+        address: "",
+        zip: "",
+        phone: "",
         email: "",
         message: "",
         products: [{
@@ -82,11 +91,12 @@ class SubscribeComponent extends Component {
     this.setState(obj)
   }
   render(){
-    const { name, business, email, message, products } = this.state;
+    const { name, business, email, message, products, address, zip, phone } = this.state;
     return (
-      <SubscribeWrap>
+      <SubscribeWrap id="subscribe">
+        <br/>
         <Subscribe>
-          <h2>Submit your catering/subscription request below.</h2>
+          <h2>Submit your subscription/catering request below.</h2>
           <p style={{color: "#fff"}}>Timelines will be indefinite and subscriptions will end on written notification.</p>
           <form onSubmit={this.submitSubscribe}>
             <input
@@ -99,10 +109,34 @@ class SubscribeComponent extends Component {
             />
             <input
               value={business}
-              placeholder="Business"
+              placeholder="Business (if applicable)"
               type="text"
               onChange={(e) => {this.change(e, "business")}}
               id="business-input"
+            />
+            <input
+              value={address}
+              placeholder="Address"
+              type="text"
+              required
+              onChange={(e) => {this.change(e, "address")}}
+              id="address-input"
+            />
+            <input
+              value={zip}
+              placeholder="Zip Code"
+              type="text"
+              required
+              onChange={(e) => {this.change(e, "zip")}}
+              id="zip-input"
+            />
+            <input
+              value={phone}
+              placeholder="Phone Number"
+              type="text"
+              required
+              onChange={(e) => {this.change(e, "phone")}}
+              id="phone-input"
             />
             <input
               value={email}
@@ -128,12 +162,18 @@ class SubscribeComponent extends Component {
                           onChange={(e) => {this.productChange(e, "product", i)}}
                         >
                           <option value="">Select Product</option>
+                          <option value="Prebrewed House Coffee - 16oz">Prebrewed House Coffee - 16oz</option>
+                          <option value="Prebrewed House Coffee - 32oz">Prebrewed House Coffee - 32oz</option>
                           <option value="Prebrewed House Coffee - 64oz">Prebrewed House Coffee - 64oz</option>
                           <option value="Prebrewed House Coffee - 128oz">Prebrewed House Coffee - 128oz</option>
+                          <option value="Prebrewed Single Origin Coffee - 16oz">Prebrewed Single Origin Coffee - 32oz</option>
+                          <option value="Prebrewed Single Origin Coffee - 32oz">Prebrewed Single Origin Coffee - 32oz</option>
                           <option value="Prebrewed Single Origin Coffee - 64oz">Prebrewed Single Origin Coffee - 64oz</option>
                           <option value="Prebrewed Single Origin Coffee - 128oz">Prebrewed Single Origin Coffee - 128oz</option>
+                          <option value="Cold Brew - 32oz">Cold Brew - 32oz</option>
                           <option value="Cold Brew - 64oz">Cold Brew - 64oz</option>
                           <option value="Cold Brew - 128oz">Cold Brew - 128oz</option>
+                          <option value="Prebrewed Tea - 64oz">Prebrewed Tea - 32oz</option>
                           <option value="Prebrewed Tea - 64oz">Prebrewed Tea - 64oz</option>
                           <option value="Prebrewed Tea - 128oz">Prebrewed Tea - 128oz</option>
                           <option value="House Coffee - 12oz Whole Beans">House Coffee - 12oz Whole Beans</option>
@@ -175,7 +215,7 @@ class SubscribeComponent extends Component {
             </table>
             <textarea
               value={message}
-              placeholder="Please explain specifics here. If we are delivering, include address, time of day, etc. If you would like a once a week or once a month order, please provide day or date you would like it delivered."
+              placeholder="Please provide more details if necessary here. Is there a time of day that works best for you? If you would like a once a week or once a month order, please provide day or date you would like it delivered."
               onChange={(e) => {this.change(e, "message")}}
             ></textarea>
             <TextBox type="submit">
@@ -190,6 +230,7 @@ class SubscribeComponent extends Component {
               </Hex>
             </TextBox>
           </form>
+          <p style={{color: "#fff"}}>If no other specific details are provided, we will deliver between 8am and 10am. Weekly subscriptions will start on Monday. Monthly subscriptions will start on the first. 16oz drinks will be delivered via disposabel cup. Larger sizes will be delivered in a reusable container. On drop off, those reusable containers will be collected. Any container damaged or lost will be charged against your account.</p>
         </Subscribe>
       </SubscribeWrap>
     );

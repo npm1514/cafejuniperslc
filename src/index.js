@@ -90,6 +90,7 @@ app.post('/subscriber', (req, res) => {
 })
 
 app.post('/emailer', (req, res) => {
+  let { email, name, message, address, zip} = req.body;
   var transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
     port: 587,
@@ -102,15 +103,16 @@ app.post('/emailer', (req, res) => {
   });
 
   transporter.sendMail({
-    from: req.body.email,
+    from: email,
     to: cryptr.decrypt(config.nodemailerEmail),
     subject: 'Cafe Juniper: Online Message',
     html: `
       <h3>Hi Cafe Juniper!</h3>
       <h3>The following person has submitted a message.<h3/>
-      <h4>Name: ${req.body.name}</h4>
-      <h4>Email: ${req.body.email}</h4>
-      <h4>Message: ${req.body.message}</h4>
+      <h4>Name: ${name}</h4>
+      <h4>Address: ${address} ${zip}</h4>
+      <h4>Email: ${email}</h4>
+      <h4>Message: ${message}</h4>
     `
   }, (error, info) => {
     if (error) res.send({error: error});
@@ -177,7 +179,9 @@ function returnHTML(data, bundle, Page, title){
               overflow-x: hidden; font-size: 14px;
               width: 100%; max-width: 100%; height: auto;
             }
-            th, h1, h2 { font-weight: 700; font-size: 16px; }
+            h1, h2 { font-weight: 700; font-size: 16px; }
+            th { font-weight: 700; font-size: 14px; }
+            td { font-size: 12px; }
             p { font-weight: 100; font-size: 12px; }
             a { text-decoration: none;}
             i { font-size: 30px;}
