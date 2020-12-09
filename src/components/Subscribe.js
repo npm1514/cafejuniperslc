@@ -190,7 +190,7 @@ class SubscribeComponent extends Component {
                         >
                           <option value="">Select Frequency</option>
                           <option value="One Time">One Time</option>
-                          <option value="Everyday">Everyday</option>
+                          <option value="Every Day">Every Day</option>
                           <option value="Monday through Friday">Monday - Friday</option>
                           <option value="Once a Week">Once a Week</option>
                           <option value="Once a Month">Once a Month</option>

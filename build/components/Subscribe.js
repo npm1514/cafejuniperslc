@@ -309,8 +309,8 @@ var SubscribeComponent = /*#__PURE__*/function (_Component) {
         }, "Select Frequency"), /*#__PURE__*/_react["default"].createElement("option", {
           value: "One Time"
         }, "One Time"), /*#__PURE__*/_react["default"].createElement("option", {
-          value: "Everyday"
-        }, "Everyday"), /*#__PURE__*/_react["default"].createElement("option", {
+          value: "Every Day"
+        }, "Every Day"), /*#__PURE__*/_react["default"].createElement("option", {
           value: "Monday through Friday"
         }, "Monday - Friday"), /*#__PURE__*/_react["default"].createElement("option", {
           value: "Once a Week"
