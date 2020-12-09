@@ -193,7 +193,7 @@ var HeaderComponent = /*#__PURE__*/function (_Component) {
       }, "Catering")), /*#__PURE__*/_react["default"].createElement(_header.DesktopOrder, null, /*#__PURE__*/_react["default"].createElement("a", {
         rel: "noopener",
         className: "online-order",
-        href: "/catering/#subscribe"
+        href: "/catering#subscribe"
       }, "Subscribe Now"))), /*#__PURE__*/_react["default"].createElement(_header.Spacer, {
         menuStuck: menuStuck
       }), /*#__PURE__*/_react["default"].createElement(_header.OnlineOrder, null, /*#__PURE__*/_react["default"].createElement("a", {

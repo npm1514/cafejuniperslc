@@ -84,7 +84,7 @@ class HeaderComponent extends Component {
             <a href="/catering">Catering</a>
           </DesktopHeader>
           <DesktopOrder>
-            <a rel="noopener" className="online-order" href="/catering/#subscribe">Subscribe Now</a>
+            <a rel="noopener" className="online-order" href="/catering#subscribe">Subscribe Now</a>
           </DesktopOrder>
         </HeaderWrap>
         <Spacer menuStuck={menuStuck}/>

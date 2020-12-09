@@ -133,7 +133,7 @@ class CoffeeMenuComponent extends Component {
                 <td>$5.00</td>
               </tr>
               <tr>
-                <td>Sourdoughnie</td>
+                <td>Scone</td>
                 <th className="mobile-menu-header"></th>
                 <th className="mobile-menu-header"></th>
                 <td>$4.00</td>

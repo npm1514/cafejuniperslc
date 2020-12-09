@@ -45,7 +45,7 @@ class CateringMenuComponent extends Component {
             <tr>
               <td>Pastries</td>
               <td>Standard</td>
-              <td>Rates</td>
+              <td style={{paddingRight: "12px"}}>Rates</td>
             </tr>
             <div></div>
             <br/>
