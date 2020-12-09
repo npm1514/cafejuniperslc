@@ -146,7 +146,7 @@ class SubscribeComponent extends Component {
               onChange={(e) => {this.change(e, "email")}}
               id="email-input"
             />
-            <p>PRODUCTS</p>
+            <div style={{color:"#fff", marginTop: "12px"}}>SELECTED PRODUCTS</div>
               {
                 products.map((a, i) => {
                   return (
@@ -195,12 +195,12 @@ class SubscribeComponent extends Component {
                           <option value="Once a Week">Once a Week</option>
                           <option value="Once a Month">Once a Month</option>
                         </select>
-                      <div title="remove product" className="hoverer" onClick={(e) => {this.deleteProduct(e,i)}}>REMOVE</div>
+                      <div title="remove product" className="removeButton hoverer" onClick={(e) => {this.deleteProduct(e,i)}}>X REMOVE PRODUCT</div>
                     </div>
                   )
                 })
               }
-            <div onClick={this.addProduct} className="hoverer">Add More</div>
+            <div onClick={this.addProduct} className="addButton hoverer">+ ADD PRODUCT</div>
             <br/>
             <textarea
               value={message}

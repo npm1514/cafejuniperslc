@@ -51,7 +51,15 @@ var MenuComponent = /*#__PURE__*/function (_Component) {
   _createClass(MenuComponent, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/_react["default"].createElement(_menu.MenuWrap, null, /*#__PURE__*/_react["default"].createElement(_menu.Menu, null, this.props.children));
+      var _this$props = this.props,
+          id = _this$props.id,
+          style = _this$props.style,
+          children = _this$props.children;
+      return /*#__PURE__*/_react["default"].createElement(_menu.MenuWrap, {
+        id: id
+      }, /*#__PURE__*/_react["default"].createElement(_menu.Menu, {
+        style: style
+      }, children));
     }
   }]);
 

@@ -36,13 +36,13 @@ export const Menu = styled.div`
   th {
     text-align: right;
     color: ${darkblue};
-    padding: 0 12px;
+    padding: 0 4px;
     min-width: 30px;
   }
   td {
     text-align: right;
     color: ${green};
-    padding: 0 12px;
+    padding: 0 4px;
   }
   sup {
     font-size: 12px;
@@ -65,6 +65,7 @@ export const Menu = styled.div`
     }
     th, td {
       font-size: 18px;
+      padding: 0 12px;
     }
   }
   @media (min-width: 800px){
