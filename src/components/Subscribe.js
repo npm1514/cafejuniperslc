@@ -146,17 +146,12 @@ class SubscribeComponent extends Component {
               onChange={(e) => {this.change(e, "email")}}
               id="email-input"
             />
-            <table>
-              <tr>
-                <td>Product</td>
-                <td>Quantity</td>
-                <td>Frequency</td>
-              </tr>
+            <p>PRODUCTS</p>
               {
                 products.map((a, i) => {
                   return (
-                    <tr key={i}>
-                      <td>
+                    <div key={i} className="productBox">
+                      <div>
                         <select
                           value={a.product} required
                           onChange={(e) => {this.productChange(e, "product", i)}}
@@ -184,14 +179,11 @@ class SubscribeComponent extends Component {
                           <option value="Burundi Coffee - 12oz Whole Beans">Burundi Coffee - 12oz Whole Beans</option>
                           <option value="Congo Coffee - 12oz Whole Beans">Congo Coffee - 12oz Whole Beans</option>
                         </select>
-                      </td>
-                      <td>
+                      </div>
                         <input
                           value={a.quantity} placeholder="Quantity" required
                           onChange={(e) => {this.productChange(e, "quantity", i)}}
                         />
-                      </td>
-                      <td>
                         <select
                           value={a.frequency} required
                           onChange={(e) => {this.productChange(e, "frequency", i)}}
@@ -203,16 +195,13 @@ class SubscribeComponent extends Component {
                           <option value="Once a Week">Once a Week</option>
                           <option value="Once a Month">Once a Month</option>
                         </select>
-                      </td>
-                      <td title="remove product" className="hoverer" onClick={(e) => {this.deleteProduct(e,i)}}>X</td>
-                    </tr>
+                      <div title="remove product" className="hoverer" onClick={(e) => {this.deleteProduct(e,i)}}>REMOVE</div>
+                    </div>
                   )
                 })
               }
-              <tr>
-                <td onClick={this.addProduct} className="hoverer">Add More</td>
-              </tr>
-            </table>
+            <div onClick={this.addProduct} className="hoverer">Add More</div>
+            <br/>
             <textarea
               value={message}
               placeholder="Please provide more details if necessary here. Is there a time of day that works best for you? If you would like a once a week or once a month order, please provide day or date you would like it delivered."
