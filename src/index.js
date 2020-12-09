@@ -65,6 +65,7 @@ app.get('/images/:id', (req, res) => {
 });
 
 app.post('/subscriber', (req, res) => {
+  let { email, name, message, business, address, zip, phone } = req.body;
   var transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
     port: 587,
@@ -80,16 +81,20 @@ app.post('/subscriber', (req, res) => {
   }).join('');
 
   transporter.sendMail({
-    from: req.body.email,
+    from: email,
     to: cryptr.decrypt(config.nodemailerEmail),
     subject: 'Cafe Juniper: Subscribe Message',
     html: `
       <h3>Hi Cafe Juniper!</h3>
       <h3>The following person has submitted a subscription request.<h3/>
-      <h4>Name: ${req.body.name}</h4>
-      <h4>Email: ${req.body.email}</h4>
-      <h4>Message: ${req.body.message}</h4>
+      <h4>Name: ${name}</h4>
+      <h4>Business: ${business}</h4>
+      <h4>Address: ${address}</h4>
+      <h4>Zip Code: ${zip}</h4>
+      <h4>Phone: ${phone}</h4>
+      <h4>Email: ${email}</h4>
       <h4>Products: ${products}</h4>
+      <h4>Message: ${message}</h4>
     `
   }, (error, info) => {
     if (error) res.send({error: error});
@@ -98,7 +103,7 @@ app.post('/subscriber', (req, res) => {
 })
 
 app.post('/emailer', (req, res) => {
-  let { email, name, message, address, zip} = req.body;
+  let { email, name, message} = req.body;
   var transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
     port: 587,
@@ -118,7 +123,6 @@ app.post('/emailer', (req, res) => {
       <h3>Hi Cafe Juniper!</h3>
       <h3>The following person has submitted a message.<h3/>
       <h4>Name: ${name}</h4>
-      <h4>Address: ${address} ${zip}</h4>
       <h4>Email: ${email}</h4>
       <h4>Message: ${message}</h4>
     `
