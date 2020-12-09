@@ -78,6 +78,15 @@ app.get('/images/:id', function (req, res) {
   res.sendFile(_path["default"].join(__dirname, '../images/' + req.params.id));
 });
 app.post('/subscriber', function (req, res) {
+  var _req$body = req.body,
+      email = _req$body.email,
+      name = _req$body.name,
+      message = _req$body.message,
+      business = _req$body.business,
+      address = _req$body.address,
+      zip = _req$body.zip,
+      phone = _req$body.phone;
+
   var transporter = _nodemailer["default"].createTransport({
     host: 'smtp.gmail.com',
     port: 587,
@@ -93,10 +102,10 @@ app.post('/subscriber', function (req, res) {
     return "<div>".concat(a.product, " - ").concat(a.quantity, " - ").concat(a.frequency, "</div>");
   }).join('');
   transporter.sendMail({
-    from: req.body.email,
+    from: email,
     to: cryptr.decrypt(_config["default"].nodemailerEmail),
     subject: 'Cafe Juniper: Subscribe Message',
-    html: "\n      <h3>Hi Cafe Juniper!</h3>\n      <h3>The following person has submitted a subscription request.<h3/>\n      <h4>Name: ".concat(req.body.name, "</h4>\n      <h4>Email: ").concat(req.body.email, "</h4>\n      <h4>Message: ").concat(req.body.message, "</h4>\n      <h4>Products: ").concat(products, "</h4>\n    ")
+    html: "\n      <h3>Hi Cafe Juniper!</h3>\n      <h3>The following person has submitted a subscription request.<h3/>\n      <h4>Name: ".concat(name, "</h4>\n      <h4>Business: ").concat(business, "</h4>\n      <h4>Address: ").concat(address, "</h4>\n      <h4>Zip Code: ").concat(zip, "</h4>\n      <h4>Phone: ").concat(phone, "</h4>\n      <h4>Email: ").concat(email, "</h4>\n      <h4>Products: ").concat(products, "</h4>\n      <h4>Message: ").concat(message, "</h4>\n    ")
   }, function (error, info) {
     if (error) res.send({
       error: error
@@ -106,12 +115,10 @@ app.post('/subscriber', function (req, res) {
   });
 });
 app.post('/emailer', function (req, res) {
-  var _req$body = req.body,
-      email = _req$body.email,
-      name = _req$body.name,
-      message = _req$body.message,
-      address = _req$body.address,
-      zip = _req$body.zip;
+  var _req$body2 = req.body,
+      email = _req$body2.email,
+      name = _req$body2.name,
+      message = _req$body2.message;
 
   var transporter = _nodemailer["default"].createTransport({
     host: 'smtp.gmail.com',
@@ -128,7 +135,7 @@ app.post('/emailer', function (req, res) {
     from: email,
     to: cryptr.decrypt(_config["default"].nodemailerEmail),
     subject: 'Cafe Juniper: Online Message',
-    html: "\n      <h3>Hi Cafe Juniper!</h3>\n      <h3>The following person has submitted a message.<h3/>\n      <h4>Name: ".concat(name, "</h4>\n      <h4>Address: ").concat(address, " ").concat(zip, "</h4>\n      <h4>Email: ").concat(email, "</h4>\n      <h4>Message: ").concat(message, "</h4>\n    ")
+    html: "\n      <h3>Hi Cafe Juniper!</h3>\n      <h3>The following person has submitted a message.<h3/>\n      <h4>Name: ".concat(name, "</h4>\n      <h4>Email: ").concat(email, "</h4>\n      <h4>Message: ").concat(message, "</h4>\n    ")
   }, function (error, info) {
     if (error) res.send({
       error: error
