@@ -86,6 +86,16 @@ export const Subscribe = styled.div`
     margin: 12px auto 0 auto;
     color: #fff;
   }
+  .dateinput::before, .timeinput::before {
+    width: 100%;
+    content: attr(placeholder);
+  }
+  .dateinput:hover::before, .dateinput:valid::before, .timeinput:hover::before, .timeinput:valid::before {
+    width: 0%;
+    content: "";
+  }
+
+
   .hoverer:hover {
     cursor: pointer;
     color: ${lightblue};

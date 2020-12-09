@@ -60,7 +60,9 @@ var SubscribeComponent = /*#__PURE__*/function (_Component) {
       products.push({
         product: "",
         quantity: "",
-        frequency: ""
+        frequency: "",
+        startdate: "",
+        timeofday: ""
       });
 
       _this.setState({
@@ -101,7 +103,9 @@ var SubscribeComponent = /*#__PURE__*/function (_Component) {
           products: [{
             product: "",
             quantity: "",
-            frequency: ""
+            frequency: "",
+            startdate: "",
+            timeofday: ""
           }]
         });
       })["catch"](function (err) {
@@ -118,7 +122,9 @@ var SubscribeComponent = /*#__PURE__*/function (_Component) {
           products: [{
             product: "",
             quantity: "",
-            frequency: ""
+            frequency: "",
+            startdate: "",
+            timeofday: ""
           }]
         });
       });
@@ -151,7 +157,9 @@ var SubscribeComponent = /*#__PURE__*/function (_Component) {
       products: [{
         product: "",
         quantity: "",
-        frequency: ""
+        frequency: "",
+        startdate: "",
+        timeofday: ""
       }]
     };
     return _this;
@@ -316,7 +324,25 @@ var SubscribeComponent = /*#__PURE__*/function (_Component) {
           value: "Once a Week"
         }, "Once a Week"), /*#__PURE__*/_react["default"].createElement("option", {
           value: "Once a Month"
-        }, "Once a Month")), /*#__PURE__*/_react["default"].createElement("div", {
+        }, "Once a Month")), /*#__PURE__*/_react["default"].createElement("input", {
+          value: a.startdate,
+          placeholder: "Start Date",
+          required: true,
+          onChange: function onChange(e) {
+            _this2.productChange(e, "startdate", i);
+          },
+          type: "date",
+          className: "dateinput"
+        }), /*#__PURE__*/_react["default"].createElement("input", {
+          value: a.timeofday,
+          placeholder: "Preferred Time of Day",
+          required: true,
+          onChange: function onChange(e) {
+            _this2.productChange(e, "timeofday", i);
+          },
+          type: "time",
+          className: "timeinput"
+        }), /*#__PURE__*/_react["default"].createElement("div", {
           title: "remove product",
           className: "removeButton hoverer",
           onClick: function onClick(e) {

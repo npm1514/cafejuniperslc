@@ -19,7 +19,9 @@ class SubscribeComponent extends Component {
       products: [{
         product: "",
         quantity: "",
-        frequency: ""
+        frequency: "",
+        startdate: "",
+        timeofday: ""
       }]
     };
   }
@@ -28,7 +30,9 @@ class SubscribeComponent extends Component {
     products.push({
       product: "",
       quantity: "",
-      frequency: ""
+      frequency: "",
+      startdate: "",
+      timeofday: ""
     })
     this.setState({ products })
   }
@@ -58,7 +62,9 @@ class SubscribeComponent extends Component {
         products: [{
           product: "",
           quantity: "",
-          frequency: ""
+          frequency: "",
+          startdate: "",
+          timeofday: ""
         }]
       })
     })
@@ -75,7 +81,9 @@ class SubscribeComponent extends Component {
         products: [{
           product: "",
           quantity: "",
-          frequency: ""
+          frequency: "",
+          startdate: "",
+          timeofday: ""
         }]
       })
     })
@@ -195,6 +203,18 @@ class SubscribeComponent extends Component {
                           <option value="Once a Week">Once a Week</option>
                           <option value="Once a Month">Once a Month</option>
                         </select>
+                        <input
+                          value={a.startdate} placeholder="Start Date" required
+                          onChange={(e) => {this.productChange(e, "startdate", i)}}
+                          type="date"
+                          className="dateinput"
+                        />
+                        <input
+                          value={a.timeofday} placeholder="Preferred Time of Day" required
+                          onChange={(e) => {this.productChange(e, "timeofday", i)}}
+                          type="time"
+                          className="timeinput"
+                        />
                       <div title="remove product" className="removeButton hoverer" onClick={(e) => {this.deleteProduct(e,i)}}>X REMOVE PRODUCT</div>
                     </div>
                   )
