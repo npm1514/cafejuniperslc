@@ -70,9 +70,26 @@ export const Subscribe = styled.div`
   button {
     padding: 4px;
   }
+  .removeButton {
+    padding: 4px 8px;
+    border: 1px solid red;
+    width: max-content;
+    border-radius: 3px;
+    margin: 12px auto 0 auto;
+    color: #fff;
+  }
+  .addButton {
+    padding: 4px 8px;
+    border: 1px solid #fff;
+    width: max-content;
+    border-radius: 3px;
+    margin: 12px auto 0 auto;
+    color: #fff;
+  }
   .hoverer:hover {
     cursor: pointer;
     color: ${lightblue};
+    border-color: ${lightblue};
   }
   .productBox {
     width: 80%;

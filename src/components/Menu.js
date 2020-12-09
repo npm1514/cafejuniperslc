@@ -4,10 +4,11 @@ import { MenuWrap, Menu } from '../styled-components/components/menu';
 
 class MenuComponent extends Component {
   render(){
+    const { id, style, children } = this.props;
     return (
-      <MenuWrap>
-        <Menu>
-          {this.props.children}
+      <MenuWrap id={id}>
+        <Menu style={style}>
+          {children}
         </Menu>
       </MenuWrap>
     );

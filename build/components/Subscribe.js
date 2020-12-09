@@ -232,7 +232,12 @@ var SubscribeComponent = /*#__PURE__*/function (_Component) {
           _this2.change(e, "email");
         },
         id: "email-input"
-      }), /*#__PURE__*/_react["default"].createElement("p", null, "PRODUCTS"), products.map(function (a, i) {
+      }), /*#__PURE__*/_react["default"].createElement("div", {
+        style: {
+          color: "#fff",
+          marginTop: "12px"
+        }
+      }, "SELECTED PRODUCTS"), products.map(function (a, i) {
         return /*#__PURE__*/_react["default"].createElement("div", {
           key: i,
           className: "productBox"
@@ -313,15 +318,15 @@ var SubscribeComponent = /*#__PURE__*/function (_Component) {
           value: "Once a Month"
         }, "Once a Month")), /*#__PURE__*/_react["default"].createElement("div", {
           title: "remove product",
-          className: "hoverer",
+          className: "removeButton hoverer",
           onClick: function onClick(e) {
             _this2.deleteProduct(e, i);
           }
-        }, "REMOVE"));
+        }, "X REMOVE PRODUCT"));
       }), /*#__PURE__*/_react["default"].createElement("div", {
         onClick: this.addProduct,
-        className: "hoverer"
-      }, "Add More"), /*#__PURE__*/_react["default"].createElement("br", null), /*#__PURE__*/_react["default"].createElement("textarea", {
+        className: "addButton hoverer"
+      }, "+ ADD PRODUCT"), /*#__PURE__*/_react["default"].createElement("br", null), /*#__PURE__*/_react["default"].createElement("textarea", {
         value: message,
         placeholder: "Please provide more details if necessary here. Is there a time of day that works best for you? If you would like a once a week or once a month order, please provide day or date you would like it delivered.",
         onChange: function onChange(e) {
