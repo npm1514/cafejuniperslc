@@ -19,12 +19,16 @@ export const Subscribe = styled.div`
   h2 {
     color: ${white}
   }
-  textarea, input {
+  textarea, input, select {
     font-family: diazo-mvb-ex-cond, sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 18px;
     padding: 8px;
+
+  }
+  select {
+    width: 100%;
   }
   textarea {
     height: 200px;
@@ -63,9 +67,21 @@ export const Subscribe = styled.div`
       }
     }
   }
+  button {
+    padding: 4px;
+  }
   .hoverer:hover {
     cursor: pointer;
     color: ${lightblue};
+  }
+  .productBox {
+    width: 80%;
+    border: 1px solid #fff;
+    padding: 8px;
+    margin: 4px auto;
+    input {
+      width: 100%;
+    }
   }
 `;
 export const TextBox = styled.button`

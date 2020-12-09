@@ -232,10 +232,11 @@ var SubscribeComponent = /*#__PURE__*/function (_Component) {
           _this2.change(e, "email");
         },
         id: "email-input"
-      }), /*#__PURE__*/_react["default"].createElement("table", null, /*#__PURE__*/_react["default"].createElement("tr", null, /*#__PURE__*/_react["default"].createElement("td", null, "Product"), /*#__PURE__*/_react["default"].createElement("td", null, "Quantity"), /*#__PURE__*/_react["default"].createElement("td", null, "Frequency")), products.map(function (a, i) {
-        return /*#__PURE__*/_react["default"].createElement("tr", {
-          key: i
-        }, /*#__PURE__*/_react["default"].createElement("td", null, /*#__PURE__*/_react["default"].createElement("select", {
+      }), /*#__PURE__*/_react["default"].createElement("p", null, "PRODUCTS"), products.map(function (a, i) {
+        return /*#__PURE__*/_react["default"].createElement("div", {
+          key: i,
+          className: "productBox"
+        }, /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement("select", {
           value: a.product,
           required: true,
           onChange: function onChange(e) {
@@ -285,14 +286,14 @@ var SubscribeComponent = /*#__PURE__*/function (_Component) {
           value: "Burundi Coffee - 12oz Whole Beans"
         }, "Burundi Coffee - 12oz Whole Beans"), /*#__PURE__*/_react["default"].createElement("option", {
           value: "Congo Coffee - 12oz Whole Beans"
-        }, "Congo Coffee - 12oz Whole Beans"))), /*#__PURE__*/_react["default"].createElement("td", null, /*#__PURE__*/_react["default"].createElement("input", {
+        }, "Congo Coffee - 12oz Whole Beans"))), /*#__PURE__*/_react["default"].createElement("input", {
           value: a.quantity,
           placeholder: "Quantity",
           required: true,
           onChange: function onChange(e) {
             _this2.productChange(e, "quantity", i);
           }
-        })), /*#__PURE__*/_react["default"].createElement("td", null, /*#__PURE__*/_react["default"].createElement("select", {
+        }), /*#__PURE__*/_react["default"].createElement("select", {
           value: a.frequency,
           required: true,
           onChange: function onChange(e) {
@@ -310,17 +311,17 @@ var SubscribeComponent = /*#__PURE__*/function (_Component) {
           value: "Once a Week"
         }, "Once a Week"), /*#__PURE__*/_react["default"].createElement("option", {
           value: "Once a Month"
-        }, "Once a Month"))), /*#__PURE__*/_react["default"].createElement("td", {
+        }, "Once a Month")), /*#__PURE__*/_react["default"].createElement("div", {
           title: "remove product",
           className: "hoverer",
           onClick: function onClick(e) {
             _this2.deleteProduct(e, i);
           }
-        }, "X"));
-      }), /*#__PURE__*/_react["default"].createElement("tr", null, /*#__PURE__*/_react["default"].createElement("td", {
+        }, "REMOVE"));
+      }), /*#__PURE__*/_react["default"].createElement("div", {
         onClick: this.addProduct,
         className: "hoverer"
-      }, "Add More"))), /*#__PURE__*/_react["default"].createElement("textarea", {
+      }, "Add More"), /*#__PURE__*/_react["default"].createElement("br", null), /*#__PURE__*/_react["default"].createElement("textarea", {
         value: message,
         placeholder: "Please provide more details if necessary here. Is there a time of day that works best for you? If you would like a once a week or once a month order, please provide day or date you would like it delivered.",
         onChange: function onChange(e) {
