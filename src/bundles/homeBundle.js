@@ -1,9 +1,9 @@
 import React from 'react';
 import { hydrate, render } from 'react-dom';
-import Home from '../pages/HomePage';
+import { HomePage } from '../pages';
 
 if (window)
   render(
-    <Home data={window.__DATA__} />,
+    <HomePage data={window.__DATA__} />,
     document.getElementById('app')
   );

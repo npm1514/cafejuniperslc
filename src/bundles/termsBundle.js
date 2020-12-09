@@ -1,9 +1,9 @@
 import React from 'react';
 import { hydrate, render } from 'react-dom';
-import { CateringPage } from '../pages';
+import { TermsPage } from '../pages';
 
 if (window)
   render(
-    <CateringPage data={window.__DATA__} />,
+    <TermsPage data={window.__DATA__} />,
     document.getElementById('app')
   );

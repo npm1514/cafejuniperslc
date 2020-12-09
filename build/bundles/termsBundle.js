@@ -8,6 +8,6 @@ var _pages = require("../pages");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-if (window) (0, _reactDom.render)( /*#__PURE__*/_react["default"].createElement(_pages.CateringPage, {
+if (window) (0, _reactDom.render)( /*#__PURE__*/_react["default"].createElement(_pages.TermsPage, {
   data: window.__DATA__
 }), document.getElementById('app'));

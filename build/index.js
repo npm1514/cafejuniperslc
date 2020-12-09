@@ -8,12 +8,6 @@ var _react = _interopRequireDefault(require("react"));
 
 var _server = require("react-dom/server");
 
-var _HomeRoot = _interopRequireDefault(require("./roots/HomeRoot"));
-
-var _CateringRoot = _interopRequireDefault(require("./roots/CateringRoot"));
-
-var _styledComponents = require("styled-components");
-
 var _fs = _interopRequireDefault(require("fs"));
 
 var _cors = _interopRequireDefault(require("cors"));
@@ -22,31 +16,37 @@ var _path = _interopRequireDefault(require("path"));
 
 var _bodyParser = _interopRequireDefault(require("body-parser"));
 
-var _config = _interopRequireDefault(require("./config"));
+var _nodeCron = _interopRequireDefault(require("node-cron"));
 
 var _nodemailer = _interopRequireDefault(require("nodemailer"));
+
+var _roots = require("./roots");
+
+var _styledComponents = require("styled-components");
+
+var _config = _interopRequireDefault(require("./config"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 var Cryptr = require('cryptr');
 
 var cryptr = new Cryptr(_config["default"].key);
-
-var cron = require('node-cron');
-
 var PORT = process.env.PORT || 3003;
 var app = (0, _express["default"])();
 app.use((0, _cors["default"])());
 app.use(_bodyParser["default"].json());
 app.use(_bodyParser["default"].urlencoded());
-cron.schedule('* * 1 * *', function () {
+
+_nodeCron["default"].schedule('* * 1 * *', function () {
   (0, _nodeFetch["default"])('http://www.cafejuniperslc.com/').then(function (res) {
     return console.log("requested at " + new Date());
   });
 });
+
 var dataObj = {},
     homeBundle = "",
-    cateringBundle = "";
+    cateringBundle = "",
+    termsBundle = "";
 
 _fs["default"].readFile('./dist/js/home.bundle.min.js', "utf8", function (err, data) {
   if (err) console.log("ERR", err);
@@ -58,10 +58,20 @@ _fs["default"].readFile('./dist/js/catering.bundle.min.js', "utf8", function (er
   cateringBundle = data || "";
 });
 
+_fs["default"].readFile('./dist/js/terms.bundle.min.js', "utf8", function (err, data) {
+  if (err) console.log("ERR", err);
+  termsBundle = data || "";
+});
+
+app.get('/terms', function (req, res) {
+  var data = "";
+  res.set('Cache-Control', 'public, max-age=31557600');
+  res.send(returnHTML(data, termsBundle, _roots.TermsRoot, "terms and conditions"));
+});
 app.get('/catering', function (req, res) {
   var data = "";
   res.set('Cache-Control', 'public, max-age=31557600');
-  res.send(returnHTML(data, cateringBundle, _CateringRoot["default"], "catering"));
+  res.send(returnHTML(data, cateringBundle, _roots.CateringRoot, "catering"));
 });
 app.get('/images/:id', function (req, res) {
   res.set('Cache-Control', 'public, max-age=31557600');
@@ -130,7 +140,7 @@ app.post('/emailer', function (req, res) {
 app.get('/', function (req, res) {
   var data = "";
   res.set('Cache-Control', 'public, max-age=31557600');
-  res.send(returnHTML(data, homeBundle, _HomeRoot["default"], "home"));
+  res.send(returnHTML(data, homeBundle, _roots.HomeRoot, "home"));
 });
 app.listen(PORT, function () {
   console.log('Running on http://localhost:' + PORT);

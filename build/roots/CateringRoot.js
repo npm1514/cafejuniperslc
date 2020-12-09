@@ -7,9 +7,7 @@ exports["default"] = void 0;
 
 var _react = _interopRequireWildcard(require("react"));
 
-var _CateringPage = _interopRequireDefault(require("../pages/CateringPage"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+var _pages = require("../pages");
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
 
@@ -51,7 +49,7 @@ var Root = /*#__PURE__*/function (_Component) {
   _createClass(Root, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/_react["default"].createElement(_CateringPage["default"], {
+      return /*#__PURE__*/_react["default"].createElement(_pages.CateringPage, {
         data: this.props.data ? this.props.data : {}
       });
     }

@@ -341,11 +341,14 @@ var SubscribeComponent = /*#__PURE__*/function (_Component) {
         id: "airplane",
         points: "20 40 75 30 50 80 42 60 62 40 40 56",
         fill: _colors.pink
-      })))), /*#__PURE__*/_react["default"].createElement("p", {
+      })))), /*#__PURE__*/_react["default"].createElement("a", {
+        target: "_blank",
+        href: "/terms"
+      }, /*#__PURE__*/_react["default"].createElement("p", {
         style: {
           color: "#fff"
         }
-      }, "If no other specific details are provided, we will deliver between 8am and 10am. Weekly subscriptions will start on Monday. Monthly subscriptions will start on the first. 16oz drinks will be delivered via disposabel cup. Larger sizes will be delivered in a reusable container. On drop off, those reusable containers will be collected. Any container damaged or lost will be charged against your account.")));
+      }, "Terms and Conditions"))));
     }
   }]);
 

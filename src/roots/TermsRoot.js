@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { CateringPage } from '../pages';
+import { TermsPage } from '../pages';
 
 class Root extends Component {
     render() {
-        return <CateringPage data={this.props.data ? this.props.data : {}}/>
+        return <TermsPage data={this.props.data ? this.props.data : {}}/>
     }
 }
 

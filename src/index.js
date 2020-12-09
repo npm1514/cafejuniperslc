@@ -2,23 +2,20 @@ import express from "express";
 import fetch from "node-fetch";
 import React from "react";
 import { renderToString } from "react-dom/server";
-
-import HomeRoot from "./roots/HomeRoot";
-import CateringRoot from "./roots/CateringRoot";
-
-import { ServerStyleSheet } from 'styled-components';
-
 import fs from 'fs';
 import cors from 'cors';
 import path from 'path'
 import bodyParser from 'body-parser';
+import cron from 'node-cron';
+import nodemailer from 'nodemailer';
+
+import { HomeRoot, CateringRoot, TermsRoot } from "./roots";
+import { ServerStyleSheet } from 'styled-components';
+
 import config from './config';
 
 const Cryptr = require('cryptr');
 const cryptr = new Cryptr(config.key);
-
-import nodemailer from 'nodemailer';
-var cron = require('node-cron');
 
 var PORT = process.env.PORT || 3003;
 
@@ -34,7 +31,8 @@ cron.schedule('* * 1 * *', () => {
 
 var dataObj = {},
 homeBundle = "",
-cateringBundle = "";
+cateringBundle = "",
+termsBundle = "";
 
 fs.readFile('./dist/js/home.bundle.min.js', "utf8", (err, data) => {
   if (err) console.log("ERR" ,err);
@@ -44,6 +42,16 @@ fs.readFile('./dist/js/catering.bundle.min.js', "utf8", (err, data) => {
   if (err) console.log("ERR" ,err);
   cateringBundle = data || "";
 })
+fs.readFile('./dist/js/terms.bundle.min.js', "utf8", (err, data) => {
+  if (err) console.log("ERR" ,err);
+  termsBundle = data || "";
+})
+
+app.get('/terms', (req, res) => {
+  let data = "";
+  res.set('Cache-Control', 'public, max-age=31557600');
+  res.send(returnHTML(data, termsBundle, TermsRoot, "terms and conditions"));
+});
 
 app.get('/catering', (req, res) => {
   let data = "";

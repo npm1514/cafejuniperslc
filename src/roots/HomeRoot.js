@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import Home from '../pages/HomePage';
+import { HomePage } from '../pages';
 
 class Root extends Component {
     render() {
-        return <Home data={this.props.data ? this.props.data : {}}/>
+        return <HomePage data={this.props.data ? this.props.data : {}}/>
     }
 }
 

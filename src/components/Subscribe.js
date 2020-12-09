@@ -230,7 +230,7 @@ class SubscribeComponent extends Component {
               </Hex>
             </TextBox>
           </form>
-          <p style={{color: "#fff"}}>If no other specific details are provided, we will deliver between 8am and 10am. Weekly subscriptions will start on Monday. Monthly subscriptions will start on the first. 16oz drinks will be delivered via disposabel cup. Larger sizes will be delivered in a reusable container. On drop off, those reusable containers will be collected. Any container damaged or lost will be charged against your account.</p>
+          <a target="_blank" href="/terms"><p style={{color: "#fff"}}>Terms and Conditions</p></a>
         </Subscribe>
       </SubscribeWrap>
     );

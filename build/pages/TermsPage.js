@@ -7,7 +7,9 @@ exports["default"] = void 0;
 
 var _react = _interopRequireWildcard(require("react"));
 
-var _pages = require("../pages");
+var _components = require("../components");
+
+var _terms = require("../styled-components/terms");
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
 
@@ -35,28 +37,29 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
-var Root = /*#__PURE__*/function (_Component) {
-  _inherits(Root, _Component);
+var Terms = /*#__PURE__*/function (_Component) {
+  _inherits(Terms, _Component);
 
-  var _super = _createSuper(Root);
+  var _super = _createSuper(Terms);
 
-  function Root() {
-    _classCallCheck(this, Root);
+  function Terms() {
+    _classCallCheck(this, Terms);
 
     return _super.apply(this, arguments);
   }
 
-  _createClass(Root, [{
+  _createClass(Terms, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/_react["default"].createElement(_pages.HomePage, {
-        data: this.props.data ? this.props.data : {}
-      });
+      return /*#__PURE__*/_react["default"].createElement(_terms.TermsWrapper, null, /*#__PURE__*/_react["default"].createElement(_components.Header, null), /*#__PURE__*/_react["default"].createElement(_components.About, {
+        noLogo: true,
+        noHexes: true
+      }, /*#__PURE__*/_react["default"].createElement("h2", null, "Terms and Conditions"), /*#__PURE__*/_react["default"].createElement("p", null, "No refunds will be given on any purchase. All sales are final."), /*#__PURE__*/_react["default"].createElement("p", null, "Product purchase prices may be modified or changed without customer notification."), /*#__PURE__*/_react["default"].createElement("h2", null, "Subscription Program"), /*#__PURE__*/_react["default"].createElement("p", null, "All subscriptions are recurring unless cancelled. If subscription is cancelled, services will render until the end of the payment cycle."), /*#__PURE__*/_react["default"].createElement("p", null, "If no other specific details are provided, we will deliver to your address between 8am and 10am."), /*#__PURE__*/_react["default"].createElement("p", null, "Weekly subscriptions will start on Monday. Monthly subscriptions will start on the first."), /*#__PURE__*/_react["default"].createElement("p", null, "16oz drinks will be delivered via disposable cup. Larger sizes will be delivered in a reusable container. On drop off, those reusable containers will be collected. Any container damaged or lost will be charged against your account.")), /*#__PURE__*/_react["default"].createElement(_components.Footer, null));
     }
   }]);
 
-  return Root;
+  return Terms;
 }(_react.Component);
 
-var _default = Root;
+var _default = Terms;
 exports["default"] = _default;
