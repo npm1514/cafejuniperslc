@@ -33,14 +33,14 @@ export const Delivery = styled.div`
   p {
     margin-top: 0;
   }
-  /* .ddButton {
+  .ddButton {
     position: relative;
     width: 289px;
     height: 59px;
     margin: 0px auto;
     background-image: url("https://cdn.doordash.com/media/button/button_red_l.svg");
     color: transparent;
-  } */
+  }
   .orderTitle {
     font-size: 32px;
     padding: 12px;
