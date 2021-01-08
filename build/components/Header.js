@@ -57,7 +57,11 @@ var HeaderComponent = /*#__PURE__*/function (_Component) {
       if (_this.state.menuOpen) _this.closeMenu();else _this.openMenu();
     });
 
-    _defineProperty(_assertThisInitialized(_this), "closeMenu", function () {
+    _defineProperty(_assertThisInitialized(_this), "closeMenu", function (e, id) {
+      e.preventDefault();
+      var scroll = _this.props.scroll;
+      scroll(id);
+
       _this.setState({
         menuOpen: false
       }, function () {
@@ -107,6 +111,8 @@ var HeaderComponent = /*#__PURE__*/function (_Component) {
   }, {
     key: "render",
     value: function render() {
+      var _this2 = this;
+
       var menuStuck = this.state.menuStuck;
       return /*#__PURE__*/_react["default"].createElement(_header.HeaderWrap, null, /*#__PURE__*/_react["default"].createElement(_header.MobileHeader, {
         id: "mobile-header"
@@ -156,51 +162,85 @@ var HeaderComponent = /*#__PURE__*/function (_Component) {
       })))), /*#__PURE__*/_react["default"].createElement("h1", null, "Salt lake city's premier coffee shop")), this.state.menuOpen && /*#__PURE__*/_react["default"].createElement(_header.MobileMenu, {
         id: "mobile-menu"
       }, /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement("a", {
-        onClick: this.closeMenu,
-        href: "/"
+        href: "/",
+        onClick: function onClick(e) {
+          return _this2.closeMenu(e, "home");
+        }
       }, "Home")), /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement("a", {
-        onClick: this.closeMenu,
-        href: "/#about"
+        href: "/about",
+        onClick: function onClick(e) {
+          return _this2.closeMenu(e, "about");
+        }
       }, "About Us")), /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement("a", {
-        onClick: this.closeMenu,
-        href: "/#map"
+        href: "/map",
+        onClick: function onClick(e) {
+          return _this2.closeMenu(e, "map");
+        }
       }, "Location")), /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement("a", {
-        onClick: this.closeMenu,
-        href: "/#contact"
+        href: "/contact",
+        onClick: function onClick(e) {
+          return _this2.closeMenu(e, "contact");
+        }
       }, "Contact")), /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement("a", {
-        onClick: this.closeMenu,
-        href: "/catering"
-      }, "Catering")), /*#__PURE__*/_react["default"].createElement("div", {
+        href: "/subscriptions",
+        onClick: function onClick(e) {
+          return _this2.closeMenu(e, "subscriptions");
+        }
+      }, "Subscriptions")), /*#__PURE__*/_react["default"].createElement("div", {
         className: "online-order"
       }, /*#__PURE__*/_react["default"].createElement("a", {
+        href: "/order",
         rel: "noopener",
         className: "online-order",
-        href: "/catering#subscribe"
-      }, "Subscribe Now"))), /*#__PURE__*/_react["default"].createElement(_header.HeaderWrap, {
+        onClick: function onClick(e) {
+          return _this2.closeMenu(e, "order");
+        }
+      }, "Order Now"))), /*#__PURE__*/_react["default"].createElement(_header.HeaderWrap, {
         menuStuck: menuStuck
       }, /*#__PURE__*/_react["default"].createElement(_header.DesktopHeader, {
         menuStuck: menuStuck
       }, /*#__PURE__*/_react["default"].createElement("a", {
-        href: "/"
+        href: "",
+        onClick: function onClick(e) {
+          return _this2.closeMenu(e, "home");
+        }
       }, "Home"), /*#__PURE__*/_react["default"].createElement("a", {
-        href: "/#about"
+        href: "/about",
+        onClick: function onClick(e) {
+          return _this2.closeMenu(e, "about");
+        }
       }, "About Us"), /*#__PURE__*/_react["default"].createElement("a", {
-        href: "/#map"
+        href: "/map",
+        onClick: function onClick(e) {
+          return _this2.closeMenu(e, "map");
+        }
       }, "Location"), /*#__PURE__*/_react["default"].createElement("a", {
-        href: "/#contact"
+        href: "/contact",
+        onClick: function onClick(e) {
+          return _this2.closeMenu(e, "contact");
+        }
       }, "Contact"), /*#__PURE__*/_react["default"].createElement("a", {
-        href: "/catering"
-      }, "Catering")), /*#__PURE__*/_react["default"].createElement(_header.DesktopOrder, null, /*#__PURE__*/_react["default"].createElement("a", {
+        href: "/subscriptions",
+        onClick: function onClick(e) {
+          return _this2.closeMenu(e, "subscriptions");
+        }
+      }, "Subscriptions")), /*#__PURE__*/_react["default"].createElement(_header.DesktopOrder, null, /*#__PURE__*/_react["default"].createElement("a", {
+        href: "/order",
         rel: "noopener",
         className: "online-order",
-        href: "/catering#subscribe"
-      }, "Subscribe Now"))), /*#__PURE__*/_react["default"].createElement(_header.Spacer, {
+        onClick: function onClick(e) {
+          return _this2.closeMenu(e, "order");
+        }
+      }, "Order Now"))), /*#__PURE__*/_react["default"].createElement(_header.Spacer, {
         menuStuck: menuStuck
       }), /*#__PURE__*/_react["default"].createElement(_header.OnlineOrder, null, /*#__PURE__*/_react["default"].createElement("a", {
+        href: "/order",
         rel: "noopener",
         className: "online-order",
-        href: "/catering#subscribe"
-      }, "Subscribe Now")));
+        onClick: function onClick(e) {
+          return _this2.closeMenu(e, "order");
+        }
+      }, "Order Now")));
     }
   }]);
 

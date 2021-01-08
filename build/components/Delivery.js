@@ -53,7 +53,31 @@ var DeliveryComponent = /*#__PURE__*/function (_Component) {
   _createClass(DeliveryComponent, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/_react["default"].createElement(_delivery.DeliveryWrap, null, /*#__PURE__*/_react["default"].createElement(_delivery.Delivery, null, /*#__PURE__*/_react["default"].createElement("h2", null, "GET YOUR ORDER DELIVERED!"), /*#__PURE__*/_react["default"].createElement("a", {
+      return /*#__PURE__*/_react["default"].createElement(_delivery.DeliveryWrap, null, /*#__PURE__*/_react["default"].createElement(_delivery.OrderID, {
+        id: this.props.id
+      }), /*#__PURE__*/_react["default"].createElement(_delivery.Delivery, null, /*#__PURE__*/_react["default"].createElement("h2", {
+        className: "orderTitle"
+      }, "ORDER ONLINE"), /*#__PURE__*/_react["default"].createElement("h2", null, "PLACE AN ORDER FOR PICKUP!"), /*#__PURE__*/_react["default"].createElement("p", null, "[No delivery or processing fees!]"), /*#__PURE__*/_react["default"].createElement("a", {
+        href: "https://www.clover.com/online-ordering/cafe-juniper-llc-salt-lake-city",
+        target: "_blank",
+        alt: "Order Food Pickup with Clover",
+        title: "Order Food Pickup with Clover",
+        style: {
+          textDecoration: "none"
+        }
+      }, /*#__PURE__*/_react["default"].createElement("div", {
+        style: {
+          background: "#FFF",
+          borderRadius: "4px",
+          padding: "8px 16px"
+        }
+      }, /*#__PURE__*/_react["default"].createElement("img", {
+        className: "clButton",
+        src: "/images/clover-logo.svg",
+        style: {
+          width: "200px"
+        }
+      }))), /*#__PURE__*/_react["default"].createElement("br", null), /*#__PURE__*/_react["default"].createElement("hr", null), /*#__PURE__*/_react["default"].createElement("h2", null, "OR GET YOUR ORDER DELIVERED!"), /*#__PURE__*/_react["default"].createElement("a", {
         href: "https://www.doordash.com/business/596471/?utm_source=partner-link&utm_medium=website&utm_campaign=596471&utm_content=red-l",
         target: "_blank",
         alt: "Order Food Delivery with DoorDash",
@@ -77,27 +101,7 @@ var DeliveryComponent = /*#__PURE__*/function (_Component) {
         style: {
           width: "268px"
         }
-      })), /*#__PURE__*/_react["default"].createElement("h2", null, "OR PLACE AN ORDER FOR PICKUP!"), /*#__PURE__*/_react["default"].createElement("a", {
-        href: "https://www.clover.com/online-ordering/cafe-juniper-llc-salt-lake-city",
-        target: "_blank",
-        alt: "Order Food Pickup with Clover",
-        title: "Order Food Pickup with Clover",
-        style: {
-          textDecoration: "none"
-        }
-      }, /*#__PURE__*/_react["default"].createElement("div", {
-        style: {
-          background: "#FFF",
-          borderRadius: "4px",
-          padding: "8px 16px"
-        }
-      }, /*#__PURE__*/_react["default"].createElement("img", {
-        className: "clButton",
-        src: "/images/clover-logo.svg",
-        style: {
-          width: "200px"
-        }
-      })))));
+      }))));
     }
   }]);
 

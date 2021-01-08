@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import { MessageWrap, Message, TextBox } from '../styled-components/components/message';
+import { MessageWrap, Message, TextBox, ContactID } from '../styled-components/components/message';
 import { Hex } from '../subcomponents';
 import { lightblue } from '../styled-components/colors';
 import { pink, green } from '../styled-components/colors';
@@ -46,7 +46,8 @@ class MessageComponent extends Component {
   render(){
     const { name, email, message } = this.state;
     return (
-      <MessageWrap id={this.props.id}>
+      <MessageWrap>
+        <ContactID id={this.props.id}/>
         <Message>
           <Hex className="mobile-hex" color={green} bottom={-83} left={-50} size={100}/>
           <h2>385-213-5061 | cafejuniperslc@gmail.com</h2>

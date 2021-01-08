@@ -10,7 +10,15 @@ export const BannerWrap = styled.div`
     height: 300px;
   }
 `;
-
+export const HomeID = styled.div`
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: -159px;
+  @media(min-width: 700px){
+    top: -74px;
+  }
+`;
 export const Banner = styled.div`
   width: 100%;
   display: none;

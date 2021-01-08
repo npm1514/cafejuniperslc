@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import { MapWrap, Map } from '../styled-components/components/map';
+import { MapWrap, Map, MapID } from '../styled-components/components/map';
 import { Hex } from '../subcomponents';
 import { green, pink } from '../styled-components/colors';
 
 class MapComponent extends Component {
   render(){
     return (
-      <MapWrap id={this.props.id}>
+      <MapWrap>
+        <MapID id={this.props.id}/>
         <Map>
           <Hex className="desktop-hex" color={green} top={-77} left={-67} size={200}/>
           <Hex className="mobile-hex" color={pink} top={-77} left={-27} size={75}/>

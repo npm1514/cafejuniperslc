@@ -59,6 +59,12 @@ app.get('/catering', (req, res) => {
   res.send(returnHTML(data, cateringBundle, CateringRoot, "catering"));
 });
 
+app.get('/subscriptions', (req, res) => {
+  let data = "";
+  res.set('Cache-Control', 'public, max-age=31557600');
+  res.send(returnHTML(data, cateringBundle, CateringRoot, "subscriptions"));
+});
+
 app.get('/images/:id', (req, res) => {
   res.set('Cache-Control', 'public, max-age=31557600');
   res.sendFile(path.join(__dirname, '../images/' + req.params.id));
@@ -131,6 +137,14 @@ app.post('/emailer', (req, res) => {
     else res.send({response: info});
   });
 })
+
+app.get('/:id', (req, res) => {
+  let data = {
+    path: req.params.id
+  };
+  res.set('Cache-Control', 'public, max-age=31557600');
+  res.send(returnHTML(data, homeBundle, HomeRoot, req.params.id));
+});
 
 app.get('/', (req, res) => {
   let data = "";

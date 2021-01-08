@@ -5,14 +5,23 @@ export const MessageWrap = styled.div`
   width: 100%;
   background-color: ${darkblue};
   padding-bottom: 24px;
+  position: relative;
 `;
-
+export const ContactID = styled.div`
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: -159px;
+  @media(min-width: 700px){
+    top: -74px;
+  }
+`;
 export const Message = styled.div`
-  width: 100%;
   background-color: ${darkblue};
   max-width: 800px;
   margin: auto;
-  padding-top: 24px;
+  padding: 32px;
+  width: calc(100% - 64px);
   position: relative;
   text-align: center;
   h2 {

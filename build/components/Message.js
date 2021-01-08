@@ -106,9 +106,9 @@ var MessageComponent = /*#__PURE__*/function (_Component) {
           name = _this$state.name,
           email = _this$state.email,
           message = _this$state.message;
-      return /*#__PURE__*/_react["default"].createElement(_message.MessageWrap, {
+      return /*#__PURE__*/_react["default"].createElement(_message.MessageWrap, null, /*#__PURE__*/_react["default"].createElement(_message.ContactID, {
         id: this.props.id
-      }, /*#__PURE__*/_react["default"].createElement(_message.Message, null, /*#__PURE__*/_react["default"].createElement(_subcomponents.Hex, {
+      }), /*#__PURE__*/_react["default"].createElement(_message.Message, null, /*#__PURE__*/_react["default"].createElement(_subcomponents.Hex, {
         className: "mobile-hex",
         color: _colors.green,
         bottom: -83,

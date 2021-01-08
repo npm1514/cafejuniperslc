@@ -4,13 +4,22 @@ import {lightblue} from '../colors';
 export const MapWrap = styled.div`
   width: 100%;
   background-color: ${lightblue};
-  padding: 24px 0;
+  position: relative;
 `;
-
+export const MapID = styled.div`
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: -159px;
+  @media(min-width: 700px){
+    top: -74px;
+  }
+`;
 export const Map = styled.div`
-  width: 100%;
+  width: calc(100% - 64px);
   max-width: 800px;
   margin: auto;
+  padding: 32px;
   text-align: center;
   position: relative;
   background-color: ${lightblue};

@@ -3,6 +3,16 @@ import { brown, white, darkblue } from '../colors';
 export const AboutWrap = styled.div`
   width: 100%;
   background-color: ${brown};
+  position: relative;
+`;
+export const AboutID = styled.div`
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: -159px;
+  @media(min-width: 700px){
+    top: -74px;
+  }
 `;
 export const About = styled.div`
   width: calc(100% - 64px);

@@ -15,7 +15,10 @@ class HeaderComponent extends Component {
     if(this.state.menuOpen) this.closeMenu()
     else this.openMenu()
   }
-  closeMenu = () => {
+  closeMenu = (e, id) => {
+    e.preventDefault();
+    const { scroll } = this.props;
+    scroll(id)
     this.setState(
       { menuOpen: false },
       () => {
@@ -46,6 +49,7 @@ class HeaderComponent extends Component {
   }
   render(){
     const { menuStuck } = this.state;
+
     return (
       <HeaderWrap>
         <MobileHeader id="mobile-header">
@@ -67,28 +71,40 @@ class HeaderComponent extends Component {
         {
           this.state.menuOpen &&
           <MobileMenu id="mobile-menu">
-            <div><a onClick={this.closeMenu} href="/">Home</a></div>
-            <div><a onClick={this.closeMenu} href="/#about">About Us</a></div>
-            <div><a onClick={this.closeMenu} href="/#map">Location</a></div>
-            <div><a onClick={this.closeMenu} href="/#contact">Contact</a></div>
-            <div><a onClick={this.closeMenu} href="/catering">Catering</a></div>
-            <div className="online-order"><a rel="noopener" className="online-order" href="/catering#subscribe">Subscribe Now</a></div>
+            <div>
+              <a href="/" onClick={(e) => this.closeMenu(e, "home")}>Home</a>
+            </div>
+            <div>
+              <a href="/about" onClick={(e) => this.closeMenu(e, "about")}>About Us</a>
+            </div>
+            <div>
+              <a href="/map" onClick={(e) => this.closeMenu(e, "map")}>Location</a>
+            </div>
+            <div>
+              <a href="/contact" onClick={(e) => this.closeMenu(e, "contact")}>Contact</a>
+            </div>
+            <div>
+              <a href="/subscriptions" onClick={(e) => this.closeMenu(e, "subscriptions")}>Subscriptions</a>
+            </div>
+            <div className="online-order">
+              <a href="/order" rel="noopener" className="online-order" onClick={(e) => this.closeMenu(e, "order")}>Order Now</a>
+            </div>
           </MobileMenu>
         }
         <HeaderWrap menuStuck={menuStuck}>
           <DesktopHeader menuStuck={menuStuck}>
-            <a href="/">Home</a>
-            <a href="/#about">About Us</a>
-            <a href="/#map">Location</a>
-            <a href="/#contact">Contact</a>
-            <a href="/catering">Catering</a>
+            <a href="" onClick={(e) => this.closeMenu(e, "home")}>Home</a>
+            <a href="/about" onClick={(e) => this.closeMenu(e, "about")}>About Us</a>
+            <a href="/map" onClick={(e) => this.closeMenu(e, "map")}>Location</a>
+            <a href="/contact" onClick={(e) => this.closeMenu(e, "contact")}>Contact</a>
+            <a href="/subscriptions" onClick={(e) => this.closeMenu(e, "subscriptions")}>Subscriptions</a>
           </DesktopHeader>
           <DesktopOrder>
-            <a rel="noopener" className="online-order" href="/catering#subscribe">Subscribe Now</a>
+            <a href="/order" rel="noopener" className="online-order" onClick={(e) => this.closeMenu(e, "order")}>Order Now</a>
           </DesktopOrder>
         </HeaderWrap>
         <Spacer menuStuck={menuStuck}/>
-        <OnlineOrder><a rel="noopener" className="online-order" href="/catering#subscribe">Subscribe Now</a></OnlineOrder>
+        <OnlineOrder><a href="/order" rel="noopener" className="online-order" onClick={(e) => this.closeMenu(e, "order")}>Order Now</a></OnlineOrder>
       </HeaderWrap>
     );
   }

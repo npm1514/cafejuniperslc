@@ -53,9 +53,9 @@ var MapComponent = /*#__PURE__*/function (_Component) {
   _createClass(MapComponent, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/_react["default"].createElement(_map.MapWrap, {
+      return /*#__PURE__*/_react["default"].createElement(_map.MapWrap, null, /*#__PURE__*/_react["default"].createElement(_map.MapID, {
         id: this.props.id
-      }, /*#__PURE__*/_react["default"].createElement(_map.Map, null, /*#__PURE__*/_react["default"].createElement(_subcomponents.Hex, {
+      }), /*#__PURE__*/_react["default"].createElement(_map.Map, null, /*#__PURE__*/_react["default"].createElement(_subcomponents.Hex, {
         className: "desktop-hex",
         color: _colors.green,
         top: -77,

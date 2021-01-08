@@ -57,9 +57,9 @@ var AboutComponent = /*#__PURE__*/function (_Component) {
           noHexes = _this$props.noHexes,
           noLogo = _this$props.noLogo,
           id = _this$props.id;
-      return /*#__PURE__*/_react["default"].createElement(_about.AboutWrap, {
+      return /*#__PURE__*/_react["default"].createElement(_about.AboutWrap, null, /*#__PURE__*/_react["default"].createElement(_about.AboutID, {
         id: id
-      }, /*#__PURE__*/_react["default"].createElement(_about.About, null, !noHexes && /*#__PURE__*/_react["default"].createElement(_react.Fragment, null, /*#__PURE__*/_react["default"].createElement(_subcomponents.Hex, {
+      }), /*#__PURE__*/_react["default"].createElement(_about.About, null, !noHexes && /*#__PURE__*/_react["default"].createElement(_react.Fragment, null, /*#__PURE__*/_react["default"].createElement(_subcomponents.Hex, {
         className: "desktop-hex",
         color: _colors.lightblue,
         top: -40,

@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import { AboutWrap, About, AboutLeft, AboutRight } from '../styled-components/components/about';
+import { AboutWrap, About, AboutLeft, AboutRight, AboutID } from '../styled-components/components/about';
 import { Hex } from '../subcomponents';
 import { lightblue, darkblue } from '../styled-components/colors';
 
@@ -7,7 +7,8 @@ class AboutComponent extends Component {
   render(){
     const { noHexes, noLogo, id } = this.props;
     return (
-      <AboutWrap id={id}>
+      <AboutWrap>
+        <AboutID id={id}/>
         <About>
           {
             !noHexes &&
