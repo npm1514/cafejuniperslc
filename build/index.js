@@ -47,6 +47,7 @@ var dataObj = {},
     homeBundle = "",
     cateringBundle = "",
     fourohfourBundle = "",
+    sitemapBundle = "",
     termsBundle = "";
 
 _fs["default"].readFile('./dist/js/home.bundle.min.js', "utf8", function (err, data) {
@@ -69,6 +70,11 @@ _fs["default"].readFile('./dist/js/fourohfour.bundle.min.js', "utf8", function (
   fourohfourBundle = data || "";
 });
 
+_fs["default"].readFile('./dist/js/sitemap.bundle.min.js', "utf8", function (err, data) {
+  if (err) console.log("ERR", err);
+  sitemapBundle = data || "";
+});
+
 app.get('/terms', function (req, res) {
   var data = "";
   res.set('Cache-Control', 'public, max-age=31557600');
@@ -83,6 +89,11 @@ app.get('/subscriptions', function (req, res) {
   var data = "";
   res.set('Cache-Control', 'public, max-age=31557600');
   res.send(returnHTML(data, cateringBundle, _roots.CateringRoot, "subscriptions"));
+});
+app.get('/sitemap', function (req, res) {
+  var data = "";
+  res.set('Cache-Control', 'public, max-age=31557600');
+  res.send(returnHTML(data, sitemapBundle, _roots.SitemapRoot, "sitemap"));
 });
 app.get('/images/:id', function (req, res) {
   res.set('Cache-Control', 'public, max-age=31557600');
@@ -194,6 +205,9 @@ app.get('/', function (req, res) {
   var data = "";
   res.set('Cache-Control', 'public, max-age=31557600');
   res.send(returnHTML(data, homeBundle, _roots.HomeRoot, "home"));
+});
+app.get('/health', function (req, res) {
+  res.send("healthy");
 });
 app.get('/*', function (req, res) {
   var data = {};

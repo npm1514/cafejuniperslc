@@ -9,7 +9,7 @@ import bodyParser from 'body-parser';
 import cron from 'node-cron';
 import nodemailer from 'nodemailer';
 
-import { HomeRoot, CateringRoot, TermsRoot, FourOhFourRoot } from "./roots";
+import { HomeRoot, CateringRoot, TermsRoot, FourOhFourRoot, SitemapRoot } from "./roots";
 import { ServerStyleSheet } from 'styled-components';
 
 import config from './config';
@@ -33,6 +33,7 @@ var dataObj = {},
 homeBundle = "",
 cateringBundle = "",
 fourohfourBundle = "",
+sitemapBundle = "",
 termsBundle = "";
 
 fs.readFile('./dist/js/home.bundle.min.js', "utf8", (err, data) => {
@@ -51,7 +52,10 @@ fs.readFile('./dist/js/fourohfour.bundle.min.js', "utf8", (err, data) => {
   if (err) console.log("ERR" ,err);
   fourohfourBundle = data || "";
 })
-
+fs.readFile('./dist/js/sitemap.bundle.min.js', "utf8", (err, data) => {
+  if (err) console.log("ERR" ,err);
+  sitemapBundle = data || "";
+})
 app.get('/terms', (req, res) => {
   let data = "";
   res.set('Cache-Control', 'public, max-age=31557600');
@@ -68,6 +72,12 @@ app.get('/subscriptions', (req, res) => {
   let data = "";
   res.set('Cache-Control', 'public, max-age=31557600');
   res.send(returnHTML(data, cateringBundle, CateringRoot, "subscriptions"));
+});
+
+app.get('/sitemap', (req, res) => {
+  let data = "";
+  res.set('Cache-Control', 'public, max-age=31557600');
+  res.send(returnHTML(data, sitemapBundle, SitemapRoot, "sitemap"));
 });
 
 app.get('/images/:id', (req, res) => {
@@ -185,6 +195,10 @@ app.get('/', (req, res) => {
   let data = "";
   res.set('Cache-Control', 'public, max-age=31557600');
   res.send(returnHTML(data, homeBundle, HomeRoot, "home"));
+});
+
+app.get('/health', (req, res) => {
+  res.send("healthy");
 });
 
 app.get('/*', (req, res) => {

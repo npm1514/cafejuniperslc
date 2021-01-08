@@ -1,11 +1,38 @@
 import styled from 'styled-components';
 import {darkblue, white, lightblue } from '../colors';
-
-export const Footer = styled.footer`
+export const FooterWrap = styled.footer`
   width: calc(100% - 32px);
   background-color: ${darkblue};
   color: ${white};
   padding: 16px;
+  text-align: center;
+  a:hover {
+    color: ${lightblue};
+    transition: color 0.5s;
+  }
+  a:visited {
+    color: ${white};
+  }
+`;
+
+export const Sitemap = styled.div`
+  width: max-content;
+  margin: auto;
+  &:hover {
+    color: ${lightblue};
+    transition: color 0.5s;
+  }
+  &:visited {
+    color: ${white};
+  }
+  @media (min-width: 700px){
+    font-size: 14px;
+  }
+`;
+
+
+export const Footer = styled.div`
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,13 +59,7 @@ export const Footer = styled.footer`
     justify-content: center;
     margin: 8px 0;
   }
-  a:hover {
-    color: ${lightblue};
-    transition: color 0.5s;
-  }
-  a:visited {
-    color: ${white};
-  }
+
   i:hover {
     color: ${lightblue};
     transition: color 0.5s;

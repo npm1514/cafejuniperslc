@@ -21,6 +21,12 @@ Object.defineProperty(exports, "HomePage", {
     return _HomePage["default"];
   }
 });
+Object.defineProperty(exports, "SitemapPage", {
+  enumerable: true,
+  get: function get() {
+    return _SitemapPage["default"];
+  }
+});
 Object.defineProperty(exports, "TermsPage", {
   enumerable: true,
   get: function get() {
@@ -33,6 +39,8 @@ var _CateringPage = _interopRequireDefault(require("./CateringPage"));
 var _FourOhFourPage = _interopRequireDefault(require("./FourOhFourPage"));
 
 var _HomePage = _interopRequireDefault(require("./HomePage"));
+
+var _SitemapPage = _interopRequireDefault(require("./SitemapPage"));
 
 var _TermsPage = _interopRequireDefault(require("./TermsPage"));
 

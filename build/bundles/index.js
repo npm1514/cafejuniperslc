@@ -21,6 +21,12 @@ Object.defineProperty(exports, "homeBundle", {
     return _homeBundle["default"];
   }
 });
+Object.defineProperty(exports, "sitemapBundle", {
+  enumerable: true,
+  get: function get() {
+    return _sitemapBundle["default"];
+  }
+});
 Object.defineProperty(exports, "termsBundle", {
   enumerable: true,
   get: function get() {
@@ -33,6 +39,8 @@ var _cateringBundle = _interopRequireDefault(require("./cateringBundle"));
 var _fourohfourBundle = _interopRequireDefault(require("./fourohfourBundle"));
 
 var _homeBundle = _interopRequireDefault(require("./homeBundle"));
+
+var _sitemapBundle = _interopRequireDefault(require("./sitemapBundle"));
 
 var _termsBundle = _interopRequireDefault(require("./termsBundle"));
 
