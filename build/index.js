@@ -46,6 +46,7 @@ _nodeCron["default"].schedule('* * 1 * *', function () {
 var dataObj = {},
     homeBundle = "",
     cateringBundle = "",
+    fourohfourBundle = "",
     termsBundle = "";
 
 _fs["default"].readFile('./dist/js/home.bundle.min.js', "utf8", function (err, data) {
@@ -61,6 +62,11 @@ _fs["default"].readFile('./dist/js/catering.bundle.min.js', "utf8", function (er
 _fs["default"].readFile('./dist/js/terms.bundle.min.js', "utf8", function (err, data) {
   if (err) console.log("ERR", err);
   termsBundle = data || "";
+});
+
+_fs["default"].readFile('./dist/js/fourohfour.bundle.min.js', "utf8", function (err, data) {
+  if (err) console.log("ERR", err);
+  fourohfourBundle = data || "";
 });
 
 app.get('/terms', function (req, res) {
@@ -149,17 +155,50 @@ app.post('/emailer', function (req, res) {
     });
   });
 });
-app.get('/:id', function (req, res) {
+app.get('/home', function (req, res) {
   var data = {
-    path: req.params.id
+    path: "home"
   };
   res.set('Cache-Control', 'public, max-age=31557600');
-  res.send(returnHTML(data, homeBundle, _roots.HomeRoot, req.params.id));
+  res.send(returnHTML(data, homeBundle, _roots.HomeRoot, "home"));
+});
+app.get('/about', function (req, res) {
+  var data = {
+    path: "about"
+  };
+  res.set('Cache-Control', 'public, max-age=31557600');
+  res.send(returnHTML(data, homeBundle, _roots.HomeRoot, "about"));
+});
+app.get('/map', function (req, res) {
+  var data = {
+    path: "map"
+  };
+  res.set('Cache-Control', 'public, max-age=31557600');
+  res.send(returnHTML(data, homeBundle, _roots.HomeRoot, "map"));
+});
+app.get('/order', function (req, res) {
+  var data = {
+    path: "order"
+  };
+  res.set('Cache-Control', 'public, max-age=31557600');
+  res.send(returnHTML(data, homeBundle, _roots.HomeRoot, "order"));
+});
+app.get('/contact', function (req, res) {
+  var data = {
+    path: "contact"
+  };
+  res.set('Cache-Control', 'public, max-age=31557600');
+  res.send(returnHTML(data, homeBundle, _roots.HomeRoot, "contact"));
 });
 app.get('/', function (req, res) {
   var data = "";
   res.set('Cache-Control', 'public, max-age=31557600');
   res.send(returnHTML(data, homeBundle, _roots.HomeRoot, "home"));
+});
+app.get('/*', function (req, res) {
+  var data = {};
+  res.set('Cache-Control', 'public, max-age=31557600');
+  res.send(returnHTML(data, fourohfourBundle, _roots.FourOhFourRoot, "error"));
 });
 app.listen(PORT, function () {
   console.log('Running on http://localhost:' + PORT);

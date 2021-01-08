@@ -7,11 +7,11 @@ exports["default"] = void 0;
 
 var _react = _interopRequireWildcard(require("react"));
 
-var _delivery = require("../styled-components/components/delivery");
+var _components = require("../components");
 
-var _subcomponents = require("../subcomponents");
+var _fourohfour = require("../styled-components/pages/fourohfour");
 
-var _colors = require("../styled-components/colors");
+var _global = require("../styled-components/global");
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
 
@@ -39,106 +39,30 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
-var DeliveryComponent = /*#__PURE__*/function (_Component) {
-  _inherits(DeliveryComponent, _Component);
+var FourOhFour = /*#__PURE__*/function (_Component) {
+  _inherits(FourOhFour, _Component);
 
-  var _super = _createSuper(DeliveryComponent);
+  var _super = _createSuper(FourOhFour);
 
-  function DeliveryComponent() {
-    _classCallCheck(this, DeliveryComponent);
+  function FourOhFour() {
+    _classCallCheck(this, FourOhFour);
 
     return _super.apply(this, arguments);
   }
 
-  _createClass(DeliveryComponent, [{
+  _createClass(FourOhFour, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/_react["default"].createElement(_delivery.DeliveryWrap, null, /*#__PURE__*/_react["default"].createElement(_delivery.OrderID, {
-        id: this.props.id
-      }), /*#__PURE__*/_react["default"].createElement(_delivery.Delivery, null, /*#__PURE__*/_react["default"].createElement("h2", {
-        className: "orderTitle"
-      }, "ORDER ONLINE"), /*#__PURE__*/_react["default"].createElement("h2", null, "PLACE AN ORDER FOR PICKUP!"), /*#__PURE__*/_react["default"].createElement("p", null, "[No delivery or processing fees!]"), /*#__PURE__*/_react["default"].createElement("a", {
-        href: "https://www.clover.com/online-ordering/cafe-juniper-llc-salt-lake-city",
-        target: "_blank",
-        alt: "Order Food Pickup with Clover",
-        title: "Order Food Pickup with Clover",
-        style: {
-          textDecoration: "none"
-        }
-      }, /*#__PURE__*/_react["default"].createElement("div", {
-        style: {
-          background: "#FFF",
-          borderRadius: "4px",
-          padding: "8px 16px"
-        }
-      }, /*#__PURE__*/_react["default"].createElement("img", {
-        className: "clButton",
-        src: "/images/clover-logo.svg",
-        style: {
-          width: "200px"
-        }
-      }))), /*#__PURE__*/_react["default"].createElement("br", null), /*#__PURE__*/_react["default"].createElement("hr", null), /*#__PURE__*/_react["default"].createElement("h2", null, "OR GET YOUR ORDER DELIVERED!"), /*#__PURE__*/_react["default"].createElement("a", {
-        href: "https://www.doordash.com/business/596471/?utm_source=partner-link&utm_medium=website&utm_campaign=596471&utm_content=red-l",
-        target: "_blank",
-        alt: "Order Food Delivery with DoorDash",
-        title: "Order Food Delivery with DoorDash",
-        style: {
-          textDecoration: "none"
-        }
-      }, /*#__PURE__*/_react["default"].createElement("img", {
-        className: "ddButton",
-        src: "/images/button_red_l.svg",
-        style: {
-          width: "268px"
-        }
-      })), /*#__PURE__*/_react["default"].createElement("a", {
-        href: "https://postmates.com/merchant/cafe-juniper-salt-lake-city",
-        target: "_blank",
-        alt: "Order Food Delivery with Postmates",
-        title: "Order Food Delivery with Postmates",
-        style: {
-          textDecoration: "none"
-        }
-      }, /*#__PURE__*/_react["default"].createElement("img", {
-        className: "pmButton",
-        src: "/images/postmates.png",
-        style: {
-          width: "268px"
-        }
-      })), /*#__PURE__*/_react["default"].createElement("a", {
-        href: "https://www.grubhub.com/restaurant/cafe-juniper-29-e-400-s-salt-lake-city/2418846",
-        target: "_blank",
-        alt: "Order Food Delivery with Grubhub",
-        title: "Order Food Delivery with Grubhub",
-        style: {
-          textDecoration: "none"
-        }
-      }, /*#__PURE__*/_react["default"].createElement("img", {
-        className: "ghButton",
-        src: "/images/grubhub.png",
-        style: {
-          width: "268px"
-        }
-      })), /*#__PURE__*/_react["default"].createElement("a", {
-        href: "https://www.ubereats.com/salt-lake-city/food-delivery/cafe-juniper/Pf2MDmZ7TJycEdVMfcS5mg",
-        target: "_blank",
-        alt: "Order Food Delivery with Uber Eats",
-        title: "Order Food Delivery with Uber Eats",
-        style: {
-          textDecoration: "none"
-        }
-      }, /*#__PURE__*/_react["default"].createElement("img", {
-        className: "ueButton",
-        src: "/images/UberEats.png",
-        style: {
-          width: "268px"
-        }
-      }))));
+      return /*#__PURE__*/_react["default"].createElement(_global.PageWrapper, null, /*#__PURE__*/_react["default"].createElement(_components.Header, null), /*#__PURE__*/_react["default"].createElement(_global.ContentWrapper, null, /*#__PURE__*/_react["default"].createElement(_fourohfour.FourOhFourContent, null, /*#__PURE__*/_react["default"].createElement("h2", null, "[404] Oh No!"), /*#__PURE__*/_react["default"].createElement("h2", null, "It looks like you need some more coffee!"), /*#__PURE__*/_react["default"].createElement("a", {
+        href: "/"
+      }, /*#__PURE__*/_react["default"].createElement(_global.Button, null, "Let's Go Home")), /*#__PURE__*/_react["default"].createElement("br", null), /*#__PURE__*/_react["default"].createElement("img", {
+        src: "/images/needcoffee.gif"
+      }))), /*#__PURE__*/_react["default"].createElement(_components.Footer, null));
     }
   }]);
 
-  return DeliveryComponent;
+  return FourOhFour;
 }(_react.Component);
 
-var _default = DeliveryComponent;
+var _default = FourOhFour;
 exports["default"] = _default;

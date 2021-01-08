@@ -9,7 +9,7 @@ import bodyParser from 'body-parser';
 import cron from 'node-cron';
 import nodemailer from 'nodemailer';
 
-import { HomeRoot, CateringRoot, TermsRoot } from "./roots";
+import { HomeRoot, CateringRoot, TermsRoot, FourOhFourRoot } from "./roots";
 import { ServerStyleSheet } from 'styled-components';
 
 import config from './config';
@@ -32,6 +32,7 @@ cron.schedule('* * 1 * *', () => {
 var dataObj = {},
 homeBundle = "",
 cateringBundle = "",
+fourohfourBundle = "",
 termsBundle = "";
 
 fs.readFile('./dist/js/home.bundle.min.js', "utf8", (err, data) => {
@@ -45,6 +46,10 @@ fs.readFile('./dist/js/catering.bundle.min.js', "utf8", (err, data) => {
 fs.readFile('./dist/js/terms.bundle.min.js', "utf8", (err, data) => {
   if (err) console.log("ERR" ,err);
   termsBundle = data || "";
+})
+fs.readFile('./dist/js/fourohfour.bundle.min.js', "utf8", (err, data) => {
+  if (err) console.log("ERR" ,err);
+  fourohfourBundle = data || "";
 })
 
 app.get('/terms', (req, res) => {
@@ -138,18 +143,54 @@ app.post('/emailer', (req, res) => {
   });
 })
 
-app.get('/:id', (req, res) => {
+app.get('/home', (req, res) => {
   let data = {
-    path: req.params.id
+    path: "home"
   };
   res.set('Cache-Control', 'public, max-age=31557600');
-  res.send(returnHTML(data, homeBundle, HomeRoot, req.params.id));
+  res.send(returnHTML(data, homeBundle, HomeRoot, "home"));
+});
+
+app.get('/about', (req, res) => {
+  let data = {
+    path: "about"
+  };
+  res.set('Cache-Control', 'public, max-age=31557600');
+  res.send(returnHTML(data, homeBundle, HomeRoot, "about"));
+});
+
+app.get('/map', (req, res) => {
+  let data = {
+    path: "map"
+  };
+  res.set('Cache-Control', 'public, max-age=31557600');
+  res.send(returnHTML(data, homeBundle, HomeRoot, "map"));
+});
+app.get('/order', (req, res) => {
+  let data = {
+    path: "order"
+  };
+  res.set('Cache-Control', 'public, max-age=31557600');
+  res.send(returnHTML(data, homeBundle, HomeRoot, "order"));
+});
+app.get('/contact', (req, res) => {
+  let data = {
+    path: "contact"
+  };
+  res.set('Cache-Control', 'public, max-age=31557600');
+  res.send(returnHTML(data, homeBundle, HomeRoot, "contact"));
 });
 
 app.get('/', (req, res) => {
   let data = "";
   res.set('Cache-Control', 'public, max-age=31557600');
   res.send(returnHTML(data, homeBundle, HomeRoot, "home"));
+});
+
+app.get('/*', (req, res) => {
+  let data = {};
+  res.set('Cache-Control', 'public, max-age=31557600');
+  res.send(returnHTML(data, fourohfourBundle, FourOhFourRoot, "error"));
 });
 
 app.listen( PORT, () => {

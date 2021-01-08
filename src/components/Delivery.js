@@ -19,7 +19,7 @@ class DeliveryComponent extends Component {
           <hr/>
           <h2>OR GET YOUR ORDER DELIVERED!</h2>
           <a href="https://www.doordash.com/business/596471/?utm_source=partner-link&utm_medium=website&utm_campaign=596471&utm_content=red-l" target="_blank" alt="Order Food Delivery with DoorDash" title="Order Food Delivery with DoorDash" style={{textDecoration: "none"}}>
-            <div className="ddButton">Order Food Delivery with DoorDash</div>
+            <img className="ddButton" src="/images/button_red_l.svg" style={{width: "268px"}}/>
           </a>
           <a href="https://postmates.com/merchant/cafe-juniper-salt-lake-city" target="_blank" alt="Order Food Delivery with Postmates" title="Order Food Delivery with Postmates" style={{textDecoration: "none"}}>
             <img className="pmButton" src="/images/postmates.png" style={{width: "268px"}}/>

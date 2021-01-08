@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Banner, Header, CoffeeMenu, Parallax, About, Map, Message, Partners, Footer, Delivery } from '../components';
-import { HomeWrapper, OnlineOrder } from '../styled-components/home';
+import { HomeWrapper, OnlineOrder } from '../styled-components/pages/home';
 
 class Home extends Component {
     scroll = (id) => {

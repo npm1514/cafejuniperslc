@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { pink, darkblue, lightblue } from './colors';
 
 export const TermsWrapper = styled.div`
   width: 100%;

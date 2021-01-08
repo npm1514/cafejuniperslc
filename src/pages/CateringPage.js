@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Banner, Header, CateringMenu, About, Message, Footer, Subscribe } from '../components';
-import { CateringWrapper, OnlineOrder } from '../styled-components/catering';
+import { CateringWrapper, OnlineOrder } from '../styled-components/pages/catering';
 
 class Catering extends Component {
     scroll = (id) => {

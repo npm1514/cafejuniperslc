@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Header, About, Footer } from '../components';
-import { TermsWrapper } from '../styled-components/terms';
+import { TermsWrapper } from '../styled-components/pages/terms';
 
 class Terms extends Component {
     render(){

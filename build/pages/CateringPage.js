@@ -9,7 +9,7 @@ var _react = _interopRequireWildcard(require("react"));
 
 var _components = require("../components");
 
-var _catering = require("../styled-components/catering");
+var _catering = require("../styled-components/pages/catering");
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
 

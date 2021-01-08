@@ -9,6 +9,12 @@ Object.defineProperty(exports, "CateringRoot", {
     return _CateringRoot["default"];
   }
 });
+Object.defineProperty(exports, "FourOhFourRoot", {
+  enumerable: true,
+  get: function get() {
+    return _FourOhFourRoot["default"];
+  }
+});
 Object.defineProperty(exports, "HomeRoot", {
   enumerable: true,
   get: function get() {
@@ -23,6 +29,8 @@ Object.defineProperty(exports, "TermsRoot", {
 });
 
 var _CateringRoot = _interopRequireDefault(require("./CateringRoot"));
+
+var _FourOhFourRoot = _interopRequireDefault(require("./FourOhFourRoot"));
 
 var _HomeRoot = _interopRequireDefault(require("./HomeRoot"));
 
