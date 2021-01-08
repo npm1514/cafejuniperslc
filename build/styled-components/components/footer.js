@@ -22,7 +22,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n  width: max-content;\n  margin: auto;\n  &:hover {\n    color: ", ";\n    transition: color 0.5s;\n  }\n  &:visited {\n    color: ", ";\n  }\n  @media (min-width: 700px){\n    font-size: 14px;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  width: max-content;\n  margin: auto;\n  color: ", ";\n  &:hover {\n    color: ", ";\n    transition: color 0.5s;\n  }\n  &:visited {\n    color: ", ";\n  }\n  @media (min-width: 700px){\n    font-size: 14px;\n  }\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -47,7 +47,7 @@ var FooterWrap = _styledComponents["default"].footer(_templateObject(), _colors.
 
 exports.FooterWrap = FooterWrap;
 
-var Sitemap = _styledComponents["default"].div(_templateObject2(), _colors.lightblue, _colors.white);
+var Sitemap = _styledComponents["default"].div(_templateObject2(), _colors.white, _colors.lightblue, _colors.white);
 
 exports.Sitemap = Sitemap;
 

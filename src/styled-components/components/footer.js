@@ -18,6 +18,7 @@ export const FooterWrap = styled.footer`
 export const Sitemap = styled.div`
   width: max-content;
   margin: auto;
+  color: ${white};
   &:hover {
     color: ${lightblue};
     transition: color 0.5s;
