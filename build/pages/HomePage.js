@@ -74,14 +74,12 @@ var Home = /*#__PURE__*/function (_Component) {
     key: "componentDidMount",
     value: function componentDidMount() {
       if (this.props.data.path) {
-        console.log("crash1", this.props.data.path);
         document.getElementById(this.props.data.path).scrollIntoView({
           block: 'start',
           behavior: 'smooth',
           passive: true
         });
       } else {
-        console.log("crash2", "home");
         document.getElementById("home").scrollIntoView({
           block: 'start',
           behavior: 'smooth'

@@ -252,6 +252,7 @@ function returnHTML(data, bundle, Page, title){
           <meta name="Description" content="Welcome to downtown Salt Lake's newest coffee shop destination! Offering coffee and espresso drinks, baked goods, and our very own artisanal toast selection prepared daily. Stop by today!">
           <link rel="stylesheet" href="https://use.typekit.net/mno0keq.css">
           <script src="https://kit.fontawesome.com/7fa747235e.js" crossorigin="anonymous"></script>
+          <script data-ad-client="ca-pub-6867043285236947" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
           <style>
             body {
               margin: 0;
@@ -278,39 +279,6 @@ function returnHTML(data, bundle, Page, title){
           <script>window.__DATA__=${dataString}</script>
           <div id="app" role="main">${body}</div>
           <script>${bundle}</script>
-          <script defer>
-            fetch('https://npm-data-storage.herokuapp.com/addData', {
-              method:"POST",
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({
-                type: "pageload",
-                date: new Date(),
-                url: window.origin,
-                device: window.navigator.appVersion,
-                referrer: document.referrer,
-                performance: window.performance.timing
-              })
-            })
-            .then((res) => res.text())
-            .then((data) => console.log("page load"))
-            window.addEventListener('click', (e) => {
-              fetch('https://npm-data-storage.herokuapp.com/addData', {
-                method:"POST",
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                  type: "click",
-                  date: new Date(),
-                  url: window.origin,
-                  device: window.navigator.appVersion,
-                  referrer: document.referrer,
-                  performance: window.performance.timing,
-                  clickThing: e.target.outerHTML
-                })
-              })
-              .then((res) => res.text())
-              .then((data) => console.log("click"))
-            })
-          </script>
           <!-- Global site tag (gtag.js) - Google Analytics -->
           <script async src="https://www.googletagmanager.com/gtag/js?id=UA-182243768-1">
           </script>
