@@ -39,8 +39,10 @@ class MapComponent extends Component {
           ></iframe>
 
           <h2 style={{marginTop: "12px"}}>Hours</h2>
-          <h2>Monday - Wednesday | 8am - 5pm</h2>
-          <h2>Thursday - Sunday | 8am - 8pm</h2>
+          <h2>Monday - Wednesday | 7am - 4pm</h2>
+          <h2>Thursday - Friday | 7am - 9pm</h2>
+          <h2>Saturday | 8am - 9pm</h2>
+          <h2>Sunday | 7am - 6pm</h2>
         </Map>
       </MapWrap>
     );
