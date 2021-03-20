@@ -176,7 +176,7 @@ var HeaderComponent = /*#__PURE__*/function (_Component) {
         onClick: function onClick(e) {
           return _this2.closeMenu(e, "map");
         }
-      }, "Location")), /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement("a", {
+      }, "Location & Hours")), /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement("a", {
         href: "/contact",
         onClick: function onClick(e) {
           return _this2.closeMenu(e, "contact");
@@ -214,7 +214,7 @@ var HeaderComponent = /*#__PURE__*/function (_Component) {
         onClick: function onClick(e) {
           return _this2.closeMenu(e, "map");
         }
-      }, "Location"), /*#__PURE__*/_react["default"].createElement("a", {
+      }, "Location & Hours"), /*#__PURE__*/_react["default"].createElement("a", {
         href: "/contact",
         onClick: function onClick(e) {
           return _this2.closeMenu(e, "contact");

@@ -77,12 +77,6 @@ var PartnersComponent = /*#__PURE__*/function (_Component) {
         alt: "ruby snap logo"
       })), /*#__PURE__*/_react["default"].createElement("a", {
         rel: "noopener",
-        href: "https://www.piepartytime.com/"
-      }, /*#__PURE__*/_react["default"].createElement("img", {
-        src: "/images/pieparty.jpeg",
-        alt: "pie party logo"
-      })), /*#__PURE__*/_react["default"].createElement("a", {
-        rel: "noopener",
         href: "https://www.eatchocolateconspiracy.com/"
       }, /*#__PURE__*/_react["default"].createElement("img", {
         src: "/images/chocolate.jpg",

@@ -45,7 +45,7 @@ export const CoffeeMenu = styled.div`
     font-size: 12px;
   }
   @media (min-width: 700px){
-    flex-direction: row;
+
     .mobile-menu-header {
       display: none;
     }
@@ -76,7 +76,7 @@ export const CoffeeMenuLeft = styled.div`
     margin: auto;
   }
   @media (min-width: 700px){
-      width: 60%;
+      width: 100%;
       table {
         margin: 12px 24px;
       }
@@ -84,7 +84,7 @@ export const CoffeeMenuLeft = styled.div`
 `;
 export const CoffeeMenuRight = styled.div`
   width: 100%;
-  margin-top: 24px;
+  margin: 24px auto;
   table {
     margin: auto;
   }

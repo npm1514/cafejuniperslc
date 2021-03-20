@@ -48,7 +48,6 @@ export const Menu = styled.div`
     font-size: 12px;
   }
   @media (min-width: 700px){
-    flex-direction: row;
     .mobile-menu-header {
       display: none;
     }

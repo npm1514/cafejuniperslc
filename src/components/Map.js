@@ -11,7 +11,7 @@ class MapComponent extends Component {
         <Map>
           <Hex className="desktop-hex" color={green} top={-77} left={-67} size={200}/>
           <Hex className="mobile-hex" color={pink} top={-77} left={-27} size={75}/>
-          <h2>Come grab a cup of coffee at 29<sub>E</sub> 400<sub>S</sub>!</h2>
+          <h2>Come grab a cup of coffee at <br/>29 East 400 South<br/>Salt Lake City, Utah 84111</h2>
           <h2>Try our toast!</h2>
           <iframe
             className="desktop-map"
@@ -40,8 +40,7 @@ class MapComponent extends Component {
 
           <h2 style={{marginTop: "12px"}}>Hours</h2>
           <h2>Monday - Wednesday | 7am - 4pm</h2>
-          <h2>Thursday - Friday | 7am - 9pm</h2>
-          <h2>Saturday | 8am - 9pm</h2>
+          <h2>Thursday - Saturday | 7am - 9pm</h2>
           <h2>Sunday | 7am - 6pm</h2>
         </Map>
       </MapWrap>

@@ -12,7 +12,6 @@ class PartnersComponent extends Component {
           <a rel="noopener" href="https://mimsslc.com/"><img src="/images/MIMS_logo.jpg" alt="mims logo"/></a>
           <a rel="noopener" href="https://amourspreads.com/"><img src="/images/amourlogo.jpg" alt="amour logo"/></a>
           <a rel="noopener" href="https://rubysnap.com/"><img src="/images/rubymainlogo.jpeg" alt="ruby snap logo"/></a>
-          <a rel="noopener" href="https://www.piepartytime.com/"><img src="/images/pieparty.jpeg" alt="pie party logo"/></a>
           <a rel="noopener" href="https://www.eatchocolateconspiracy.com/"><img src="/images/chocolate.jpg" alt="chocolate conspiracy logo"/></a>
         </PartnerList>
         <hr/>

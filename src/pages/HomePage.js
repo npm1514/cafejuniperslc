@@ -26,7 +26,7 @@ class Home extends Component {
             <Parallax className="mobile-parallax" url="/images/normalcup.jpg"/>
             <About id="about">
               <h2>ABOUT US</h2>
-              <p>Our team has been in the hospitality industry of Salt Lake City for the last ten plus years. Our mission is to give back to the Salt Lake City community by providing the best quality coffee, snacks, and confectionaries sourced both locally and responsibly in our cute downtown cafe.</p>
+              <p>Our team has been in the hospitality industry of Salt Lake City for the last ten plus years. Our mission is to give back to the Salt Lake City community by providing the best quality coffee, pastries, and toast sourced both locally and responsibly in our cute downtown cafe.</p>
             </About>
             <Parallax url="/images/normalcup.jpg"/>
             <Delivery id="order"/>

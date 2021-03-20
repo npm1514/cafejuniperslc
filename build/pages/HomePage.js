@@ -98,7 +98,7 @@ var Home = /*#__PURE__*/function (_Component) {
         url: "/images/normalcup.jpg"
       }), /*#__PURE__*/_react["default"].createElement(_components.About, {
         id: "about"
-      }, /*#__PURE__*/_react["default"].createElement("h2", null, "ABOUT US"), /*#__PURE__*/_react["default"].createElement("p", null, "Our team has been in the hospitality industry of Salt Lake City for the last ten plus years. Our mission is to give back to the Salt Lake City community by providing the best quality coffee, snacks, and confectionaries sourced both locally and responsibly in our cute downtown cafe.")), /*#__PURE__*/_react["default"].createElement(_components.Parallax, {
+      }, /*#__PURE__*/_react["default"].createElement("h2", null, "ABOUT US"), /*#__PURE__*/_react["default"].createElement("p", null, "Our team has been in the hospitality industry of Salt Lake City for the last ten plus years. Our mission is to give back to the Salt Lake City community by providing the best quality coffee, pastries, and toast sourced both locally and responsibly in our cute downtown cafe.")), /*#__PURE__*/_react["default"].createElement(_components.Parallax, {
         url: "/images/normalcup.jpg"
       }), /*#__PURE__*/_react["default"].createElement(_components.Delivery, {
         id: "order"

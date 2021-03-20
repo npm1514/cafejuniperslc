@@ -20,70 +20,46 @@ class CoffeeMenuComponent extends Component {
                 <th>16<sup>oz</sup></th>
               </tr>
               <tr>
-                <td>Espresso</td>
+                <td>Espresso, Americano</td>
                 <td>$3.00</td>
                 <td></td>
                 <td></td>
               </tr>
               <tr>
-                <td>Cortado</td>
+                <td>Cortado, Cappuccino</td>
                 <td>$3.50</td>
                 <td></td>
                 <td></td>
               </tr>
               <tr>
-                <td>Cappuccino</td>
-                <td>$3.50</td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Latte</td>
+                <td>Latte, Chai</td>
                 <td>$4.00</td>
                 <td>$4.50</td>
                 <td>$5.00</td>
               </tr>
               <tr>
-                <td>Drip</td>
-                <td></td>
+                <td>Drip, Tea</td>
                 <td>$3.00</td>
                 <td>$3.50</td>
-              </tr>
-              <tr>
-                <td>Americano</td>
-                <td></td>
-                <td>$3.00</td>
-                <td>$3.50</td>
-              </tr>
-              <tr>
-                <td>Pour Over</td>
-                <td></td>
                 <td>$4.00</td>
-                <td>$4.50</td>
               </tr>
               <tr>
-                <td>Cold Brew</td>
-                <td></td>
+                <td>Cider, Pour Over</td>
+                <td>$4.00</td>
                 <td>$4.50</td>
                 <td>$5.00</td>
               </tr>
               <tr>
-                <td>Chai</td>
-                <td></td>
+                <td>Hot Cocoa, Cold Brew</td>
+                <td>$4.00</td>
                 <td>$4.50</td>
                 <td>$5.00</td>
               </tr>
               <tr>
-                <td>Tea</td>
-                <td></td>
-                <td>$3.00</td>
-                <td>$3.50</td>
-              </tr>
-              <tr>
-                <td>Hot Cocoa</td>
-                <td></td>
-                <td>$4.00</td>
-                <td>$4.50</td>
+                <th>Alternative Milk</th>
+                <th></th>
+                <th></th>
+                <th>+$0.75</th>
               </tr>
               <tr>
                 <th>Extra Flavors</th>
@@ -99,6 +75,12 @@ class CoffeeMenuComponent extends Component {
                 <th className="mobile-menu-header"></th>
               </tr>
               <tr>
+                <td>House Espresso</td>
+                <td></td>
+                <td></td>
+                <td>$17.00</td>
+              </tr>
+              <tr>
                 <td>House Coffee</td>
                 <td></td>
                 <td></td>
@@ -108,14 +90,9 @@ class CoffeeMenuComponent extends Component {
                 <td>Single Origin</td>
                 <td></td>
                 <td></td>
-                <td>$19.00</td>
+                <td>As Listed</td>
               </tr>
-              <tr>
-                <td>House Espresso</td>
-                <td></td>
-                <td></td>
-                <td>$17.00</td>
-              </tr>
+
             </table>
           </CoffeeMenuLeft>
           <CoffeeMenuRight>
@@ -123,74 +100,68 @@ class CoffeeMenuComponent extends Component {
               <tr>
                 <th>Food</th>
                 <th></th>
-                <th className="mobile-menu-header"></th>
-                <th className="mobile-menu-header"></th>
+                <th></th>
+                <th></th>
               </tr>
               <tr>
                 <td>Cookie</td>
-                <th className="mobile-menu-header"></th>
-                <th className="mobile-menu-header"></th>
+                <th></th>
+                <th></th>
                 <td>$3.00</td>
               </tr>
               <tr>
-                <td>Scone</td>
-                <th className="mobile-menu-header"></th>
-                <th className="mobile-menu-header"></th>
+                <td>Pastries</td>
+                <th></th>
+                <th></th>
                 <td>$4.00</td>
-              </tr>
-              <tr>
-                <td>Pie / Danish</td>
-                <th className="mobile-menu-header"></th>
-                <th className="mobile-menu-header"></th>
-                <td>$5.00</td>
               </tr>
               <br/>
               <tr>
                 <th>Toast</th>
-                <th className="mobile-menu-header"></th>
-                <th className="mobile-menu-header"></th>
+                <th></th>
+                <th></th>
                 <th>$3.50</th>
               </tr>
               <tr>
                 <td>Italian Toast</td>
-                <th className="mobile-menu-header"></th>
-                <th className="mobile-menu-header"></th>
+                <th></th>
+                <th></th>
                 <td>$4.00</td>
               </tr>
               <tr>
                 <td>Hummus Toast</td>
-                <th className="mobile-menu-header"></th>
-                <th className="mobile-menu-header"></th>
+                <th></th>
+                <th></th>
                 <td>$6.00</td>
               </tr>
               <tr>
                 <td>Ricotta Toast</td>
-                <th className="mobile-menu-header"></th>
-                <th className="mobile-menu-header"></th>
+                <th></th>
+                <th></th>
                 <td>$7.00</td>
               </tr>
               <tr>
                 <td>Avocado Toast</td>
-                <th className="mobile-menu-header"></th>
-                <th className="mobile-menu-header"></th>
+                <th></th>
+                <th></th>
                 <td>$7.00</td>
               </tr>
               <tr>
                 <td>Mushroom Toast</td>
-                <th className="mobile-menu-header"></th>
-                <th className="mobile-menu-header"></th>
+                <th></th>
+                <th></th>
                 <td>$8.00</td>
               </tr>
               <tr>
                 <td>Specialty Toast</td>
-                <th className="mobile-menu-header"></th>
-                <th className="mobile-menu-header"></th>
-                <td>$8.00</td>
+                <th></th>
+                <th></th>
+                <td>As Listed</td>
               </tr>
               <tr>
                 <th>Extras</th>
-                <th className="mobile-menu-header"></th>
-                <th className="mobile-menu-header"></th>
+                <th></th>
+                <th></th>
                 <th>+$1.00</th>
               </tr>
             </table>

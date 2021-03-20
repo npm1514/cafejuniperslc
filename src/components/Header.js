@@ -78,7 +78,7 @@ class HeaderComponent extends Component {
               <a href="/about" onClick={(e) => this.closeMenu(e, "about")}>About Us</a>
             </div>
             <div>
-              <a href="/map" onClick={(e) => this.closeMenu(e, "map")}>Location</a>
+              <a href="/map" onClick={(e) => this.closeMenu(e, "map")}>Location & Hours</a>
             </div>
             <div>
               <a href="/contact" onClick={(e) => this.closeMenu(e, "contact")}>Contact</a>
@@ -95,7 +95,7 @@ class HeaderComponent extends Component {
           <DesktopHeader menuStuck={menuStuck}>
             <a href="" onClick={(e) => this.closeMenu(e, "home")}>Home</a>
             <a href="/about" onClick={(e) => this.closeMenu(e, "about")}>About Us</a>
-            <a href="/map" onClick={(e) => this.closeMenu(e, "map")}>Location</a>
+            <a href="/map" onClick={(e) => this.closeMenu(e, "map")}>Location & Hours</a>
             <a href="/contact" onClick={(e) => this.closeMenu(e, "contact")}>Contact</a>
             <a href="/subscriptions" onClick={(e) => this.closeMenu(e, "subscriptions")}>Subscriptions</a>
           </DesktopHeader>
