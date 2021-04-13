@@ -3,7 +3,6 @@ import { white, brown } from '../colors';
 
 export const BannerWrap = styled.div`
   width: 100%;
-  background-color: ${white};
   height: 0;
   overflow: hidden;
   @media (min-width: 700px){
@@ -22,7 +21,6 @@ export const HomeID = styled.div`
 export const Banner = styled.div`
   width: 100%;
   display: none;
-  background-color: ${white};
   position: relative;
   max-width: 800px;
   margin: auto;

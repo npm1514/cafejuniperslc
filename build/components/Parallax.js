@@ -52,7 +52,7 @@ var ParallaxComponent = /*#__PURE__*/function (_Component) {
       return /*#__PURE__*/_react["default"].createElement(_parallax.Parallax, {
         url: this.props.url,
         className: this.props.className
-      });
+      }, this.props.children);
     }
   }]);
 
