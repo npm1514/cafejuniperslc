@@ -92,29 +92,6 @@ class CoffeeMenuComponent extends Component {
                 <td></td>
                 <td>As Listed</td>
               </tr>
-
-            </table>
-          </CoffeeMenuLeft>
-          <CoffeeMenuRight>
-            <table>
-              <tr>
-                <th>Food</th>
-                <th></th>
-                <th></th>
-                <th></th>
-              </tr>
-              <tr>
-                <td>Cookie</td>
-                <th></th>
-                <th></th>
-                <td>$3.00</td>
-              </tr>
-              <tr>
-                <td>Pastries</td>
-                <th></th>
-                <th></th>
-                <td>$4.00</td>
-              </tr>
               <br/>
               <tr>
                 <th>Toast</th>
@@ -164,8 +141,28 @@ class CoffeeMenuComponent extends Component {
                 <th></th>
                 <th>+$1.00</th>
               </tr>
+              <br/>
+
+              <tr>
+                <th>Snacks</th>
+                <th></th>
+                <th></th>
+                <th></th>
+              </tr>
+              <tr>
+                <td>Cookie</td>
+                <th></th>
+                <th></th>
+                <td>$3.00</td>
+              </tr>
+              <tr>
+                <td>Pastries</td>
+                <th></th>
+                <th></th>
+                <td>$4.00</td>
+              </tr>
             </table>
-          </CoffeeMenuRight>
+          </CoffeeMenuLeft>
         </Menu>
     );
   }

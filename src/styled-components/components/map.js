@@ -16,10 +16,10 @@ export const MapID = styled.div`
   }
 `;
 export const Map = styled.div`
-  width: calc(100% - 64px);
+  width: 100%;
   max-width: 800px;
   margin: auto;
-  padding: 32px;
+  padding: 32px 0;
   text-align: center;
   position: relative;
   background-color: ${lightblue};
@@ -37,6 +37,8 @@ export const Map = styled.div`
     display: none;
   }
   @media (min-width: 700px){
+    width: calc(100% - 64px);
+    padding: 32px;
     .mobile-map {
       display: none;
     }

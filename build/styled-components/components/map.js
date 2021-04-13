@@ -12,7 +12,7 @@ var _colors = require("../colors");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n  width: calc(100% - 64px);\n  max-width: 800px;\n  margin: auto;\n  padding: 32px;\n  text-align: center;\n  position: relative;\n  background-color: ", ";\n  h2 {\n    text-align: center;\n    margin-top: 0;\n  }\n  h2:last-child {\n    margin-top: 24px;\n  }\n  .mobile-map {\n    display: inline\n  }\n  .desktop-map {\n    display: none;\n  }\n  @media (min-width: 700px){\n    .mobile-map {\n      display: none;\n    }\n    .desktop-map {\n      display: inline;\n    }\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  width: 100%;\n  max-width: 800px;\n  margin: auto;\n  padding: 32px 0;\n  text-align: center;\n  position: relative;\n  background-color: ", ";\n  h2 {\n    text-align: center;\n    margin-top: 0;\n  }\n  h2:last-child {\n    margin-top: 24px;\n  }\n  .mobile-map {\n    display: inline\n  }\n  .desktop-map {\n    display: none;\n  }\n  @media (min-width: 700px){\n    width: calc(100% - 64px);\n    padding: 32px;\n    .mobile-map {\n      display: none;\n    }\n    .desktop-map {\n      display: inline;\n    }\n  }\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
