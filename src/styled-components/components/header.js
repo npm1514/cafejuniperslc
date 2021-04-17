@@ -52,6 +52,7 @@ export const MobileHeader = styled.header`
   z-index: 10;
   img {
     width: 140px;
+    height: 76px;
     margin: 12px 24px;
   }
   span {
@@ -113,7 +114,7 @@ export const MobileMenu = styled.div`
 
 export const HexLock = styled.div`
   width: calc(40% - 24px);
-  margin: 12px;
+  margin: 0 12px;
   height: 100%;
   position: relative;
 `;

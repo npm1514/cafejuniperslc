@@ -42,7 +42,7 @@ function _templateObject6() {
 }
 
 function _templateObject5() {
-  var data = _taggedTemplateLiteral(["\n  width: calc(40% - 24px);\n  margin: 12px;\n  height: 100%;\n  position: relative;\n"]);
+  var data = _taggedTemplateLiteral(["\n  width: calc(40% - 24px);\n  margin: 0 12px;\n  height: 100%;\n  position: relative;\n"]);
 
   _templateObject5 = function _templateObject5() {
     return data;
@@ -62,7 +62,7 @@ function _templateObject4() {
 }
 
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n  width: 100%;\n  max-width: 732px;\n  margin: auto;\n  position: fixed;\n  top: 0;\n  left: 0;\n  background-color: ", ";\n  height: 125px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  flex-direction: column;\n  z-index: 10;\n  img {\n    width: 140px;\n    margin: 12px 24px;\n  }\n  span {\n    width: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n  }\n  h1 {\n    color: ", ";\n    margin: 0;\n    font-weight: 500;\n    letter-spacing: 1;\n  }\n  @media (min-width: 700px){\n    display: none;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  width: 100%;\n  max-width: 732px;\n  margin: auto;\n  position: fixed;\n  top: 0;\n  left: 0;\n  background-color: ", ";\n  height: 125px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  flex-direction: column;\n  z-index: 10;\n  img {\n    width: 140px;\n    height: 76px;\n    margin: 12px 24px;\n  }\n  span {\n    width: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n  }\n  h1 {\n    color: ", ";\n    margin: 0;\n    font-weight: 500;\n    letter-spacing: 1;\n  }\n  @media (min-width: 700px){\n    display: none;\n  }\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
