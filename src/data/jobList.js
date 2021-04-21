@@ -7,7 +7,7 @@ module.exports = [
   {
     id: "b2bsales",
     title: "B2B Sales",
-    description: "We are looking for a contract sales person. In this role, the sales person will go out to local businesses and make efforts in setting up repeat delivery sales for daily or weekly coffee delivery and pickup. This will be a by-commission position earning 20% on all contracts signed off by a local business. This is an important role in the future growth of our business and has opportunity to become a salary role or partner role down the road."
+    description: "We are looking for a contract sales person. In this role, the sales person will reach out to local businesses and make efforts in setting up repeat delivery sales for daily or weekly coffee delivery and pickup. This will be a by-commission position earning 20% on all contracts signed off by a local business. This is an important role in the future growth of our business and has opportunity to become a salary role or partner role down the road."
   },
   // {
   //   id: "driver",
