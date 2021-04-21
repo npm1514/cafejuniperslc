@@ -87,7 +87,7 @@ var Jobs = /*#__PURE__*/function (_Component) {
           key: i,
           href: "/jobs/".concat(job.id)
         }, /*#__PURE__*/_react["default"].createElement("h4", null, job.title));
-      })), /*#__PURE__*/_react["default"].createElement("hr", null), /*#__PURE__*/_react["default"].createElement("p", null, "For any other job inquiries, please submit your resume at ", /*#__PURE__*/_react["default"].createElement("a", {
+      })), /*#__PURE__*/_react["default"].createElement("hr", null), /*#__PURE__*/_react["default"].createElement("p", null, "For any job inquiries, please submit your resume at ", /*#__PURE__*/_react["default"].createElement("a", {
         href: "mailto:cafejuniperslc@gmail.com"
       }, "cafejuniperslc@gmail.com"))), /*#__PURE__*/_react["default"].createElement(_components.Parallax, {
         url: "/images/grub.jpg"

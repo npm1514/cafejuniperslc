@@ -47,7 +47,7 @@ class Jobs extends Component {
                 </div>
               }
               <hr/>
-              <p>For any other job inquiries, please submit your resume at <a href="mailto:cafejuniperslc@gmail.com">cafejuniperslc@gmail.com</a></p>
+              <p>For any job inquiries, please submit your resume at <a href="mailto:cafejuniperslc@gmail.com">cafejuniperslc@gmail.com</a></p>
             </About>
             <Parallax url="/images/grub.jpg"/>
             <Message id="contact"/>
