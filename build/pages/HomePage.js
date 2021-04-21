@@ -13,10 +13,6 @@ var _components = require("../components");
 
 var _home = require("../styled-components/pages/home");
 
-var _subcomponents = require("../subcomponents");
-
-var _colors = require("../styled-components/colors");
-
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
@@ -95,50 +91,7 @@ var Home = /*#__PURE__*/function (_Component) {
     value: function render() {
       return /*#__PURE__*/_react["default"].createElement(_home.HomeWrapper, null, /*#__PURE__*/_react["default"].createElement(_components.Banner, {
         id: "home"
-      }, /*#__PURE__*/_react["default"].createElement(_subcomponents.Hex, {
-        className: "desktop-hex",
-        color: _colors.darkblue,
-        top: -80,
-        left: -60,
-        size: 230
-      }), /*#__PURE__*/_react["default"].createElement(_subcomponents.Hex, {
-        className: "desktop-hex",
-        color: _colors.green,
-        top: 135,
-        left: 80,
-        size: 130
-      }), /*#__PURE__*/_react["default"].createElement(_subcomponents.Hex, {
-        className: "desktop-hex",
-        color: _colors.pink,
-        top: -25,
-        right: 110,
-        size: 100
-      }), /*#__PURE__*/_react["default"].createElement(_subcomponents.Hex, {
-        className: "desktop-hex",
-        color: _colors.darkblue,
-        top: -90,
-        right: -100,
-        size: 200
-      }), /*#__PURE__*/_react["default"].createElement(_subcomponents.Hex, {
-        className: "desktop-hex",
-        color: _colors.brown,
-        top: 120,
-        right: -10,
-        size: 160
-      }), /*#__PURE__*/_react["default"].createElement("a", {
-        href: "/"
-      }, /*#__PURE__*/_react["default"].createElement("img", {
-        src: "/images/Cafe-Juniper_J_01.png",
-        alt: "primary logo"
-      })), /*#__PURE__*/_react["default"].createElement("div", null, "C", /*#__PURE__*/_react["default"].createElement("span", {
-        className: "smallLetters"
-      }, "A"), "F\xC9 JUN", /*#__PURE__*/_react["default"].createElement("span", {
-        className: "smallLetters"
-      }, "I"), "P", /*#__PURE__*/_react["default"].createElement("span", {
-        className: "smallLetters"
-      }, "E"), "R"), /*#__PURE__*/_react["default"].createElement("h1", {
-        className: "bottomBanner"
-      }, "Salt lake city's premier coffee shop")), /*#__PURE__*/_react["default"].createElement(_components.Header, {
+      }), /*#__PURE__*/_react["default"].createElement(_components.Header, {
         scroll: this.scroll
       }), /*#__PURE__*/_react["default"].createElement(_components.CoffeeMenu, null), /*#__PURE__*/_react["default"].createElement(_components.Parallax, {
         className: "mobile-parallax",

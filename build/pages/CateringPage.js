@@ -69,7 +69,9 @@ var Catering = /*#__PURE__*/function (_Component) {
   _createClass(Catering, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/_react["default"].createElement(_catering.CateringWrapper, null, /*#__PURE__*/_react["default"].createElement(_components.Banner, null), /*#__PURE__*/_react["default"].createElement(_components.Header, {
+      return /*#__PURE__*/_react["default"].createElement(_catering.CateringWrapper, null, /*#__PURE__*/_react["default"].createElement(_components.Banner, {
+        id: "catering"
+      }), /*#__PURE__*/_react["default"].createElement(_components.Header, {
         scroll: this.scroll
       }), /*#__PURE__*/_react["default"].createElement(_components.About, {
         noLogo: true,

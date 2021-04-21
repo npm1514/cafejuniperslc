@@ -83,20 +83,7 @@ var Jobs = /*#__PURE__*/function (_Component) {
       }) : {};
       return /*#__PURE__*/_react["default"].createElement(_jobs.JobsWrapper, null, /*#__PURE__*/_react["default"].createElement(_components.Banner, {
         id: "jobs"
-      }, /*#__PURE__*/_react["default"].createElement("a", {
-        href: "/"
-      }, /*#__PURE__*/_react["default"].createElement("img", {
-        src: "/images/Cafe-Juniper_J_01.png",
-        alt: "primary logo"
-      })), /*#__PURE__*/_react["default"].createElement("div", null, "C", /*#__PURE__*/_react["default"].createElement("span", {
-        className: "smallLetters"
-      }, "A"), "F\xC9 JUN", /*#__PURE__*/_react["default"].createElement("span", {
-        className: "smallLetters"
-      }, "I"), "P", /*#__PURE__*/_react["default"].createElement("span", {
-        className: "smallLetters"
-      }, "E"), "R"), /*#__PURE__*/_react["default"].createElement("h1", {
-        className: "bottomBanner"
-      }, "Salt lake city's premier coffee shop")), /*#__PURE__*/_react["default"].createElement(_components.Header, {
+      }), /*#__PURE__*/_react["default"].createElement(_components.Header, {
         scroll: this.scroll
       }), /*#__PURE__*/_react["default"].createElement(_components.About, {
         id: "about"

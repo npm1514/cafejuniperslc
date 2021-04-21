@@ -13,7 +13,7 @@ class Catering extends Component {
     render(){
       return (
           <CateringWrapper>
-            <Banner/>
+            <Banner id="catering"/>
             <Header scroll={this.scroll}/>
             <About noLogo noHexes>
               <h2>Subscription / Catering Program</h2>

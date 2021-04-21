@@ -18,15 +18,7 @@ class Jobs extends Component {
       const job = id ? jobList.find(a => a.id == id) : {}
       return (
           <JobsWrapper>
-            <Banner id="jobs">
-              <a href="/"><img src="/images/Cafe-Juniper_J_01.png" alt="primary logo"/></a>
-              <div>
-                C<span className="smallLetters">A</span>FÉ JUN<span className="smallLetters">I</span>P<span className="smallLetters">E</span>R
-              </div>
-              <h1 className="bottomBanner">
-                Salt lake city's premier coffee shop
-              </h1>
-            </Banner>
+            <Banner id="jobs"/>
             <Header scroll={this.scroll}/>
             <About id="about">
               <a href="/jobs">
