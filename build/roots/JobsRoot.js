@@ -49,7 +49,7 @@ var Root = /*#__PURE__*/function (_Component) {
   _createClass(Root, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/_react["default"].createElement(_pages.FourOhFourPage, {
+      return /*#__PURE__*/_react["default"].createElement(_pages.JobsPage, {
         data: this.props.data ? this.props.data : {}
       });
     }

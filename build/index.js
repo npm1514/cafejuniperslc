@@ -45,6 +45,7 @@ _nodeCron["default"].schedule('* * 1 * *', function () {
 
 var dataObj = {},
     homeBundle = "",
+    jobsBundle = "",
     cateringBundle = "",
     fourohfourBundle = "",
     sitemapBundle = "",
@@ -53,6 +54,11 @@ var dataObj = {},
 _fs["default"].readFile('./dist/js/home.bundle.min.js', "utf8", function (err, data) {
   if (err) console.log("ERR", err);
   homeBundle = data || "";
+});
+
+_fs["default"].readFile('./dist/js/jobs.bundle.min.js', "utf8", function (err, data) {
+  if (err) console.log("ERR", err);
+  jobsBundle = data || "";
 });
 
 _fs["default"].readFile('./dist/js/catering.bundle.min.js', "utf8", function (err, data) {
@@ -79,6 +85,18 @@ app.get('/terms', function (req, res) {
   var data = "";
   res.set('Cache-Control', 'public, max-age=31557600');
   res.send(returnHTML(data, termsBundle, _roots.TermsRoot, "terms and conditions"));
+});
+app.get('/jobs', function (req, res) {
+  var data = "";
+  res.set('Cache-Control', 'public, max-age=31557600');
+  res.send(returnHTML(data, jobsBundle, _roots.JobsRoot, "jobs"));
+});
+app.get('/jobs/:id', function (req, res) {
+  var data = {
+    id: req.params.id
+  };
+  res.set('Cache-Control', 'public, max-age=31557600');
+  res.send(returnHTML(data, jobsBundle, _roots.JobsRoot, "jobs"));
 });
 app.get('/catering', function (req, res) {
   var data = "";

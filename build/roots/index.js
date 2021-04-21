@@ -21,6 +21,12 @@ Object.defineProperty(exports, "HomeRoot", {
     return _HomeRoot["default"];
   }
 });
+Object.defineProperty(exports, "JobsRoot", {
+  enumerable: true,
+  get: function get() {
+    return _JobsRoot["default"];
+  }
+});
 Object.defineProperty(exports, "SitemapRoot", {
   enumerable: true,
   get: function get() {
@@ -39,6 +45,8 @@ var _CateringRoot = _interopRequireDefault(require("./CateringRoot"));
 var _FourOhFourRoot = _interopRequireDefault(require("./FourOhFourRoot"));
 
 var _HomeRoot = _interopRequireDefault(require("./HomeRoot"));
+
+var _JobsRoot = _interopRequireDefault(require("./JobsRoot"));
 
 var _SitemapRoot = _interopRequireDefault(require("./SitemapRoot"));
 

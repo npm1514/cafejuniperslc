@@ -16,6 +16,7 @@ class Sitemap extends Component {
                   <a href="/order"><div>Online Ordering</div></a>
                   <a href="/map"><div>Location</div></a>
                   <a href="/contact"><div>Contact</div></a>
+                  <a href="/jobs"><div>Jobs</div></a>
                   <a href="/catering"><div>Catering</div></a>
                   <a href="/subscriptions"><div>Subscriptions</div></a>
                   <a href="/terms"><div>Subscription Terms</div></a>

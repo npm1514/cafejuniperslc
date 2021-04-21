@@ -9,7 +9,7 @@ import bodyParser from 'body-parser';
 import cron from 'node-cron';
 import nodemailer from 'nodemailer';
 
-import { HomeRoot, CateringRoot, TermsRoot, FourOhFourRoot, SitemapRoot } from "./roots";
+import { HomeRoot, JobsRoot, CateringRoot, TermsRoot, FourOhFourRoot, SitemapRoot } from "./roots";
 import { ServerStyleSheet } from 'styled-components';
 
 import config from './config';
@@ -31,6 +31,7 @@ cron.schedule('* * 1 * *', () => {
 
 var dataObj = {},
 homeBundle = "",
+jobsBundle = "",
 cateringBundle = "",
 fourohfourBundle = "",
 sitemapBundle = "",
@@ -39,6 +40,10 @@ termsBundle = "";
 fs.readFile('./dist/js/home.bundle.min.js', "utf8", (err, data) => {
   if (err) console.log("ERR" ,err);
   homeBundle = data || "";
+})
+fs.readFile('./dist/js/jobs.bundle.min.js', "utf8", (err, data) => {
+  if (err) console.log("ERR" ,err);
+  jobsBundle = data || "";
 })
 fs.readFile('./dist/js/catering.bundle.min.js', "utf8", (err, data) => {
   if (err) console.log("ERR" ,err);
@@ -60,6 +65,20 @@ app.get('/terms', (req, res) => {
   let data = "";
   res.set('Cache-Control', 'public, max-age=31557600');
   res.send(returnHTML(data, termsBundle, TermsRoot, "terms and conditions"));
+});
+
+app.get('/jobs', (req, res) => {
+  let data = "";
+  res.set('Cache-Control', 'public, max-age=31557600');
+  res.send(returnHTML(data, jobsBundle, JobsRoot, "jobs"));
+});
+
+app.get('/jobs/:id', (req, res) => {
+  let data = {
+    id: req.params.id
+  };
+  res.set('Cache-Control', 'public, max-age=31557600');
+  res.send(returnHTML(data, jobsBundle, JobsRoot, "jobs"));
 });
 
 app.get('/catering', (req, res) => {

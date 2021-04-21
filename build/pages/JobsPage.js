@@ -9,7 +9,17 @@ exports["default"] = void 0;
 
 var _react = _interopRequireWildcard(require("react"));
 
-var _pages = require("../pages");
+var _components = require("../components");
+
+var _jobs = require("../styled-components/pages/jobs");
+
+var _subcomponents = require("../subcomponents");
+
+var _colors = require("../styled-components/colors");
+
+var _jobList = _interopRequireDefault(require("../data/jobList"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
 
@@ -35,28 +45,60 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
-var Root = /*#__PURE__*/function (_Component) {
-  _inherits(Root, _Component);
+var Jobs = /*#__PURE__*/function (_Component) {
+  _inherits(Jobs, _Component);
 
-  var _super = _createSuper(Root);
+  var _super = _createSuper(Jobs);
 
-  function Root() {
-    _classCallCheck(this, Root);
+  function Jobs() {
+    _classCallCheck(this, Jobs);
 
     return _super.apply(this, arguments);
   }
 
-  _createClass(Root, [{
+  _createClass(Jobs, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/_react["default"].createElement(_pages.FourOhFourPage, {
-        data: this.props.data ? this.props.data : {}
-      });
+      var id = this.props.data.id;
+      var job = id ? _jobList["default"].find(function (a) {
+        return a.id == id;
+      }) : {};
+      return /*#__PURE__*/_react["default"].createElement(_jobs.JobsWrapper, null, /*#__PURE__*/_react["default"].createElement(_components.Banner, {
+        id: "jobs"
+      }, /*#__PURE__*/_react["default"].createElement("a", {
+        href: "/"
+      }, /*#__PURE__*/_react["default"].createElement("img", {
+        src: "/images/Cafe-Juniper_J_01.png",
+        alt: "primary logo"
+      })), /*#__PURE__*/_react["default"].createElement("div", null, "C", /*#__PURE__*/_react["default"].createElement("span", {
+        className: "smallLetters"
+      }, "A"), "F\xC9 JUN", /*#__PURE__*/_react["default"].createElement("span", {
+        className: "smallLetters"
+      }, "I"), "P", /*#__PURE__*/_react["default"].createElement("span", {
+        className: "smallLetters"
+      }, "E"), "R"), /*#__PURE__*/_react["default"].createElement("h1", {
+        className: "bottomBanner"
+      }, "Salt lake city's premier coffee shop")), /*#__PURE__*/_react["default"].createElement(_components.Header, null), /*#__PURE__*/_react["default"].createElement(_components.About, {
+        id: "about"
+      }, /*#__PURE__*/_react["default"].createElement("a", {
+        href: "/jobs"
+      }, /*#__PURE__*/_react["default"].createElement("h2", null, id ? "BACK TO JOBS PAGE" : "JOBS")), /*#__PURE__*/_react["default"].createElement("hr", null), id ? /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement("h4", null, job.title), /*#__PURE__*/_react["default"].createElement("p", null, job.description)) : /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement("p", null, "These are our available jobs."), _jobList["default"].map(function (job, i) {
+        return /*#__PURE__*/_react["default"].createElement("a", {
+          key: i,
+          href: "/jobs/".concat(job.id)
+        }, /*#__PURE__*/_react["default"].createElement("h4", null, job.title));
+      })), /*#__PURE__*/_react["default"].createElement("hr", null), /*#__PURE__*/_react["default"].createElement("p", null, "For any other job inquiries, please submit your resume at ", /*#__PURE__*/_react["default"].createElement("a", {
+        href: "mailto:cafejuniperslc@gmail.com"
+      }, "cafejuniperslc@gmail.com"))), /*#__PURE__*/_react["default"].createElement(_components.Parallax, {
+        url: "/images/grub.jpg"
+      }), /*#__PURE__*/_react["default"].createElement(_components.Message, {
+        id: "contact"
+      }), /*#__PURE__*/_react["default"].createElement(_components.Partners, null), /*#__PURE__*/_react["default"].createElement(_components.Footer, null));
     }
   }]);
 
-  return Root;
+  return Jobs;
 }(_react.Component);
 
-var _default = Root;
+var _default = Jobs;
 exports["default"] = _default;
