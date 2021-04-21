@@ -15,7 +15,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var AboutWrap = _styledComponents["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  width: 100%;\n  background-color: ", ";\n  position: relative;\n"])), _colors.brown);
+var AboutWrap = _styledComponents["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  width: 100%;\n  background-color: ", ";\n  position: relative;\n  a {\n    color: #ffffff90;\n    transition: color 0.5s;\n  }\n  a:hover {\n    color: #fff;\n  }\n  h4 {\n    margin: 12px 0;\n  }\n  h2 {\n    opacity: 0.8;\n    transition: opacity 0.5s;\n  }\n  h2:hover {\n    opacity: 1;\n  }\n"])), _colors.brown);
 
 exports.AboutWrap = AboutWrap;
 

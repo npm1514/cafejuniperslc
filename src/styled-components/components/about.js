@@ -4,6 +4,23 @@ export const AboutWrap = styled.div`
   width: 100%;
   background-color: ${brown};
   position: relative;
+  a {
+    color: #ffffff90;
+    transition: color 0.5s;
+  }
+  a:hover {
+    color: #fff;
+  }
+  h4 {
+    margin: 12px 0;
+  }
+  h2 {
+    opacity: 0.8;
+    transition: opacity 0.5s;
+  }
+  h2:hover {
+    opacity: 1;
+  }
 `;
 export const AboutID = styled.div`
   width: 0;

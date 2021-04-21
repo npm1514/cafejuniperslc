@@ -45,15 +45,33 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 var Jobs = /*#__PURE__*/function (_Component) {
   _inherits(Jobs, _Component);
 
   var _super = _createSuper(Jobs);
 
   function Jobs() {
+    var _this;
+
     _classCallCheck(this, Jobs);
 
-    return _super.apply(this, arguments);
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _super.call.apply(_super, [this].concat(args));
+
+    _defineProperty(_assertThisInitialized(_this), "scroll", function (id) {
+      if (id == "home") {
+        window.location.href = "/";
+      } else {
+        window.location.href = "/" + id;
+      }
+    });
+
+    return _this;
   }
 
   _createClass(Jobs, [{
@@ -78,7 +96,9 @@ var Jobs = /*#__PURE__*/function (_Component) {
         className: "smallLetters"
       }, "E"), "R"), /*#__PURE__*/_react["default"].createElement("h1", {
         className: "bottomBanner"
-      }, "Salt lake city's premier coffee shop")), /*#__PURE__*/_react["default"].createElement(_components.Header, null), /*#__PURE__*/_react["default"].createElement(_components.About, {
+      }, "Salt lake city's premier coffee shop")), /*#__PURE__*/_react["default"].createElement(_components.Header, {
+        scroll: this.scroll
+      }), /*#__PURE__*/_react["default"].createElement(_components.About, {
         id: "about"
       }, /*#__PURE__*/_react["default"].createElement("a", {
         href: "/jobs"

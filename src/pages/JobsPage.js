@@ -6,6 +6,13 @@ import { darkblue, green, pink, brown } from '../styled-components/colors';
 import jobList from '../data/jobList'
 
 class Jobs extends Component {
+    scroll = (id) => {
+      if(id == "home"){
+        window.location.href = "/"
+      } else {
+        window.location.href = "/" + id;
+      }
+    }
     render(){
       const { id } = this.props.data;
       const job = id ? jobList.find(a => a.id == id) : {}
@@ -20,7 +27,7 @@ class Jobs extends Component {
                 Salt lake city's premier coffee shop
               </h1>
             </Banner>
-            <Header/>
+            <Header scroll={this.scroll}/>
             <About id="about">
               <a href="/jobs">
                 <h2>{ id ? "BACK TO JOBS PAGE" : "JOBS" }</h2>
