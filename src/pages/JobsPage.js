@@ -50,7 +50,6 @@ class Jobs extends Component {
             </About>
             <Parallax url="/images/grub.jpg"/>
             <Message id="contact"/>
-            <Partners/>
             <Footer/>
           </JobsWrapper>
       );

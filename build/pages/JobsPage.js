@@ -100,7 +100,7 @@ var Jobs = /*#__PURE__*/function (_Component) {
         url: "/images/grub.jpg"
       }), /*#__PURE__*/_react["default"].createElement(_components.Message, {
         id: "contact"
-      }), /*#__PURE__*/_react["default"].createElement(_components.Partners, null), /*#__PURE__*/_react["default"].createElement(_components.Footer, null));
+      }), /*#__PURE__*/_react["default"].createElement(_components.Footer, null));
     }
   }]);
 
