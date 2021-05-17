@@ -32,7 +32,12 @@ class Jobs extends Component {
                   <p>{job.description}</p>
                 </div> :
                 <div>
-                  <p>These are our available jobs.</p>
+                  {
+                    jobList.length ?
+                    <p>These are our available jobs.</p> :
+                    <p>There are no available jobs currently.</p>
+                  }
+
                   {
                     jobList.map((job,i) => {
                       return (
@@ -46,7 +51,7 @@ class Jobs extends Component {
                 </div>
               }
               <hr/>
-              <p>For any job inquiries, please submit your resume at <a href="mailto:cafejuniperslc@gmail.com">cafejuniperslc@gmail.com</a></p>
+              <p>For any {jobList.length ? "" : "other "}job inquiries, please submit your resume at <a href="mailto:cafejuniperslc@gmail.com">cafejuniperslc@gmail.com</a></p>
             </About>
             <Parallax url="/images/grub.jpg"/>
             <Message id="contact"/>

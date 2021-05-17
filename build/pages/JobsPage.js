@@ -89,12 +89,12 @@ var Jobs = /*#__PURE__*/function (_Component) {
         id: "about"
       }, /*#__PURE__*/_react["default"].createElement("a", {
         href: "/jobs"
-      }, /*#__PURE__*/_react["default"].createElement("h2", null, id ? "BACK TO JOBS PAGE" : "JOBS")), /*#__PURE__*/_react["default"].createElement("hr", null), id ? /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement("h4", null, job.title), /*#__PURE__*/_react["default"].createElement("p", null, job.description)) : /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement("p", null, "These are our available jobs."), _jobList["default"].map(function (job, i) {
+      }, /*#__PURE__*/_react["default"].createElement("h2", null, id ? "BACK TO JOBS PAGE" : "JOBS")), /*#__PURE__*/_react["default"].createElement("hr", null), id ? /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement("h4", null, job.title), /*#__PURE__*/_react["default"].createElement("p", null, job.description)) : /*#__PURE__*/_react["default"].createElement("div", null, _jobList["default"].length ? /*#__PURE__*/_react["default"].createElement("p", null, "These are our available jobs.") : /*#__PURE__*/_react["default"].createElement("p", null, "There are no available jobs currently."), _jobList["default"].map(function (job, i) {
         return /*#__PURE__*/_react["default"].createElement("a", {
           key: i,
           href: "/jobs/".concat(job.id)
         }, /*#__PURE__*/_react["default"].createElement("h4", null, job.title));
-      })), /*#__PURE__*/_react["default"].createElement("hr", null), /*#__PURE__*/_react["default"].createElement("p", null, "For any job inquiries, please submit your resume at ", /*#__PURE__*/_react["default"].createElement("a", {
+      })), /*#__PURE__*/_react["default"].createElement("hr", null), /*#__PURE__*/_react["default"].createElement("p", null, "For any ", _jobList["default"].length ? "" : "other ", "job inquiries, please submit your resume at ", /*#__PURE__*/_react["default"].createElement("a", {
         href: "mailto:cafejuniperslc@gmail.com"
       }, "cafejuniperslc@gmail.com"))), /*#__PURE__*/_react["default"].createElement(_components.Parallax, {
         url: "/images/grub.jpg"
