@@ -92,20 +92,6 @@ var DeliveryComponent = /*#__PURE__*/function (_Component) {
           width: "268px"
         }
       })), /*#__PURE__*/_react["default"].createElement("a", {
-        href: "https://postmates.com/merchant/cafe-juniper-salt-lake-city",
-        target: "_blank",
-        alt: "Order Food Delivery with Postmates",
-        title: "Order Food Delivery with Postmates",
-        style: {
-          textDecoration: "none"
-        }
-      }, /*#__PURE__*/_react["default"].createElement("img", {
-        className: "pmButton",
-        src: "/images/postmates.png",
-        style: {
-          width: "268px"
-        }
-      })), /*#__PURE__*/_react["default"].createElement("a", {
         href: "https://www.grubhub.com/restaurant/cafe-juniper-29-e-400-s-salt-lake-city/2418846",
         target: "_blank",
         alt: "Order Food Delivery with Grubhub",

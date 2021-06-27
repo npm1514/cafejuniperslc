@@ -32,7 +32,7 @@ class Home extends Component {
             <Delivery id="order"/>
             <Map id="map"/>
             <Parallax url="/images/coolfront.jpg">
-              <Toast>Try our Toast!</Toast>
+              <a href="https://www.clover.com/online-ordering/cafe-juniper-llc-salt-lake-city"><Toast>Try our Toast!</Toast></a>
             </Parallax>
             <Message id="contact"/>
             <Partners/>

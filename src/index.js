@@ -281,8 +281,8 @@ function returnHTML(data, bundle, Page, title){
               width: 100%; max-width: 100%; height: auto;
             }
             h1, h2 { font-weight: 700; font-size: 16px; }
-            th { font-weight: 700; font-size: 14px; }
-            td { font-size: 12px; }
+            th { font-weight: 700; font-size: 21px; }
+            td { font-size: 20px; }
             p { font-weight: 100; font-size: 12px; }
             a { text-decoration: none;}
             i { font-size: 30px;}

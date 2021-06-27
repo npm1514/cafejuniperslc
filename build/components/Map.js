@@ -97,7 +97,7 @@ var MapComponent = /*#__PURE__*/function (_Component) {
         style: {
           marginTop: "12px"
         }
-      }, "Hours"), /*#__PURE__*/_react["default"].createElement("h2", null, "Monday - Wednesday | 7am - 4pm"), /*#__PURE__*/_react["default"].createElement("h2", null, "Thursday - Sunday | 7am - 6pm")));
+      }, "Hours"), /*#__PURE__*/_react["default"].createElement("h2", null, "Monday - Wednesday | 6:30am - 4pm"), /*#__PURE__*/_react["default"].createElement("h2", null, "Thursday - Sunday | 6:30am - 5pm")));
     }
   }]);
 

@@ -106,7 +106,9 @@ var Home = /*#__PURE__*/function (_Component) {
         id: "map"
       }), /*#__PURE__*/_react["default"].createElement(_components.Parallax, {
         url: "/images/coolfront.jpg"
-      }, /*#__PURE__*/_react["default"].createElement(_home.Toast, null, "Try our Toast!")), /*#__PURE__*/_react["default"].createElement(_components.Message, {
+      }, /*#__PURE__*/_react["default"].createElement("a", {
+        href: "https://www.clover.com/online-ordering/cafe-juniper-llc-salt-lake-city"
+      }, /*#__PURE__*/_react["default"].createElement(_home.Toast, null, "Try our Toast!"))), /*#__PURE__*/_react["default"].createElement(_components.Message, {
         id: "contact"
       }), /*#__PURE__*/_react["default"].createElement(_components.Partners, null), /*#__PURE__*/_react["default"].createElement(_components.Footer, null));
     }

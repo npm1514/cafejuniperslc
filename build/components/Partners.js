@@ -71,12 +71,6 @@ var PartnersComponent = /*#__PURE__*/function (_Component) {
         alt: "amour logo"
       })), /*#__PURE__*/_react["default"].createElement("a", {
         rel: "noopener",
-        href: "https://rubysnap.com/"
-      }, /*#__PURE__*/_react["default"].createElement("img", {
-        src: "/images/rubymainlogo.jpeg",
-        alt: "ruby snap logo"
-      })), /*#__PURE__*/_react["default"].createElement("a", {
-        rel: "noopener",
         href: "https://www.eatchocolateconspiracy.com/"
       }, /*#__PURE__*/_react["default"].createElement("img", {
         src: "/images/chocolate.jpg",

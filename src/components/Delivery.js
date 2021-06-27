@@ -21,9 +21,6 @@ class DeliveryComponent extends Component {
           <a href="https://www.doordash.com/business/596471/?utm_source=partner-link&utm_medium=website&utm_campaign=596471&utm_content=red-l" target="_blank" alt="Order Food Delivery with DoorDash" title="Order Food Delivery with DoorDash" style={{textDecoration: "none"}}>
             <img className="ddButton" src="/images/button_red_l.svg" style={{width: "268px"}}/>
           </a>
-          <a href="https://postmates.com/merchant/cafe-juniper-salt-lake-city" target="_blank" alt="Order Food Delivery with Postmates" title="Order Food Delivery with Postmates" style={{textDecoration: "none"}}>
-            <img className="pmButton" src="/images/postmates.png" style={{width: "268px"}}/>
-          </a>
           <a href="https://www.grubhub.com/restaurant/cafe-juniper-29-e-400-s-salt-lake-city/2418846" target="_blank" alt="Order Food Delivery with Grubhub" title="Order Food Delivery with Grubhub" style={{textDecoration: "none"}}>
             <img className="ghButton" src="/images/grubhub.png" style={{width: "268px"}}/>
           </a>

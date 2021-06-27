@@ -61,7 +61,7 @@ export const CoffeeMenu = styled.div`
       width: 172px;
     }
     th, td {
-      font-size: 18px;
+      font-size: 20px;
     }
   }
   @media (min-width: 800px){
@@ -74,6 +74,7 @@ export const CoffeeMenuLeft = styled.div`
   width: 100%;
   table {
     margin: auto;
+    width: max-content;
   }
   @media (min-width: 700px){
       width: 100%;
