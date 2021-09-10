@@ -194,12 +194,9 @@ var HeaderComponent = /*#__PURE__*/function (_Component) {
       }, "Subscriptions")), /*#__PURE__*/_react["default"].createElement("div", {
         className: "online-order"
       }, /*#__PURE__*/_react["default"].createElement("a", {
-        href: "/order",
+        href: "https://order.online/store/CafeJuniper-1279187/en-US/?delivery=true&hideModal=true",
         rel: "noopener",
-        className: "online-order",
-        onClick: function onClick(e) {
-          return _this2.closeMenu(e, "order");
-        }
+        className: "online-order"
       }, "Order Now"))), /*#__PURE__*/_react["default"].createElement(_header.HeaderWrap, {
         menuStuck: menuStuck
       }, /*#__PURE__*/_react["default"].createElement(_header.DesktopHeader, {
@@ -235,21 +232,15 @@ var HeaderComponent = /*#__PURE__*/function (_Component) {
           return _this2.closeMenu(e, "subscriptions");
         }
       }, "Subscriptions")), /*#__PURE__*/_react["default"].createElement(_header.DesktopOrder, null, /*#__PURE__*/_react["default"].createElement("a", {
-        href: "/order",
+        href: "https://order.online/store/CafeJuniper-1279187/en-US/?delivery=true&hideModal=true",
         rel: "noopener",
-        className: "online-order",
-        onClick: function onClick(e) {
-          return _this2.closeMenu(e, "order");
-        }
+        className: "online-order"
       }, "Order Now"))), /*#__PURE__*/_react["default"].createElement(_header.Spacer, {
         menuStuck: menuStuck
       }), /*#__PURE__*/_react["default"].createElement(_header.OnlineOrder, null, /*#__PURE__*/_react["default"].createElement("a", {
-        href: "/order",
+        href: "https://order.online/store/CafeJuniper-1279187/en-US/?delivery=true&hideModal=true",
         rel: "noopener",
-        className: "online-order",
-        onClick: function onClick(e) {
-          return _this2.closeMenu(e, "order");
-        }
+        className: "online-order"
       }, "Order Now")));
     }
   }]);

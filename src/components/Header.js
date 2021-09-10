@@ -90,7 +90,7 @@ class HeaderComponent extends Component {
               <a href="/subscriptions" onClick={(e) => this.closeMenu(e, "subscriptions")}>Subscriptions</a>
             </div>
             <div className="online-order">
-              <a href="/order" rel="noopener" className="online-order" onClick={(e) => this.closeMenu(e, "order")}>Order Now</a>
+              <a href="https://order.online/store/CafeJuniper-1279187/en-US/?delivery=true&hideModal=true" rel="noopener" className="online-order">Order Now</a>
             </div>
           </MobileMenu>
         }
@@ -104,11 +104,11 @@ class HeaderComponent extends Component {
             <a href="/subscriptions" onClick={(e) => this.closeMenu(e, "subscriptions")}>Subscriptions</a>
           </DesktopHeader>
           <DesktopOrder>
-            <a href="/order" rel="noopener" className="online-order" onClick={(e) => this.closeMenu(e, "order")}>Order Now</a>
+            <a href="https://order.online/store/CafeJuniper-1279187/en-US/?delivery=true&hideModal=true" rel="noopener" className="online-order">Order Now</a>
           </DesktopOrder>
         </HeaderWrap>
         <Spacer menuStuck={menuStuck}/>
-        <OnlineOrder><a href="/order" rel="noopener" className="online-order" onClick={(e) => this.closeMenu(e, "order")}>Order Now</a></OnlineOrder>
+        <OnlineOrder><a href="https://order.online/store/CafeJuniper-1279187/en-US/?delivery=true&hideModal=true" rel="noopener" className="online-order">Order Now</a></OnlineOrder>
       </HeaderWrap>
     );
   }
