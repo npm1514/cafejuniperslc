@@ -1,9 +1,9 @@
 module.exports = [
-  // {
-  //   id: "parttimebarista",
-  //   title: "Part Time Barista",
-  //   description: "Here at Cafe Juniper our biggest priority is creating a positive, comfortable work environment. We encourage our employees to express themselves however they feel, and voice their opinion whenever they feel necessary. Crafting specialty Coffee, making delicious toast, and baking small treats are just a couple of things you can expect when joining our team. Starting wage is $8.50 plus tips which averages to be about $12- $14 an hour. Shifts range from 4-6 hours, with 15-20 hours a week with room in expanding those hours. Looking forward to having you join our team!"
-  // },
+  {
+    id: "parttimebarista",
+    title: "Part Time Barista",
+    description: "Here at Cafe Juniper our biggest priority is creating a positive, comfortable work environment. We encourage our employees to express themselves however they feel, and voice their opinion whenever they feel necessary. Crafting specialty coffee, making delicious food, and baking small treats are just a couple of things you can expect when joining our team. Starting wage is $8.50 plus tips which averages to be about $12 - $14 an hour. Shifts range from 4 to 6 hours, with 10 - 20 hours a week with room in expanding those hours. Looking forward to having you join our team!"
+  },
   // {
   //   id: "b2bsales",
   //   title: "B2B Sales",

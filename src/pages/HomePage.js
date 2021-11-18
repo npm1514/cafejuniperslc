@@ -16,6 +16,17 @@ class Home extends Component {
       } else {
         document.getElementById("home").scrollIntoView({block: 'start', behavior: 'smooth'});
       }
+
+
+
+      // `<style>
+      //   .socialwall_header {
+      //     display: none;
+      //   }
+      //   .socialwall_container {
+      //     margin: 12px;
+      //   }
+      // </style>`;
     }
     render(){
       return (
@@ -23,19 +34,17 @@ class Home extends Component {
             <Banner id="home"/>
             <Header scroll={this.scroll}/>
             <CoffeeMenu/>
-            <Parallax className="mobile-parallax" url="/images/grub.jpg"/>
             <About id="about">
               <h2>ABOUT US</h2>
               <p>Our team has been in the hospitality industry of Salt Lake City for the last ten plus years. Our mission is to give back to the community by providing the best quality coffee, pastries, and toast sourced both locally and responsibly in our cute downtown cafe.</p>
             </About>
-            <Parallax url="/images/grub.jpg"/>
-            <Delivery id="order"/>
-            <Map id="map"/>
             <Parallax url="/images/coolfront.jpg">
-              <a href="https://www.clover.com/online-ordering/cafe-juniper-llc-salt-lake-city"><Toast>Try our Toast!</Toast></a>
+              <h2>What's been happening at Juniper...</h2>
+              <iframe src="/html/insta.html" id="insta"/>
             </Parallax>
-            <Message id="contact"/>
             <Partners/>
+            <Message id="contact"/>
+            <Map id="map"/>
             <Footer/>
           </HomeWrapper>
       );

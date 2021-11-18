@@ -49,7 +49,7 @@ var FooterComponent = /*#__PURE__*/function (_Component) {
   _createClass(FooterComponent, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/_react["default"].createElement(_footer.FooterWrap, null, /*#__PURE__*/_react["default"].createElement(_footer.Footer, null, /*#__PURE__*/_react["default"].createElement("span", null, "Copyright 2020 Cafe Juniper LLC"), /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement("a", {
+      return /*#__PURE__*/_react["default"].createElement(_footer.FooterWrap, null, this.props.children, /*#__PURE__*/_react["default"].createElement(_footer.Footer, null, /*#__PURE__*/_react["default"].createElement("span", null, "Copyright 2020 Cafe Juniper LLC"), /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement("a", {
         rel: "noopener",
         name: "instagram link",
         href: "https://www.instagram.com/cafejuniperslc/",

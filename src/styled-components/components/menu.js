@@ -2,14 +2,18 @@ import styled from 'styled-components';
 import { white, green, darkblue } from '../colors';
 export const MenuWrap = styled.div`
   width: 100%;
-  background-color: ${white};
+  background-image: url(/images/grub.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+
   h2 {
     color: ${darkblue};
   }
 `;
 export const Menu = styled.div`
   width: calc(100% - 64px);
-  background-color: ${white};
+  background: #ffffff69;
   color: ${green};
   padding: 32px;
   overflow: hidden;

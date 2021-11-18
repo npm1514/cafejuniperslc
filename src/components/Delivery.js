@@ -16,17 +16,6 @@ class DeliveryComponent extends Component {
             <div style={{background:"#FFF", borderRadius: "4px", padding: "8px 16px"}}><img className="clButton" src="/images/clover-logo.svg" style={{width: "200px"}}/></div>
           </a>
           <br/>
-          <hr/>
-          <h2>OR GET YOUR ORDER DELIVERED!</h2>
-          <a href="https://www.doordash.com/business/596471/?utm_source=partner-link&utm_medium=website&utm_campaign=596471&utm_content=red-l" target="_blank" alt="Order Food Delivery with DoorDash" title="Order Food Delivery with DoorDash" style={{textDecoration: "none"}}>
-            <img className="ddButton" src="/images/button_red_l.svg" style={{width: "268px"}}/>
-          </a>
-          <a href="https://www.grubhub.com/restaurant/cafe-juniper-29-e-400-s-salt-lake-city/2418846" target="_blank" alt="Order Food Delivery with Grubhub" title="Order Food Delivery with Grubhub" style={{textDecoration: "none"}}>
-            <img className="ghButton" src="/images/grubhub.png" style={{width: "268px"}}/>
-          </a>
-          <a href="https://www.ubereats.com/salt-lake-city/food-delivery/cafe-juniper/Pf2MDmZ7TJycEdVMfcS5mg" target="_blank" alt="Order Food Delivery with Uber Eats" title="Order Food Delivery with Uber Eats" style={{textDecoration: "none"}}>
-            <img className="ueButton" src="/images/UberEats.png" style={{width: "268px"}}/>
-          </a>
         </Delivery>
       </DeliveryWrap>
     );

@@ -117,6 +117,14 @@ app.get('/images/:id', function (req, res) {
   res.set('Cache-Control', 'public, max-age=31557600');
   res.sendFile(_path["default"].join(__dirname, '../images/' + req.params.id));
 });
+app.get('/html/:id', function (req, res) {
+  res.set('Cache-Control', 'public, max-age=31557600');
+  res.sendFile(_path["default"].join(__dirname, '../html/' + req.params.id));
+});
+app.get('/css/:id', function (req, res) {
+  res.set('Cache-Control', 'public, max-age=31557600');
+  res.sendFile(_path["default"].join(__dirname, '../css/' + req.params.id));
+});
 app.post('/subscriber', function (req, res) {
   var _req$body = req.body,
       email = _req$body.email,

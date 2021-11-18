@@ -104,6 +104,16 @@ app.get('/images/:id', (req, res) => {
   res.sendFile(path.join(__dirname, '../images/' + req.params.id));
 });
 
+app.get('/html/:id', (req, res) => {
+  res.set('Cache-Control', 'public, max-age=31557600');
+  res.sendFile(path.join(__dirname, '../html/' + req.params.id));
+});
+
+app.get('/css/:id', (req, res) => {
+  res.set('Cache-Control', 'public, max-age=31557600');
+  res.sendFile(path.join(__dirname, '../css/' + req.params.id));
+});
+
 app.post('/subscriber', (req, res) => {
   let { email, name, message, business, address, zip, phone } = req.body;
   var transporter = nodemailer.createTransport({

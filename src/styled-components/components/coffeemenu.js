@@ -2,14 +2,12 @@ import styled from 'styled-components';
 import { white, green, darkblue } from '../colors';
 export const CoffeeMenuWrap = styled.div`
   width: 100%;
-  background-color: ${white};
   h2 {
     color: ${darkblue};
   }
 `;
 export const CoffeeMenu = styled.div`
   width: 100%;
-  background-color: ${white};
   color: ${green};
   overflow: hidden;
   position: relative;

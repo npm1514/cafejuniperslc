@@ -50,10 +50,11 @@ class MessageComponent extends Component {
         <ContactID id={this.props.id}/>
         <Message>
           <Hex className="mobile-hex" color={green} bottom={-83} left={-50} size={100}/>
-          <h2>385-213-5061 | cafejuniperslc@gmail.com</h2>
+
           {
             !this.props.noMessage &&
             <Fragment>
+              <h2>385-213-5061 | cafejuniperslc@gmail.com</h2>
               <h2>Shoot us a message</h2>
               <form onSubmit={this.submitMessage}>
                 <input

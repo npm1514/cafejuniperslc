@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html class="desktop scrollable theme-fluid active colorscheme-light wall-loading" lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>My social wall – The Social Wall for Everyone</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600,700,700italic,900">
+    <link rel="stylesheet" href="https://dpt5udl8tkpo9.cloudfront.net/css/wall-fluid.css?v=2e5b7f604">
+    <style id="colorscheme-style">
+        html {
+            background-color: transparent
+        }
+
+        body {
+            background-color: #d9dfe0
+        }
+
+        body {
+            color: #222
+        }
+
+        .transparent-background body {
+            background: transparent
+        }
+
+        .socialwall_header {
+            background-color: #00222d;
+            color: #fff
+        }
+
+        .socialwall_header a {
+            color: #fff
+        }
+
+        .checkin {
+            font-weight: 400
+        }
+
+        .checkin-without-image .checkin-message {
+            font-weight: 400
+        }
+
+        @media screen and (min-width:1700px) {
+            .checkin-wrapper {
+                width: 20%
+            }
+        }
+
+        .wall-info .loading-indicator {
+            fill: #fff;
+            color: #fff
+        }
+
+        .no-more-posts-inner {
+            color: #222;
+            background-color: #fff
+        }
+
+        .checkin-color-1 {
+            background-color: #fff;
+            color: #222
+        }
+
+        .checkin-color-1 a {
+            color: #222
+        }
+
+        .checkin-color-1 .checkin-sharing {
+            border-top-color: #222
+        }
+
+        .checkin-color-1 .checkin-highlight-icon {
+            color: #222222
+        }
+
+        .checkin-color-1+.checkin-buttons {
+            background-color: #fff
+        }
+
+        .checkin-color-1+.checkin-buttons .connector:before,
+        .checkin-color-1+.checkin-buttons .connector:after,
+        .checkin-color-1+.checkin-buttons .connector {
+            background-color: #c8c8c8
+        }
+    </style>
+    <script>
+        window.WallTimings = {
+            pageload: Date.now()
+        };
+    </script>
+    <script type="text/javascript">
+        (function(f, b) {
+            if (!b.__SV) {
+                var e, g, i, h;
+                window.mixpanel = b;
+                b._i = [];
+                b.init = function(e, f, c) {
+                    function g(a, d) {
+                        var b = d.split(".");
+                        2 == b.length && (a = a[b[0]], d = b[1]);
+                        a[d] = function() {
+                            a.push([d].concat(Array.prototype.slice.call(arguments, 0)))
+                        }
+                    }
+                    var a = b;
+                    "undefined" !== typeof c ? a = b[c] = [] : c = "mixpanel";
+                    a.people = a.people || [];
+                    a.toString = function(a) {
+                        var d = "mixpanel";
+                        "mixpanel" !== c && (d += "." + c);
+                        a || (d += " (stub)");
+                        return d
+                    };
+                    a.people.toString = function() {
+                        return a.toString(1) + ".people (stub)"
+                    };
+                    i =
+                        "disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove"
+                        .split(" ");
+                    for (h = 0; h < i.length; h++) g(a, i[h]);
+                    var j = "set set_once union unset remove delete".split(" ");
+                    a.get_group = function() {
+                        function b(c) {
+                            d[c] = function() {
+                                call2_args = arguments;
+                                call2 = [c].concat(Array.prototype.slice.call(call2_args, 0));
+                                a.push([e, call2])
+                            }
+                        }
+                        for (var d = {}, e = ["get_group"].concat(Array.prototype.slice.call(arguments, 0)), c = 0; c < j.length; c++) b(j[c]);
+                        return d
+                    };
+                    b._i.push([e, f, c])
+                };
+                b.__SV = 1.2;
+                e = f.createElement("script");
+                e.type = "text/javascript";
+                e.async = !0;
+                e.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ?
+                    MIXPANEL_CUSTOM_LIB_URL : "file:" === f.location.protocol && "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js" :
+                    "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";
+                g = f.getElementsByTagName("script")[0];
+                g.parentNode.insertBefore(e, g)
+            }
+        })(document, window.mixpanel || []);
+    </script>
+    <script type="text/javascript">
+        mixpanel.init("7443b16c1d0e316ded8013f541b586bb");
+    </script>
+</head>
+
+<body class="hide-header">
+    <div class="socialwall_container" style="margin: 12px">
+    </div>
+    <div class="no-more-posts">
+        <div class="no-more-posts-inner">
+            <div class="no-more-posts-text" data-translate="NO_MORE_POSTS"></div>
+            <a class="scroll-to-top-link" href="#" data-action="scroll-to-top">
+                <span class="scroll-to-top-text" data-translate="BACK_TO_TOP"></span>
+                <span class="arrow"></span>
+            </a>
+        </div>
+    </div>
+    <div class="wall-info wall-info-loading">
+        <svg class="loading-indicator">
+<use xlink:href="#app-logo-svg"></use>
+</svg>
+    </div>
+    <div class="detail-mount-point">
+    </div>
+    <div class="wall-show-new-posts">
+        <a href="#" data-action="release-checkins" data-translate="SHOW_NEW_POSTS"></a>
+    </div>
+    <div class="iframe-detail-overlay" data-action="hide-detail">
+    </div>
+    </div>
+    <div class="wall-menu-overlay" data-action="hide-full-menu">
+    </div>
+    <div class="wall-action-icons">
+        <div data-action-name="fullscreen" class="wall-action-icon-wrapper">
+            <div class="wall-action-icon wall-action-icon-fullscreen fullscreen-toggle">
+                <div class="wall-action-icon-label wall-action-icon-enter-fullscreen" data-translate-attribute="title=ENTER_FULLSCREEN"></div>
+                <div class="wall-action-icon-label wall-action-icon-leave-fullscreen" data-translate-attribute="title=LEAVE_FULLSCREEN"></div>
+            </div>
+        </div>
+        <div data-action-name="sharing" class="wall-action-icon-wrapper">
+            <div class="wall-action-icon wall-action-icon-sharing" data-action="show-sharing" data-translate-attribute="title=SHARE_THIS_WALL">
+            </div>
+        </div>
+        <div data-action-name="pause" class="wall-action-icon-wrapper">
+            <div class="wall-action-icon wall-action-icon-autoadvance">
+                <div class="wall-action-icon-label wall-action-icon-autoadvance-pause" data-action="pause-autoadvance" data-translate-attribute="title=PAUSE_TITLE_TEXT"></div>
+                <div class="wall-action-icon-label wall-action-icon-autoadvance-unpause" data-action="unpause-autoadvance" data-translate-attribute="title=UNPAUSE_TITLE_TEXT"></div>
+            </div>
+        </div>
+        <div data-action-name="settings" class="wall-action-icon-wrapper">
+            <div class="wall-action-icon wall-action-icon-show-menu" data-action="toggle-full-menu preload-settings-iframe" data-translate-attribute="title=WALL_SETTINGS">
+            </div>
+        </div>
+        <div data-action-name="main" class="wall-action-icon-wrapper wall-action-icon-always-expanded">
+            <div class="wall-action-icon wall-action-icon-expand" data-action="toggle-mini-menu">
+            </div>
+        </div>
+    </div>
+    <div class="wall-menu">
+
+    </div>
+    <div class="wall-notifications"></div>
+
+    <script src="https://dpt5udl8tkpo9.cloudfront.net/js/wall-fluid-libs.js?v=23e90cc1c"></script>
+    <script src="https://dpt5udl8tkpo9.cloudfront.net/js/messages-frontend-en_US.js?v=231ea23c4"></script>
+    <script src="https://dpt5udl8tkpo9.cloudfront.net/js/i18n.js?v=29ac85dc7"></script>
+    <script src="https://dpt5udl8tkpo9.cloudfront.net/js/socketio.js?v=29914e95e"></script>
+    <script src="https://dpt5udl8tkpo9.cloudfront.net/js/wall-fluid.js?v=20c7b1738"></script>
+
+    <script>
+        (function() {
+            var wallOptions = {
+                "ads": [{
+                    "id": 153547,
+                    "image": "https:\/\/app.walls.io\/ads\/Fluid\/FreeTrial_Fluid-08.png",
+                    "image_dominant_colors": "0e262e,fbb314,cbd5d5",
+                    "image_height": 1201,
+                    "image_width": 1201,
+                    "latitude": null,
+                    "link": "https:\/\/app.walls.io\/upgrade?type=yearly&utm_campaign=20-app-ads&utm_source=free-trial&utm_medium=image&utm_term=fluid&utm_content=08",
+                    "location": null,
+                    "longitude": null,
+                    "text": null,
+                    "user_image": null,
+                    "user_name": null,
+                    "posted_at": null,
+                    "scheduled_at": null,
+                    "theme": "fluid",
+                    "type": "ad_trial",
+                    "video": null,
+                    "image_key": "2af30a6bd57853e549ad880388366e9a",
+                    "image_relative": "\/ads\/Fluid\/FreeTrial_Fluid-08.png",
+                    "media_type": "image"
+                }, {
+                    "id": 153546,
+                    "image": "https:\/\/app.walls.io\/ads\/Fluid\/FreeTrial_Fluid-07.png",
+                    "image_dominant_colors": "1cab9b,0c242c,cfd4ca",
+                    "image_height": 1201,
+                    "image_width": 1201,
+                    "latitude": null,
+                    "link": "https:\/\/app.walls.io\/upgrade?type=yearly&utm_campaign=20-app-ads&utm_source=free-trial&utm_medium=image&utm_term=fluid&utm_content=07",
+                    "location": null,
+                    "longitude": null,
+                    "text": null,
+                    "user_image": null,
+                    "user_name": null,
+                    "posted_at": null,
+                    "scheduled_at": null,
+                    "theme": "fluid",
+                    "type": "ad_trial",
+                    "video": null,
+                    "image_key": "ae9f564c6441a99a1190c98289cfc7ae",
+                    "image_relative": "\/ads\/Fluid\/FreeTrial_Fluid-07.png",
+                    "media_type": "image"
+                }, {
+                    "id": 153545,
+                    "image": "https:\/\/app.walls.io\/ads\/Fluid\/FreeTrial_Fluid-06.png",
+                    "image_dominant_colors": "0d262d,fbb314,cbd5d5",
+                    "image_height": 1201,
+                    "image_width": 1201,
+                    "latitude": null,
+                    "link": "https:\/\/app.walls.io\/upgrade?type=yearly&utm_campaign=20-app-ads&utm_source=free-trial&utm_medium=image&utm_term=fluid&utm_content=06",
+                    "location": null,
+                    "longitude": null,
+                    "text": null,
+                    "user_image": null,
+                    "user_name": null,
+                    "posted_at": null,
+                    "scheduled_at": null,
+                    "theme": "fluid",
+                    "type": "ad_trial",
+                    "video": null,
+                    "image_key": "138b4f63b2d9b29129c62cde0a6fa5be",
+                    "image_relative": "\/ads\/Fluid\/FreeTrial_Fluid-06.png",
+                    "media_type": "image"
+                }, {
+                    "id": 153544,
+                    "image": "https:\/\/app.walls.io\/ads\/Fluid\/FreeTrial_Fluid-05.png",
+                    "image_dominant_colors": "1cab9b,0c242c,cfd3c7",
+                    "image_height": 1201,
+                    "image_width": 1201,
+                    "latitude": null,
+                    "link": "https:\/\/app.walls.io\/upgrade?type=yearly&utm_campaign=20-app-ads&utm_source=free-trial&utm_medium=image&utm_term=fluid&utm_content=05",
+                    "location": null,
+                    "longitude": null,
+                    "text": null,
+                    "user_image": null,
+                    "user_name": null,
+                    "posted_at": null,
+                    "scheduled_at": null,
+                    "theme": "fluid",
+                    "type": "ad_trial",
+                    "video": null,
+                    "image_key": "1500d215938de3118e9f522956b1d13e",
+                    "image_relative": "\/ads\/Fluid\/FreeTrial_Fluid-05.png",
+                    "media_type": "image"
+                }, {
+                    "id": 153543,
+                    "image": "https:\/\/app.walls.io\/ads\/Fluid\/FreeTrial_Fluid-04-Preview.png",
+                    "image_dominant_colors": "fbb304,05252d,cdd7d7",
+                    "image_height": 1200,
+                    "image_width": 1200,
+                    "latitude": null,
+                    "link": "https:\/\/app.walls.io\/upgrade?type=yearly&utm_campaign=20-app-ads&utm_source=free-trial&utm_medium=video&utm_term=fluid&utm_content=04",
+                    "location": null,
+                    "longitude": null,
+                    "text": null,
+                    "user_image": null,
+                    "user_name": null,
+                    "posted_at": null,
+                    "scheduled_at": null,
+                    "theme": "fluid",
+                    "type": "ad_trial",
+                    "video": "https:\/\/app.walls.io\/ads\/Fluid\/FreeTrial_Fluid-04.mp4",
+                    "image_key": "e646a0191049fbe03d4e4a2b2c62f7cb",
+                    "image_relative": "\/ads\/Fluid\/FreeTrial_Fluid-04-Preview.png",
+                    "media_type": "video"
+                }, {
+                    "id": 153542,
+                    "image": "https:\/\/app.walls.io\/ads\/Fluid\/FreeTrial_Fluid-03-Preview.png",
+                    "image_dominant_colors": "04ab9b,04242c,d4cea9",
+                    "image_height": 1200,
+                    "image_width": 1200,
+                    "latitude": null,
+                    "link": "https:\/\/app.walls.io\/upgrade?type=yearly&utm_campaign=20-app-ads&utm_source=free-trial&utm_medium=video&utm_term=fluid&utm_content=03",
+                    "location": null,
+                    "longitude": null,
+                    "text": null,
+                    "user_image": null,
+                    "user_name": null,
+                    "posted_at": null,
+                    "scheduled_at": null,
+                    "theme": "fluid",
+                    "type": "ad_trial",
+                    "video": "https:\/\/app.walls.io\/ads\/Fluid\/FreeTrial_Fluid-03.mp4",
+                    "image_key": "174e1d552621c8bb8797ab29de835f40",
+                    "image_relative": "\/ads\/Fluid\/FreeTrial_Fluid-03-Preview.png",
+                    "media_type": "video"
+                }, {
+                    "id": 153541,
+                    "image": "https:\/\/app.walls.io\/ads\/Fluid\/FreeTrial_Fluid-02-B-Preview.png",
+                    "image_dominant_colors": "fbb304,06262e,cdd7d7",
+                    "image_height": 1200,
+                    "image_width": 1200,
+                    "latitude": null,
+                    "link": "https:\/\/app.walls.io\/upgrade?type=yearly&utm_campaign=20-app-ads&utm_source=free-trial&utm_medium=video&utm_term=fluid&utm_content=02-b",
+                    "location": null,
+                    "longitude": null,
+                    "text": null,
+                    "user_image": null,
+                    "user_name": null,
+                    "posted_at": null,
+                    "scheduled_at": null,
+                    "theme": "fluid",
+                    "type": "ad_trial",
+                    "video": "https:\/\/app.walls.io\/ads\/Fluid\/FreeTrial_Fluid-02-B.mp4",
+                    "image_key": "c84e0c413022ba8ee55bbff29651f3c2",
+                    "image_relative": "\/ads\/Fluid\/FreeTrial_Fluid-02-B-Preview.png",
+                    "media_type": "video"
+                }, {
+                    "id": 153540,
+                    "image": "https:\/\/app.walls.io\/ads\/Fluid\/FreeTrial_Fluid-02-A-Preview.png",
+                    "image_dominant_colors": "04ab9b,d0d3c1,04242c",
+                    "image_height": 1200,
+                    "image_width": 1200,
+                    "latitude": null,
+                    "link": "https:\/\/app.walls.io\/upgrade?type=yearly&utm_campaign=20-app-ads&utm_source=free-trial&utm_medium=video&utm_term=fluid&utm_content=02-a",
+                    "location": null,
+                    "longitude": null,
+                    "text": null,
+                    "user_image": null,
+                    "user_name": null,
+                    "posted_at": null,
+                    "scheduled_at": null,
+                    "theme": "fluid",
+                    "type": "ad_trial",
+                    "video": "https:\/\/app.walls.io\/ads\/Fluid\/FreeTrial_Fluid-02-A.mp4",
+                    "image_key": "af365430ae5989c4bf0a630bbf283fa3",
+                    "image_relative": "\/ads\/Fluid\/FreeTrial_Fluid-02-A-Preview.png",
+                    "media_type": "video"
+                }, {
+                    "id": 153539,
+                    "image": "https:\/\/app.walls.io\/ads\/Fluid\/FreeTrial_Fluid-01.png",
+                    "image_dominant_colors": "fbb314,0e262e,d9e1e2",
+                    "image_height": 1201,
+                    "image_width": 1201,
+                    "latitude": null,
+                    "link": "https:\/\/app.walls.io\/upgrade?type=yearly&utm_campaign=20-app-ads&utm_source=free-trial&utm_medium=image&utm_term=fluid&utm_content=01",
+                    "location": null,
+                    "longitude": null,
+                    "text": null,
+                    "user_image": null,
+                    "user_name": null,
+                    "posted_at": null,
+                    "scheduled_at": null,
+                    "theme": "fluid",
+                    "type": "ad_trial",
+                    "video": null,
+                    "image_key": "da68f78dd501f68ca0ac633fa1ce46d6",
+                    "image_relative": "\/ads\/Fluid\/FreeTrial_Fluid-01.png",
+                    "media_type": "image"
+                }],
+                "adsFrequency": 15,
+                "urls": {
+                    "basePath": "https:\/\/my.walls.io\/",
+                    "imageBase": "https:\/\/app.walls.io\/",
+                    "marketingBase": "https:\/\/walls.io",
+                    "recordView": "https:\/\/app.walls.io\/record_view",
+                    "cachedCheckins": "https:\/\/app.walls.io\/get_cached_checkins.json",
+                    "backendEmbed": "https:\/\/app.walls.io\/t4d8w\/embed"
+                },
+                "initialCheckins": null,
+                "maxCommentLength": null,
+                "networksWithVideoEmbeds": {
+                    "facebook": {
+                        "field": "post_link",
+                        "regex": "^https:\\\/\\\/www\\.facebook\\.com\\\/[^\\\/]+\\\/videos\\\/\\d+"
+                    },
+                    "vimeo": {
+                        "field": "post_link",
+                        "regex": ".*"
+                    },
+                    "youtube": {
+                        "field": "post_link",
+                        "regex": ".*"
+                    }
+                },
+                "nodeUrl": "https:\/\/broadcaster.walls.io",
+                "postInstructions": {
+                    "basic": ["My social wall"],
+                    "networks": []
+                },
+                "imageSlimproxyHost": "https:\/\/dpt5udl8tkpo9.cloudfront.net\/slimproxy\/",
+                "imageProxyHost": "https:\/\/d3pelj80y5v5k4.cloudfront.net\/",
+                "proxySalt": null,
+                "mediaProxyHost": null,
+                "rankingMode": "addOrder",
+                "token": null,
+                "twitterVia": "walls_io",
+                "wallId": 123809,
+                "wallTitle": "My social wall",
+                "wallUrl": "https:\/\/my.walls.io\/t4d8w",
+                "theme": "fluid",
+                "autoscrollSettings": {
+                    "isEnabled": false,
+                    "pages": 5,
+                    "speed": 25
+                }
+            };
+            wallOptions.colorCount = 1;
+            wallOptions.locale = "en_US";
+            wallOptions.overlayBar = {
+                "autoshowhideInterval": 15000,
+                "displayTimeout": 10000,
+                "markup": "\n<link rel=\"stylesheet\" type=\"text\/css\" href=\"https:\/\/app.walls.io\/css\/frontend-notifications.css\"\/>\n<div class=\"wall-notification wall-notification-default wall-notification-trial\">\n  <div class=\"wall-notification-text\">\n    To remove this notice, upgrade to a paid plan.  <\/div>\n\n  <a href=\"https:\/\/app.walls.io\/upgrade?utm_campaign=20-app-ads&utm_source=free-trial&utm_medium=upgrade-yearly&utm_content=top-button\" class=\"button button-green-cta button-icon small button-no-shadow\" target=\"_top\" id=\"trial-banner-upgrade-btn\">\n    <span class=\"action-button-icon\">\n      <svg class=\"icon small-icon\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewBox=\"0 0 512 512\">\n        <path\n          fill=\"currentColor\"\n          d=\"M512 112c0-36.8-.8-47.2-11-89.1-1.4-5.8-5.9-10.3-11.7-11.8C451.4 1.8 440 0 400 0c-68.3 0-127.4 39.5-177 96H96c-15.2 0-29 8.6-35.8 22.1l-56 112C-9 256.7 10.3 288 40.1 288h66.3c-6.7 15-12.9 29.8-18.6 44.1-2.4 5.9-1 12.7 3.6 17.2l71.3 71.3c4.5 4.5 11.3 5.9 17.2 3.6 14.3-5.7 29.1-11.9 44.1-18.6v66.3c0 29.7 31.3 49.1 57.9 35.8l112-56c13.6-6.8 22.1-20.6 22.1-35.8V289c56.5-49.6 96-108.7 96-177zM53 240l48-96h84.7c-21.1 30.3-39.9 63.1-56.6 96H53zm87.1 90.2C196.8 191.1 293 48 400.1 48c22.6 0 34.7 0 58.8 5.2 5.1 24 5.1 36.2 5.1 58.8 0 107.1-143.1 203.2-282.2 259.9l-41.7-41.7zM368 411l-96 48v-76.2c32.9-16.6 65.7-35.5 96-56.6V411zm0-315c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48z\"\n        \/>\n      <\/svg>\n    <\/span>\n    Upgrade now  <\/a>\n<\/div>\n"
+            };
+            Wall.create(wallOptions);
+        }());
+    </script>
+</body>
+
+</html>

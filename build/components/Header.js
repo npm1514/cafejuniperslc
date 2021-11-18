@@ -167,26 +167,23 @@ var HeaderComponent = /*#__PURE__*/function (_Component) {
           return _this2.closeMenu(e, "home");
         }
       }, "Home")), /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement("a", {
-        href: "/about",
-        onClick: function onClick(e) {
-          return _this2.closeMenu(e, "about");
-        }
-      }, "About Us")), /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement("a", {
-        href: "/map",
-        onClick: function onClick(e) {
-          return _this2.closeMenu(e, "map");
-        }
-      }, "Location & Hours")), /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement("a", {
         href: "/contact",
         onClick: function onClick(e) {
           return _this2.closeMenu(e, "contact");
         }
       }, "Contact")), /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement("a", {
+        href: "/map",
+        onClick: function onClick(e) {
+          return _this2.closeMenu(e, "map");
+        }
+      }, "Location & Hours")), /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement("a", {
         href: "/jobs",
         onClick: function onClick(e) {
           return _this2.closeMenu(e, "jobs");
         }
       }, "Jobs")), /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement("a", {
+        href: "https://www.clover.com/online-ordering/cafe-juniper-llc-salt-lake-city/giftcard"
+      }, "Gift Cards")), /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement("a", {
         href: "/subscriptions",
         onClick: function onClick(e) {
           return _this2.closeMenu(e, "subscriptions");
@@ -207,26 +204,23 @@ var HeaderComponent = /*#__PURE__*/function (_Component) {
           return _this2.closeMenu(e, "home");
         }
       }, "Home"), /*#__PURE__*/_react["default"].createElement("a", {
-        href: "/about",
-        onClick: function onClick(e) {
-          return _this2.closeMenu(e, "about");
-        }
-      }, "About Us"), /*#__PURE__*/_react["default"].createElement("a", {
-        href: "/map",
-        onClick: function onClick(e) {
-          return _this2.closeMenu(e, "map");
-        }
-      }, "Location & Hours"), /*#__PURE__*/_react["default"].createElement("a", {
         href: "/contact",
         onClick: function onClick(e) {
           return _this2.closeMenu(e, "contact");
         }
       }, "Contact"), /*#__PURE__*/_react["default"].createElement("a", {
+        href: "/map",
+        onClick: function onClick(e) {
+          return _this2.closeMenu(e, "map");
+        }
+      }, "Location & Hours"), /*#__PURE__*/_react["default"].createElement("a", {
         href: "/jobs",
         onClick: function onClick(e) {
           return _this2.closeMenu(e, "jobs");
         }
       }, "Jobs"), /*#__PURE__*/_react["default"].createElement("a", {
+        href: "https://www.clover.com/online-ordering/cafe-juniper-llc-salt-lake-city/giftcard"
+      }, "Gift Cards"), /*#__PURE__*/_react["default"].createElement("a", {
         href: "/subscriptions",
         onClick: function onClick(e) {
           return _this2.closeMenu(e, "subscriptions");

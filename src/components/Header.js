@@ -75,16 +75,16 @@ class HeaderComponent extends Component {
               <a href="/" onClick={(e) => this.closeMenu(e, "home")}>Home</a>
             </div>
             <div>
-              <a href="/about" onClick={(e) => this.closeMenu(e, "about")}>About Us</a>
+              <a href="/contact" onClick={(e) => this.closeMenu(e, "contact")}>Contact</a>
             </div>
             <div>
               <a href="/map" onClick={(e) => this.closeMenu(e, "map")}>Location & Hours</a>
             </div>
             <div>
-              <a href="/contact" onClick={(e) => this.closeMenu(e, "contact")}>Contact</a>
+              <a href="/jobs" onClick={(e) => this.closeMenu(e, "jobs")}>Jobs</a>
             </div>
             <div>
-              <a href="/jobs" onClick={(e) => this.closeMenu(e, "jobs")}>Jobs</a>
+              <a href="https://www.clover.com/online-ordering/cafe-juniper-llc-salt-lake-city/giftcard">Gift Cards</a>
             </div>
             <div>
               <a href="/subscriptions" onClick={(e) => this.closeMenu(e, "subscriptions")}>Subscriptions</a>
@@ -97,10 +97,10 @@ class HeaderComponent extends Component {
         <HeaderWrap menuStuck={menuStuck}>
           <DesktopHeader menuStuck={menuStuck}>
             <a href="" onClick={(e) => this.closeMenu(e, "home")}>Home</a>
-            <a href="/about" onClick={(e) => this.closeMenu(e, "about")}>About Us</a>
-            <a href="/map" onClick={(e) => this.closeMenu(e, "map")}>Location & Hours</a>
             <a href="/contact" onClick={(e) => this.closeMenu(e, "contact")}>Contact</a>
+            <a href="/map" onClick={(e) => this.closeMenu(e, "map")}>Location & Hours</a>
             <a href="/jobs" onClick={(e) => this.closeMenu(e, "jobs")}>Jobs</a>
+            <a href="https://www.clover.com/online-ordering/cafe-juniper-llc-salt-lake-city/giftcard">Gift Cards</a>
             <a href="/subscriptions" onClick={(e) => this.closeMenu(e, "subscriptions")}>Subscriptions</a>
           </DesktopHeader>
           <DesktopOrder>

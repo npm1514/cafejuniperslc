@@ -77,49 +77,7 @@ var DeliveryComponent = /*#__PURE__*/function (_Component) {
         style: {
           width: "200px"
         }
-      }))), /*#__PURE__*/_react["default"].createElement("br", null), /*#__PURE__*/_react["default"].createElement("hr", null), /*#__PURE__*/_react["default"].createElement("h2", null, "OR GET YOUR ORDER DELIVERED!"), /*#__PURE__*/_react["default"].createElement("a", {
-        href: "https://www.doordash.com/business/596471/?utm_source=partner-link&utm_medium=website&utm_campaign=596471&utm_content=red-l",
-        target: "_blank",
-        alt: "Order Food Delivery with DoorDash",
-        title: "Order Food Delivery with DoorDash",
-        style: {
-          textDecoration: "none"
-        }
-      }, /*#__PURE__*/_react["default"].createElement("img", {
-        className: "ddButton",
-        src: "/images/button_red_l.svg",
-        style: {
-          width: "268px"
-        }
-      })), /*#__PURE__*/_react["default"].createElement("a", {
-        href: "https://www.grubhub.com/restaurant/cafe-juniper-29-e-400-s-salt-lake-city/2418846",
-        target: "_blank",
-        alt: "Order Food Delivery with Grubhub",
-        title: "Order Food Delivery with Grubhub",
-        style: {
-          textDecoration: "none"
-        }
-      }, /*#__PURE__*/_react["default"].createElement("img", {
-        className: "ghButton",
-        src: "/images/grubhub.png",
-        style: {
-          width: "268px"
-        }
-      })), /*#__PURE__*/_react["default"].createElement("a", {
-        href: "https://www.ubereats.com/salt-lake-city/food-delivery/cafe-juniper/Pf2MDmZ7TJycEdVMfcS5mg",
-        target: "_blank",
-        alt: "Order Food Delivery with Uber Eats",
-        title: "Order Food Delivery with Uber Eats",
-        style: {
-          textDecoration: "none"
-        }
-      }, /*#__PURE__*/_react["default"].createElement("img", {
-        className: "ueButton",
-        src: "/images/UberEats.png",
-        style: {
-          width: "268px"
-        }
-      }))));
+      }))), /*#__PURE__*/_react["default"].createElement("br", null)));
     }
   }]);
 

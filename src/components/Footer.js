@@ -5,6 +5,7 @@ class FooterComponent extends Component {
   render(){
     return (
       <FooterWrap>
+        {this.props.children}
         <Footer>
           <span>Copyright 2020 Cafe Juniper LLC</span>
           <div>
