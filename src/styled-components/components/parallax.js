@@ -25,7 +25,7 @@ export const Parallax = styled.div`
   iframe {
     width: calc(100% - 48px);
     margin: 48px 24px;
-    height: 352px;
+    height: 448px;
     border: 0;
     border-radius: 2px;
     .socialwall_header {
