@@ -16,8 +16,8 @@ class Catering extends Component {
             <Banner id="catering"/>
             <Header scroll={this.scroll}/>
             <About noLogo noHexes>
-              <h2>Subscription / Catering Program</h2>
-              <p>We are capable of providing premium coffee to anybody and any business within the Salt Lake valley. Please consider our catering menu and if you are interested, fill out the form below.</p>
+              <h2>Cafe Juniper Subscription & Catering</h2>
+              <p>We at Cafe Juniper are capable of providing premium coffee to anybody and any business within the Salt Lake valley. Please consider our catering menu and if you are interested, fill out the form below.</p>
             </About>
             <CateringMenu/>
             <Subscribe/>

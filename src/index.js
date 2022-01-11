@@ -9,6 +9,7 @@ import bodyParser from 'body-parser';
 import cron from 'node-cron';
 import nodemailer from 'nodemailer';
 
+
 import { HomeRoot, JobsRoot, CateringRoot, TermsRoot, FourOhFourRoot, SitemapRoot } from "./roots";
 import { ServerStyleSheet } from 'styled-components';
 
@@ -229,6 +230,15 @@ app.get('/', (req, res) => {
   let data = "";
   res.set('Cache-Control', 'public, max-age=31557600');
   res.send(returnHTML(data, homeBundle, HomeRoot, "home"));
+});
+
+app.get('/robots.txt', (req, res) => {
+  res.set('Cache-Control', 'public, max-age=31557600');
+  res.sendFile(path.join(__dirname, '../robots.txt'));
+});
+app.get('/sitemap.xml', (req, res) => {
+  res.set('Cache-Control', 'public, max-age=31557600');
+  res.sendFile(path.join(__dirname, '../sitemap.xml'));
 });
 
 app.get('/health', (req, res) => {

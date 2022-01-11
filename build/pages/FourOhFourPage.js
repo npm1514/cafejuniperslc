@@ -53,10 +53,10 @@ var FourOhFour = /*#__PURE__*/function (_Component) {
   _createClass(FourOhFour, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/_react["default"].createElement(_global.PageWrapper, null, /*#__PURE__*/_react["default"].createElement(_components.Header, null), /*#__PURE__*/_react["default"].createElement(_global.ContentWrapper, null, /*#__PURE__*/_react["default"].createElement(_fourohfour.FourOhFourContent, null, /*#__PURE__*/_react["default"].createElement("h2", null, "[404] Oh No!"), /*#__PURE__*/_react["default"].createElement("h2", null, "It looks like you need some more coffee!"), /*#__PURE__*/_react["default"].createElement("a", {
+      return /*#__PURE__*/_react["default"].createElement(_global.PageWrapper, null, /*#__PURE__*/_react["default"].createElement(_components.Header, null), /*#__PURE__*/_react["default"].createElement(_global.ContentWrapper, null, /*#__PURE__*/_react["default"].createElement(_fourohfour.FourOhFourContent, null, /*#__PURE__*/_react["default"].createElement("h2", null, "Error [404] Oh No - Its the Cafe Juniper Coffee Dance!"), /*#__PURE__*/_react["default"].createElement("h2", null, "It looks like you need a cup of coffee!"), /*#__PURE__*/_react["default"].createElement("a", {
         href: "/"
-      }, /*#__PURE__*/_react["default"].createElement(_global.Button, null, "Let's Go Home")), /*#__PURE__*/_react["default"].createElement("br", null), /*#__PURE__*/_react["default"].createElement("img", {
-        src: "/images/needcoffee.gif"
+      }, /*#__PURE__*/_react["default"].createElement(_global.Button, null, "Let's Get You Back to Cafe Juniper!")), /*#__PURE__*/_react["default"].createElement("br", null), /*#__PURE__*/_react["default"].createElement("img", {
+        src: "/images/needcoffee.webp"
       }))), /*#__PURE__*/_react["default"].createElement(_components.Footer, null));
     }
   }]);

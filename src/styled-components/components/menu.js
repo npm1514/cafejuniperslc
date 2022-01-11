@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { white, green, darkblue } from '../colors';
 export const MenuWrap = styled.div`
   width: 100%;
-  background-image: url(/images/grub.jpg);
+  background-image: url(/images/grub.webp);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;

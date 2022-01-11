@@ -10,7 +10,7 @@ class CateringMenuComponent extends Component {
         <Menu id={this.props.id} style={{flexDirection: "column"}}>
           <table>
             <tr>
-              <th>Menu</th>
+              <th>Coffee Menu</th>
               <th>16<sup>oz</sup></th>
               <th>32<sup>oz</sup></th>
               <th>64<sup>oz</sup></th>
@@ -44,36 +44,16 @@ class CateringMenuComponent extends Component {
               <td>$20.00</td>
               <td>$38.00</td>
             </tr>
-            <div></div>
-            <br/>
             <tr>
-              <th>Volume Discounts</th>
-              <th>% Off</th>
-              <th></th>
-            </tr>
-            <tr>
-              <td>2 Products</td>
-              <td>5%</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>5 Products</td>
-              <td>10%</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>10 Products</td>
-              <td>20%</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Annual Commitment</td>
-              <td>20%</td>
-              <td></td>
+              <td>Hot Cocoa</td>
+              <td>$7.00</td>
+              <td>$13.00</td>
+              <td>$24.00</td>
+              <td>$45.00</td>
             </tr>
           </table>
           <br/>
-          <p style={{margin: "auto", fontSize: "80%"}}>**Volume discounts only apply to subscriptions. One time orders will not be included.</p>
+          <p style={{margin: "auto", fontSize: "80%"}}>**Volume discounts may be applied to certain subscriptions based off of quantity and frequency. One time orders will not be included.</p>
         </Menu>
     );
   }

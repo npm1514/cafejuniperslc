@@ -16,17 +16,6 @@ class Home extends Component {
       } else {
         document.getElementById("home").scrollIntoView({block: 'start', behavior: 'smooth'});
       }
-
-
-
-      // `<style>
-      //   .socialwall_header {
-      //     display: none;
-      //   }
-      //   .socialwall_container {
-      //     margin: 12px;
-      //   }
-      // </style>`;
     }
     render(){
       return (
@@ -39,7 +28,7 @@ class Home extends Component {
               <p>Our team has been in the hospitality industry of Salt Lake City for the last ten plus years. Our mission is to give back to the community by providing the best quality coffee, pastries, and toast sourced both locally and responsibly in our cute downtown cafe.</p>
             </About>
             <Parallax url="/images/coolfront.jpg">
-              <h2>What's been happening at Juniper...</h2>
+              <h2>What's been happening at Cafe Juniper...</h2>
               <iframe src="/html/insta.html" id="insta"/>
             </Parallax>
             <Partners/>

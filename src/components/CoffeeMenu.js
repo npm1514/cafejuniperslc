@@ -12,7 +12,7 @@ class CoffeeMenuComponent extends Component {
           <Hex className="mobile-hex" color={darkblue} top={240} right={-60} size={100}/>
           <Hex className="mobile-hex" color={pink} top={360} left={-25} size={50}/>
           <CoffeeMenu>
-            <h2>MENU</h2>
+            <h2>CAFE MENU</h2>
             <Row>
               <Head>Drinks</Head>
               <Head>All Sizes</Head>
@@ -56,12 +56,12 @@ class CoffeeMenuComponent extends Component {
             <br/>
 
             <Row>
-              <Head>Toast</Head>
-              <Head>$3.50</Head>
+              <Head>Food</Head>
+              <Head></Head>
             </Row>
             <Row>
-              <Data>Italian Toast</Data>
-              <Data>$4.00</Data>
+              <Data>Toast</Data>
+              <Data>Starting at $3.50</Data>
             </Row>
             <Row>
               <Data>Hummus Toast</Data>
@@ -80,12 +80,16 @@ class CoffeeMenuComponent extends Component {
               <Data>$8.00</Data>
             </Row>
             <Row>
-              <Data>Specialty Toast</Data>
-              <Data>As Listed</Data>
+              <Data>Rotating Soup</Data>
+              <Data>$7.00</Data>
             </Row>
             <Row>
-              <Head>Extras</Head>
-              <Head>+$1.00</Head>
+              <Data>French Toast</Data>
+              <Data>$10.00</Data>
+            </Row>
+            <Row>
+              <Data>Sausage Farro Bowl</Data>
+              <Data>$10.00</Data>
             </Row>
             <br/>
 

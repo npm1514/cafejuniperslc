@@ -15,7 +15,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var MenuWrap = _styledComponents["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  width: 100%;\n  background-image: url(/images/grub.jpg);\n  background-size: cover;\n  background-attachment: fixed;\n  background-position: center;\n\n  h2 {\n    color: ", ";\n  }\n"])), _colors.darkblue);
+var MenuWrap = _styledComponents["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  width: 100%;\n  background-image: url(/images/grub.webp);\n  background-size: cover;\n  background-attachment: fixed;\n  background-position: center;\n\n  h2 {\n    color: ", ";\n  }\n"])), _colors.darkblue);
 
 exports.MenuWrap = MenuWrap;
 

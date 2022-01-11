@@ -22,7 +22,7 @@ class Jobs extends Component {
             <Header scroll={this.scroll}/>
             <About id="about">
               <a href="/jobs">
-                <h2>{ id ? "BACK TO JOBS PAGE" : "JOBS" }</h2>
+                <h2>{ id ? "BACK TO JOBS PAGE" : "CAFE JUNIPER JOBS" }</h2>
               </a>
               <hr/>
               {
@@ -34,8 +34,8 @@ class Jobs extends Component {
                 <div>
                   {
                     jobList.length ?
-                    <p>These are our available jobs.</p> :
-                    <p>There are no available jobs currently.</p>
+                    <p>These are the available jobs at Cafe Juniper.</p> :
+                    <p>There are no available jobs currently at Cafe Juniper.</p>
                   }
 
                   {
@@ -53,7 +53,7 @@ class Jobs extends Component {
               <hr/>
               <p>For any {jobList.length ? "" : "other "}job inquiries, please submit your resume at <a href="mailto:cafejuniperslc@gmail.com">cafejuniperslc@gmail.com</a></p>
             </About>
-            <Parallax url="/images/grub.jpg"/>
+            <Parallax url="/images/grub.webp"/>
             <Message id="contact"/>
             <Footer/>
           </JobsWrapper>

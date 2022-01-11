@@ -236,6 +236,14 @@ app.get('/', function (req, res) {
   res.set('Cache-Control', 'public, max-age=31557600');
   res.send(returnHTML(data, homeBundle, _roots.HomeRoot, "home"));
 });
+app.get('/robots.txt', function (req, res) {
+  res.set('Cache-Control', 'public, max-age=31557600');
+  res.sendFile(_path["default"].join(__dirname, '../robots.txt'));
+});
+app.get('/sitemap.xml', function (req, res) {
+  res.set('Cache-Control', 'public, max-age=31557600');
+  res.sendFile(_path["default"].join(__dirname, '../sitemap.xml'));
+});
 app.get('/health', function (req, res) {
   res.send("healthy");
 });
