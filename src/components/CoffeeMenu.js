@@ -27,23 +27,23 @@ class CoffeeMenuComponent extends Component {
             </Row>
             <Row>
               <Data>Latte, Chai, Matcha</Data>
-              <Data>$4.25</Data>
+              <Data>$4.50</Data>
             </Row>
             <Row>
               <Data>Drip, Tea</Data>
-              <Data>$3.25</Data>
+              <Data>$3.50</Data>
             </Row>
             <Row>
               <Data>Pour Over</Data>
-              <Data>$4.00</Data>
+              <Data>$4.50</Data>
             </Row>
             <Row>
               <Data>Cold Brew</Data>
-              <Data>$4.00</Data>
+              <Data>$4.50</Data>
             </Row>
             <Row>
               <Data>Hot Cocoa</Data>
-              <Data>$4.00</Data>
+              <Data>$4.50</Data>
             </Row>
             <Row>
               <Head>Alt. Milk</Head>
@@ -51,7 +51,7 @@ class CoffeeMenuComponent extends Component {
             </Row>
             <Row>
               <Head>Syrups</Head>
-              <Head>+$0.50</Head>
+              <Head>+$0.75</Head>
             </Row>
             <br/>
 
@@ -69,19 +69,15 @@ class CoffeeMenuComponent extends Component {
             </Row>
             <Row>
               <Data>Ricotta Toast</Data>
-              <Data>$7.00</Data>
+              <Data>$8.50</Data>
             </Row>
             <Row>
               <Data>Avocado Toast</Data>
-              <Data>$7.00</Data>
-            </Row>
-            <Row>
-              <Data>Mushroom Toast</Data>
               <Data>$8.00</Data>
             </Row>
             <Row>
-              <Data>Rotating Soup</Data>
-              <Data>$7.00</Data>
+              <Data>Mushroom Toast</Data>
+              <Data>$8.50</Data>
             </Row>
             <Row>
               <Data>French Toast</Data>
