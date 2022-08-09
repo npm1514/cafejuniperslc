@@ -7,7 +7,7 @@ class FooterComponent extends Component {
       <FooterWrap>
         {this.props.children}
         <Footer>
-          <span>Copyright 2020 Cafe Juniper LLC</span>
+          <span>Copyright {new Date().getFullYear() || '2022'} Cafe Juniper LLC</span>
           <div>
             <a rel="noopener" name="instagram link" href="https://www.instagram.com/cafejuniperslc/" target="_blank"><i className="fab fa-instagram"></i></a>
             <a rel="noopener" name="facebook link" href="https://www.facebook.com/cafejuniperslc" target="_blank"><i className="fab fa-facebook-square"></i></a>
