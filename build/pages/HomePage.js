@@ -95,12 +95,7 @@ var Home = /*#__PURE__*/function (_Component) {
         scroll: this.scroll
       }), /*#__PURE__*/_react["default"].createElement(_components.CoffeeMenu, null), /*#__PURE__*/_react["default"].createElement(_components.About, {
         id: "about"
-      }, /*#__PURE__*/_react["default"].createElement("h2", null, "ABOUT US"), /*#__PURE__*/_react["default"].createElement("p", null, "Our team has been in the hospitality industry of Salt Lake City for the last ten plus years. Our mission is to give back to the community by providing the best quality coffee, pastries, and toast sourced both locally and responsibly in our cute downtown cafe.")), /*#__PURE__*/_react["default"].createElement(_components.Parallax, {
-        url: "/images/coolfront.jpg"
-      }, /*#__PURE__*/_react["default"].createElement("h2", null, "What's been happening at Cafe Juniper..."), /*#__PURE__*/_react["default"].createElement("iframe", {
-        src: "/html/insta.html",
-        id: "insta"
-      })), /*#__PURE__*/_react["default"].createElement(_components.Partners, null), /*#__PURE__*/_react["default"].createElement(_components.Message, {
+      }, /*#__PURE__*/_react["default"].createElement("h2", null, "ABOUT US"), /*#__PURE__*/_react["default"].createElement("p", null, "Our team has been in the hospitality industry of Salt Lake City for the last ten plus years. Our mission is to give back to the community by providing the best quality coffee, pastries, and toast sourced both locally and responsibly in our cute downtown cafe.")), /*#__PURE__*/_react["default"].createElement(_components.Partners, null), /*#__PURE__*/_react["default"].createElement(_components.Message, {
         id: "contact"
       }), /*#__PURE__*/_react["default"].createElement(_components.Map, {
         id: "map"
