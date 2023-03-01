@@ -90,7 +90,7 @@ class HeaderComponent extends Component {
               <a href="/subscriptions" onClick={(e) => this.closeMenu(e, "subscriptions")}>Subscriptions</a>
             </div>
             <div className="online-order">
-              <a href="https://order.online/store/CafeJuniper-1279187/en-US/?delivery=true&hideModal=true" rel="noopener" className="online-order">Order Now</a>
+              <a href="https://www.clover.com/online-ordering/cafe-juniper-llc-salt-lake-city" rel="noopener" className="online-order">Order Now</a>
             </div>
           </MobileMenu>
         }
@@ -104,11 +104,11 @@ class HeaderComponent extends Component {
             <a href="/subscriptions" onClick={(e) => this.closeMenu(e, "subscriptions")}>Subscriptions</a>
           </DesktopHeader>
           <DesktopOrder>
-            <a href="https://order.online/store/CafeJuniper-1279187/en-US/?delivery=true&hideModal=true" rel="noopener" className="online-order">Order Now</a>
+            <a href="https://www.clover.com/online-ordering/cafe-juniper-llc-salt-lake-city" rel="noopener" className="online-order">Order Now</a>
           </DesktopOrder>
         </HeaderWrap>
         <Spacer menuStuck={menuStuck}/>
-        <OnlineOrder><a href="https://order.online/store/CafeJuniper-1279187/en-US/?delivery=true&hideModal=true" rel="noopener" className="online-order">Order Now</a></OnlineOrder>
+        <OnlineOrder><a href="https://www.clover.com/online-ordering/cafe-juniper-llc-salt-lake-city" rel="noopener" className="online-order">Order Now</a></OnlineOrder>
       </HeaderWrap>
     );
   }
