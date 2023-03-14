@@ -114,7 +114,7 @@ var MessageComponent = /*#__PURE__*/function (_Component) {
         bottom: -83,
         left: -50,
         size: 100
-      }), !this.props.noMessage && /*#__PURE__*/_react["default"].createElement(_react.Fragment, null, /*#__PURE__*/_react["default"].createElement("h2", null, "801-946-0452 | cafejuniperslc@gmail.com"), /*#__PURE__*/_react["default"].createElement("h2", null, "Shoot us a message"), /*#__PURE__*/_react["default"].createElement("form", {
+      }), !this.props.noMessage && /*#__PURE__*/_react["default"].createElement(_react.Fragment, null, /*#__PURE__*/_react["default"].createElement("h2", null, "385-454-2847 | cafejuniperslc@gmail.com"), /*#__PURE__*/_react["default"].createElement("h2", null, "Shoot us a message"), /*#__PURE__*/_react["default"].createElement("form", {
         onSubmit: this.submitMessage
       }, /*#__PURE__*/_react["default"].createElement("input", {
         value: name,
