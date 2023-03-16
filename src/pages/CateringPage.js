@@ -22,7 +22,7 @@ class Catering extends Component {
             <CateringMenu/>
             <Subscribe/>
             <Footer>
-              <h2>385-454-2847 | cafejuniperslc@gmail.com</h2>
+              <h2>385-454-2947 | cafejuniperslc@gmail.com</h2>
             </Footer>
           </CateringWrapper>
       );

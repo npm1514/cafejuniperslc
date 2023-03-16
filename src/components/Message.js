@@ -54,7 +54,7 @@ class MessageComponent extends Component {
           {
             !this.props.noMessage &&
             <Fragment>
-              <h2>385-454-2847 | cafejuniperslc@gmail.com</h2>
+              <h2>385-454-2947 | cafejuniperslc@gmail.com</h2>
               <h2>Shoot us a message</h2>
               <form onSubmit={this.submitMessage}>
                 <input

@@ -76,7 +76,7 @@ var Catering = /*#__PURE__*/function (_Component) {
       }), /*#__PURE__*/_react["default"].createElement(_components.About, {
         noLogo: true,
         noHexes: true
-      }, /*#__PURE__*/_react["default"].createElement("h2", null, "Cafe Juniper Subscription & Catering"), /*#__PURE__*/_react["default"].createElement("p", null, "We at Cafe Juniper are capable of providing premium coffee to anybody and any business within the Salt Lake valley. Please consider our catering menu and if you are interested, fill out the form below.")), /*#__PURE__*/_react["default"].createElement(_components.CateringMenu, null), /*#__PURE__*/_react["default"].createElement(_components.Subscribe, null), /*#__PURE__*/_react["default"].createElement(_components.Footer, null, /*#__PURE__*/_react["default"].createElement("h2", null, "385-454-2847 | cafejuniperslc@gmail.com")));
+      }, /*#__PURE__*/_react["default"].createElement("h2", null, "Cafe Juniper Subscription & Catering"), /*#__PURE__*/_react["default"].createElement("p", null, "We at Cafe Juniper are capable of providing premium coffee to anybody and any business within the Salt Lake valley. Please consider our catering menu and if you are interested, fill out the form below.")), /*#__PURE__*/_react["default"].createElement(_components.CateringMenu, null), /*#__PURE__*/_react["default"].createElement(_components.Subscribe, null), /*#__PURE__*/_react["default"].createElement(_components.Footer, null, /*#__PURE__*/_react["default"].createElement("h2", null, "385-454-2947 | cafejuniperslc@gmail.com")));
     }
   }]);
 
